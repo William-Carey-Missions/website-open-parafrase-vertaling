@@ -64,6 +64,7 @@ def test_volledige_tekst_metadata_en_navigatie(tmp_path):
     assert '<base href="/">' in first
     assert 'id="sidebar-right"' in first
     assert 'js/app.js' in first
+    assert '/js/reading-support.js?v=2' in first
     assert 'Lees met instellingen' not in first
     assert 'Lezer met instellingen' not in first
     assert 'type="application/ld+json"' in first
