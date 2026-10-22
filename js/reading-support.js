@@ -4,7 +4,8 @@
     const root = document.getElementById('verses-container');
     if (!root) return;
     const support = {
-        locations: fetch('/data/reading-locations.json').then(r => r.ok ? r.json() : { books: {} }).catch(() => ({ books: {} })),
+        // Kaarten openen rechtstreeks bij Open Gods Woord; geen lokale kopie.
+        locations: Promise.resolve({ books: {} }),
         ground: fetch('/data/reading-groundwords.json').then(r => r.ok ? r.json() : { books: {} }).catch(() => ({ books: {} })),
         terms: fetch('/data/reading-term-index.json').then(r => r.ok ? r.json() : []).catch(() => []),
         busy: false,
