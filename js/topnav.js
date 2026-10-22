@@ -122,6 +122,7 @@
             '<div class="opv-rechts">' +
                 '<div class="opv-links" id="topnav-links">' +
                     '<a href="/bijbel/">Alle boeken</a>' +
+                    '<a href="/woordenboek.html">Woordenboek</a>' +
                     '<a href="over-opv.html">Over OPW</a>' +
                     '<a href="https://opengodsword.com/wiki.html" data-ogw-href="wiki.html" title="Wiki, Bijbelachtergrond en broninformatie op Open Gods Woord">Achtergrond ' + PIJL + '</a>' +
                 '</div>' +

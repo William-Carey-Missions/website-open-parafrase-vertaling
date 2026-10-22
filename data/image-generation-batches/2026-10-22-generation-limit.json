@@ -1,0 +1,51 @@
+{
+  "method": "built-in image_gen",
+  "images": [],
+  "run_started_at_utc": "2026-10-21T23:22:05Z",
+  "baseline_commit": "f93e878",
+  "status": "resumed_after_reset",
+  "limitation": {
+    "http_status": 429,
+    "type": "usage_limit_reached",
+    "resets_at_utc": "2026-10-22T04:00:30Z",
+    "resets_at_amsterdam": "2026-10-22T06:00:30+02:00"
+  },
+  "generated_images": 215,
+  "accepted_images": 214,
+  "discarded_images": [
+    {
+      "book": "psalmen",
+      "chapter": 122,
+      "verse": 2,
+      "reason": "Later Jerusalem architecture visible; a checked alternative for verse 1 was selected."
+    }
+  ],
+  "pending_prompt_count": 134,
+  "pending_prompts_saved_in": [
+    "psalmen-116-125.json",
+    "psalmen-126-135.json",
+    "psalmen-136-145.json",
+    "psalmen-146-150-spreuken-1-5.json",
+    "spreuken-6-15.json",
+    "spreuken-16-25.json",
+    "spreuken-26-31-prediker-1-4.json",
+    "prediker-5-12-hooglied-1-2.json",
+    "hooglied-3-8-jesaja-1-4.json",
+    "jesaja-5-14.json",
+    "jesaja-15-24.json"
+  ],
+  "resume": "Begin bij het eerste hoofdstuk met minder dan drie beelden. Raadpleeg pending_images in de batchlogs voor de al gecontroleerde verskeuze en de voorbereide prompts. Start voor de vermelde reset geen nieuwe generatiepogingen; de uurlijkse automatisering blijft actief.",
+  "verified_new_images": 214,
+  "touched_chapters": 78,
+  "new_chapters_completed": 67,
+  "total_chapters_with_three_images": 669,
+  "total_registered_images": 2171,
+  "images_still_needed": 2641,
+  "next_incomplete_chapter": {
+    "book": "psalmen",
+    "chapter": 125
+  },
+  "site_build": "passed",
+  "source_asset_and_generated_page_checks": "passed",
+  "resumed_at_utc": "2026-10-22T04:20:42Z"
+}

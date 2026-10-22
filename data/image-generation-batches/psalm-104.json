@@ -1,0 +1,29 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "psalmen",
+      "chapter": 104,
+      "verse": 11,
+      "scene": "Wilde ezels drinken bij de bronnen",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East. Accurate natural animal anatomy and realistic terrain. No text, watermark, painting, CGI, modern objects or human depiction of God. Poetic illustration of local Psalm 104:11. Two wild asses with slender natural legs drink from a clear spring in a rocky Judean valley, mountains behind, morning sunlight, natural wildlife photograph.",
+      "file": "104-11.webp"
+    },
+    {
+      "book": "psalmen",
+      "chapter": 104,
+      "verse": 18,
+      "scene": "Steenbokken en klipdassen in de bergen",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East. Accurate natural animal anatomy and realistic terrain. No text, watermark, painting, CGI, modern objects or human depiction of God. Poetic illustration of local Psalm 104:18. Two Nubian ibex on rocky desert mountain ledges, one rock hyrax visible in a separate sheltered crevice lower in the foreground. Distinct accurate species anatomy, warm late sunlight, wildlife photography.",
+      "file": "104-18.webp"
+    },
+    {
+      "book": "psalmen",
+      "chapter": 104,
+      "verse": 25,
+      "scene": "De zee vol kleine en grote dieren",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East. Accurate natural animal anatomy and realistic terrain. No text, watermark, painting, CGI, modern objects or human depiction of God. Poetic illustration of local Psalm 104:25. Crystal clear eastern Mediterranean coastal sea, underwater photograph of a school of small silver fish and one large grouper swimming above natural rock and seagrass, sunlight ripples, no modern boats, no aquarium, accurate marine anatomy.",
+      "file": "104-25.webp"
+    }
+  ]
+}

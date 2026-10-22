@@ -1,5 +1,14 @@
 /* Reader presentation, shared through the main controller object. */
 const ChapterRenderer = {
+    async _bookImages() {
+        if (!this._bookImagesPromise) {
+            this._bookImagesPromise = fetch('/data/book-images.json')
+                .then(response => response.ok ? response.json() : { books: {} })
+                .then(data => data.books || {})
+                .catch(() => ({}));
+        }
+        return this._bookImagesPromise;
+    },
     async renderChapter(bookId, chapterNum, opts = {}) {
         if (!opts.append && !opts.prepend) document.getElementById('chapter-verification')?.remove();
         await App._laadVerified();   // banner mag niet op verouderde info draaien
@@ -116,21 +125,37 @@ const ChapterRenderer = {
                 container.appendChild(unavailable);
             }
         }
+        const layout = document.createElement('section');
+        layout.className = 'opw-leesindeling';
+        const textColumn = document.createElement('div');
+        textColumn.className = 'opw-leeskolom';
         // Hoofdstukkop: boek en hoofdstuk boven het onderwerp. Bij doorlopend lezen
         // is dezelfde kop ook de scheiding tussen twee hoofdstukken.
-        sink.appendChild(this._hoofdstukKop(book, chapter, chapterNum, append || prepend));
-        if (['genesis', 'exodus'].includes(bookId)) {
+        textColumn.appendChild(this._hoofdstukKop(book, chapter, chapterNum, append || prepend));
+        const bookImages = await this._bookImages();
+        const chapterImages = (bookImages[bookId] || []).filter(item => Number(item.chapter) === Number(chapterNum));
+        const imageGallery = document.createElement('aside');
+        imageGallery.className = 'opw-hoofdstukbeelden';
+        imageGallery.setAttribute('aria-label', 'Beelden bij dit hoofdstuk');
+        for (const bookImage of chapterImages) {
             const figure = document.createElement('figure');
             figure.className = 'opw-hoofdstukbeeld';
+            if (bookImage.verse) figure.dataset.verse = bookImage.verse;
             const illustration = document.createElement('img');
-            illustration.src = `/images/hoofdstukken/${bookId}/${chapterNum}.webp`;
+            illustration.src = `/images/boekseries/${bookId}/${bookImage.file}`;
             illustration.width = 1536;
             illustration.height = 1024;
-            illustration.alt = `Illustratie bij ${book.nameDutch} ${chapterNum}: ${chapter.heading || ''}`;
+            illustration.alt = bookImage.alt;
             illustration.loading = append || prepend ? 'lazy' : 'eager';
             figure.appendChild(illustration);
-            sink.appendChild(figure);
+            if (bookImage.scene) {
+                const caption = document.createElement('figcaption');
+                caption.textContent = bookImage.scene;
+                figure.appendChild(caption);
+            }
+            imageGallery.appendChild(figure);
         }
+        if (chapterImages.length) layout.classList.add('heeft-beelden');
 
         // Boekinleiding inline in de tekstkolom (alleen bij hoofdstuk 1, onder de
         // hoofdstukkop), zichtbaar via instelling (body.show-book-intro)
@@ -140,7 +165,7 @@ const ChapterRenderer = {
             bIntro.dataset.book = bookId;
             bIntro.innerHTML = '<span class="book-intro-label">Boekinleiding:</span> ' +
                 (book.bookIntro.text2026 || book.bookIntro.text1637);
-            sink.appendChild(bIntro);
+            textColumn.appendChild(bIntro);
         }
 
         // Hoofdstukinleiding inline in de tekstkolom (onder de hoofdstukkop),
@@ -151,7 +176,7 @@ const ChapterRenderer = {
             intro.dataset.book = bookId;
             intro.dataset.chapter = chapterNum;
             intro.textContent = chapter.chapterIntro.text2026 || chapter.chapterIntro.text1637;
-            sink.appendChild(intro);
+            textColumn.appendChild(intro);
         }
 
         for (const verse of chapter.verses) {
@@ -171,7 +196,7 @@ const ChapterRenderer = {
                 } else {
                     h.textContent = pTitle;
                 }
-                sink.appendChild(h);
+                textColumn.appendChild(h);
             }
             const row = document.createElement('div');
             row.className = 'verse-row';
@@ -366,7 +391,7 @@ const ChapterRenderer = {
                 <div class="verse-cell col-noteDiff" data-col="noteDiff">${noteDiffHtml}</div>
             `;
 
-            sink.appendChild(row);
+            textColumn.appendChild(row);
             if (!isExternalTranslation) Editor.attachVerseListeners(row, bookId, chapterNum, verse);
             // Rechtermuisknop op versnummer = tag toevoegen
             row.querySelector('.verse-num').addEventListener('contextmenu', (e) => {
@@ -376,6 +401,10 @@ const ChapterRenderer = {
                 }
             });
         }
+
+        layout.appendChild(textColumn);
+        if (chapterImages.length) layout.appendChild(imageGallery);
+        sink.appendChild(layout);
 
         // Doorlopend lezen: prepend-fragment bovenaan plaatsen met scroll-compensatie
         // zodat de leespositie niet verspringt.

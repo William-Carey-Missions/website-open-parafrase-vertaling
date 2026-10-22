@@ -56,8 +56,10 @@ def test_de_volledige_lezer_is_standaard_met_rode_cursieve_citaten(browser, site
     assert page.locator(".verse-num").first.evaluate("el => getComputedStyle(el).display") == "none"
     assert quote.evaluate("el => getComputedStyle(el).color") == "rgb(163, 32, 32)"
     assert quote.evaluate("el => getComputedStyle(el).fontStyle") == "italic"
-    assert page.locator(".opw-hoofdstukbeeld img").get_attribute("src") == "/images/hoofdstukken/genesis/1.webp"
-    page.wait_for_function("document.querySelector('.opw-hoofdstukbeeld img').naturalWidth === 1536")
+    assert page.locator(".opw-hoofdstukbeeld img").count() == 3
+    assert page.locator(".opw-hoofdstukbeeld img").first.get_attribute("src") == "/images/boekseries/genesis/1.webp"
+    for picture in page.locator(".opw-hoofdstukbeeld img").all():
+        page.wait_for_function("img => img.complete && img.naturalWidth > 0", arg=picture.element_handle())
     page.locator("#topnav-weergave").click()
     assert page.locator("#sidebar-right").is_visible()
     assert page.locator("#sidebar-right #toggle-versnummers").count() == 0
@@ -89,7 +91,7 @@ def test_versankers_zoeken_en_boekenmenu_gebruiken_hetzelfde_adres(browser, site
     page.evaluate("Search._goTo('genesis', 2, 3)")
     page.wait_for_url("**/bijbel/genesis/2.html#vers-3")
     page.locator('.verse-row[data-verse="3"]').wait_for(timeout=20000)
-    assert page.locator("#opv-hfst .mp-label").inner_text() == "Genesis 2"
+    page.wait_for_function("document.querySelector('#opv-hfst .mp-label').textContent === 'Genesis 2'")
     page.goto(site + "/bijbel/", wait_until="domcontentloaded")
     assert page.locator(".opw-boeken img").count() == 88
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
@@ -108,8 +110,9 @@ def test_startbeelden_en_laatste_genesishoofdstuk_laden_op_mobiel(browser, site)
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
     page.goto(site + "/bijbel/genesis/50.html", wait_until="domcontentloaded")
     page.locator('.verse-row[data-verse="1"]').wait_for(timeout=20000)
-    page.wait_for_function("document.querySelector('.opw-hoofdstukbeeld img').naturalWidth === 1536")
-    assert page.locator(".opw-hoofdstukbeeld img").get_attribute("src") == "/images/hoofdstukken/genesis/50.webp"
+    page.wait_for_function("document.querySelector('.opw-hoofdstukbeeld img')?.naturalWidth > 0")
+    assert page.locator(".opw-hoofdstukbeeld img").count() == 3
+    assert page.locator(".opw-hoofdstukbeeld img").first.get_attribute("src") == "/images/boekseries/genesis/50-1.webp"
 
 
 @pytest.mark.parametrize("chapter,width", [(1, 1440), (40, 390)])
@@ -119,9 +122,9 @@ def test_exodusbeelden_in_dezelfde_lezer(browser, site, chapter, width):
     page.wait_for_url(f"**/bijbel/exodus/{chapter}.html")
     page.locator(".verse-num").first.wait_for(state="attached", timeout=20000)
     assert page.locator("#verses-container h1").inner_text() == f"Exodus {chapter}"
-    assert page.locator(".opw-hoofdstukbeeld img").count() == 1
-    assert page.locator(".opw-hoofdstukbeeld img").get_attribute("src") == f"/images/hoofdstukken/exodus/{chapter}.webp"
-    page.wait_for_function("document.querySelector('.opw-hoofdstukbeeld img').naturalWidth === 1536")
+    assert page.locator(".opw-hoofdstukbeeld img").count() == 3
+    assert page.locator(".opw-hoofdstukbeeld img").first.get_attribute("src").startswith("/images/boekseries/exodus/")
+    page.wait_for_function("document.querySelector('.opw-hoofdstukbeeld img')?.naturalWidth > 0")
     assert page.locator(".verse-num").first.evaluate("el => getComputedStyle(el).display") == "none"
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
     page.locator("#topnav-weergave" if width > 640 else "#opv-duim-aa").click()

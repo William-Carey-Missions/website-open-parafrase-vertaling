@@ -1,0 +1,29 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "psalmen",
+      "chapter": 105,
+      "verse": 13,
+      "scene": "De aartsvaders trekken als vreemdelingen verder",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, linen and wool robes, realistic stone and desert terrain, clay and wood objects. All people fully clothed, exactly two arms each and natural five-finger hands. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of the remembered Bible events in local Psalm 105:13. A small ancient pastoral family of six people travels with two pack donkeys across an open Canaanite valley, plain wool tents bundled on packs, men and women in simple linen robes, hopeful long journey, wide landscape shot with clearly separate figures and anatomically natural donkeys.",
+      "file": "105-13.webp"
+    },
+    {
+      "book": "psalmen",
+      "chapter": 105,
+      "verse": 26,
+      "scene": "Mozes en Aäron worden gezonden",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, linen and wool robes, realistic stone and desert terrain, clay and wood objects. All people fully clothed, exactly two arms each and natural five-finger hands. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of the remembered Bible events in local Psalm 105:26. Two elderly Israelite brothers, Moses and Aaron, stand together at the edge of an ancient Egyptian settlement, plain unadorned linen robes and sandals, one holding a wooden walking staff, determined humble faces. Modest mudbrick buildings, palm trees, no tablets, no crowns, no temple ornamentation.",
+      "file": "105-26.webp"
+    },
+    {
+      "book": "psalmen",
+      "chapter": 105,
+      "verse": 41,
+      "scene": "Water stroomt uit de rots door het dorre land",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, linen and wool robes, realistic stone and desert terrain, clay and wood objects. All people fully clothed, exactly two arms each and natural five-finger hands. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of the remembered Bible events in local Psalm 105:41. Fresh water flows from a cleft in a large rock into a clear stream across a barren desert valley. Four ancient Israelite adults in simple linen robes and sandals kneel nearby filling clay jars, grateful amazed faces, realistic water and natural hands, no visible deity.",
+      "file": "105-41.webp"
+    }
+  ]
+}

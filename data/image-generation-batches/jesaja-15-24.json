@@ -1,0 +1,36 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "jesaja",
+      "chapter": 15,
+      "verse": 3,
+      "scene": "Rouw op de pleinen van Moab",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 15:3. Fully clothed ancient Moabite adults in plain mourning wool sit sorrowfully in a simple stone town square, no bodies or injury.",
+      "file": "15-3.webp"
+    },
+    {
+      "book": "jesaja",
+      "chapter": 15,
+      "verse": 5,
+      "scene": "Vluchtelingen op de helling",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 15:5. Ancient refugee families in modest plain robes carry bundles up a rugged Moabite hill path, sorrow and fatigue, natural anatomy, no violence.",
+      "file": "15-5.webp"
+    },
+    {
+      "book": "jesaja",
+      "chapter": 15,
+      "verse": 6,
+      "scene": "De wateren van Nimrim verdorren",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 15:6. A dry ancient streambed with withered reeds and pale grasses among Moabite hills, natural harsh summer light.",
+      "file": "15-6.webp"
+    }
+  ],
+  "pending_images": [],
+  "limitation": {
+    "type": "usage_limit_reached",
+    "resets_at_utc": "2026-10-22T04:00:30Z"
+  },
+  "resumed_at_utc": "2026-10-22T04:19:16Z",
+  "pending_images_resolved_at_utc": "2026-10-22T05:17:40.678006+00:00"
+}

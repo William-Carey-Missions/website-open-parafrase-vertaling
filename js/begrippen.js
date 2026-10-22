@@ -122,6 +122,7 @@ const Begrippen = {
         while (walker.nextNode()) textNodes.push(walker.currentNode);
 
         for (const node of textNodes) {
+            if (node.parentElement?.closest('a, button')) continue;
             const text = node.textContent;
             if (!text.trim()) continue;
 
@@ -216,17 +217,10 @@ const Begrippen = {
 
         // Encyclopedie link
         const encLink = document.getElementById('begrip-encyclopedie');
-        const mapping = this.encyclopedieMapping || {};
-        const enKey = mapping[item.woord];
-        if (enKey) {
-            encLink.href = `begrippen.html#${encodeURIComponent(enKey)}`;
-            encLink.textContent = 'Lees meer in encyclopedie \u2192';
-            encLink.style.display = 'block';
-        } else {
-            encLink.href = `begrippen.html#${encodeURIComponent(item.woord)}`;
-            encLink.textContent = 'Zoek in encyclopedie \u2192';
-            encLink.style.display = 'block';
-        }
+        const activeBook = typeof Navigation !== 'undefined' ? Navigation.currentBook || '' : '';
+        encLink.href = `woordenboek.html?boek=${encodeURIComponent(activeBook)}#${encodeURIComponent(item.woord)}`;
+        encLink.textContent = 'Bekijk dit lemma \u2192';
+        encLink.style.display = 'block';
 
         const rect = anchorEl.getBoundingClientRect();
         pop.style.left = Math.min(rect.left + window.scrollX, window.innerWidth - 370) + 'px';

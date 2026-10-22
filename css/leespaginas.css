@@ -14,6 +14,13 @@
 .opw-boekbeeld { display: block; width: calc(100% + 32px); max-width: none; height: auto; aspect-ratio: 1; object-fit: cover; margin: -16px -16px 16px; border-radius: 11px 11px 0 0; }
 .opw-boekintro { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 28px; align-items: center; }
 .opw-boekillustratie { display: block; width: 100%; height: auto; border-radius: 16px; }
+.opw-boekserie { margin: 32px 0; }
+.opw-boekserie h2 { font: 500 23px/1.3 var(--opv-serif); color: var(--opv-kop); }
+.opw-boekserie-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.opw-boekserie figure { margin: 0; }
+.opw-boekserie a { display: block; color: var(--opv-kop); text-decoration: none; }
+.opw-boekserie img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 12px; }
+.opw-boekserie span { display: block; margin-top: 8px; font-size: 14px; }
 .opw-statisch a:hover { text-decoration: underline; }
 .opw-statisch :focus-visible { outline: 3px solid var(--opv-accent-ink); outline-offset: 4px; }
 .opw-leeshulp { color: var(--opv-muted); font-size: 14px; }
@@ -38,6 +45,7 @@
     .opw-boeken, .opw-hoofdstukken { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .opw-boekintro { grid-template-columns: 1fr; }
     .opw-boekillustratie { max-width: 220px; }
+    .opw-boekserie-grid { grid-template-columns: 1fr; }
 }
 @media print {
     .opw-sitekop, .opw-skip, .opw-kruimels, .opw-hoofdstuknav, .opv-acties, .opv-voet { display: none; }

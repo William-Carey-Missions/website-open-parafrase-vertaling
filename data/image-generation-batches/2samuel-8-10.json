@@ -1,0 +1,81 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "2samuel",
+      "chapter": 8,
+      "verse": 7,
+      "scene": "David brengt de gouden schilden naar Jeruzalem.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult bearded King David watches attendants bring captured golden shields into ancient Jerusalem courtyard, shields held carefully no battle, warm daylight, authentic early Iron Age.",
+      "file": "8-7.webp",
+      "edit_prompt": "Keep this photorealistic scene, people, objects and anatomy unchanged. Correct distant Jerusalem skyline to early Iron Age. Remove every minaret, bell tower, dome and modern religious building visible in the distant background. Replace those features with low simple flat-roofed ancient mudbrick and stone houses. Preserve lighting and foreground."
+    },
+    {
+      "book": "2samuel",
+      "chapter": 8,
+      "verse": 10,
+      "scene": "Joram brengt David geschenken van koning Thoi.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult envoy Joram of Hamath respectfully presents silver gold and copper vessels to adult King David, peaceful ancient courtyard reception, natural anatomy, no inscriptions.",
+      "file": "8-10.webp"
+    },
+    {
+      "book": "2samuel",
+      "chapter": 8,
+      "verse": 15,
+      "scene": "David doet recht aan zijn volk.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult King David patiently hears dispute between two ordinary farmers before elders and women in simple royal courtyard, fair attentive judgment, modest ancient clothing, no classical columns.",
+      "file": "8-15.webp"
+    },
+    {
+      "book": "2samuel",
+      "chapter": 9,
+      "verse": 3,
+      "scene": "Ziba vertelt David over Jonathans zoon Mefiboseth.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult servant Ziba respectfully speaks to adult King David seated in modest cedar and stone room, king listens compassionately asking after Jonathan's family, simple court no extra limbs.",
+      "file": "9-3.webp"
+    },
+    {
+      "book": "2samuel",
+      "chapter": 9,
+      "verse": 7,
+      "scene": "David stelt Mefiboseth gerust en belooft hem zijn erfdeel terug.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult King David gently reassures adult Mephibosheth seated with weak disabled feet resting naturally on low stool, plain cane beside him, compassionate respectful equal dignity, royal stone courtyard, no modern wheelchair, no deformed extra limbs.",
+      "file": "9-7.webp",
+      "edit_prompt": "Keep this photorealistic scene, people, objects and anatomy unchanged. Correct distant Jerusalem skyline to early Iron Age. Remove every minaret, bell tower, dome and modern religious building visible in the distant background. Replace those features with low simple flat-roofed ancient mudbrick and stone houses. Preserve lighting and foreground."
+    },
+    {
+      "book": "2samuel",
+      "chapter": 9,
+      "verse": 11,
+      "scene": "Mefiboseth eet bij David als een van zijn zonen.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult Mephibosheth seated comfortably as honored guest at low dining table beside King David and royal sons, feet discreetly under robe, warm family welcome, simple pottery food, authentic ancient Israel.",
+      "file": "9-11.webp"
+    },
+    {
+      "book": "2samuel",
+      "chapter": 10,
+      "verse": 2,
+      "scene": "David stuurt gezanten om Hanun te troosten.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult King David dispatches two fully clothed bearded envoys on condolence mission to Ammon, grave respectful farewell at ancient Jerusalem gate, travel packs, no weapons drawn.",
+      "file": "10-2.webp",
+      "edit_prompt": "Preserve whole photorealistic scene and people. Remove the tall narrow minaret/bell tower in distant skyline upper right, replacing it with low flat-roofed early Iron Age stone houses. No later religious architecture."
+    },
+    {
+      "book": "2samuel",
+      "chapter": 10,
+      "verse": 5,
+      "scene": "De vernederde gezanten krijgen in Jericho bescherming.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Two adult Israelite envoys with visibly uneven half-shaved beards rest in quiet Jericho courtyard after humiliation, fully covered by replacement long linen robes and cloaks, compassionate messenger brings water, no nudity, humane dignity.",
+      "file": "10-5.webp",
+      "edit_prompt": "Correct the two seated envoys: their HAIR on their heads is normal, fully grown natural dark curly hair, no shaved scalps. It is HALF OF EACH BEARD that has been shaved off by their captors: one cheek and half chin clean shaven, the other half beard still grown. Make this unmistakable, realistic and respectful. Keep their fully covering replacement long robes, sad expressions, anatomy, water-serving man, and ancient courtyard unchanged."
+    },
+    {
+      "book": "2samuel",
+      "chapter": 10,
+      "verse": 11,
+      "scene": "Joab en Abisai spreken af elkaar in de strijd te helpen.",
+      "prompt": "Use case: historical-scene. Asset: Bible chapter illustration. Fully photorealistic ancient Israel, early Iron Age, authentic modest linen robes and wool cloaks, warm natural photographic light, natural stone timber pottery, landscape 3:2. Every person anatomically correct with exactly two arms and natural hands. No modern objects, Roman columns, medieval castles, fantasy, CGI, illustration, text, watermark. Adult brothers commanders Joab and Abishai consult facing two distant hostile formations near Ammonite city gate, pledge mutual support, spears lowered no battle or wounds, rocky field, natural two arms each.",
+      "file": "10-11.webp"
+    }
+  ]
+}

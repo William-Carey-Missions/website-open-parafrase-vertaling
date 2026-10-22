@@ -1,0 +1,56 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "2kronieken",
+      "chapter": 20,
+      "verse": 13,
+      "scene": "Heel Juda zoekt God, met vrouwen en kinderen.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. Judean families stand together in prayer in a simple Jerusalem sanctuary courtyard, men women and small children modestly clothed, King Jehoshaphat in the middle distance, no visible divine figure, low stone walls and rectangular doorways. Based on 2 Chronicles 20:13.",
+      "file": "20-13.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 20,
+      "verse": 21,
+      "scene": "Zangers gaan voor de gewapende mannen uit.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. Levitical singers in fine linen festive robes lead a Judean army along a road toward the wilderness of Tekoa at dawn, singers visibly in front and soldiers with lowered weapons behind them. Small ancient lyres, no battle or wounds. Based on 2 Chronicles 20:21.",
+      "file": "20-21.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 20,
+      "verse": 26,
+      "scene": "Het volk looft de HEERE in het dal Beracha.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. Jehoshaphat and Judean men gather gratefully in the broad rocky Valley of Beracah after deliverance, praising God with naturally lifted hands and a few small lyres, no bodies or battle scene, warm morning light. Based on 2 Chronicles 20:26.",
+      "file": "20-26.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 21,
+      "verse": 5,
+      "scene": "Joram wordt koning in Jeruzalem.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. Adult Jehoram aged about thirty-two sits on a plain wooden royal seat in a modest stone Jerusalem courtyard, stern expression, simple broad gold royal headband without points, two officials stand nearby. No other crowned kings. Illustrative royal portrait based on 2 Chronicles 21:5.",
+      "file": "21-5.webp",
+      "edit_prompt": "Use case: precise-object-edit. Preserve the seated Jehoram and his two officials, every face hand arm and garment, chair and foreground. Replace ONLY the entire distant medieval castle wall and church-tower skyline with low early Iron Age stone and mudbrick flat roof houses on a Judean hill and a low rough limestone wall. No church towers spires domes tall medieval towers or battlements. Photorealism unchanged."
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 21,
+      "verse": 12,
+      "scene": "Joram ontvangt een brief van de profeet Elia.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. A plainly dressed royal messenger hands a parchment letter to adult King Jehoram in a modest cedar and stone room in Jerusalem, king looks troubled, no visible prophet Elijah, no readable text. Natural hands. Based on 2 Chronicles 21:12.",
+      "file": "21-12.webp",
+      "edit_prompt": "Use case: precise-object-edit. Correct the king's anatomy: he currently has THREE arms. REMOVE completely the extra arm and hand reaching out from his torso to hold the scroll. Keep ONLY his natural right arm with hand at his chin and his natural left arm resting on his lap. The messenger alone holds the scroll out toward the king, its far end is unsupported. Keep both men's faces, robes, natural hands and room otherwise unchanged."
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 21,
+      "verse": 20,
+      "scene": "Joram wordt buiten de koningsgraven begraven.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. A quiet solemn burial place in the City of David, a few workers cover a simple grave outside the royal tomb precinct, no corpse or exposed remains, no celebratory mourning crowd, subdued daylight. Based on 2 Chronicles 21:20.",
+      "file": "21-20.webp",
+      "edit_prompt": "Use case: precise-object-edit. Preserve the grave, all workers, the standing observer, natural hands and faces, stone tomb doorway and the entire foreground. Replace ONLY the distant medieval castle wall and towers on the hill with small flat roof stone and mudbrick houses of early Iron Age Jerusalem and a modest low rough stone perimeter wall. No medieval castle towers battlements church buildings domes or spires. Photorealism unchanged."
+    }
+  ]
+}

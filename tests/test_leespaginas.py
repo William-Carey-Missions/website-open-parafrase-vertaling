@@ -39,6 +39,13 @@ def fixture_site(tmp_path):
             "blokken": [{"vers": 1, "tekst": "Een nieuw begin"}],
             "verzen": [{"nummer": 1, "tekst": text}],
         }), encoding="utf-8")
+    scenes = {book: [{"chapter": 1, "file": "1.webp", "alt": "Een begin", "scene": "Begin"}]
+              for book in ("genesis", "johannes")}
+    (tmp_path / "data/book-images.json").write_text(json.dumps({"books": scenes}), encoding="utf-8")
+    for book in scenes:
+        folder = tmp_path / "images/boekseries" / book
+        folder.mkdir(parents=True)
+        (folder / "1.webp").write_bytes(b"fixture")
     return tmp_path
 
 
@@ -75,7 +82,8 @@ def test_sitemap_en_ai_ingangen_volgen_de_beschikbare_tekst(tmp_path):
     module.build_site(root)
     sitemap = ET.parse(root / "sitemap.xml")
     urls = [el.text for el in sitemap.findall(".//{*}loc")]
-    assert len(urls) == len(set(urls)) == 8
+    assert len(urls) == len(set(urls)) == 9
+    assert "https://open-parafrase-weergave.nl/woordenboek.html" in urls
     assert all("#" not in url for url in urls)
     assert "https://open-parafrase-weergave.nl/bijbel/johannes/1.html" in urls
     guide = (root / "llms.txt").read_text(encoding="utf-8")
@@ -124,9 +132,20 @@ def test_exodus_heeft_hoofdstukbeeld_in_tekst_en_deelvoorbeeld(tmp_path):
             'boek': 'exodus', 'hoofdstuk': number, 'kop': 'Het volk en de tabernakel',
             'verzen': [{'nummer': 1, 'tekst': 'De HEERE sprak tot Mozes.'}],
         }), encoding='utf-8')
+    image_manifest = root / "data/book-images.json"
+    images = json.loads(image_manifest.read_text(encoding="utf-8"))
+    images["books"]["exodus"] = [{"chapter": 1, "file": "1.webp", "alt": "Het volk", "scene": "Het volk"}]
+    image_manifest.write_text(json.dumps(images), encoding="utf-8")
+    series = root / "images/boekseries/exodus"
+    series.mkdir(parents=True)
+    (series / "1.webp").write_bytes(b"fixture")
+    legacy = root / "images/hoofdstukken/exodus"
+    legacy.mkdir(parents=True)
+    (legacy / "40.webp").write_bytes(b"fixture")
     builder().build_site(root)
     for number in (1, 40):
         html = (root / f'bijbel/exodus/{number}.html').read_text(encoding='utf-8')
-        assert f'<figure class="opw-hoofdstukbeeld"><img src="/images/hoofdstukken/exodus/{number}.webp"' in html
-        assert f'<meta property="og:image" content="https://open-parafrase-weergave.nl/images/hoofdstukken/exodus/{number}.webp">' in html
-        assert f'alt="Illustratie bij Exodus {number}:' in html
+        image_path = f"/images/{'boekseries' if number == 1 else 'hoofdstukken'}/exodus/{number}.webp"
+        assert f'<figure class="opw-hoofdstukbeeld"><img src="{image_path}"' in html
+        assert f'<meta property="og:image" content="https://open-parafrase-weergave.nl{image_path}">' in html
+        assert ('alt="Het volk"' if number == 1 else f'alt="Illustratie bij Exodus {number}:') in html

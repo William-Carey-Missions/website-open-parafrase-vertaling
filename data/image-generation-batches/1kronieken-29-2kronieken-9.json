@@ -1,0 +1,223 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "1kronieken",
+      "chapter": 29,
+      "verse": 10,
+      "scene": "David prijst God voor de hele vergadering.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Elderly David stands before the assembly of Israel with hands raised in thankful praise, people listen reverently, open modest royal courtyard, no finished temple. Based on 1 Chronicles 29:10.",
+      "file": "29-10.webp"
+    },
+    {
+      "book": "1kronieken",
+      "chapter": 29,
+      "verse": 22,
+      "scene": "Salomo wordt opnieuw tot koning gezalfd.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. A priest anoints young adult Solomon with a little oil from a horn before the joyful assembly, elderly David watches seated nearby, dignified linen robes and simple royal furnishings, no medieval crowns. Based on 1 Chronicles 29:22.",
+      "file": "29-22.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 1,
+      "verse": 3,
+      "scene": "Salomo en de vergadering gaan naar Gibeon.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Young adult King Solomon leads the elders of Israel toward the ancient meeting tent at Gibeon, a large bronze altar stands outside, morning light, no ark present and no stone temple yet. Based on 2 Chronicles 1:3.",
+      "file": "1-3.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 1,
+      "verse": 10,
+      "scene": "Salomo vraagt om wijsheid en inzicht.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Solomon prays humbly at night asking for wisdom, a young adult king in a modest robe seated near a clay oil lamp at his camp in Gibeon, hands naturally open, no visible divine figure. Based on 2 Chronicles 1:10.",
+      "file": "1-10.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 1,
+      "verse": 16,
+      "scene": "Handelaars brengen paarden uit Egypte.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Ancient royal horse traders lead a small group of healthy horses along a dusty road from Egypt into Israel, linen garments and simple woven halters, no modern saddles or equipment. Based on 2 Chronicles 1:16.",
+      "file": "1-16.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 2,
+      "verse": 7,
+      "scene": "Salomo vraagt om een bekwame vakman.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Solomon dictates a request to Huram king of Tyre while a scribe writes on a parchment roll, samples of fine dyed cloth and metalwork on a nearby table illustrate the skilled work requested. No legible text. Based on 2 Chronicles 2:7.",
+      "file": "2-7.webp",
+      "edit_prompt": "Use case: precise-object-edit. Preserve Solomon on the right, the scribe writing the letter, the envoy on the left, every hand and face, all tables, cloth and metal samples. Change ONLY the entire background: this scene is in Jerusalem, so remove the sea, ships, masts and harbor and replace them with a modest Iron Age Jerusalem stone courtyard and distant low flat roof houses on dry Judean hills. No water, no boats, no classical colonnades, no medieval towers. Natural photorealistic daylight."
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 2,
+      "verse": 14,
+      "scene": "Huram-Abi werkt samen met de vaklieden.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Huram-Abi, a mature Tyrian craftsman, works alongside Israelite artisans at a simple workshop, carefully engraving a bronze vessel with ancient hand tools while gold silver and dyed linen samples rest nearby. Based on 2 Chronicles 2:14.",
+      "file": "2-14.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 2,
+      "verse": 16,
+      "scene": "Houtvlotten komen over zee aan in Jafo.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Long cedar logs lashed into rafts arrive at the ancient rocky coastal landing at Joppa, sailors and workers guide ropes from simple wooden boats, Mediterranean natural light, no modern harbor cranes or masonry piers. Based on 2 Chronicles 2:16.",
+      "file": "2-16.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 3,
+      "verse": 7,
+      "scene": "Vaklieden bekleden de tempelwanden met goud.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Ancient craftsmen apply thin gold sheets to carved wooden wall panels with cherub and palm motifs in Solomon's temple interior, natural hands and small tools, rectangular architecture, no classical columns. Based on 2 Chronicles 3:7.",
+      "file": "3-7.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 3,
+      "verse": 14,
+      "scene": "Het voorhangsel wordt van gekleurd linnen gemaakt.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Skilled adult weavers prepare a richly colored sanctuary curtain of blue purple crimson and fine linen with woven cherub motifs, loom in an ancient Jerusalem workshop, hands carefully guiding thread, no stone temple facade. Based on 2 Chronicles 3:14.",
+      "file": "3-14.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 4,
+      "verse": 11,
+      "scene": "Huram maakt koperen potten, scheppen en sprengschalen.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Huram and fellow bronze workers finish polished bronze pots, shovels and sprinkling bowls in an ancient foundry workshop, natural copper textures and clay molds, no modern equipment. Based on 2 Chronicles 4:11.",
+      "file": "4-11.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 4,
+      "verse": 17,
+      "scene": "Het koperen gerei wordt in de Jordaanvlakte gegoten.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Ancient bronze founders carefully pour molten bronze into firm clay molds in the Jordan plain between Succoth and Zeredathah, protective leather aprons over linen garments, furnaces and charcoal, authentic ancient tools. Based on 2 Chronicles 4:17.",
+      "file": "4-17.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 4,
+      "verse": 21,
+      "scene": "Een vakman maakt gouden lampen en snuiters voor het heiligdom.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Royal headbands simple broad gold without points. Close documentary view of an ancient temple metalworker carefully polishing small shallow golden oil lamps and golden wick trimming tongs on a wooden worktable. Focus on natural hands and authentic hammered gold vessels. No lampstands, no menorahs, no candles, no modern scissors. Based on 2 Chronicles 4:21.",
+      "file": "4-21.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 5,
+      "verse": 1,
+      "scene": "De gewijde gaven van David worden in de schatkamer gebracht.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Levites carry silver and gold vessels from David's dedicated gifts into the finished temple treasury, modest stone storeroom with cedar chests, no ark in frame, careful natural hands. Based on 2 Chronicles 5:1.",
+      "file": "5-1.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 5,
+      "verse": 12,
+      "scene": "Levitische zangers en priesters maken muziek.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Levitical singers in fine linen stand beside priests blowing straight ancient silver trumpets near the temple courtyard altar; others play small lyres and bronze cymbals, a modest representative group, no modern brass instruments. Based on 2 Chronicles 5:12.",
+      "file": "5-12.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 5,
+      "verse": 14,
+      "scene": "De wolk van Gods heerlijkheid vult het huis.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Priests in linen robes stop reverently outside a rectangular sanctuary doorway as a luminous dense cloud fills the temple interior, the building appears only as a small portion of golden doors and stone wall, no visible divine figure. Based on 2 Chronicles 5:14.",
+      "file": "5-14.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 6,
+      "verse": 3,
+      "scene": "Salomo zegent de staande vergadering.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Adult King Solomon turns toward the standing assembly of Israel and blesses them with one open hand raised, temple courtyard framed closely with simple stone walls and bronze altar, no grand facade or classical colonnade. Based on 2 Chronicles 6:3.",
+      "file": "6-3.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 6,
+      "verse": 13,
+      "scene": "Salomo knielt op de koperen verhoging en bidt.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Solomon kneels on a square bronze platform in the temple courtyard, both arms naturally lifted with open hands toward heaven, standing Israelites listen in the background, close composition without temple facade. Based on 2 Chronicles 6:13.",
+      "file": "6-13.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 6,
+      "verse": 32,
+      "scene": "Ook een vreemdeling mag in het huis van God bidden.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. An adult traveler from a distant land in modest ancient Levantine garments prays quietly in the outer temple courtyard, respectful Israelite worshippers nearby. This is an illustrative scene of Solomon's prayer for foreigners in 2 Chronicles 6:32, not a named historical visitor.",
+      "file": "6-32.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 7,
+      "verse": 1,
+      "scene": "Vuur daalt neer op het brandofferaltaar.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. A brilliant column of heavenly fire ignites the offering on a square bronze altar as priests stand at a respectful distance in the temple courtyard, no bodies or gore, close view and no temple facade or divine human figure. Based on 2 Chronicles 7:1.",
+      "file": "7-1.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 7,
+      "verse": 10,
+      "scene": "Het volk keert blij en opgewekt naar huis terug.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Israelite families leave Jerusalem joyfully after the temple dedication feast, carrying woven baskets and walking with children on a sunlit road, modest linen and wool clothes, distant low stone houses. Based on 2 Chronicles 7:10.",
+      "file": "7-10.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 8,
+      "verse": 5,
+      "scene": "Hoog-Beth-Horon wordt met muren en poorten versterkt.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Ancient builders strengthen Upper Beth Horon on a rocky hill road with rough limestone walls, simple rectangular timber gates and wooden bars, no medieval battlements or towers, authentic hand tools. Based on 2 Chronicles 8:5.",
+      "file": "8-5.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 8,
+      "verse": 14,
+      "scene": "Priesters en Levieten krijgen hun vaste taken.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Priests and Levites gather in an orderly sanctuary courtyard for their assigned service duties, a leader gives instructions while singers hold lyres and gatekeepers stand by a simple gate, plain white linen, no jeweled breastplate. Based on 2 Chronicles 8:14.",
+      "file": "8-14.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 8,
+      "verse": 18,
+      "scene": "Zeevaarders van Huram en Salomo varen naar Ofir.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Phoenician and Israelite sailors prepare an ancient wooden merchant sailing ship at the Red Sea shore near Ezion Geber, coiled ropes and cargo jars, simple square sail and timber hull, no modern rigging or harbor. Based on 2 Chronicles 8:18.",
+      "file": "8-18.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 9,
+      "verse": 1,
+      "scene": "De koningin van Scheba komt met haar karavaan in Jeruzalem aan.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. The adult queen of Sheba arrives near Jerusalem with an orderly camel caravan carrying spices gold and precious stones in woven panniers, modest elegant South Arabian robes, attendants, no medieval or modern structures. Based on 2 Chronicles 9:1.",
+      "file": "9-1.webp",
+      "edit_prompt": "Use case: precise-object-edit. Keep the queen of Sheba, all attendants, natural hands and arms, camels, cargo and foreground rocky road exactly. Replace ONLY the entire background medieval Jerusalem castle walls and towers with modest early Iron Age Jerusalem: a rough low limestone perimeter wall with simple rectangular timber gate and small flat roof stone and mudbrick houses on a hill. Remove the distant domed or tower buildings as well. No tall medieval towers, battlements, pointed arches, domes or classical columns. Photorealistic daylight."
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 9,
+      "verse": 2,
+      "scene": "Salomo beantwoordt de vragen van de koningin van Scheba.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Solomon and the adult queen of Sheba converse thoughtfully as equals in a modest cedar-paneled royal audience room, natural engaged gestures, a few attendants listen, no modern items or Greek columns. Based on 2 Chronicles 9:2.",
+      "file": "9-2.webp"
+    },
+    {
+      "book": "2kronieken",
+      "chapter": 9,
+      "verse": 11,
+      "scene": "Vaklieden maken harpen en luiten van sandelhout.",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic ancient Israel Iron Age reconstruction, natural photographic light and realistic linen wool pottery timber and stone textures, landscape 3:2. All people fully clothed in modest ancient garments, exactly two arms each and anatomically natural hands. Buildings low flat-roofed stone or mudbrick with rectangular doorways. No minarets, domes, church towers, medieval castles, Gothic or Islamic arches, classical Greco-Roman columns, telescopes, binoculars, modern objects, text, watermark, CGI, or painting. Ancient Israelite musical instrument makers shape small harps and lyres from richly grained sandalwood at a sunlit workshop bench, hand chisels and wood shavings, anatomically natural hands. Based on 2 Chronicles 9:11.",
+      "file": "9-11.webp"
+    }
+  ]
+}

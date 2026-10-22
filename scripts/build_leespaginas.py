@@ -16,7 +16,6 @@ NAME = "Open Parafrase Weergave"
 GROUPS = {"OT": "Oude Testament", "NT": "Nieuwe Testament",
           "AP": "Apocriefe boeken", "ET": "Ethiopische boeken"}
 IMAGE = "/images/psalm-23-herder.webp"
-ILLUSTRATED_BOOKS = {"genesis", "exodus"}
 BOOK_ORDER = """genesis exodus leviticus numeri deuteronomium jozua richteren ruth
 1samuel 2samuel 1koningen 2koningen 1kronieken 2kronieken ezra nehemia esther
 job psalmen spreuken prediker hooglied jesaja jeremia klaagliederen ezechiel daniel
@@ -60,6 +59,12 @@ def catalog(root: Path) -> list[dict]:
 
 def chapter_path(book: dict, chapter: dict) -> str:
     return f"/bijbel/{book['id']}/{chapter['hoofdstuk']}.html"
+
+
+def book_cover(book_id: str, book_images: dict) -> str:
+    scenes = book_images.get(book_id)
+    return (f"/images/boekseries/{book_id}/{scenes[0]['file']}" if scenes
+            else f"/images/boeken/{book_id}.webp")
 
 
 def schema_json(value: dict) -> str:
@@ -116,7 +121,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.4">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.5">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.2">
 </head>
 <body class="opw-statisch">
@@ -184,6 +189,14 @@ def verse_html(verse: dict) -> str:
     return html
 
 
+def reading_image(book_id: str, scene: dict) -> str:
+    anchor = f' data-verse="{int(scene["verse"])}"' if scene.get("verse") else ""
+    return (f'<figure class="opw-hoofdstukbeeld"{anchor}>'
+            f'<img src="/images/boekseries/{book_id}/{escape(scene["file"], quote=True)}" '
+            f'width="1536" height="1024" alt="{escape(scene["alt"], quote=True)}" loading="lazy">'
+            f'<figcaption>{escape(scene["scene"])}</figcaption></figure>')
+
+
 def integrated_reader(template: str, document: str, path: str) -> str:
     """Gebruik dezelfde lezer, met vooraf gerenderde tekst als eerste weergave."""
     head = document.split("</head>", 1)[0]
@@ -200,17 +213,36 @@ def integrated_reader(template: str, document: str, path: str) -> str:
     return head + '''<link rel="stylesheet" href="/css/verification.css">
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
+<script src="/js/reading-support.js?v=1" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
 </head><body class="opv-lezerpagina opw-hoofdstukpagina">''' + skip + body + '</body></html>\n'
 
 
 def build_site(root: Path = ROOT) -> dict:
     books = catalog(root)
+    book_images = json.loads((root / "data/book-images.json").read_text(encoding="utf-8"))["books"]
+    catalog_by_id = {book["id"]: book for book in books}
+    if set(book_images) != set(catalog_by_id):
+        missing = sorted(set(catalog_by_id) - set(book_images))
+        unexpected = sorted(set(book_images) - set(catalog_by_id))
+        raise ValueError(f"Boekbeelden ontbreken of horen niet bij een gepubliceerd boek: {missing=}, {unexpected=}")
+    for book_id, scenes in book_images.items():
+        if not scenes or len({scene["file"] for scene in scenes}) != len(scenes):
+            raise ValueError(f"Boekbeelden ontbreken of bestandsnamen zijn dubbel voor {book_id}")
+        chapters = {chapter["hoofdstuk"] for chapter in catalog_by_id[book_id]["chapters"]}
+        chapter_counts = {chapter: sum(scene["chapter"] == chapter for scene in scenes) for chapter in chapters}
+        if any(count > 3 for count in chapter_counts.values()):
+            raise ValueError(f"Meer dan drie beelden in een hoofdstuk van {book_id}")
+        for scene in scenes:
+            if scene["chapter"] not in chapters:
+                raise ValueError(f"Geen gepubliceerd hoofdstuk voor boekbeeld: {book_id} {scene['chapter']}")
+            if not (root / f"images/boekseries/{book_id}/{scene['file']}").is_file():
+                raise ValueError(f"Ontbrekend boekbeeld: {book_id} {scene['file']}")
     reader_template = (root / "index.html").read_text(encoding="utf-8")
     sequence = [(book, chapter) for book in books for chapter in book["chapters"]]
     # De bron heeft geen publicatiedatum: checkouttijd is geen inhoudswijziging.
     # Daarom geen verzonnen lastmod-datums in de sitemap.
-    urls = [("/", None), ("/over-opv.html", None), ("/bijbel/", None)]
+    urls = [("/", None), ("/over-opv.html", None), ("/bijbel/", None), ("/woordenboek.html", None)]
     guide = f'''# {NAME} — de Bijbel in eenvoudig Nederlands
 
 > Gods Woord in begrijpelijke taal. Nederlandse parafrase van de Bijbel. Proefversie: alle verzen hebben de status concept. De Bijbeltekst is publiek domein.
@@ -219,6 +251,7 @@ Er zijn {len(books)} boeken en {len(sequence)} hoofdstukken beschikbaar. De coll
 
 ## Lezen en vinden
 - [Alle Bijbelboeken]({BASE}/bijbel/): boekenoverzicht met links naar ieder hoofdstuk; volledig leesbaar zonder JavaScript.
+- [Woordenboek]({BASE}/woordenboek.html): bestaande begrippenverklaringen, met conceptstatus.
 - [Over de weergave]({BASE}/over-opv.html): doelgroep, bronbeleid, proefstatus en hergebruik.
 - [Volledige tekst]({BASE}/llms-full.txt): alle beschikbare hoofdstukken als UTF-8-tekst; groot bestand.
 - [Sitemap]({BASE}/sitemap.xml): canonieke HTML-adressen van boeken en hoofdstukken.
@@ -236,12 +269,17 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         urls.append((book_path, None))
         title = book["nameDutch"]
         links = "".join(f'<li><a href="{chapter_path(book, chapter)}">Hoofdstuk {chapter["hoofdstuk"]}<span>{escape(chapter.get("kop", ""))}</span></a></li>' for chapter in book["chapters"])
-        body = f'<div class="opw-boekintro"><div><h1>{escape(title)} in eenvoudig Nederlands</h1><p class="opv-lead">Lees {escape(title)} in de {NAME}. Kies een hoofdstuk om te beginnen.</p><p class="opv-pil">Proeftekst · alle verzen concept</p></div><img class="opw-boekillustratie" src="/images/boeken/{book["id"]}.webp" width="1024" height="1024" alt=""></div><ol class="opw-hoofdstukken">{links}</ol>'
+        scenes = book_images.get(book['id'], [])[:3]
+        gallery = ('<section class="opw-boekserie" aria-labelledby="boekserie-titel"><h2 id="boekserie-titel">Beelden bij dit boek</h2><div class="opw-boekserie-grid">' +
+                   ''.join(f'<figure><a href="/bijbel/{book["id"]}/{scene["chapter"]}.html"><img src="/images/boekseries/{book["id"]}/{scene["file"]}" width="1536" height="1024" loading="lazy" alt="{escape(scene["alt"], quote=True)}"><span>{escape(title)} {scene["chapter"]}: {escape(scene["scene"])}</span></a></figure>' for scene in scenes) +
+                   '</div></section>') if scenes else ''
+        cover = book_cover(book['id'], book_images)
+        body = f'<div class="opw-boekintro"><div><h1>{escape(title)} in eenvoudig Nederlands</h1><p class="opv-lead">Lees {escape(title)} in de {NAME}. Kies een hoofdstuk om te beginnen.</p><p class="opv-pil">Proeftekst · alle verzen concept</p></div><img class="opw-boekillustratie" src="{cover}" width="1536" height="1024" alt=""></div>{gallery}<ol class="opw-hoofdstukken">{links}</ol>'
         write(root / book_path.strip("/") / "index.html", page(
             f"{title} in eenvoudig Nederlands", f"Lees alle {len(book['chapters'])} hoofdstukken van {title} in de Open Parafrase Weergave. Gratis Bijbeltekst in eenvoudig Nederlands; proefversie.",
             book_path, body, [("Start", "/"), ("Bijbel", "/bijbel/"), (title, book_path)],
             reader_path=chapter_path(book, book['chapters'][0]),
-            image=f"/images/boeken/{book['id']}.webp", image_alt=f"Illustratie bij {title}"))
+            image=cover, image_alt=f"Beeld bij {title}"))
         guide += f'- [{title}]({BASE}{book_path}): {len(book["chapters"])} hoofdstukken; [platte tekst]({BASE}{book_path}tekst.txt).\n'
         book_text = [f"# {title} — {NAME} (proef)\n\nBijbeltekst: publiek domein.\n"]
         for chapter in book["chapters"]:
@@ -274,15 +312,28 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         subtitle = f'<p class="opv-hoofdstuktitel opw-hoofdstuktitel">{escape(heading)}</p>' if heading != ref else ''
         minutes = max(1, int(sum(len(v['tekst'].split()) for v in chapter['verzen']) / 150 + .5))
         read_time = '1 minuut' if minutes == 1 else f'ongeveer {minutes} minuten'
-        illustration = (f'<figure class="opw-hoofdstukbeeld"><img src="/images/hoofdstukken/{book["id"]}/{number}.webp" width="1536" height="1024" alt="Illustratie bij {escape(ref)}: {escape(heading)}"></figure>' if book['id'] in ILLUSTRATED_BOOKS else '')
-        body = f'''<header class="opv-hoofdstukkop" aria-labelledby="hoofdstuk-titel">
+        chapter_images = [scene for scene in book_images.get(book['id'], []) if scene['chapter'] == number]
+        legacy_image = f"/images/hoofdstukken/{book['id']}/{number}.webp"
+        has_legacy = (root / legacy_image.lstrip('/')).is_file()
+        chapter_cover = (f"/images/boekseries/{book['id']}/{chapter_images[0]['file']}" if chapter_images
+                         else legacy_image if has_legacy else f"/images/boeken/{book['id']}.webp")
+        illustration = ('<aside class="opw-hoofdstukbeelden" aria-label="Beelden en locaties bij dit hoofdstuk">' +
+                        ''.join(reading_image(book['id'], scene) for scene in chapter_images) +
+                        '</aside>') if chapter_images else ''
+        if not chapter_images and has_legacy:
+            illustration = (f'<aside class="opw-hoofdstukbeelden" aria-label="Beeld bij dit hoofdstuk">'
+                            f'<figure class="opw-hoofdstukbeeld"><img src="{legacy_image}" width="1536" height="1024" '
+                            f'alt="Illustratie bij {escape(ref)}: {escape(heading, quote=True)}" loading="lazy"></figure></aside>')
+        body = f'''<section class="opw-leesindeling{' heeft-beelden' if illustration else ''}">
+<div class="opw-leeskolom"><header class="opv-hoofdstukkop" aria-labelledby="hoofdstuk-titel">
 <p class="opv-boven">{escape(GROUPS.get(book['testament'], 'Bijbel'))}</p>
 <h1 class="opv-titel" id="hoofdstuk-titel">{escape(ref)}</h1>
 {subtitle}
 <div class="opv-meta"><span class="opv-pil" title="Alle verzen hebben nog de status concept">Proeftekst</span><span>Gods Woord in begrijpelijke taal · {read_time}</span></div>
 </header>
+<div class="opw-bijbeltekst">{''.join(verses)}</div></div>
 {illustration}
-<div class="opw-bijbeltekst">{''.join(verses)}</div>
+</section>
 <nav class="opw-hoofdstuknav" aria-label="Hoofdstukken">{''.join(navigation)}</nav>
 <p class="opw-tekstdownload"><a href="{path.removesuffix('.html')}.txt" download>Download hoofdstuk als tekstbestand</a></p>'''
         work = {"@type": "Chapter", "@id": BASE + path + "#hoofdstuk", "name": f"{ref}: {heading}",
@@ -293,14 +344,14 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         document = page(f"{ref} — {heading}", description, path, body,
               [("Start", "/"), ("Bijbel", "/bijbel/"), (book["nameDutch"], f"/bijbel/{book['id']}/"), (ref, path)], work, path.removesuffix(".html") + ".txt",
               reader_path=path,
-              image=f"/images/hoofdstukken/{book['id']}/{number}.webp" if book['id'] in ILLUSTRATED_BOOKS else f"/images/boeken/{book['id']}.webp",
+              image=chapter_cover,
               image_alt=f"Illustratie bij {ref}: {heading}")
         write(root / path.lstrip("/"), integrated_reader(reader_template, document, path))
         urls.append((path, None))
 
     sections = []
     for group, label in GROUPS.items():
-        links = "".join(f'<li><a href="/bijbel/{book["id"]}/"><img class="opw-boekbeeld" src="/images/boeken/{book["id"]}.webp" width="1024" height="1024" loading="lazy" decoding="async" alt=""><span class="opw-boeknaam">{escape(book["nameDutch"])}</span><span>{len(book["chapters"])} hoofdstukken</span></a></li>' for book in books if book["testament"] == group)
+        links = "".join(f'<li><a href="/bijbel/{book["id"]}/"><img class="opw-boekbeeld" src="{book_cover(book["id"], book_images)}" width="1024" height="1024" loading="lazy" decoding="async" alt=""><span class="opw-boeknaam">{escape(book["nameDutch"])}</span><span>{len(book["chapters"])} hoofdstukken</span></a></li>' for book in books if book["testament"] == group)
         if links:
             sections.append(f'<section aria-labelledby="groep-{group}"><h2 id="groep-{group}">{label}</h2><ul class="opw-boeken">{links}</ul></section>')
     body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Alle {len(books)} boeken en {len(sequence)} hoofdstukken van de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De apocriefe en Ethiopische boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p>{"".join(sections)}'

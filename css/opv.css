@@ -206,7 +206,7 @@ html { scrollbar-color: var(--opv-sand-line) transparent; }
 .opv-startscherm .opv-voortgang { display: none; }
 
 /* Middelbreed: de links gaan in het menu */
-@media (max-width: 1240px) {
+@media (max-width: 1450px) {
     .opv-menu { display: inline-grid; }
     #topnav .opv-links {
         display: none;
@@ -339,7 +339,7 @@ html.opv-startscherm .opv-hfst { display: none !important; }
     background: transparent;
 }
 #content #verses-container {
-    max-width: 36em;
+    max-width: 68em;
     margin: 0 auto;
     padding: 56px 24px 8px;
     font-size: var(--opv-fs);
@@ -348,6 +348,65 @@ html.opv-startscherm .opv-hfst { display: none !important; }
     font-family: var(--opv-serif);
     text-wrap: pretty;
     hyphens: manual;
+}
+.opw-leesindeling {
+    max-width: 36em;
+    margin: 0 auto;
+}
+.opw-leesindeling.heeft-beelden {
+    max-width: 68em;
+    display: grid;
+    grid-template-columns: minmax(0, 36em) minmax(220px, 17em);
+    justify-content: center;
+    align-items: start;
+    gap: clamp(24px, 4vw, 64px);
+}
+.opw-leeskolom { min-width: 0; }
+.opw-leesindeling .opw-hoofdstukbeelden {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0;
+}
+.opw-leesindeling .opw-hoofdstukbeeld img { width: 100%; }
+.opw-leesindeling .opw-sidecar {
+    position: sticky;
+    top: calc(var(--opv-balk-h) + 20px);
+    min-width: 0;
+    max-height: calc(100vh - var(--opv-balk-h) - 36px);
+    overflow: auto;
+    scrollbar-width: thin;
+}
+.opw-leesindeling .opw-sidecar-item { display: none; }
+.opw-leesindeling .opw-sidecar-item.is-active { display: block; }
+.opw-leesindeling .opw-hoofdstukbeeld,
+.opw-leesindeling .opw-kaartkaart { order: -1; }
+.opw-sidecar-item figcaption,
+.opw-sidecar-label { margin: 9px 2px 0; font: 500 14px/1.4 var(--opv-sans); color: var(--opv-kop); }
+.opw-kaartkaart { padding: 14px; border: 1px solid var(--opv-sand-line); border-radius: 16px; background: var(--opv-surface); }
+.opw-kaartkaart .opw-sidecar-label { margin: 0 0 12px; }
+.opw-kaartkaart svg { display: block; width: 100%; height: auto; border-radius: 12px; }
+.opw-map-bg { fill: var(--opv-sand); }
+.opw-map-grid { fill: none; stroke: var(--opv-sand-line); stroke-width: 1; }
+.opw-map-dot { fill: var(--opv-kop); }
+.opw-map-number { fill: var(--opv-paper); font: 600 13px var(--opv-sans); }
+.opw-map-places { display: grid; gap: 4px; margin: 12px 0 0; padding-left: 24px; font: 500 14px/1.5 var(--opv-sans); }
+.opw-map-places a { color: var(--opv-kop); }
+.opw-map-note { margin: 10px 0 0; font: 400 11px/1.5 var(--opv-sans); color: var(--opv-muted); }
+.opw-grondkaart { padding: 14px; border: 1px solid var(--opv-sand-line); border-radius: 16px; background: var(--opv-surface); }
+.opw-grondkaart .opw-sidecar-label { margin: 0 0 10px; }
+.opw-grondwoord { margin: 0 0 6px; font: 600 25px/1.5 serif; color: var(--opv-kop); overflow-wrap: anywhere; }
+.opw-grondbetekenis { margin: 0 0 10px; font: 500 15px/1.4 var(--opv-sans); }
+.opw-grondkaart a { color: var(--opv-kop); font: 600 13px/1.4 var(--opv-sans); }
+.opw-lemma-link { color: inherit; text-decoration: underline dotted var(--opv-accent-ink); text-underline-offset: .14em; }
+.opw-lemma-link:hover, .opw-lemma-link:focus-visible { color: var(--opv-accent-ink); text-decoration-style: solid; }
+@media (max-width: 800px) {
+    .opw-leesindeling.heeft-beelden { grid-template-columns: minmax(0, 36em); }
+    .opw-leesindeling .opw-hoofdstukbeelden { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); margin-top: 28px; }
+    .opw-leesindeling .opw-sidecar { position: static; max-height: none; overflow: visible; }
+    .opw-leesindeling .opw-sidecar-item { display: block; }
+    .opw-leesindeling .opw-hoofdstukbeeld,
+    .opw-leesindeling .opw-kaartkaart { order: 0; }
 }
 
 /* Hoofdstukkop: titel eerst, nummer klein erboven */
@@ -517,8 +576,10 @@ body.citaten-uit :is(#verses-container, #sidebar-right) :is(span.god-speaks, spa
 :root :is(#verses-container, #sidebar-right) :is(span.direct-speech, span.god-speaks, span.angel-speaks, span.devil-speaks) :is(span.direct-speech, span.god-speaks, span.angel-speaks, span.devil-speaks)::after { content: "\201D"; }
 
 /* ---------- 7. Verder lezen en zijpijlen ---------- */
-.opw-hoofdstukbeeld { margin: 28px 0 36px; }
+.opw-hoofdstukbeelden { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 28px 0 36px; }
+.opw-hoofdstukbeeld { margin: 0; }
 .opw-hoofdstukbeeld img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 16px; }
+@media (max-width: 700px) { .opw-hoofdstukbeelden { grid-template-columns: 1fr; } }
 .opv-hoofdstuktitel { margin: 0 0 20px; font: 400 clamp(22px, 3vw, 28px)/1.4 var(--opv-serif); color: var(--opv-ink-soft); }
 .opv-verder {
     display: flex; flex-wrap: wrap; gap: 12px;

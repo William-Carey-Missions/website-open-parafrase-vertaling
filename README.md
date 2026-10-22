@@ -43,6 +43,7 @@ De adressen van de drie sites staan op één plek: `js/sites.js`.
 - Leeseditie bouwen: `python3 scripts/opv_leeseditie.py` schrijft
   `data/vertalingen/nl-opv/` en werkt `data/vertalingen/manifest.json` bij.
 - Controleren: `python3 scripts/validate_opv.py`.
+- Voortgang van drie beelden per hoofdstuk: `python3 scripts/check_book_image_coverage.py`.
 - Zoekindex: `python3 scripts/build_search_index.py --editie nl-opv`.
 - Publieke leespagina's, tekstbestanden, sitemap en AI-bronnengids:
   `python3 scripts/build_leespaginas.py`. Dezelfde stap draait bij elke publicatie.
@@ -51,8 +52,10 @@ De adressen van de drie sites staan op één plek: `js/sites.js`.
   Elk hoofdstuk op `/bijbel/{boek}/{hoofdstuk}.html` gebruikt de volledige
   lezer met instellingen en bevat de tekst ook zonder JavaScript.
   Oude links zoals `/index.html#genesis/1` openen hetzelfde hoofdstuk.
-  Boekillustraties staan in `images/boeken/`; Genesis en Exodus hebben daarnaast
-  per hoofdstuk een afbeelding in `images/hoofdstukken/{boek}/`.
+  Boekillustraties staan in `images/boeken/`. De fotorealistische reeks staat in
+  `images/boekseries/{boek}/`. `data/book-images.json` koppelt de beelden aan
+  hoofdstukken. De uitbreiding naar drie beelden per hoofdstuk is in uitvoering;
+  de boekpagina toont drie voorbeelden uit het boek.
 - Redactionele besluiten: `docs/opv/besluitregister.md`.
 
 De directe bron is SV1888 in `data/{boek}/{hoofdstuk}.json` (veld

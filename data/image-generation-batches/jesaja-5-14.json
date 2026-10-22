@@ -1,0 +1,52 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "jesaja",
+      "chapter": 5,
+      "verse": 2,
+      "scene": "De zorgvuldig aangelegde wijngaard",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 5:2. An ancient terraced vineyard with a simple stone watchtower and a rock cut winepress, carefully cleared soil and grapevines on a fertile hill, natural daylight.",
+      "file": "5-2.webp"
+    },
+    {
+      "book": "jesaja",
+      "chapter": 5,
+      "verse": 6,
+      "scene": "Doorns in de verlaten wijngaard",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 5:6. A neglected ancient vineyard overgrown with thistles and a broken dry stone wall beneath a cloudless dry sky, sober natural landscape.",
+      "file": "5-6.webp"
+    },
+    {
+      "book": "jesaja",
+      "chapter": 6,
+      "verse": 4,
+      "scene": "De voorhof vult zich met rook",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 6:4. A simple ancient stone sanctuary interior fills with thin incense smoke, heavy timber doorposts and warm light, no deity or human throne figure.",
+      "file": "6-4.webp"
+    },
+    {
+      "book": "jesaja",
+      "chapter": 6,
+      "verse": 8,
+      "scene": "Hier ben ik, stuur mij",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 6:8. An ancient prophet in plain wool stands humbly in a sanctuary courtyard, one natural hand resting on his chest, willing earnest expression, no deity depicted.",
+      "file": "6-8.webp"
+    },
+    {
+      "book": "jesaja",
+      "chapter": 6,
+      "verse": 13,
+      "scene": "Een stronk met blijvend zaad",
+      "prompt": "Use case: historical-scene. Asset type: Bible chapter illustration. Fully photorealistic natural photograph, landscape 3:2, 1536x1024. Ancient Near East, historically simple linen and wool garments and sandals. All people fully clothed, exactly two arms each, natural five-finger hands and believable animal anatomy. No modern objects, text, watermark, painting, CGI, medieval architecture or human depiction of God. Illustration of local Isaiah 6:13. A living oak stump with a small green shoot among fallen leaves in a Judean landscape, hopeful natural close photograph.",
+      "file": "6-13.webp"
+    }
+  ],
+  "pending_images": [],
+  "limitation": {
+    "type": "usage_limit_reached",
+    "resets_at_utc": "2026-10-22T04:00:30Z"
+  },
+  "resumed_at_utc": "2026-10-22T04:19:16Z",
+  "pending_images_resolved_at_utc": "2026-10-22T05:17:40.689775+00:00"
+}

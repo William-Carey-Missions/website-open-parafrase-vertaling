@@ -1,0 +1,30 @@
+{
+  "method": "built-in image_gen",
+  "images": [
+    {
+      "book": "psalmen",
+      "chapter": 8,
+      "verse": 3,
+      "scene": "Kinderen laten Gods lof horen",
+      "prompt": "undefinedIllustrate Psalm 8:3 as a poetic image, not an invented historical event. Three fully clothed children and one mother with a clothed baby sit in an ancient stone courtyard, the older children singing with joyful natural expressions, gentle day light, no text or supernatural imagery.",
+      "file": "8-3.webp"
+    },
+    {
+      "book": "psalmen",
+      "chapter": 8,
+      "verse": 4,
+      "scene": "De maan en de sterren aan de hemel",
+      "prompt": "undefinedIllustrate Psalm 8:4 as a poetic image, not an invented historical event. A lone fully clothed worshipper standing small on a rocky hill beneath a vast clear night sky with a natural crescent moon and stars. Awe and human smallness, real astrophotographic appearance, no giant unrealistic moon.",
+      "file": "8-4.webp",
+      "edit_prompt": "Use case: precise-object-edit. Change only the silhouette of the lone stargazing person. Replace the modern trousers, jacket and shoes with an ancient Israelite worshipper wearing a knee-length linen tunic, a long rough wool cloak, leather sandals and no modern belongings. Keep the same small scale and position on the rocky hill, same pose with exactly two arms and two legs. Keep the moon, stars, Milky Way, night sky, terrain, lighting, composition and photorealism exactly unchanged. No text or crown."
+    },
+    {
+      "book": "psalmen",
+      "chapter": 8,
+      "verse": 9,
+      "scene": "Vogels en vissen in Gods schepping",
+      "prompt": "undefinedIllustrate Psalm 8:9 as a poetic image, not an invented historical event. Photorealistic calm clear coastal water with a small school of fish visible near the rocky shallows and a few seabirds flying overhead, natural dawn, no humans, realistic wildlife.",
+      "file": "8-9.webp"
+    }
+  ]
+}
