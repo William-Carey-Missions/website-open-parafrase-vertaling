@@ -129,3 +129,28 @@ def test_exodusbeelden_in_dezelfde_lezer(browser, site, chapter, width):
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
     page.locator("#topnav-weergave" if width > 640 else "#opv-duim-aa").click()
     assert page.locator("#sidebar-right").is_visible()
+
+
+def test_beeld_staat_vanaf_het_begin_naast_de_tekst_en_wisselt_bij_het_vers(browser, site):
+    page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
+    page.goto(site + "/bijbel/exodus/1.html", wait_until="domcontentloaded")
+    page.locator('.opw-leesindeling[data-reading-ready="true"]').wait_for()
+    first = page.locator('.opw-hoofdstukbeeld img[src$="/1-7.webp"]')
+    assert first.is_visible()
+    text = page.locator('.opw-leeskolom').bounding_box()
+    picture = first.bounding_box()
+    assert picture["x"] >= text["x"] + text["width"]
+    assert picture["y"] < 200
+    page.locator('.verse-row[data-verse="8"]').evaluate(
+        "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
+    page.locator('.opw-kaartkaart.is-active').wait_for()
+    assert first.is_visible()
+    page.locator('.verse-row[data-verse="17"]').evaluate(
+        "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
+    last = page.locator('.opw-hoofdstukbeeld img[src$="/1-17.webp"]')
+    page.wait_for_function("() => document.querySelector('.opw-hoofdstukbeeld img[src$=\"/1-17.webp\"]').getBoundingClientRect().width > 0")
+    assert last.is_visible()
+    page.goto(site + "/bijbel/exodus/2.html", wait_until="domcontentloaded")
+    page.locator('.opw-leesindeling[data-reading-ready="true"]').wait_for()
+    assert page.locator('.opw-hoofdstukbeeld.is-active img').count() == 1
+    assert '/exodus/2-' in page.locator('.opw-hoofdstukbeeld.is-active img').get_attribute('src')
