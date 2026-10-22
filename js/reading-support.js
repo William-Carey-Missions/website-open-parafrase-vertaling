@@ -200,22 +200,27 @@
                 }
             }
             const cards = [...layout.querySelectorAll('.opw-sidecar-item')];
-            const activeByType = { visual: null, ground: null };
+            const cardType = card => card.classList.contains('opw-hoofdstukbeeld') ? 'image'
+                : card.classList.contains('opw-grondkaart') ? 'ground' : 'location';
+            // Een hoofdstukbeeld blijft zichtbaar, ook vóór het eerste scènevers.
+            // Locatiekaartjes kiezen hun eigen moment en verdringen het beeld niet.
+            const firstImage = cards.find(card => cardType(card) === 'image');
+            const activeByType = { image: firstImage ? Number(firstImage.dataset.verse) : null, location: null, ground: null };
             for (const card of cards) {
                 if (Number(card.dataset.verse) <= verse) {
-                    const type = card.classList.contains('opw-grondkaart') ? 'ground' : 'visual';
+                    const type = cardType(card);
                     activeByType[type] = Number(card.dataset.verse);
                 }
                 else break;
             }
             for (const card of cards) {
-                const type = card.classList.contains('opw-grondkaart') ? 'ground' : 'visual';
+                const type = cardType(card);
                 if (activeByType[type] === null && Number(card.dataset.verse) <= verse + 5) {
                     activeByType[type] = Number(card.dataset.verse);
                 }
             }
             cards.forEach(card => {
-                const type = card.classList.contains('opw-grondkaart') ? 'ground' : 'visual';
+                const type = cardType(card);
                 card.classList.toggle('is-active', activeByType[type] !== null && Number(card.dataset.verse) === activeByType[type]);
             });
         }
