@@ -133,7 +133,7 @@ def test_exodusbeelden_in_dezelfde_lezer(browser, site, chapter, width):
 
 def test_beeld_staat_vanaf_het_begin_naast_de_tekst_en_wisselt_bij_het_vers(browser, site):
     page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
-    page.goto(site + "/bijbel/exodus/1.html", wait_until="domcontentloaded")
+    page.goto(site + "/bijbel/exodus/1.html", wait_until="networkidle")
     page.locator('.opw-leesindeling[data-reading-ready="true"]').wait_for()
     first = page.locator('.opw-hoofdstukbeeld img[src$="/1-7.webp"]')
     assert first.is_visible()
@@ -143,7 +143,7 @@ def test_beeld_staat_vanaf_het_begin_naast_de_tekst_en_wisselt_bij_het_vers(brow
     assert picture["y"] < 200
     page.locator('.verse-row[data-verse="8"]').evaluate(
         "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
-    page.locator('.opw-kaartkaart.is-active').wait_for()
+    page.locator('.opw-background a[data-background="map"]').wait_for()
     assert first.is_visible()
     page.locator('.verse-row[data-verse="17"]').evaluate(
         "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
@@ -154,3 +154,66 @@ def test_beeld_staat_vanaf_het_begin_naast_de_tekst_en_wisselt_bij_het_vers(brow
     page.locator('.opw-leesindeling[data-reading-ready="true"]').wait_for()
     assert page.locator('.opw-hoofdstukbeeld.is-active img').count() == 1
     assert '/exodus/2-' in page.locator('.opw-hoofdstukbeeld.is-active img').get_attribute('src')
+
+
+def test_breed_beeld_kan_groot_open_en_met_escape_sluiten(browser, site):
+    page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
+    page.goto(site + "/bijbel/genesis/1.html", wait_until="networkidle")
+    picture = page.locator('.opw-hoofdstukbeeld.is-active img').first
+    assert picture.bounding_box()["width"] >= 420
+    picture.click()
+    dialog = page.locator('.opw-image-dialog[open]')
+    assert dialog.count() == 1
+    assert dialog.locator('img').evaluate('img => img.src') == picture.evaluate('img => img.src')
+    page.keyboard.press('Escape')
+    assert not dialog.count()
+
+
+def test_ethioopische_boeken_pas_na_vinkje_en_keuze_blijft_bewaard(browser, site):
+    page = page_for(browser, site)
+    page.goto(site + '/bijbel/', wait_until='networkidle')
+    assert not page.locator('#groep-ET').is_visible()
+    toggle = page.get_by_label('Ethiopische boeken tonen', exact=True)
+    toggle.check(timeout=2000)
+    assert page.locator('#groep-ET').is_visible()
+    assert page.locator('[data-ethiopic-books] .opw-boeken li').count() == 6
+    page.reload(wait_until='networkidle')
+    assert toggle.is_checked()
+    assert page.locator('#groep-ET').is_visible()
+    toggle.uncheck()
+    assert not page.locator('#groep-ET').is_visible()
+
+
+def test_zoeken_houdt_rekening_met_het_vinkje_voor_ethioopische_boeken(browser, site):
+    page = page_for(browser, site)
+    page.goto(site + '/bijbel/genesis/1.html', wait_until='networkidle')
+    page.evaluate("""() => {
+        Search.index = [
+            {b:'genesis',c:1,v:1,t:'controlewoord',_tl:'controlewoord'},
+            {b:'henoch',c:1,v:1,t:'controlewoord',_tl:'controlewoord'}
+        ];
+        Search.open('controlewoord');
+        Search._render();
+    }""")
+    assert page.locator('.search-result[data-book="henoch"]').count() == 0
+    page.evaluate("Opties.state.ethiopischeBoeken='aan'; Search._render()")
+    assert page.locator('.search-result[data-book="henoch"]').count() == 1
+
+
+@pytest.mark.parametrize('book,word', [('genesis', 'afgrond'), ('johannes', 'Messias')])
+def test_woorduitleg_komt_live_van_ogw_en_achtergrond_blijft_een_bronlink(browser, site, book, word):
+    import json
+    page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
+    source = 'https://opengodsword.com/data/opw-begrippen.js'
+    page.context.route(source, lambda route: route.fulfill(
+        content_type='application/javascript',
+        body='window.OGWReadingTerms = ' + json.dumps({book: [{'woord': word, 'uitleg': 'Actuele uitleg vanuit de bron.', 'ref': 'Genesis 1:2' if book == 'genesis' else 'Johannes 1:41', 'categorie': 'begrip'}]}) + ';'))
+    page.goto(site + f'/bijbel/{book}/1.html', wait_until='networkidle')
+    word_link = page.locator('.opw-word-link').filter(has_text=word).first
+    word_link.click(timeout=2000)
+    assert 'Actuele uitleg vanuit de bron.' in page.locator('.opw-word-dialog[open]').inner_text()
+    assert page.locator('.opw-word-dialog a').last.get_attribute('href').startswith('https://opengodsword.com/')
+    page.keyboard.press('Escape')
+    map_link = page.locator('.opw-background a[data-background="map"]')
+    assert map_link.get_attribute('href') == f'https://opengodsword.com/kaart.html?boek={book}&hoofdstuk=1'
+    assert page.locator('.opw-kaartkaart svg').count() == 0

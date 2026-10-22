@@ -382,6 +382,7 @@
 
             for (let i = 0; i < this.index.length; i++) {
                 const e = this.index[i];
+                if (typeof isBookVisibleInNavigation === 'function' && !isBookVisibleInNavigation({ id: e.b })) continue;
                 const cat = BOOK_TO_CAT[e.b];
                 if (cat && !cats.has(cat)) continue;
                 if (!cat && cats.size === 0) continue; // unknown book + nothing selected

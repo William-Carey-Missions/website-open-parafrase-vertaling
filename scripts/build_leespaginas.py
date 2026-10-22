@@ -121,7 +121,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.5">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.6">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.2">
 </head>
 <body class="opw-statisch">
@@ -130,12 +130,12 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <a class="opv-merk" href="/"><span class="opv-merk-naam">{NAME}<small>Gods Woord in begrijpelijke taal</small></span></a>
 <nav aria-label="Hoofdmenu"><a href="/bijbel/">Alle boeken</a><a href="{escape(reader_path)}">Lezen</a><a href="/over-opv.html">Over OPW</a></nav>
 </header>
-<script src="/js/topnav.js?v=0.38.7"></script>
+<script src="/js/topnav.js?v=0.39.0"></script>
 <main class="opv-pagina" id="inhoud" tabindex="-1">
 <nav class="opw-kruimels" aria-label="Broodkruimelpad">{breadcrumb}</nav>
 {body}
 </main>
-<footer class="opv-voet"><span class="opv-ark">de kleine ark</span>
+<footer class="opv-voet"><a href="/over-opv.html#comite-van-aanbeveling">Comité van aanbeveling</a><span class="opv-ark">Open Parafrase Weergave</span>
 <nav aria-label="Meer informatie"><a href="/bijbel/">Alle Bijbelboeken</a><a href="/over-opv.html#status">Over de proeftekst</a><a href="/llms.txt">AI en hergebruik</a><a href="https://openvertaling.nl/" data-ov-href="">Open Vertaling</a><a href="https://opengodsword.com/wiki.html" data-ogw-href="wiki.html">Achtergrond</a></nav>
 <span>Bijbeltekst: publiek domein · proefversie</span></footer>
 </body>
@@ -213,7 +213,8 @@ def integrated_reader(template: str, document: str, path: str) -> str:
     return head + '''<link rel="stylesheet" href="/css/verification.css">
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
-<script src="/js/reading-support.js?v=2" defer></script>
+<script src="/js/reading-support.js?v=3" defer></script>
+<script src="/js/reading-details.js?v=1" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
 </head><body class="opv-lezerpagina opw-hoofdstukpagina">''' + skip + body + '</body></html>\n'
 
@@ -353,12 +354,13 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
     for group, label in GROUPS.items():
         links = "".join(f'<li><a href="/bijbel/{book["id"]}/"><img class="opw-boekbeeld" src="{book_cover(book["id"], book_images)}" width="1024" height="1024" loading="lazy" decoding="async" alt=""><span class="opw-boeknaam">{escape(book["nameDutch"])}</span><span>{len(book["chapters"])} hoofdstukken</span></a></li>' for book in books if book["testament"] == group)
         if links:
-            sections.append(f'<section aria-labelledby="groep-{group}"><h2 id="groep-{group}">{label}</h2><ul class="opw-boeken">{links}</ul></section>')
-    body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Alle {len(books)} boeken en {len(sequence)} hoofdstukken van de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De apocriefe en Ethiopische boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p>{"".join(sections)}'
+            attributes = ' data-ethiopic-books hidden' if group == 'ET' else ''
+            sections.append(f'<section aria-labelledby="groep-{group}"{attributes}><h2 id="groep-{group}">{label}</h2><ul class="opw-boeken">{links}</ul></section>')
+    body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Lees de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De aanvullende boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p><label class="opw-book-choice"><input type="checkbox" id="show-ethiopic-books">Ethiopische boeken tonen</label><script src="/js/book-visibility.js?v=1" defer></script>{"".join(sections)}'
     write(root / "bijbel/index.html", page("Alle Bijbelboeken in eenvoudig Nederlands", f"Lees de Bijbel gratis in eenvoudig Nederlands: {len(books)} boeken en {len(sequence)} hoofdstukken. Open Parafrase Weergave, proefversie.", "/bijbel/", body, [("Start", "/"), ("Bijbel", "/bijbel/")]))
     guide += f'''\n## Verwante bronnen
 - [Open Vertaling](https://openvertaling.nl/): voor wie een meer woordelijke weergave wil lezen.
-- [Open Gods Woord](https://opengodsword.com/wiki.html): Bijbelachtergrond en broninformatie.
+- [Open Gods Word](https://opengodsword.com/wiki.html): Bijbelachtergrond en broninformatie.
 '''
     write(root / "llms.txt", guide)
     write(root / "LLM.txt", guide)
