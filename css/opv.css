@@ -156,8 +156,10 @@ html { scrollbar-color: var(--opv-sand-line) transparent; }
     justify-self: start; min-width: 0;
     color: var(--opv-kop); text-decoration: none;
 }
-.opv-zon { flex: none; width: 40px; height: 40px; }
-:root[data-theme="donker"] .opv-zon-vlak { fill: #1f3546; }
+.opw-logo { display: block; width: 238px; height: auto; max-width: 100%; flex: none; }
+.opw-logo--light { display: none; }
+:root[data-theme="donker"] .opw-logo--dark { display: none; }
+:root[data-theme="donker"] .opw-logo--light { display: block; }
 .opv-merk-naam {
     font: 500 19px/1.1 var(--opv-serif); letter-spacing: -.005em;
     color: var(--opv-kop); white-space: normal; max-width: 190px;
@@ -943,7 +945,8 @@ body.dyslexia-mode .opv-voorbeeld { font-family: var(--opv-sans); font-size: cal
 /* ---------- 11. Mobiel: bovenbalk en duimbalk ---------- */
 @media (max-width: 768px) {
     .opv-balk { grid-template-columns: auto minmax(0, 1fr) auto; padding: 0 6px 0 14px; gap: 6px; }
-    .opv-zon { width: 36px; height: 36px; }
+    .opw-logo { width: 176px; }
+    html:not(.opv-startscherm) body.opv-lezerpagina .opw-logo { width: 108px; }
     .opv-merk { gap: 6px; }
     .opv-merk-naam { display: none; }
     html.opv-startscherm .opv-merk-naam, body:not(.opv-lezerpagina) .opv-merk-naam { display: inline; font-size: 16px; max-width: 140px; }

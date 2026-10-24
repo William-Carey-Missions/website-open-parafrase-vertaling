@@ -99,12 +99,8 @@
         return;
     }
 
-    /* Logo: een opkomende zon boven de horizon, in navy, goud en zand. */
-    var ZON = '<svg class="opv-zon" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false">' +
-        '<rect class="opv-zon-vlak" width="40" height="40" rx="12" fill="#142e42"/>' +
-        '<path d="M9 26a11 11 0 0 1 22 0z" fill="#cba449"/>' +
-        '<rect x="7" y="27.5" width="26" height="2.4" rx="1.2" fill="#f3ebdc"/>' +
-        '<path d="M20 8.5v4M11.5 12.5l2.4 2.6M28.5 12.5l-2.4 2.6" stroke="#cba449" stroke-width="2" stroke-linecap="round"/></svg>';
+    var LOGO = '<img class="opw-logo opw-logo--dark" src="/images/branding/open-parafrase-weergave-logo-horizontal.svg?v=20261024" alt="Open Parafrase Weergave" width="238" height="70" fetchpriority="high">' +
+        '<img class="opw-logo opw-logo--light" src="/images/branding/open-parafrase-weergave-logo-horizontal-light.svg?v=20261024" alt="" width="238" height="70">';
     var PIJL = '<span class="opv-ext" aria-hidden="true">&#8599;</span>';
     var lezer = document.body.classList.contains('opv-lezerpagina');
 
@@ -112,8 +108,7 @@
     nav.setAttribute('aria-label', 'Hoofdmenu');
     nav.innerHTML =
         '<div class="opv-balk">' +
-            '<a class="topnav-brand-link opv-merk" href="index.html" aria-label="Open Parafrase Weergave, naar de startpagina">' + ZON +
-                '<span class="opv-merk-naam">Open Parafrase Weergave<small>Gods Woord in begrijpelijke taal</small></span>' +
+            '<a class="topnav-brand-link opv-merk" href="index.html" aria-label="Open Parafrase Weergave, naar de startpagina">' + LOGO +
             '</a>' +
             (lezer ? '<button type="button" class="opv-hfst" id="opv-hfst" aria-label="Kies boek en hoofdstuk" aria-haspopup="dialog">' +
                 '<span class="mp-label">Kies een boek</span>' +

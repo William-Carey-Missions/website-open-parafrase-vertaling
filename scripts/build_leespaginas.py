@@ -127,7 +127,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <body class="opw-statisch">
 <a class="opw-skip" href="{escape(path)}#inhoud">Direct naar de inhoud</a>
 <header class="opw-sitekop" id="topnav">
-<a class="opv-merk" href="/"><span class="opv-merk-naam">{NAME}<small>Gods Woord in begrijpelijke taal</small></span></a>
+<a class="opv-merk" href="/" aria-label="{NAME}, naar de startpagina"><img class="opw-logo opw-logo--dark" src="/images/branding/open-parafrase-weergave-logo-horizontal.svg?v=20261024" alt="{NAME}" width="238" height="70"><img class="opw-logo opw-logo--light" src="/images/branding/open-parafrase-weergave-logo-horizontal-light.svg?v=20261024" alt="" width="238" height="70"></a>
 <nav aria-label="Hoofdmenu"><a href="/bijbel/">Alle boeken</a><a href="{escape(reader_path)}">Lezen</a><a href="/over-opv.html">Over OPW</a></nav>
 </header>
 <script src="/js/topnav.js?v=0.39.0"></script>
