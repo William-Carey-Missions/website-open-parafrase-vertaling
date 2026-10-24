@@ -84,7 +84,7 @@ def test_sitemap_en_ai_ingangen_volgen_de_beschikbare_tekst(tmp_path):
     module.build_site(root)
     sitemap = ET.parse(root / "sitemap.xml")
     urls = [el.text for el in sitemap.findall(".//{*}loc")]
-    assert len(urls) == len(set(urls)) == 9
+    assert len(urls) == len(set(urls)) == 10
     assert "https://open-parafrase-weergave.nl/woordenboek.html" in urls
     assert all("#" not in url for url in urls)
     assert "https://open-parafrase-weergave.nl/bijbel/johannes/1.html" in urls
@@ -151,3 +151,26 @@ def test_exodus_heeft_hoofdstukbeeld_in_tekst_en_deelvoorbeeld(tmp_path):
         assert f'<figure class="opw-hoofdstukbeeld"><img src="{image_path}"' in html
         assert f'<meta property="og:image" content="https://open-parafrase-weergave.nl{image_path}">' in html
         assert ('alt="Het volk"' if number == 1 else f'alt="Illustratie bij Exodus {number}:') in html
+
+
+def test_markdown_en_achtergrondpagina(tmp_path):
+    site = fixture_site(tmp_path)
+    (site / "achtergrond.md").write_text("# Achtergrond\n\n> Kort.\n\n## Kop\n\nTekst met [link](https://openvertaling.nl/).\n\n- **Bron**: punt\n", encoding="utf-8")
+    (site / "data/reading-dictionary.json").write_text(json.dumps({"status": "concept", "note": "", "terms": [
+        {"woord": "Verbond", "categorie": "begrip", "betekenissen": [{"uitleg": "Een plechtige afspraak.", "ref": "Gen 9:9"}]},
+    ]}), encoding="utf-8")
+    builder().build_site(site)
+    genesis = (site / "markdown/opv/genesis.md").read_text(encoding="utf-8")
+    assert "## Genesis 1: Het begin" in genesis and "### Een nieuw begin" in genesis
+    assert "**1** In het begin. Daarna was er licht!" in genesis
+    assert r"**1** Een tuin met \<bomen\> & water. Hij rustte." in genesis
+    volledig = (site / "markdown/opv-volledig.md").read_text(encoding="utf-8")
+    assert "## Genesis" in volledig and "### Genesis 1: Het begin" in volledig and "#### Een nieuw begin" in volledig
+    assert "https://open-parafrase-weergave.nl/markdown/opv/johannes.md" in (site / "markdown/index.md").read_text(encoding="utf-8")
+    assert "- Een plechtige afspraak. (Gen 9:9)" in (site / "markdown/woordenboek.md").read_text(encoding="utf-8")
+    pagina = (site / "achtergrond.html").read_text(encoding="utf-8")
+    assert '<link rel="canonical" href="https://open-parafrase-weergave.nl/achtergrond.html">' in pagina
+    assert '<a href="https://openvertaling.nl/">link</a>' in pagina and "<li><strong>Bron</strong>: punt</li>" in pagina
+    guide = (site / "llms.txt").read_text(encoding="utf-8")
+    assert "https://open-parafrase-weergave.nl/markdown/index.md" in guide and "/achtergrond.md" in guide
+    assert "https://open-parafrase-weergave.nl/achtergrond.html" in (site / "sitemap.xml").read_text(encoding="utf-8")

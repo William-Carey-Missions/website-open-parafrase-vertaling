@@ -219,6 +219,130 @@ def integrated_reader(template: str, document: str, path: str) -> str:
 </head><body class="opv-lezerpagina opw-hoofdstukpagina">''' + skip + body + '</body></html>\n'
 
 
+def md(text: str) -> str:
+    """Tekens die Markdown anders leest, letterlijk houden."""
+    return re.sub(r"([\\`*_\[\]<>])", r"\\\1", " ".join(str(text or "").split()))
+
+
+def book_markdown(book: dict) -> str:
+    lines = [f"# {book['nameDutch']} — {NAME} (proef)", "",
+             f"> Parafrase in eenvoudig Nederlands. Proefversie: alle verzen hebben de status concept. "
+             f"Bijbeltekst: publiek domein. Bron: {BASE}/bijbel/{book['id']}/", ""]
+    for chapter in book["chapters"]:
+        kop = f": {md(chapter['kop'])}" if chapter.get("kop") else ""
+        lines += [f"## {book['nameDutch']} {chapter['hoofdstuk']}{kop}", ""]
+        headings = {int(item["vers"]): item["tekst"] for item in chapter.get("blokken", []) if item.get("vers") and item.get("tekst")}
+        for verse in chapter["verzen"]:
+            if int(verse["nummer"]) in headings:
+                lines += [f"### {md(headings[int(verse['nummer'])])}", ""]
+            lines += [f"**{verse['nummer']}** {md(verse['tekst'])}", ""]
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def dictionary_markdown(root: Path) -> str:
+    data = json.loads((root / "data/reading-dictionary.json").read_text(encoding="utf-8"))
+    lines = [f"# Woordenboek bij de {NAME}", "",
+             f"> Uitleg bij woorden en uitdrukkingen in de tekst, per vindplaats. Status: {data.get('status', 'concept')}; "
+             f"niet door mensen goedgekeurd. {data.get('note', '')} Vrij te gebruiken.", ""]
+    for term in sorted(data["terms"], key=lambda t: t["woord"].strip("'\"‘’“”").lower()):
+        soort = f" ({md(term['categorie'])})" if term.get("categorie") else ""
+        lines += [f"## {md(term['woord'])}{soort}", ""]
+        for meaning in term.get("betekenissen", []):
+            ref = f" ({md(meaning['ref'])})" if meaning.get("ref") else ""
+            lines.append(f"- {md(meaning.get('uitleg', ''))}{ref}")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def inline_markdown(text: str) -> str:
+    safe = escape(text, quote=False)
+    safe = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', safe)
+    safe = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", safe)
+    return re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<em>\1</em>", safe)
+
+
+def markdown_html(text: str) -> str:
+    """Genoeg Markdown voor achtergrond.md: koppen, alinea's, lijsten en citaten."""
+    out, paragraph, in_list = [], [], False
+
+    def close():
+        nonlocal in_list
+        if paragraph:
+            out.append(f"<p>{inline_markdown(' '.join(paragraph))}</p>")
+            paragraph.clear()
+        if in_list:
+            out.append("</ul>")
+            in_list = False
+
+    for raw in text.splitlines():
+        line = raw.strip()
+        heading = re.match(r"(#{1,3}) (.+)", line)
+        if not line:
+            close()
+        elif heading:
+            close()
+            level = len(heading.group(1))
+            out.append(f"<h{level}>{inline_markdown(heading.group(2))}</h{level}>")
+        elif line.startswith("- "):
+            if paragraph:
+                close()
+            if not in_list:
+                out.append("<ul>")
+                in_list = True
+            out.append(f"<li>{inline_markdown(line[2:])}</li>")
+        elif line.startswith(">"):
+            close()
+            out.append(f'<p class="opv-lead">{inline_markdown(line.lstrip("> "))}</p>')
+        else:
+            paragraph.append(line)
+    close()
+    return "\n".join(out)
+
+
+def write_markdown(root: Path, books: list[dict]) -> None:
+    """Markdown van de hele parafrase en het woordenboek, plus achtergrond.md als HTML-pagina."""
+    full = [f"# {NAME} (proef) — volledige tekst", "",
+            f"> Alle boeken van de {NAME} als Markdown. Proefversie: alle verzen concept. "
+            f"Bijbeltekst: publiek domein. Bron: {BASE}/markdown/", ""]
+    index = [f"# {NAME} — Markdown", "",
+             "> De hele parafrase als Markdown, per boek en als één bestand, met de tussenkopjes. Proefversie: "
+             "alle verzen concept. Bijbeltekst: publiek domein; vrij te gebruiken, ook door AI-taalmodellen.", "",
+             f"- [Volledige tekst]({BASE}/markdown/opv-volledig.md)",
+             f"- [Woordenboek]({BASE}/markdown/woordenboek.md): uitleg bij woorden en uitdrukkingen (concept).",
+             f"- [Achtergrond]({BASE}/achtergrond.md): wat de parafrase is, hoe ze gemaakt is en hoe je haar mag gebruiken.",
+             "- [Open Vertaling met kanttekeningen](https://openvertaling.nl/markdown/index.md): de herziene "
+             "Statenvertaling en de Statenvertaling 1888 en 1637, elk met kanttekeningen.", ""]
+    for group, label in GROUPS.items():
+        group_books = [book for book in books if book["testament"] == group]
+        if not group_books:
+            continue
+        index += [f"## {label}", ""]
+        for book in group_books:
+            text = book_markdown(book)
+            write(root / "markdown/opv" / f"{book['id']}.md", text)
+            body = re.sub(r"^(#{2,3}) ", r"#\1 ", text.split("\n", 4)[4], flags=re.M)
+            full += [f"## {book['nameDutch']}", "", body]
+            index.append(f"- [{book['nameDutch']}]({BASE}/markdown/opv/{book['id']}.md): {len(book['chapters'])} hoofdstukken")
+        index.append("")
+    write(root / "markdown/opv-volledig.md", "\n".join(full))
+    write(root / "markdown/index.md", "\n".join(index))
+    if (root / "data/reading-dictionary.json").exists():
+        write(root / "markdown/woordenboek.md", dictionary_markdown(root))
+    if not (root / "achtergrond.md").exists():
+        return
+    source = (root / "achtergrond.md").read_text(encoding="utf-8")
+    title = re.search(r"^# (.+)$", source, re.M).group(1)
+    body = (f'<article class="opw-achtergrond">{markdown_html(source)}</article>'
+            '<p>Deze pagina staat ook als <a href="/achtergrond.md">Markdown</a>.</p>')
+    document = page(title, "Wat de Open Parafrase Weergave is, hoe de parafrase uit de Statenvertaling is gemaakt, "
+                    "de proefstatus, vrij hergebruik en de bestanden voor AI en zoekmachines.", "/achtergrond.html",
+                    body, [("Start", "/"), ("Achtergrond", "/achtergrond.html")])
+    write(root / "achtergrond.html", document.replace(
+        "</head>", '<link rel="alternate" type="text/markdown" href="/achtergrond.md">\n'
+        '<style>.opw-achtergrond p,.opw-achtergrond li{line-height:1.75;margin:0 0 14px}'
+        '.opw-achtergrond ul{padding-left:22px}</style>\n</head>', 1))
+
+
 def build_site(root: Path = ROOT) -> dict:
     books = catalog(root)
     book_images = json.loads((root / "data/book-images.json").read_text(encoding="utf-8"))["books"]
@@ -243,7 +367,7 @@ def build_site(root: Path = ROOT) -> dict:
     sequence = [(book, chapter) for book in books for chapter in book["chapters"]]
     # De bron heeft geen publicatiedatum: checkouttijd is geen inhoudswijziging.
     # Daarom geen verzonnen lastmod-datums in de sitemap.
-    urls = [("/", None), ("/over-opv.html", None), ("/bijbel/", None), ("/woordenboek.html", None)]
+    urls = [("/", None), ("/over-opv.html", None), ("/achtergrond.html", None), ("/bijbel/", None), ("/woordenboek.html", None)]
     guide = f'''# {NAME} — de Bijbel in eenvoudig Nederlands
 
 > Gods Woord in begrijpelijke taal. Nederlandse parafrase van de Bijbel. Proefversie: alle verzen hebben de status concept. De Bijbeltekst is publiek domein.
@@ -254,6 +378,9 @@ Er zijn {len(books)} boeken en {len(sequence)} hoofdstukken beschikbaar. De coll
 - [Alle Bijbelboeken]({BASE}/bijbel/): boekenoverzicht met links naar ieder hoofdstuk; volledig leesbaar zonder JavaScript.
 - [Woordenboek]({BASE}/woordenboek.html): bestaande begrippenverklaringen, met conceptstatus.
 - [Over de weergave]({BASE}/over-opv.html): doelgroep, bronbeleid, proefstatus en hergebruik.
+- [Achtergrond]({BASE}/achtergrond.md): wat een parafrase is, hoe de tekst vanuit de Statenvertaling is gemaakt, de proefstatus, hergebruik en veelgestelde vragen. Ook als [HTML]({BASE}/achtergrond.html).
+- [Markdown]({BASE}/markdown/index.md): de hele parafrase per boek en als [één bestand]({BASE}/markdown/opv-volledig.md), met tussenkopjes.
+- [Woordenboek als Markdown]({BASE}/markdown/woordenboek.md): uitleg bij woorden en uitdrukkingen (concept).
 - [Volledige tekst]({BASE}/llms-full.txt): alle beschikbare hoofdstukken als UTF-8-tekst; groot bestand.
 - [Sitemap]({BASE}/sitemap.xml): canonieke HTML-adressen van boeken en hoofdstukken.
 
@@ -281,7 +408,7 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
             book_path, body, [("Start", "/"), ("Bijbel", "/bijbel/"), (title, book_path)],
             reader_path=chapter_path(book, book['chapters'][0]),
             image=cover, image_alt=f"Beeld bij {title}"))
-        guide += f'- [{title}]({BASE}{book_path}): {len(book["chapters"])} hoofdstukken; [platte tekst]({BASE}{book_path}tekst.txt).\n'
+        guide += f'- [{title}]({BASE}{book_path}): {len(book["chapters"])} hoofdstukken; [platte tekst]({BASE}{book_path}tekst.txt); [Markdown]({BASE}/markdown/opv/{book['id']}.md).\n'
         book_text = [f"# {title} — {NAME} (proef)\n\nBijbeltekst: publiek domein.\n"]
         for chapter in book["chapters"]:
             text = f"## {title} {chapter['hoofdstuk']} — {chapter.get('kop', '')}\n\n"
@@ -359,12 +486,13 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
     body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Lees de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De aanvullende boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p><label class="opw-book-choice"><input type="checkbox" id="show-ethiopic-books">Ethiopische boeken tonen</label><script src="/js/book-visibility.js?v=1" defer></script>{"".join(sections)}'
     write(root / "bijbel/index.html", page("Alle Bijbelboeken in eenvoudig Nederlands", f"Lees de Bijbel gratis in eenvoudig Nederlands: {len(books)} boeken en {len(sequence)} hoofdstukken. Open Parafrase Weergave, proefversie.", "/bijbel/", body, [("Start", "/"), ("Bijbel", "/bijbel/")]))
     guide += f'''\n## Verwante bronnen
-- [Open Vertaling](https://openvertaling.nl/): voor wie een meer woordelijke weergave wil lezen.
+- [Open Vertaling](https://openvertaling.nl/llms.txt): voor wie een meer woordelijke weergave wil lezen; de herziene Statenvertaling met kanttekeningen, ook als [Markdown](https://openvertaling.nl/markdown/index.md).
 - [Open Gods Word](https://opengodsword.com/wiki.html): Bijbelachtergrond en broninformatie.
 '''
     write(root / "llms.txt", guide)
     write(root / "LLM.txt", guide)
     write(root / "llms-full.txt", "\n".join(full))
+    write_markdown(root, books)
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for path, date in urls:
         modified = f"<lastmod>{date}</lastmod>" if date else ""
