@@ -70,8 +70,10 @@ def book_cover(book_id: str, book_images: dict) -> str:
 def chapter_preview(root: Path, book_id: str, number: int, book_images: dict) -> str:
     scenes = [scene for scene in book_images.get(book_id, []) if scene["chapter"] == number]
     legacy = f"/images/hoofdstukken/{book_id}/{number}.webp"
+    cover = f"/images/boeken/{book_id}.webp"
     image = (f"/images/boekseries/{book_id}/{scenes[0]['file']}" if scenes
-             else legacy if (root / legacy.lstrip("/")).is_file() else None)
+             else legacy if (root / legacy.lstrip("/")).is_file()
+             else cover if (root / cover.lstrip("/")).is_file() else None)
     if image is None:
         return ""
     return (f'<img class="opw-hoofdstukpreview" src="{escape(image, quote=True)}" '
@@ -463,6 +465,11 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
             illustration = (f'<aside class="opw-hoofdstukbeelden" aria-label="Beeld bij dit hoofdstuk">'
                             f'<figure class="opw-hoofdstukbeeld"><img src="{legacy_image}" width="1536" height="1024" '
                             f'alt="Illustratie bij {escape(ref)}: {escape(heading, quote=True)}" loading="lazy"></figure></aside>')
+        if not illustration and (root / f"images/boeken/{book['id']}.webp").is_file():
+            illustration = (f'<aside class="opw-hoofdstukbeelden" aria-label="Boekbeeld bij {escape(book["nameDutch"], quote=True)}">'
+                            f'<figure class="opw-hoofdstukbeeld"><img src="/images/boeken/{book["id"]}.webp" '
+                            f'width="1024" height="1024" alt="Boekillustratie bij {escape(book["nameDutch"], quote=True)}" loading="lazy">'
+                            f'<figcaption>Boekbeeld bij {escape(book["nameDutch"])}</figcaption></figure></aside>')
         body = f'''<section class="opw-leesindeling{' heeft-beelden' if illustration else ''}">
 <div class="opw-leeskolom"><header class="opv-hoofdstukkop" aria-labelledby="hoofdstuk-titel">
 <p class="opv-boven">{escape(GROUPS.get(book['testament'], 'Bijbel'))}</p>

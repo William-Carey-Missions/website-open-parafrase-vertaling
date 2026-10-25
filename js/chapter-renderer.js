@@ -134,6 +134,12 @@ const ChapterRenderer = {
         textColumn.appendChild(this._hoofdstukKop(book, chapter, chapterNum, append || prepend));
         const bookImages = await this._bookImages();
         const chapterImages = (bookImages[bookId] || []).filter(item => Number(item.chapter) === Number(chapterNum));
+        if (!chapterImages.length) chapterImages.push({
+            src: `/images/boeken/${bookId}.webp`,
+            alt: `Boekillustratie bij ${book.nameDutch}`,
+            scene: `Boekbeeld bij ${book.nameDutch}`,
+            bookImage: true,
+        });
         const imageGallery = document.createElement('aside');
         imageGallery.className = 'opw-hoofdstukbeelden';
         imageGallery.setAttribute('aria-label', 'Beelden bij dit hoofdstuk');
@@ -142,8 +148,8 @@ const ChapterRenderer = {
             figure.className = 'opw-hoofdstukbeeld';
             if (bookImage.verse) figure.dataset.verse = bookImage.verse;
             const illustration = document.createElement('img');
-            illustration.src = `/images/boekseries/${bookId}/${bookImage.file}`;
-            illustration.width = 1536;
+            illustration.src = bookImage.src || `/images/boekseries/${bookId}/${bookImage.file}`;
+            illustration.width = bookImage.bookImage ? 1024 : 1536;
             illustration.height = 1024;
             illustration.alt = bookImage.alt;
             illustration.loading = append || prepend ? 'lazy' : 'eager';

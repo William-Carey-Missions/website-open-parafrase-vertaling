@@ -145,6 +145,23 @@ def test_hoofdstuk_zonder_eigen_beeld_krijgt_geen_onjuiste_afbeelding(tmp_path):
     assert "Hoofdstuk 2" in second
 
 
+def test_boekbeeld_vult_hoofdstukken_zonder_eigen_scenebeeld_aan(tmp_path):
+    root = fixture_site(tmp_path)
+    cover = root / "images/boeken/genesis.webp"
+    cover.parent.mkdir(parents=True)
+    cover.write_bytes(b"fixture")
+    builder().build_site(root)
+    overview = (root / "bijbel/genesis/index.html").read_text(encoding="utf-8")
+    cards = overview.split('<ol class="opw-hoofdstukken">', 1)[1].split("</ol>", 1)[0]
+    first = re.search('<a href="/bijbel/genesis/1.html">(.*?)</a>', cards).group(1)
+    second = re.search('<a href="/bijbel/genesis/2.html">(.*?)</a>', cards).group(1)
+    assert 'src="/images/boekseries/genesis/1.webp"' in first
+    assert 'src="/images/boeken/genesis.webp"' in second
+    reading = (root / "bijbel/genesis/2.html").read_text(encoding="utf-8")
+    assert 'src="/images/boeken/genesis.webp"' in reading
+    assert "Boekbeeld bij Genesis" in reading
+
+
 def test_citaatopmaak_en_zinsregels_blijven_behouden():
     rendered = builder().verse_html({
         "tekst": "God zei: Licht! Het werd licht. Toen begon de dag.",
