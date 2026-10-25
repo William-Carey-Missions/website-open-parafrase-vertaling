@@ -432,6 +432,9 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 .opw-term-media a { color: var(--opv-kop); }
 .opw-term-image { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
 .opw-term-image:focus-visible { outline: 3px solid var(--opv-accent-ink); outline-offset: 3px; border-radius: 12px; }
+.opw-definition-image { display: none; margin: 0; min-width: 0; }
+.opw-definition-image img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 12px; }
+.opw-definition-image figcaption { margin-top: 9px; color: var(--opv-kop); font: 500 14px/1.4 var(--opv-sans); }
 .opw-dialog-close { display: block; margin: 0 0 8px auto; padding: 10px 18px; min-height: 44px; border: 1px solid var(--opv-line); border-radius: 24px; color: var(--opv-kop); background: var(--opv-surface); cursor: pointer; font: 500 15px var(--opv-sans); }
 .opw-chapter-map { min-width: 0; order: -2; }
 .opw-chapter-map iframe { display: block; width: 100%; aspect-ratio: 1; border: 1px solid var(--opv-line); border-radius: 12px; box-sizing: border-box; }
@@ -446,6 +449,9 @@ html.opv-startscherm .opv-hfst { display: none !important; }
     .opw-sidecar > * { grid-column: 1 / -1; }
     .opw-sidecar > .opw-chapter-map { grid-column: 1; grid-row: 1; }
     .opw-sidecar > .opw-hoofdstukbeeld { grid-column: 2; grid-row: 1; min-width: 0; }
+    .opw-sidecar > .opw-definition-image { display: block; grid-column: 2; grid-row: 1; }
+    .opw-sidecar.toont-begripbeeld > .opw-hoofdstukbeeld { display: none; }
+    .opw-sidecar.zonder-kaart > .opw-definition-image { grid-column: 1; }
     .opw-sidecar.zonder-kaart > .opw-hoofdstukbeeld { grid-column: 1; }
     .opw-leesindeling .opw-hoofdstukbeeld img { aspect-ratio: 1; height: auto; object-fit: cover; }
     .opw-sidecar .opw-word-explanation { order: 0; }

@@ -134,6 +134,7 @@ const ChapterRenderer = {
         }
         const layout = document.createElement('section');
         layout.className = 'opw-leesindeling';
+        layout.dataset.readerRendered = 'true';
         const textColumn = document.createElement('div');
         textColumn.className = 'opw-leeskolom';
         // Hoofdstukkop: boek en hoofdstuk boven het onderwerp. Bij doorlopend lezen
@@ -147,11 +148,11 @@ const ChapterRenderer = {
             bookImage: true,
         });
         const imageGallery = document.createElement('aside');
-        imageGallery.className = 'opw-hoofdstukbeelden';
+        imageGallery.className = 'opw-hoofdstukbeelden opw-sidecar';
         imageGallery.setAttribute('aria-label', 'Beelden bij dit hoofdstuk');
         for (const bookImage of chapterImages) {
             const figure = document.createElement('figure');
-            figure.className = 'opw-hoofdstukbeeld';
+            figure.className = 'opw-hoofdstukbeeld opw-sidecar-item' + (imageGallery.children.length ? '' : ' is-active');
             if (bookImage.verse) figure.dataset.verse = bookImage.verse;
             const illustration = document.createElement('img');
             illustration.src = bookImage.src || `/images/boekseries/${bookId}/${bookImage.file}`;

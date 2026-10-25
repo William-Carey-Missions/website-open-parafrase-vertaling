@@ -62,13 +62,13 @@
         } catch { return null; }
     }
 
-    function termMedia(entry) {
+    function termMedia(entry, includeImage = true) {
         const media = node('div', 'opw-term-media');
         const detail = entry.naslag;
         if (!detail) return media;
         const name = detail.naam || entry.woord;
         const imageUrl = sourceUrl(detail.afbeelding, true);
-        if (imageUrl) {
+        if (imageUrl && includeImage) {
             const figure = node('figure');
             const zoom = node('button', 'opw-term-image');
             zoom.type = 'button';
@@ -91,6 +91,25 @@
             media.append(link);
         }
         return media;
+    }
+
+    function definitionImage(layout, entry) {
+        const aside = layout.querySelector('.opw-sidecar');
+        if (!aside) return;
+        const previous = aside.querySelector(':scope > .opw-definition-image');
+        const url = sourceUrl(entry.naslag?.afbeelding, true);
+        if (previous?.dataset.source === url) return;
+        previous?.remove();
+        aside.classList.toggle('toont-begripbeeld', !!url);
+        if (!url) return;
+        const figure = termMedia(entry).querySelector('figure');
+        figure.className = 'opw-definition-image';
+        figure.dataset.source = url;
+        figure.querySelector('img').loading = 'eager';
+        figure.querySelector('img').addEventListener('error', () => {
+            if (!aside.querySelector(':scope > .opw-definition-image')) aside.classList.remove('toont-begripbeeld');
+        }, { once: true });
+        aside.append(figure);
     }
 
     function explain(entry, book, chapter) {
@@ -170,7 +189,8 @@
         panel.querySelector('h2').textContent = data.entry.woord;
         panel.querySelector('.opw-explanation-text').textContent = explanationText(data.entry);
         panel.querySelector('.opw-word-reference').textContent = data.entry.ref || '';
-        if (panel.dataset.word !== data.entry.woord) panel.querySelector('.opw-term-media').replaceWith(termMedia(data.entry));
+        if (panel.dataset.word !== data.entry.woord) panel.querySelector('.opw-term-media').replaceWith(termMedia(data.entry, false));
+        definitionImage(layout, data.entry);
         panel.querySelector('.opw-word-more').href = link.href;
         panel.dataset.word = data.entry.woord;
         if (reveal) {
@@ -288,7 +308,9 @@
                 aside.classList.add('opw-sidecar');
                 const map = node('section', 'opw-chapter-map');
                 loadSource().then(() => {
-                    if (!layout.isConnected) return;
+                    // De statische tekst wordt nog vervangen; start de kaart pas
+                    // in de blijvende layout zodat die niet opnieuw hoeft te laden.
+                    if (!layout.isConnected || layout.dataset.readerRendered !== 'true') return;
                     const count = window.OGWChapterMapCounts?.[book]?.[chapter] || 0;
                     aside.classList.toggle('zonder-kaart', !count);
                     if (!count) return;

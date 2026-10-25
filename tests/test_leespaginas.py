@@ -66,7 +66,7 @@ def test_volledige_tekst_metadata_en_navigatie(tmp_path):
     assert 'id="sidebar-right"' in first
     assert 'js/app.js' in first
     assert '/js/reading-support.js?v=5' in first
-    assert '/js/reading-details.js?v=6' in first
+    assert '/js/reading-details.js?v=7' in first
     assert 'Lees met instellingen' not in first
     assert 'Lezer met instellingen' not in first
     assert 'type="application/ld+json"' in first
@@ -202,7 +202,7 @@ def test_exodus_heeft_hoofdstukbeeld_in_tekst_en_deelvoorbeeld(tmp_path):
     for number in (1, 40):
         html = (root / f'bijbel/exodus/{number}.html').read_text(encoding='utf-8')
         image_path = f"/images/{'boekseries' if number == 1 else 'hoofdstukken'}/exodus/{number}.webp"
-        assert f'<figure class="opw-hoofdstukbeeld"><img src="{image_path}"' in html
+        assert f'<figure class="opw-hoofdstukbeeld opw-sidecar-item is-active"><img src="{image_path}"' in html
         assert f'<meta property="og:image" content="https://open-parafrase-weergave.nl{image_path}">' in html
         assert ('alt="Het volk"' if number == 1 else f'alt="Illustratie bij Exodus {number}:') in html
 

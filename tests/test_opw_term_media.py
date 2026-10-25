@@ -53,15 +53,19 @@ def test_echte_materialenbeelden_in_uitleg_en_dialoog(browser, site, width, ston
         link = page.locator('.opw-word-link').filter(has_text=word).first
         link.click(timeout=3000)
         panel = page.locator('.opw-word-explanation' if width > 800 else '.opw-word-dialog[open]')
-        image = panel.locator('.opw-term-media img')
+        image = page.locator('.opw-sidecar > .opw-definition-image img') if width > 800 else panel.locator('.opw-term-media img')
         assert image.get_attribute('src') == f'https://opengodsword.com/images/wiki/materialen/{item}.webp'
         page.wait_for_function('img => img.complete && img.naturalWidth > 0', arg=image.element_handle())
         assert image.get_attribute('alt')
+        if width > 800:
+            assert panel.locator('img').count() == 0
+            assert page.locator('.opw-hoofdstukbeeld.is-active').is_hidden()
+            assert image.bounding_box()['y'] < panel.bounding_box()['y']
         assert panel.locator(f'a[href="https://opengodsword.com/materialen.html?item={item}"]').count() == 1
         expected = 'Een geel metaal' if word == 'goud' else 'Welke steen het precies was, weten we niet zeker.'
         assert expected in panel.inner_text()
         if word == 'goud':
-            panel.get_by_role('button', name='Vergroot afbeelding: Goud').click()
+            page.get_by_role('button', name='Vergroot afbeelding: Goud').click()
             assert page.locator('.opw-image-dialog[open] img').get_attribute('src') == image.get_attribute('src')
             page.keyboard.press('Escape')
             if width < 800:

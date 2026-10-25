@@ -152,7 +152,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.10">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.11">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.3">
 </head>
 <body class="opw-statisch">
@@ -233,6 +233,9 @@ def integrated_reader(template: str, document: str, path: str) -> str:
     head = document.split("</head>", 1)[0]
     content = re.search(r'<main class="opv-pagina"[^>]*>(.*?)</main>', document, re.S).group(1)
     content = re.sub(r'<nav class="opw-kruimels"[^>]*>.*?</nav>', '', content, flags=re.S)
+    content = content.replace('class="opw-hoofdstukbeelden"', 'class="opw-hoofdstukbeelden opw-sidecar"')
+    content = content.replace('class="opw-hoofdstukbeeld"', 'class="opw-hoofdstukbeeld opw-sidecar-item"')
+    content = content.replace('class="opw-hoofdstukbeeld opw-sidecar-item"', 'class="opw-hoofdstukbeeld opw-sidecar-item is-active"', 1)
     body = re.search(r'<body[^>]*>(.*?)</body>', template, re.S).group(1)
     body = re.sub(r'<section id="opv-start"[^>]*>.*?</section>', '', body, flags=re.S)
     placeholder = '<div id="verses-container"></div>'
@@ -245,7 +248,7 @@ def integrated_reader(template: str, document: str, path: str) -> str:
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
 <script src="/js/reading-support.js?v=5" defer></script>
-<script src="/js/reading-details.js?v=6" defer></script>
+<script src="/js/reading-details.js?v=7" defer></script>
 <link rel="stylesheet" href="/css/reading-genealogy.css?v=1">
 <script src="/js/reading-genealogy.js?v=1" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
