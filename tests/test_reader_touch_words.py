@@ -4,6 +4,31 @@ import pytest
 from tests.test_geintegreerde_lezer import browser, site, page_for
 
 
+@pytest.mark.parametrize('width', [390, 834])
+def test_mobiele_kaart_en_woordhulp_staan_boven_de_tekst(browser, site, width):
+    page = page_for(browser, site, viewport={'width': width, 'height': 1000}, has_touch=True)
+    source = 'window.OGWReadingTerms=' + json.dumps({'genesis': [
+        {'woord': 'Eden', 'hoofdstukken': [2], 'eenvoudig': 'De tuin waar de eerste mensen woonden.'}
+    ]}) + ';window.OGWChapterMapCounts={genesis:{2:3}};'
+    page.context.route('https://opengodsword.com/data/opw-begrippen.js*', lambda route: route.fulfill(content_type='application/javascript', body=source))
+    maps = []
+    def map_response(route):
+        maps.append(route.request.url)
+        route.fulfill(content_type='text/html', body='<html><body>Kaart</body></html>')
+    page.context.route('https://opengodsword.com/kaart.html*', map_response)
+    page.goto(site + '/bijbel/genesis/2.html', wait_until='networkidle')
+    help = page.locator('.opw-mobile-help')
+    assert help.is_visible()
+    map = help.locator('.opw-chapter-map iframe')
+    assert map.is_visible()
+    assert map.bounding_box()['y'] < page.locator('.verse-row').first.bounding_box()['y']
+    assert len(maps) == 1
+    help.locator('summary').tap()
+    help.get_by_role('link', name='Eden', exact=True).tap()
+    assert page.locator('.opw-word-dialog[open]').is_visible()
+    assert 'De tuin waar de eerste mensen woonden.' in page.locator('.opw-word-dialog[open]').inner_text()
+
+
 @pytest.mark.parametrize('width', [1024,1366])
 @pytest.mark.parametrize('native_dialog', [True,False])
 def test_tikken_op_moeilijk_woord_op_tablet(browser, site, width, native_dialog):

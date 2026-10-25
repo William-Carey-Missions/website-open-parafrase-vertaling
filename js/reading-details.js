@@ -248,7 +248,7 @@
             // niet overschrijven. Pas bij verder scrollen weer meelezen.
             if (chosenWords.get(layout) === readingPosition()) return;
             chosenWords.delete(layout);
-            const links = [...layout.querySelectorAll('.opw-word-link')];
+            const links = [...layout.querySelectorAll('.verse-cell .opw-word-link')];
             const visible = links.filter(link => {
                 const rect = link.getBoundingClientRect();
                 return rect.bottom > 90 && rect.top < window.innerHeight - 60;
@@ -268,6 +268,48 @@
         if (scrollQueued) return;
         scrollQueued = true;
         requestAnimationFrame(() => { scrollQueued = false; followReading(); });
+    }
+
+    function arrangeHelp(layout) {
+        const column = layout.querySelector('.opw-leeskolom');
+        const aside = layout.querySelector('.opw-sidecar');
+        if (!column || !aside) return;
+        let help = column.querySelector('.opw-mobile-help');
+        if (!help) {
+            help = node('section', 'opw-mobile-help');
+            help.setAttribute('aria-label', 'Hulp bij dit hoofdstuk');
+            help.append(node('h2', '', 'Bij dit hoofdstuk'), node('div', 'opw-mobile-map-slot'));
+            const list = node('details', 'opw-mobile-words');
+            list.append(node('summary', '', 'Woorden met uitleg'),
+                node('p', '', 'Tik op een woord voor uitleg. Dat kan ook in de tekst.'),
+                node('div', 'opw-mobile-word-list'));
+            help.append(list);
+            const heading = column.querySelector('.opv-hoofdstukkop');
+            if (heading) heading.after(help); else column.prepend(help);
+        }
+        const mobile = window.matchMedia('(max-width: 1100px), (hover: none), (pointer: coarse)').matches;
+        const map = layout.querySelector('.opw-chapter-map');
+        const target = mobile ? help.querySelector('.opw-mobile-map-slot') : aside;
+        if (map && map.parentNode !== target) target.prepend(map);
+        const unique = new Map();
+        column.querySelectorAll('.verse-cell .opw-word-link').forEach(link => {
+            const data = linkedWords.get(link);
+            if (data) unique.set(data.entry.woord, data);
+        });
+        const list = help.querySelector('.opw-mobile-word-list');
+        const signature = [...unique.keys()].join('|');
+        if (list.dataset.words !== signature) {
+            list.replaceChildren();
+            unique.forEach(({entry, book, chapter}) => {
+                const link = node('a', 'opw-lemma-link', entry.woord);
+                wordLink(link, entry, book, chapter);
+                link.classList.replace('opw-word-link', 'opw-word-choice');
+                list.append(link);
+            });
+            list.dataset.words = signature;
+        }
+        help.querySelector('details').hidden = !unique.size;
+        help.hidden = !map && !unique.size;
     }
 
     async function words(layout, book, chapter) {
@@ -314,6 +356,7 @@
             }
             cell.dataset.liveWords = 'true';
         });
+        arrangeHelp(layout);
         followReading();
     }
 
@@ -357,7 +400,10 @@
                     const mapLink = node('a', '', 'Kaart bij dit hoofdstuk · Open Gods Word');
                     mapLink.href = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}`;
                     map.append(frame, mapLink);
-                    aside.prepend(map);
+                    arrangeHelp(layout);
+                    const mobile = window.matchMedia('(max-width: 1100px), (hover: none), (pointer: coarse)').matches;
+                    (mobile ? layout.querySelector('.opw-mobile-map-slot') : aside).prepend(map);
+                    arrangeHelp(layout);
                 });
                 const explanation = node('section', 'opw-word-explanation');
                 explanation.id = `opw-uitleg-${++explanationId}`;
@@ -377,6 +423,9 @@
     document.addEventListener('DOMContentLoaded', enhance);
     document.addEventListener('opv:hoofdstuk-getoond', enhance);
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
+    window.addEventListener('resize', () => {
+        root.querySelectorAll('.opw-leesindeling').forEach(arrangeHelp);
+        onScroll();
+    }, { passive: true });
     document.getElementById('content')?.addEventListener('scroll', onScroll, { passive: true });
 })();

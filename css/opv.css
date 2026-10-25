@@ -479,9 +479,17 @@ html.opv-startscherm .opv-hfst { display: none !important; }
     .opw-sidecar .opw-background { order: 2; }
 }
 [data-ethiopic-books][hidden] { display: none !important; }
+.opw-mobile-help { display: none; }
 .opw-book-choice { display: flex; gap: 12px; align-items: center; margin: 24px 0; font: 500 16px/1.5 var(--opv-sans); }
 .opw-book-choice input { width: 20px; height: 20px; }
 @media (max-width: 1100px), (hover: none), (pointer: coarse) {
+    .opw-mobile-help:not([hidden]) { display: block; margin: 0 0 28px; padding: 18px; border: 1px solid var(--opv-line); border-radius: 12px; background: var(--opv-surface); }
+    .opw-mobile-help h2 { margin: 0 0 14px; font: 600 18px/1.4 var(--opv-sans); color: var(--opv-ink); }
+    .opw-mobile-help .opw-chapter-map { max-width: 440px; margin: 0 auto 18px; }
+    .opw-mobile-words summary { padding: 10px 0; cursor: pointer; font: 500 16px/1.4 var(--opv-sans); }
+    .opw-mobile-words p { font: 400 15px/1.5 var(--opv-sans); }
+    .opw-mobile-word-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .opw-mobile-word-list a { display: inline-flex; align-items: center; min-height: 44px; padding: 4px 12px; border-radius: 8px; background: var(--opv-sand); font: 500 15px/1.4 var(--opv-sans); }
     .opw-leeskolom > .opw-hoofdstukbeeld { display: block; margin: 28px 0; }
     .opw-leeskolom > .opw-hoofdstukbeeld img { display: block; width: 100%; height: auto; border-radius: 12px; }
     .opw-word-explanation { display: none; }
