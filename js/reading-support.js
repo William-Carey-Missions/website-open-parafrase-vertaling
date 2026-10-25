@@ -9,7 +9,7 @@
         const book = layout.querySelector('.verse-row')?.dataset.book || '';
         const escaped = [...terms].sort((a, b) => b.length - a.length)
             .map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-        const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(${escaped.join('|')})(?![\\p{L}\\p{N}])`, 'giu');
+        const pattern = new RegExp(`(^|[^\\p{L}\\p{N}])(${escaped.join('|')})(?![\\p{L}\\p{N}])`, 'giu');
         layout.querySelectorAll('.verse-cell.col-2026').forEach(cell => {
             if (cell.dataset.readingTerms) return;
             const walker = document.createTreeWalker(cell, NodeFilter.SHOW_TEXT, {
@@ -28,12 +28,12 @@
                 const fragment = document.createDocumentFragment();
                 let at = 0;
                 for (const match of content.matchAll(pattern)) {
-                    fragment.appendChild(document.createTextNode(content.slice(at, match.index)));
+                    fragment.appendChild(document.createTextNode(content.slice(at, match.index) + match[1]));
                     const link = document.createElement('a');
                     link.className = 'opw-lemma-link';
-                    link.href = `/woordenboek.html?boek=${encodeURIComponent(book)}#${encodeURIComponent(match[0].toLocaleLowerCase('nl'))}`;
-                    link.textContent = match[0];
-                    link.title = `Bekijk het begrip ${match[0]} in het woordenboek`;
+                    link.href = `/woordenboek.html?boek=${encodeURIComponent(book)}#${encodeURIComponent(match[2].toLocaleLowerCase('nl'))}`;
+                    link.textContent = match[2];
+                    link.title = `Bekijk het begrip ${match[2]} in het woordenboek`;
                     fragment.appendChild(link);
                     at = match.index + match[0].length;
                 }
@@ -45,7 +45,7 @@
     }
 
     function arrangeImages(layout) {
-        const mobile = window.matchMedia('(max-width: 800px)').matches;
+        const mobile = window.matchMedia('(max-width: 1100px), (hover: none), (pointer: coarse)').matches;
         const placement = mobile ? 'inline' : 'aside';
         if (layout.dataset.imagePlacement === placement) return;
         const gallery = layout.querySelector('.opw-hoofdstukbeelden');

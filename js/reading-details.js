@@ -34,14 +34,17 @@
             const rect = box.getBoundingClientRect();
             if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) box.close();
         });
-        box.addEventListener('close', () => { box.remove(); document.body.classList.remove('opw-dialog-open'); });
+        box.addEventListener('close', () => {
+            box.remove();
+            document.body.classList.toggle('opw-dialog-open', !!document.querySelector('dialog[open]'));
+        });
         document.body.appendChild(box);
         document.body.classList.add('opw-dialog-open');
         return box;
     }
 
-    function enlarge(image) {
-        const box = dialog('opw-image-dialog', 'Afbeelding bij dit hoofdstuk');
+    function enlarge(image, title = 'Afbeelding bij dit hoofdstuk') {
+        const box = dialog('opw-image-dialog', title);
         const full = node('img');
         full.src = image.currentSrc || image.src;
         full.alt = image.alt;
@@ -49,10 +52,52 @@
         box.showModal();
     }
 
+    function sourceUrl(value, image = false) {
+        if (typeof value !== 'string' || !value) return null;
+        try {
+            const url = new URL(value, origin + '/');
+            if (url.origin !== origin || url.username || url.password) return null;
+            if (image ? !url.pathname.startsWith('/images/') : !url.pathname.endsWith('.html')) return null;
+            return url.href;
+        } catch { return null; }
+    }
+
+    function termMedia(entry) {
+        const media = node('div', 'opw-term-media');
+        const detail = entry.naslag;
+        if (!detail) return media;
+        const name = detail.naam || entry.woord;
+        const imageUrl = sourceUrl(detail.afbeelding, true);
+        if (imageUrl) {
+            const figure = node('figure');
+            const zoom = node('button', 'opw-term-image');
+            zoom.type = 'button';
+            zoom.setAttribute('aria-label', `Vergroot afbeelding: ${name}`);
+            zoom.setAttribute('aria-haspopup', 'dialog');
+            const image = node('img');
+            image.alt = name;
+            image.loading = 'lazy';
+            image.src = imageUrl;
+            image.addEventListener('error', () => figure.remove(), { once: true });
+            zoom.append(image);
+            zoom.addEventListener('click', () => enlarge(image, `Afbeelding: ${name}`));
+            figure.append(zoom, node('figcaption', '', `Afbeelding: ${name}`));
+            media.append(figure);
+        }
+        const detailUrl = sourceUrl(detail.url);
+        if (detailUrl) {
+            const link = node('a', '', `Meer over ${name} bij Open Gods Word →`);
+            link.href = detailUrl;
+            media.append(link);
+        }
+        return media;
+    }
+
     function explain(entry, book, chapter) {
         const box = dialog('opw-word-dialog', entry.woord);
         box.append(node('p', '', explanationText(entry)));
         if (entry.ref) box.append(node('p', 'opw-word-reference', entry.ref));
+        box.append(termMedia(entry));
         box.append(node('p', 'opw-word-source', 'Uitleg uit Open Gods Word · concept'));
         const link = node('a', '', 'Lees verder bij Open Gods Word →');
         link.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
@@ -86,17 +131,17 @@
         link.classList.add('opw-word-link');
         link.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
         link.title = explanationText(entry);
-        if (!window.matchMedia('(min-width: 801px)').matches) link.setAttribute('aria-haspopup', 'dialog');
+        if (!window.matchMedia('(min-width: 1101px) and (hover: hover) and (pointer: fine)').matches) link.setAttribute('aria-haspopup', 'dialog');
         if (link.dataset.wordReady) return;
         link.dataset.wordReady = 'true';
         linkedWords.set(link, { entry, book, chapter });
         link.addEventListener('focus', () => {
-            if (window.matchMedia('(min-width: 801px)').matches) chooseExplanation(link);
+            if (window.matchMedia('(min-width: 1101px) and (hover: hover) and (pointer: fine)').matches) chooseExplanation(link);
         });
         link.addEventListener('click', event => {
             if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
             event.preventDefault();
-            if (window.matchMedia('(min-width: 801px)').matches) chooseExplanation(link, true);
+            if (window.matchMedia('(min-width: 1101px) and (hover: hover) and (pointer: fine)').matches) chooseExplanation(link, true);
             else explain(entry, book, chapter);
         });
     }
@@ -125,7 +170,8 @@
         panel.querySelector('h2').textContent = data.entry.woord;
         panel.querySelector('.opw-explanation-text').textContent = explanationText(data.entry);
         panel.querySelector('.opw-word-reference').textContent = data.entry.ref || '';
-        panel.querySelector('a').href = link.href;
+        if (panel.dataset.word !== data.entry.woord) panel.querySelector('.opw-term-media').replaceWith(termMedia(data.entry));
+        panel.querySelector('.opw-word-more').href = link.href;
         panel.dataset.word = data.entry.woord;
         if (reveal) {
             const aside = panel.closest('.opw-sidecar');
@@ -137,7 +183,7 @@
     }
 
     function followReading() {
-        if (!window.matchMedia('(min-width: 801px)').matches) return;
+        if (!window.matchMedia('(min-width: 1101px) and (hover: hover) and (pointer: fine)').matches) return;
         const readingLine = Math.max(170, window.innerHeight * .3);
         root.querySelectorAll('.opw-leesindeling').forEach(layout => {
             const bounds = layout.getBoundingClientRect();
@@ -176,7 +222,7 @@
         if (!entries.length || !layout.isConnected) return;
         const lookup = new Map();
         for (const entry of entries) for (const word of [entry.woord, ...(entry.ook || [])]) lookup.set(word.toLocaleLowerCase('nl'), entry);
-        const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(${[...lookup.keys()].sort((a, b) => b.length - a.length).map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![\\p{L}\\p{N}])`, 'giu');
+        const pattern = new RegExp(`(^|[^\\p{L}\\p{N}])(${[...lookup.keys()].sort((a, b) => b.length - a.length).map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![\\p{L}\\p{N}])`, 'giu');
         // De hoofdstukuitleg herkent eerst volledige uitdrukkingen. Oude
         // woordenboeklinks om losse woorden mogen die niet opsplitsen.
         if (book === 'genesis' && Number(chapter) <= 3) {
@@ -200,11 +246,12 @@
                 const fragment = document.createDocumentFragment();
                 let offset = 0;
                 for (const match of matches) {
-                    fragment.append(document.createTextNode(text.textContent.slice(offset, match.index)));
-                    const link = node('a', 'opw-lemma-link', match[0]);
-                    wordLink(link, lookup.get(match[0].toLocaleLowerCase('nl')), book, chapter);
+                    const start = match.index + match[1].length;
+                    fragment.append(document.createTextNode(text.textContent.slice(offset, start)));
+                    const link = node('a', 'opw-lemma-link', match[2]);
+                    wordLink(link, lookup.get(match[2].toLocaleLowerCase('nl')), book, chapter);
                     fragment.append(link);
-                    offset = match.index + match[0].length;
+                    offset = start + match[2].length;
                 }
                 fragment.append(document.createTextNode(text.textContent.slice(offset)));
                 text.replaceWith(fragment);
@@ -259,8 +306,8 @@
                 explanation.setAttribute('aria-label', 'Uitleg bij de leestekst');
                 explanation.append(node('h2', '', 'Uitleg bij de tekst'),
                     node('p', 'opw-explanation-text', 'Klik op een onderstreept woord voor uitleg. Tijdens het lezen volgt de uitleg het gemarkeerde woord.'),
-                    node('p', 'opw-word-reference'), node('p', 'opw-word-source', 'Uitleg uit Open Gods Word · concept'));
-                const source = node('a', '', 'Lees verder bij Open Gods Word');
+                    node('p', 'opw-word-reference'), node('div', 'opw-term-media'), node('p', 'opw-word-source', 'Uitleg uit Open Gods Word · concept'));
+                const source = node('a', 'opw-word-more', 'Lees verder bij Open Gods Word');
                 source.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
                 explanation.append(source);
                 aside.append(explanation);

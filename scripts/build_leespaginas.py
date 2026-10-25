@@ -137,7 +137,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.9">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.10">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.3">
 </head>
 <body class="opw-statisch">
@@ -229,8 +229,10 @@ def integrated_reader(template: str, document: str, path: str) -> str:
     return head + '''<link rel="stylesheet" href="/css/verification.css">
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
-<script src="/js/reading-support.js?v=3" defer></script>
-<script src="/js/reading-details.js?v=1" defer></script>
+<script src="/js/reading-support.js?v=5" defer></script>
+<script src="/js/reading-details.js?v=6" defer></script>
+<link rel="stylesheet" href="/css/reading-genealogy.css?v=1">
+<script src="/js/reading-genealogy.js?v=1" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
 </head><body class="opv-lezerpagina opw-hoofdstukpagina">''' + skip + body + '</body></html>\n'
 

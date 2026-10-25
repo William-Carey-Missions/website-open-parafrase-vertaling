@@ -207,6 +207,12 @@ html { scrollbar-color: var(--opv-sand-line) transparent; }
 }
 .opv-startscherm .opv-voortgang { display: none; }
 
+/* Het volledige menu krijgt eigen ruimte naast de hoofdstukknop. */
+@media (min-width: 1451px) {
+    .opv-balk { grid-template-columns: auto minmax(0, 1fr) auto; }
+    .opv-hfst { justify-self: center; max-width: 100%; }
+}
+
 /* Middelbreed: de links gaan in het menu */
 @media (max-width: 1450px) {
     .opv-menu { display: inline-grid; }
@@ -419,6 +425,13 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 .opw-word-dialog h2 { margin: 14px 0; font: 500 26px/1.3 var(--opv-serif); }
 .opw-word-dialog a { color: var(--opv-kop); }
 .opw-word-reference, .opw-word-source { color: var(--opv-muted); font: 400 13px/1.5 var(--opv-sans); }
+.opw-term-media { margin: 16px 0; min-width: 0; }
+.opw-term-media figure { margin: 0; }
+.opw-term-media img { display: block; width: 100%; max-height: 320px; height: auto; object-fit: contain; border-radius: 12px; }
+.opw-term-media figcaption { margin-top: 8px; color: var(--opv-muted); font: 400 13px/1.5 var(--opv-sans); }
+.opw-term-media a { color: var(--opv-kop); }
+.opw-term-image { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.opw-term-image:focus-visible { outline: 3px solid var(--opv-accent-ink); outline-offset: 3px; border-radius: 12px; }
 .opw-dialog-close { display: block; margin: 0 0 8px auto; padding: 10px 18px; min-height: 44px; border: 1px solid var(--opv-line); border-radius: 24px; color: var(--opv-kop); background: var(--opv-surface); cursor: pointer; font: 500 15px var(--opv-sans); }
 .opw-chapter-map { min-width: 0; order: -2; }
 .opw-chapter-map iframe { display: block; width: 100%; aspect-ratio: 1; border: 1px solid var(--opv-line); border-radius: 12px; box-sizing: border-box; }
@@ -428,7 +441,7 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 .opw-explanation-text { margin: 0 0 12px; font: 400 17px/1.65 var(--opv-serif); }
 .opw-word-explanation > a { color: var(--opv-kop); font: 500 13px/1.5 var(--opv-sans); }
 .opw-word-link.is-reading-word { background: var(--opv-sand); color: var(--opv-accent-ink); text-decoration-style: solid; outline: 2px solid var(--opv-sand-line); outline-offset: 2px; border-radius: 2px; }
-@media (min-width: 801px) {
+@media (min-width: 1101px) and (hover: hover) and (pointer: fine) {
     .opw-leesindeling .opw-sidecar { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 18px; }
     .opw-sidecar > * { grid-column: 1 / -1; }
     .opw-sidecar > .opw-chapter-map { grid-column: 1; grid-row: 1; }
@@ -442,7 +455,7 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 [data-ethiopic-books][hidden] { display: none !important; }
 .opw-book-choice { display: flex; gap: 12px; align-items: center; margin: 24px 0; font: 500 16px/1.5 var(--opv-sans); }
 .opw-book-choice input { width: 20px; height: 20px; }
-@media (max-width: 800px) {
+@media (max-width: 1100px), (hover: none), (pointer: coarse) {
     .opw-leeskolom > .opw-hoofdstukbeeld { display: block; margin: 28px 0; }
     .opw-leeskolom > .opw-hoofdstukbeeld img { display: block; width: 100%; height: auto; border-radius: 12px; }
     .opw-word-explanation { display: none; }

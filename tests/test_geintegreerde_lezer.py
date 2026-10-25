@@ -44,6 +44,27 @@ def page_for(browser, site, **kwargs):
     return context.new_page()
 
 
+@pytest.mark.parametrize('width,touch', [(320, True), (1024, True), (1366, True), (1536, False), (1920, False)])
+def test_bovenbalk_blijft_vrij_en_tabletbeelden_staan_in_de_tekst(browser, site, width, touch):
+    page = page_for(browser, site, viewport={'width': width, 'height': 1000}, has_touch=touch)
+    page.goto(site + '/bijbel/genesis/1.html', wait_until='domcontentloaded')
+    page.locator('#opv-hfst').wait_for()
+    page.wait_for_function("document.querySelector('.opw-leesindeling')?.dataset.imagePlacement")
+    boxes = [page.locator(selector).bounding_box() for selector in ('.opv-merk', '.opv-hfst', '.opv-rechts')]
+    assert boxes[0]['x'] + boxes[0]['width'] <= boxes[1]['x'] + 1
+    assert boxes[1]['x'] + boxes[1]['width'] <= boxes[2]['x'] + 1
+    if touch:
+        images = page.locator('.opw-leeskolom .opw-hoofdstukbeeld')
+        assert images.count() == 3
+        for image in images.all():
+            assert image.is_visible()
+            image.scroll_into_view_if_needed()
+            page.wait_for_function('img => img.complete && img.naturalWidth > 0', arg=image.locator('img').element_handle())
+    else:
+        assert page.locator('.opw-sidecar .opw-hoofdstukbeeld').count() == 3
+    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+
+
 def test_de_volledige_lezer_is_standaard_met_rode_cursieve_citaten(browser, site):
     page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
     page.add_init_script("localStorage.setItem('sv2026_vertaalopties', JSON.stringify({versnummers:'aan'}))")
