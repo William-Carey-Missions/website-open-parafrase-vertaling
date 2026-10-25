@@ -10,7 +10,7 @@
 
 const VERSION = 'v0.60.1';
 // New reader modules must not be mixed with HTML from before verification.
-const CACHE_VERSION = `${VERSION}-opv2-eenvoudig-kaart20261025b`;
+const CACHE_VERSION = `${VERSION}-opv2-eenvoudig-kaart20261025b-statistics-consent1`;
 const SHELL_CACHE   = `shell-${CACHE_VERSION}`;
 const DATA_CACHE    = `data-${CACHE_VERSION}`;
 const LEXICON_CACHE = `lexicon-${CACHE_VERSION}`;
@@ -20,6 +20,7 @@ const PRECACHE_URLS = [
     '/',
     '/index.html',
     '/js/theme.js',
+    '/js/analytics.js?v=1',
     '/js/auth-bootstrap.js',
     '/js/firebase-config.js',
     '/js/auth.js',

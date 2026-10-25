@@ -117,6 +117,7 @@
             '<div class="opv-rechts">' +
                 '<div class="opv-links" id="topnav-links">' +
                     '<a href="/bijbel/">Alle boeken</a>' +
+                    '<a href="/downloads.html">Downloads</a>' +
                     '<a href="/woordenboek.html">Woordenboek</a>' +
                     '<a href="over-opv.html">Over OPW</a>' +
                     '<a href="/over-opv.html#comite-van-aanbeveling">Wie steunen dit?</a>' +

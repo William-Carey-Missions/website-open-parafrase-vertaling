@@ -45,6 +45,8 @@ PROMPTS.md
 downloads/*.zip
 downloads/*.epub
 downloads/index.json
+downloads/*.pdf
+downloads/open-parafrase-weergave.md
 
 # Adres van de gepubliceerde opmerkingen-sheet (niet in de geschiedenis)
 data/opmerkingen-bron.json
@@ -62,3 +64,6 @@ images/covers/gods-woord/*/voorkant.png
 /llms-full.txt
 /markdown/
 /achtergrond.html
+
+# Kleine openbare hoofdstukbestanden, gegenereerd bij de uitrol
+/data/llm/

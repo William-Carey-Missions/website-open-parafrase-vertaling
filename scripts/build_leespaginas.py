@@ -8,9 +8,11 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+import sys
 from xml.sax.saxutils import escape as xml_escape
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 BASE = "https://open-parafrase-weergave.nl"
 NAME = "Open Parafrase Weergave"
 GROUPS = {"OT": "Oude Testament", "NT": "Nieuwe Testament",
@@ -39,6 +41,7 @@ def catalog(root: Path) -> list[dict]:
     manifest = json.loads((root / "data/vertalingen/manifest.json").read_text(encoding="utf-8"))
     published = set(next(e["boeken"] for e in manifest["edities"] if e["code"] == "nl-opv"))
     books = json.loads((root / "data/books.json").read_text(encoding="utf-8"))["books"]
+    published &= set(BOOK_ORDER[:82])
     result = []
     for book in books:
         if book["id"] not in published:
@@ -244,11 +247,12 @@ def book_markdown(book: dict) -> str:
     for chapter in book["chapters"]:
         kop = f": {md(chapter['kop'])}" if chapter.get("kop") else ""
         lines += [f"## {book['nameDutch']} {chapter['hoofdstuk']}{kop}", ""]
+        lines += [f"[Hoofdstuk als JSON]({BASE}/data/llm/{book['id']}/{chapter['hoofdstuk']}.json)", ""]
         headings = {int(item["vers"]): item["tekst"] for item in chapter.get("blokken", []) if item.get("vers") and item.get("tekst")}
         for verse in chapter["verzen"]:
             if int(verse["nummer"]) in headings:
                 lines += [f"### {md(headings[int(verse['nummer'])])}", ""]
-            lines += [f"**{verse['nummer']}** {md(verse['tekst'])}", ""]
+            lines += [f"**{verse['nummer']}** {md(verse['tekst'])} [bron]({BASE}/bijbel/{book['id']}/{chapter['hoofdstuk']}.html#vers-{verse['nummer']})", ""]
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -325,6 +329,8 @@ def write_markdown(root: Path, books: list[dict]) -> None:
              f"- [Achtergrond]({BASE}/achtergrond.md): wat de parafrase is, hoe ze gemaakt is en hoe je haar mag gebruiken.",
              "- [Open Vertaling met kanttekeningen](https://openvertaling.nl/markdown/index.md): de herziene "
              "Statenvertaling en de Statenvertaling 1888 en 1637, elk met kanttekeningen.", ""]
+    from build_llm_catalog import guide_section
+    index += [guide_section()]
     for group, label in GROUPS.items():
         group_books = [book for book in books if book["testament"] == group]
         if not group_books:
@@ -359,6 +365,7 @@ def write_markdown(root: Path, books: list[dict]) -> None:
 def build_site(root: Path = ROOT) -> dict:
     books = catalog(root)
     book_images = json.loads((root / "data/book-images.json").read_text(encoding="utf-8"))["books"]
+    book_images = {book_id: scenes for book_id, scenes in book_images.items() if book_id in BOOK_ORDER[:82]}
     catalog_by_id = {book["id"]: book for book in books}
     if set(book_images) != set(catalog_by_id):
         missing = sorted(set(catalog_by_id) - set(book_images))
@@ -385,7 +392,7 @@ def build_site(root: Path = ROOT) -> dict:
 
 > Gods Woord in begrijpelijke taal. Nederlandse parafrase van de Bijbel. Proefversie: alle verzen hebben de status concept. De Bijbeltekst is publiek domein.
 
-Er zijn {len(books)} boeken en {len(sequence)} hoofdstukken beschikbaar. De collectie omvat het Oude en Nieuwe Testament en daarnaast apocriefe en Ethiopische boeken. Die aanvullende boeken behoren niet in alle tradities tot de Bijbelcanon.
+Er zijn {len(books)} boeken en {len(sequence)} hoofdstukken beschikbaar. De collectie omvat het Oude en Nieuwe Testament en daarnaast 16 apocriefe/deuterocanonieke boeken. Ethiopische boeken worden niet openbaar aangeboden. Die aanvullende boeken behoren niet in alle tradities tot de Bijbelcanon.
 
 ## Lezen en vinden
 - [Alle Bijbelboeken]({BASE}/bijbel/): boekenoverzicht met links naar ieder hoofdstuk; volledig leesbaar zonder JavaScript.
@@ -404,6 +411,8 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
 
 ## Boeken en tekstbestanden
 '''
+    from build_llm_catalog import guide_section
+    guide = guide.replace("## Lezen en vinden", guide_section() + "## Lezen en vinden", 1)
     full = [f"# {NAME} (proef)\n\nBijbeltekst: publiek domein. Alle verzen: concept.\n"]
     for book in books:
         book_path = f"/bijbel/{book['id']}/"
@@ -509,6 +518,8 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
 - [Open Vertaling](https://openvertaling.nl/llms.txt): voor wie een meer woordelijke weergave wil lezen; de herziene Statenvertaling met kanttekeningen, ook als [Markdown](https://openvertaling.nl/markdown/index.md).
 - [Open Gods Word](https://opengodsword.com/wiki.html): Bijbelachtergrond en broninformatie.
 '''
+    from build_llm_catalog import build_catalog
+    build_catalog(root)
     write(root / "llms.txt", guide)
     write(root / "LLM.txt", guide)
     write(root / "llms-full.txt", "\n".join(full))
