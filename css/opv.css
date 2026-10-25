@@ -50,6 +50,7 @@
     --opv-kop: #e3c879;         /* koppen worden goud */
     --opv-accent: #cba449;
     --opv-accent-ink: #e0c27a;
+    --opv-link: #accbd9;
     --opv-jz: #ff9d91;
     --opv-btn: #cba449;
     --opv-btn-ink: #142e42;
@@ -106,12 +107,16 @@ html { scrollbar-color: var(--opv-sand-line) transparent; }
     font: 500 17px/1.2 var(--opv-sans); text-decoration: none; cursor: pointer;
 }
 :root .opv-knop, :root .opv-knop:visited { color: var(--opv-btn-ink); }
+:root[data-theme="donker"] .opv-knop,
+:root[data-theme="donker"] .opv-knop:visited { color: var(--opv-btn-ink); }
 .opv-knop:hover { filter: brightness(1.08); }
 .opv-knop.opv-knop-zacht, :root .opv-knop.opv-knop-zacht {
     background: transparent; color: var(--opv-kop);
     box-shadow: inset 0 0 0 1.5px var(--opv-sand-line);
 }
 .opv-knop.opv-knop-zacht:hover { background: var(--opv-sand); filter: none; }
+:root[data-theme="donker"] .opv-knop.opv-knop-zacht,
+:root[data-theme="donker"] .opv-knop.opv-knop-zacht:visited { color: var(--opv-ink); }
 .opv-pil {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 3px 10px; border-radius: 999px;
@@ -447,6 +452,18 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 .opw-explanation-text { margin: 0 0 12px; font: 400 17px/1.65 var(--opv-serif); }
 .opw-word-explanation > a { color: var(--opv-kop); font: 500 13px/1.5 var(--opv-sans); }
 .opw-word-link.is-reading-word { background: var(--opv-sand); color: var(--opv-accent-ink); text-decoration-style: solid; outline: 2px solid var(--opv-sand-line); outline-offset: 2px; border-radius: 2px; }
+:root[data-theme="donker"] a { color: var(--opv-link); }
+:root[data-theme="donker"] a:visited { color: var(--opv-link); }
+:root[data-theme="donker"] .opv-pagina a,
+:root[data-theme="donker"] .opw-word-dialog a,
+:root[data-theme="donker"] .opw-word-explanation > a,
+:root[data-theme="donker"] .opw-term-media a { color: var(--opv-link); }
+:root[data-theme="donker"] #verses-container .opw-lemma-link {
+    color: inherit;
+    text-decoration-color: var(--opv-link);
+}
+:root[data-theme="donker"] #verses-container .opw-lemma-link:hover,
+:root[data-theme="donker"] #verses-container .opw-lemma-link:focus-visible { color: var(--opv-link); }
 @media (min-width: 1101px) and (hover: hover) and (pointer: fine) {
     .opw-leesindeling .opw-sidecar { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 18px; }
     .opw-sidecar > * { grid-column: 1 / -1; }
@@ -546,6 +563,8 @@ body.hide-verse-numbers #content #verses-container .verse-row {
 #content #verses-container .verse-row > .verse-cell:not(.col-2026) { display: none !important; }
 #content #verses-container .verse-row .col-2026,
 #content.reading-mode #verses-container .verse-row .col-2026 {
+    /* Ook vóór reading-mode klaar is de pagina-achtergrond laten zien. */
+    background: transparent;
     display: inline !important;
     padding: 0;
     margin: 0;
@@ -1078,7 +1097,7 @@ body.dyslexia-mode .opv-voorbeeld { font-family: var(--opv-sans); font-size: cal
 }
 .opv-pagina h2::before { content: ""; flex: none; width: 1.1em; height: 2px; border-radius: 2px; background: var(--opv-accent); }
 .opv-pagina p { margin: 0 0 1em; font-weight: 300; }
-.opv-pagina a, :root[data-theme="donker"] .opv-pagina a { color: var(--opv-accent-ink); text-underline-offset: 3px; }
+.opv-pagina a, :root[data-theme="donker"] .opv-pagina a { color: var(--opv-link, var(--opv-accent-ink)); text-underline-offset: 3px; }
 .opv-pagina .opv-acties { margin-top: 36px; }
 .opv-pagina .opv-knop, :root[data-theme="donker"] .opv-pagina .opv-knop { color: var(--opv-btn-ink); text-decoration: none; }
 .opv-pagina .opv-knop.opv-knop-zacht, :root[data-theme="donker"] .opv-pagina .opv-knop.opv-knop-zacht { color: var(--opv-kop); }

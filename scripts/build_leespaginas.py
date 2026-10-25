@@ -152,7 +152,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.12">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.13">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.3">
 </head>
 <body class="opw-statisch">

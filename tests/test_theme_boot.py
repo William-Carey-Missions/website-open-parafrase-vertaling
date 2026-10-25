@@ -11,12 +11,54 @@ from scripts.build_leespaginas import page as render_page
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@pytest.mark.parametrize("reading_mode", [False, True])
+@pytest.mark.parametrize("theme", ["licht", "donker"])
+def test_verse_background_matches_page_during_reader_start(browser, reading_mode, theme):
+    context = browser.new_context(viewport={"width": 834, "height": 1194}, has_touch=True)
+    tab = context.new_page()
+    try:
+        tab.set_content(f'''<html data-theme="{theme}"><body class="opv-lezerpagina">
+            <main id="content" class="{'reading-mode' if reading_mode else ''}">
+            <div id="verses-container"><div class="verse-row">
+            <span class="verse-cell col-2026">In het begin maakte God de hemel en de aarde.</span>
+            </div></div></main></body></html>''')
+        for stylesheet in ("style.css", "opv.css", "leespaginas.css"):
+            tab.add_style_tag(path=str(ROOT / "css" / stylesheet))
+        assert tab.locator('.col-2026').evaluate("el => getComputedStyle(el).backgroundColor") == "rgba(0, 0, 0, 0)"
+        assert tab.locator('body').evaluate("el => getComputedStyle(el).backgroundColor") == (
+            "rgb(15, 28, 39)" if theme == "donker" else "rgb(251, 248, 242)")
+    finally:
+        context.close()
+
+
 @pytest.fixture(scope="module")
 def browser():
     with sync_playwright() as playwright:
         instance = playwright.chromium.launch()
         yield instance
         instance.close()
+
+
+def test_dark_links_and_gold_button_have_readable_colors(browser):
+    tab = browser.new_page(viewport={"width": 834, "height": 1194})
+    try:
+        tab.set_content('''<html data-theme="donker"><body>
+            <a class="opv-knop" href="#lezen">Begin bij Johannes</a>
+            <main id="content"><div id="verses-container"><span class="col-2026">
+            <a class="opw-lemma-link" href="#hemel">hemel</a></span></div></main>
+            <section class="opv-pagina"><a href="#bron">Lees verder</a></section>
+            </body></html>''')
+        for stylesheet in ("style.css", "opv.css", "leespaginas.css"):
+            tab.add_style_tag(path=str(ROOT / "css" / stylesheet))
+        button = tab.locator('.opv-knop')
+        assert button.evaluate("el => getComputedStyle(el).color") == "rgb(20, 46, 66)"
+        assert button.evaluate("el => getComputedStyle(el).backgroundColor") == "rgb(203, 164, 73)"
+        button.hover()
+        assert button.evaluate("el => getComputedStyle(el).color") == "rgb(20, 46, 66)"
+        assert tab.locator('.opv-pagina a').evaluate("el => getComputedStyle(el).color") == "rgb(172, 203, 217)"
+        assert tab.locator('.opw-lemma-link').evaluate("el => getComputedStyle(el).color") == "rgb(231, 225, 212)"
+    finally:
+        tab.close()
 
 
 @pytest.mark.parametrize("source", ["index", "chapter"])
