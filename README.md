@@ -1,13 +1,19 @@
 # Open Parafrase Weergave (OPW)
 
+![Logo van Open Parafrase Weergave](images/branding/open-parafrase-weergave-logo-horizontal.svg)
+
 Gods Woord in begrijpelijke taal. **Proef**: alle verzen hebben de status *concept*.
 
-🌐 **open-parafrase-weergave.nl** (definitief domein)
+**[Lees op open-parafrase-weergave.nl](https://open-parafrase-weergave.nl)**
+
+De Open Parafrase Weergave geeft Gods Woord weer in begrijpelijke, hedendaagse taal. De parafrase is in ontwikkeling: de leeseditie toont de concepttekst met zoeken, leesinstellingen en illustraties bij de boeken en hoofdstukken.
+
+![Illustratie bij het boek Genesis](images/boeken/genesis.webp)
 
 ## Publicatie
 
 Elke push naar `main` publiceert deze repository op
-**https://open-parafrase-weergave.nl**. De workflow bouwt de zoekindex voor
+**[open-parafrase-weergave.nl](https://open-parafrase-weergave.nl)**. De workflow bouwt de zoekindex voor
 `nl-opv`, de HTML-leespagina's, tekstbestanden, AI-bronnengids en sitemap.
 Daarna synchroniseert hij naar `/var/www/open-parafrase-weergave.nl` op
 `167.235.54.105`. Handmatig publiceren kan via **Actions → Deploy website → Run workflow**.
@@ -30,9 +36,9 @@ worden door de deployment uitgesloten; de leeseditie gaat wel naar de website.
 
 | Site | Repo | Inhoud |
 |---|---|---|
-| Open Parafrase Weergave | deze repo | de parafrase |
-| Open Vertaling | `website-open-bijbelvertaling` | de herziene Statenvertaling met alle opties |
-| Open Gods Woord | `website-open-gods-woord` | wiki, Bijbelachtergrond en broninformatie |
+| [Open Parafrase Weergave](https://open-parafrase-weergave.nl) | deze repo | de parafrase in concept |
+| [Open Vertaling](https://openvertaling.nl) | `website-open-bijbelvertaling` | de herziene Statenvertaling met kanttekeningen |
+| [Open Gods Word](https://opengodsword.com) | `website-open-gods-woord` | encyclopedie, kaarten, woordenboeken en broninformatie |
 
 De adressen van de drie sites staan op één plek: `js/sites.js`.
 
@@ -68,7 +74,7 @@ controlebron. De lezer op deze site toont alleen de parafrase.
 python3 -m http.server 8002 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8002/. Draaien de OV (:8000) en OGW (:8001) ook, dan
+Open [localhost:8002](http://127.0.0.1:8002/). Draaien de OV (:8000) en OGW (:8001) ook, dan
 werken de kruislinks lokaal.
 
 ## Tests
@@ -79,4 +85,6 @@ python3 -m unittest discover -s tests
 
 ## Licentie
 
-De tekst van de parafrase is publiek domein.
+De **tekst van de parafrase** is **publiek domein** en mag vrij worden gebruikt, gekopieerd, bewerkt en verspreid. De OV-tekst die als controlebron is opgenomen, wordt aangeboden onder CC0.
+
+Deze tekstlicenties gelden niet automatisch voor externe afbeeldingen, audio of ander bronmateriaal. Controleer bij hergebruik de bronvermelding en licentie van het betreffende bestand; zie ook [bronnen en licenties op Open Gods Word](https://opengodsword.com/bronnen.html).
