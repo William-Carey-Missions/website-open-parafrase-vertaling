@@ -11,7 +11,7 @@
     let sourceScript;
     let scrollQueued = false;
     let explanationId = 0;
-    const explanationText = entry => entry.eenvoudig || entry.uitleg;
+    const explanationText = entry => entry.eenvoudig || '';
 
     function node(tag, className, text) {
         const element = document.createElement(tag);
@@ -60,7 +60,7 @@
         box.showModal();
     }
 
-    function loadTerms(book) {
+    function loadSource() {
         if (!sourceScript) sourceScript = new Promise(resolve => {
             const script = node('script');
             // Eén verse bron per bezoek; hoofdstukwissels delen dezelfde bron.
@@ -70,9 +70,14 @@
             script.onerror = () => resolve({});
             document.head.append(script);
         });
+        return sourceScript;
+    }
+
+    function loadTerms(book) {
+        loadSource();
         if (!sources.has(book)) sources.set(book, sourceScript.then(books => {
             const entries = books[book] || [];
-            return entries.filter(entry => entry.uitleg);
+            return entries.filter(entry => entry.eenvoudig);
         }));
         return sources.get(book);
     }
@@ -228,20 +233,27 @@
                 image.replaceWith(link);
                 link.append(image);
             });
-            if (!layout.querySelector('.opw-chapter-map')) {
+            if (!layout.dataset.readingDetailsReady) {
+                layout.dataset.readingDetailsReady = 'true';
                 let aside = layout.querySelector('.opw-hoofdstukbeelden');
                 if (!aside) { aside = node('aside', 'opw-hoofdstukbeelden'); layout.append(aside); }
                 layout.classList.add('heeft-beelden');
                 aside.classList.add('opw-sidecar');
                 const map = node('section', 'opw-chapter-map');
-                const frame = node('iframe');
-                frame.src = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}&embed=1`;
-                frame.title = `Kaart bij ${book} ${chapter} — Open Gods Word`;
-                frame.loading = 'lazy';
-                const mapLink = node('a', '', 'Kaart bij dit hoofdstuk · Open Gods Word');
-                mapLink.href = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}`;
-                map.append(frame, mapLink);
-                aside.prepend(map);
+                loadSource().then(() => {
+                    if (!layout.isConnected) return;
+                    const count = window.OGWChapterMapCounts?.[book]?.[chapter] || 0;
+                    aside.classList.toggle('zonder-kaart', !count);
+                    if (!count) return;
+                    const frame = node('iframe');
+                    frame.src = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}&embed=1`;
+                    frame.title = `Kaart bij ${book} ${chapter} — Open Gods Word`;
+                    frame.loading = 'lazy';
+                    const mapLink = node('a', '', 'Kaart bij dit hoofdstuk · Open Gods Word');
+                    mapLink.href = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}`;
+                    map.append(frame, mapLink);
+                    aside.prepend(map);
+                });
                 const explanation = node('section', 'opw-word-explanation');
                 explanation.id = `opw-uitleg-${++explanationId}`;
                 explanation.setAttribute('aria-label', 'Uitleg bij de leestekst');

@@ -134,8 +134,8 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.6">
-<link rel="stylesheet" href="/css/leespaginas.css?v=1.0.2">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.9">
+<link rel="stylesheet" href="/css/leespaginas.css?v=1.0.3">
 </head>
 <body class="opw-statisch">
 <a class="opw-skip" href="{escape(path)}#inhoud">Direct naar de inhoud</a>
@@ -143,7 +143,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <a class="opv-merk" href="/" aria-label="{NAME}, naar de startpagina"><img class="opw-logo opw-logo--dark" src="/images/branding/open-parafrase-weergave-logo-horizontal.svg?v=20261024" alt="{NAME}" width="238" height="70"><img class="opw-logo opw-logo--light" src="/images/branding/open-parafrase-weergave-logo-horizontal-light.svg?v=20261024" alt="" width="238" height="70"></a>
 <nav aria-label="Hoofdmenu"><a href="/bijbel/">Alle boeken</a><a href="{escape(reader_path)}">Lezen</a><a href="/over-opv.html">Over OPW</a></nav>
 </header>
-<script src="/js/topnav.js?v=0.39.0"></script>
+<script src="/js/topnav.js?v=0.39.1"></script>
 <main class="opv-pagina" id="inhoud" tabindex="-1">
 <nav class="opw-kruimels" aria-label="Broodkruimelpad">{breadcrumb}</nav>
 {body}
@@ -497,11 +497,13 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
 
     sections = []
     for group, label in GROUPS.items():
+        if group == 'ET':
+            continue
         links = "".join(f'<li><a href="/bijbel/{book["id"]}/"><img class="opw-boekbeeld" src="{book_cover(book["id"], book_images)}" width="1024" height="1024" loading="lazy" decoding="async" alt=""><span class="opw-boeknaam">{escape(book["nameDutch"])}</span><span>{len(book["chapters"])} hoofdstukken</span></a></li>' for book in books if book["testament"] == group)
         if links:
             attributes = ' data-ethiopic-books hidden' if group == 'ET' else ''
             sections.append(f'<section aria-labelledby="groep-{group}"{attributes}><h2 id="groep-{group}">{label}</h2><ul class="opw-boeken">{links}</ul></section>')
-    body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Lees de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De aanvullende boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p><label class="opw-book-choice"><input type="checkbox" id="show-ethiopic-books">Ethiopische boeken tonen</label><script src="/js/book-visibility.js?v=1" defer></script>{"".join(sections)}'
+    body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Lees de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De aanvullende boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p>{"".join(sections)}'
     write(root / "bijbel/index.html", page("Alle Bijbelboeken in eenvoudig Nederlands", f"Lees de Bijbel gratis in eenvoudig Nederlands: {len(books)} boeken en {len(sequence)} hoofdstukken. Open Parafrase Weergave, proefversie.", "/bijbel/", body, [("Start", "/"), ("Bijbel", "/bijbel/")]))
     guide += f'''\n## Verwante bronnen
 - [Open Vertaling](https://openvertaling.nl/llms.txt): voor wie een meer woordelijke weergave wil lezen; de herziene Statenvertaling met kanttekeningen, ook als [Markdown](https://openvertaling.nl/markdown/index.md).

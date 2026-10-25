@@ -39,9 +39,9 @@
     <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css?v=0.58.9">
     <link rel="stylesheet" href="css/verwijzing-popup.css">
-    <link rel="stylesheet" href="css/opv.css?v=1.0.8">
+    <link rel="stylesheet" href="css/opv.css?v=1.0.9">
     <script src="js/reading-support.js?v=4" defer></script>
-    <script src="js/reading-details.js?v=4" defer></script>
+    <script src="js/reading-details.js?v=5" defer></script>
     <link rel="stylesheet" href="css/print.css" media="print">
     <noscript><style>#opv-start { display: block; } #app-header, #content, #mobile-footer-nav { display: none !important; }</style></noscript>
     <!-- JSONLD:start (auto) -->
@@ -82,7 +82,7 @@
           "creativeWorkStatus": "Concept",
           "isAccessibleForFree": true,
           "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "description": "Gods Woord in begrijpelijke taal. Proefversie met 88 boeken, inclusief apocriefe en Ethiopische boeken. De tekst is publiek domein.",
+          "description": "Gods Woord in begrijpelijke taal. Proefversie van de Bijbel in eenvoudig Nederlands. De tekst is publiek domein.",
           "url": "https://open-parafrase-weergave.nl/bijbel/"
         }
       ]
@@ -93,7 +93,7 @@
 <body class="opv-lezerpagina">
     <!-- Top navigatie -->
     <nav id="topnav"></nav>
-    <script src="js/topnav.js?v=0.39.0"></script>
+    <script src="js/topnav.js?v=0.39.1"></script>
 
     <!-- Mobiele picker-overlay: fullscreen, eerst boek-grid, dan hoofdstuk-grid -->
     <div id="mobile-picker" class="mp-overlay hidden" aria-hidden="true">
@@ -645,7 +645,6 @@
                         </select>
                     </label>
                     <label class="option-row option-row-with-icon"><img class="option-icon" loading="lazy" src="images/iconen/instellingen/apocriefe-boeken.png" alt="" aria-hidden="true"><span><strong>Apocriefe boeken</strong><small>Toon de apocriefe boeken in de boekkeuze.</small></span><input type="checkbox" id="toggle-apocriefe-boeken" data-optie="apocriefeBoeken" value="aan"></label>
-                    <label class="option-row option-row-with-icon"><img class="option-icon" loading="lazy" src="images/iconen/instellingen/ethiopische-boeken.png" alt="" aria-hidden="true"><span><strong>Ethiopische boeken</strong><small>Toon de Ethiopische boeken in de boekkeuze.</small></span><input type="checkbox" id="toggle-ethiopische-boeken" data-optie="ethiopischeBoeken" value="aan"></label>
                 </div>
 
                 <div class="options-section-heading">

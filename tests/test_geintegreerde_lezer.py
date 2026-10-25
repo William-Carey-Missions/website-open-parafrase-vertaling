@@ -93,7 +93,7 @@ def test_versankers_zoeken_en_boekenmenu_gebruiken_hetzelfde_adres(browser, site
     page.locator('.verse-row[data-verse="3"]').wait_for(timeout=20000)
     page.wait_for_function("document.querySelector('#opv-hfst .mp-label').textContent === 'Genesis 2'")
     page.goto(site + "/bijbel/", wait_until="domcontentloaded")
-    assert page.locator(".opw-boeken img").count() == 88
+    assert page.locator(".opw-boeken img").count() == 82
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
     page.locator("#topnav-weergave").click()
     page.locator("#sidebar-right[open]").wait_for(timeout=15000)
@@ -143,7 +143,7 @@ def test_beeld_staat_vanaf_het_begin_naast_de_tekst_en_wisselt_bij_het_vers(brow
     assert picture["y"] < 200
     page.locator('.verse-row[data-verse="8"]').evaluate(
         "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
-    page.locator('.opw-background a[data-background="map"]').wait_for()
+    assert page.locator('.opw-background').count() == 0
     assert first.is_visible()
     page.locator('.verse-row[data-verse="17"]').evaluate(
         "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
@@ -160,7 +160,7 @@ def test_breed_beeld_kan_groot_open_en_met_escape_sluiten(browser, site):
     page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
     page.goto(site + "/bijbel/genesis/1.html", wait_until="networkidle")
     picture = page.locator('.opw-hoofdstukbeeld.is-active img').first
-    assert picture.bounding_box()["width"] >= 420
+    assert picture.bounding_box()["width"] >= 320
     picture.click()
     dialog = page.locator('.opw-image-dialog[open]')
     assert dialog.count() == 1
@@ -169,22 +169,18 @@ def test_breed_beeld_kan_groot_open_en_met_escape_sluiten(browser, site):
     assert not dialog.count()
 
 
-def test_ethioopische_boeken_pas_na_vinkje_en_keuze_blijft_bewaard(browser, site):
+def test_ethioopische_boeken_en_vinkje_zijn_verborgen_ook_bij_oude_voorkeur(browser, site):
     page = page_for(browser, site)
+    page.add_init_script("localStorage.setItem('sv2026_vertaalopties', JSON.stringify({ethiopischeBoeken:'aan'}))")
     page.goto(site + '/bijbel/', wait_until='networkidle')
-    assert not page.locator('#groep-ET').is_visible()
-    toggle = page.get_by_label('Ethiopische boeken tonen', exact=True)
-    toggle.check(timeout=2000)
-    assert page.locator('#groep-ET').is_visible()
-    assert page.locator('[data-ethiopic-books] .opw-boeken li').count() == 6
-    page.reload(wait_until='networkidle')
-    assert toggle.is_checked()
-    assert page.locator('#groep-ET').is_visible()
-    toggle.uncheck()
-    assert not page.locator('#groep-ET').is_visible()
+    assert page.locator('#groep-ET').count() == 0
+    assert page.get_by_label('Ethiopische boeken tonen', exact=True).count() == 0
+    page.goto(site + '/bijbel/genesis/1.html', wait_until='networkidle')
+    assert page.locator('#toggle-ethiopische-boeken').count() == 0
+    assert page.evaluate("isBookVisibleInNavigation({id:'henoch'})") is False
 
 
-def test_zoeken_houdt_rekening_met_het_vinkje_voor_ethioopische_boeken(browser, site):
+def test_zoeken_verbergt_ethioopische_boeken_ook_bij_oude_voorkeur(browser, site):
     page = page_for(browser, site)
     page.goto(site + '/bijbel/genesis/1.html', wait_until='networkidle')
     page.evaluate("""() => {
@@ -197,23 +193,21 @@ def test_zoeken_houdt_rekening_met_het_vinkje_voor_ethioopische_boeken(browser, 
     }""")
     assert page.locator('.search-result[data-book="henoch"]').count() == 0
     page.evaluate("Opties.state.ethiopischeBoeken='aan'; Search._render()")
-    assert page.locator('.search-result[data-book="henoch"]').count() == 1
+    assert page.locator('.search-result[data-book="henoch"]').count() == 0
 
 
 @pytest.mark.parametrize('book,word', [('genesis', 'afgrond'), ('johannes', 'Messias')])
-def test_woorduitleg_komt_live_van_ogw_en_achtergrond_blijft_een_bronlink(browser, site, book, word):
+def test_woorduitleg_gebruikt_alleen_eenvoudige_brontekst(browser, site, book, word):
     import json
     page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
     source = 'https://opengodsword.com/data/opw-begrippen.js'
-    page.context.route(source, lambda route: route.fulfill(
+    page.context.route(source + '*', lambda route: route.fulfill(
         content_type='application/javascript',
-        body='window.OGWReadingTerms = ' + json.dumps({book: [{'woord': word, 'uitleg': 'Actuele uitleg vanuit de bron.', 'ref': 'Genesis 1:2' if book == 'genesis' else 'Johannes 1:41', 'categorie': 'begrip'}]}) + ';'))
+        body='window.OGWReadingTerms = ' + json.dumps({book: [{'woord': word, 'uitleg': 'Lange achtergrond voor kenners.', 'eenvoudig': 'Korte uitleg in gewone woorden.', 'ref': 'Genesis 1:2' if book == 'genesis' else 'Johannes 1:41', 'categorie': 'begrip'}]}) + ';'))
     page.goto(site + f'/bijbel/{book}/1.html', wait_until='networkidle')
     word_link = page.locator('.opw-word-link').filter(has_text=word).first
     word_link.click(timeout=2000)
-    assert 'Actuele uitleg vanuit de bron.' in page.locator('.opw-word-dialog[open]').inner_text()
-    assert page.locator('.opw-word-dialog a').last.get_attribute('href').startswith('https://opengodsword.com/')
-    page.keyboard.press('Escape')
-    map_link = page.locator('.opw-background a[data-background="map"]')
-    assert map_link.get_attribute('href') == f'https://opengodsword.com/kaart.html?boek={book}&hoofdstuk=1'
-    assert page.locator('.opw-kaartkaart svg').count() == 0
+    panel = page.locator('.opw-word-explanation')
+    assert 'Korte uitleg in gewone woorden.' in panel.inner_text()
+    assert 'Lange achtergrond' not in panel.inner_text()
+    assert page.locator('.opw-background,.opw-chapter-map').count() == 0

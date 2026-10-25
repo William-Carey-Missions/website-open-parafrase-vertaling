@@ -9,6 +9,8 @@
 .opw-kruimels a { color: inherit; }
 .opw-boeken, .opw-hoofdstukken { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 0; list-style: none; }
 .opw-boeken a, .opw-hoofdstukken a { display: block; height: 100%; box-sizing: border-box; padding: 16px; border: 1px solid var(--opv-sand-line); border-radius: 12px; background: var(--opv-surface); color: var(--opv-kop); text-decoration: none; overflow-wrap: anywhere; }
+.opw-boeken a:hover, .opw-hoofdstukken a:hover,
+.opw-boeken a:focus-visible, .opw-hoofdstukken a:focus-visible { background: var(--opv-sand); border-color: var(--opv-accent-ink); box-shadow: 0 0 0 2px var(--opv-accent); }
 .opw-boeken span, .opw-hoofdstukken span { display: block; margin-top: 5px; color: var(--opv-muted); font-size: 13px; }
 .opw-boeken .opw-boeknaam { color: var(--opv-kop); font-size: 18px; font-weight: 500; }
 .opw-boekbeeld { display: block; width: calc(100% + 32px); max-width: none; height: auto; aspect-ratio: 1; object-fit: cover; margin: -16px -16px 16px; border-radius: 11px 11px 0 0; }

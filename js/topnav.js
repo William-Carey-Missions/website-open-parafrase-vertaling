@@ -119,6 +119,7 @@
                     '<a href="/bijbel/">Alle boeken</a>' +
                     '<a href="/woordenboek.html">Woordenboek</a>' +
                     '<a href="over-opv.html">Over OPW</a>' +
+                    '<a href="/over-opv.html#comite-van-aanbeveling">Wie steunen dit?</a>' +
                     '<a href="https://opengodsword.com/wiki.html" data-ogw-href="wiki.html" title="Wiki, Bijbelachtergrond en broninformatie op Open Gods Woord">Achtergrond ' + PIJL + '</a>' +
                 '</div>' +
                 '<button type="button" class="opv-icoon" id="topnav-zoek" aria-label="Zoeken" title="Zoeken (Ctrl+K)">' +
