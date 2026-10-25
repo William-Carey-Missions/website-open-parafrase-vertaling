@@ -6,7 +6,10 @@
     const supported = new Set(['genesis', 'johannes']);
     const selected = new Set(('afgrond|firmament|hemelgewelf|Eden|adem des levens|levende ziel|boom des levens|boom van de kennis van goed en kwaad|scheppen|sabbat|heilig|zegen|vloek|zonde|verbond|ark|brandoffer|altaar|offer|aartsvader|eerstgeboorterecht|eerstgeborene|besnijdenis|bijvrouw|hongersnood|balsemen|farao|engel|tienden|gelofte|erfenis|erfgenaam|barmhartigheid|genade|gerechtigheid|geloof|Almachtige|Allerhoogste|verzoening|Messias|Christus|Woord|Lam van God|Zoon van God|Zoon van de Mensen|Heilige Geest|doop|dopen|discipel|discipelen|apostel|Rabbi|Rabbouni|Farizeeën|Samaritanen|tempel|synagoge|Pascha|Vernieuwingsfeest|opnieuw geboren|wedergeboorte|eeuwig leven|brood des levens|levend water|opstanding|Trooster|waarheid|wereld|vlees geworden|voetwassing|Wijnstok|ranken|profeet|profetie|Schrift|wet|heerlijkheid|verheerlijken|teken|gelijkenis|aanbidden').toLocaleLowerCase('nl').split('|'));
     const sources = new Map();
+    const linkedWords = new WeakMap();
     let sourceScript;
+    let scrollQueued = false;
+    let explanationId = 0;
 
     function node(tag, className, text) {
         const element = document.createElement(tag);
@@ -75,14 +78,72 @@
         link.classList.add('opw-word-link');
         link.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
         link.title = entry.uitleg;
-        link.setAttribute('aria-haspopup', 'dialog');
+        if (!window.matchMedia('(min-width: 801px)').matches) link.setAttribute('aria-haspopup', 'dialog');
         if (link.dataset.wordReady) return;
         link.dataset.wordReady = 'true';
+        linkedWords.set(link, { entry, book, chapter });
+        link.addEventListener('focus', () => {
+            if (window.matchMedia('(min-width: 801px)').matches) showExplanation(link);
+        });
         link.addEventListener('click', event => {
             if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
             event.preventDefault();
-            explain(entry, book, chapter);
+            if (window.matchMedia('(min-width: 801px)').matches) showExplanation(link, true);
+            else explain(entry, book, chapter);
         });
+    }
+
+    function showExplanation(link, reveal = false) {
+        const data = linkedWords.get(link);
+        const layout = link.closest('.opw-leesindeling');
+        const panel = layout?.querySelector('.opw-word-explanation');
+        if (!data || !panel) return;
+        layout.querySelectorAll('.opw-word-link.is-reading-word').forEach(previous => {
+            previous.classList.remove('is-reading-word');
+            previous.removeAttribute('aria-describedby');
+        });
+        link.classList.add('is-reading-word');
+        link.setAttribute('aria-describedby', panel.id);
+        panel.querySelector('h2').textContent = data.entry.woord;
+        panel.querySelector('.opw-explanation-text').textContent = data.entry.uitleg;
+        panel.querySelector('.opw-word-reference').textContent = data.entry.ref || '';
+        panel.querySelector('a').href = link.href;
+        panel.dataset.word = data.entry.woord;
+        if (reveal) {
+            const aside = panel.closest('.opw-sidecar');
+            if (aside) {
+                const hiddenBelow = panel.getBoundingClientRect().bottom - aside.getBoundingClientRect().bottom;
+                if (hiddenBelow > 0) aside.scrollTop += hiddenBelow + 12;
+            }
+        }
+    }
+
+    function followReading() {
+        if (!window.matchMedia('(min-width: 801px)').matches) return;
+        const readingLine = Math.max(170, window.innerHeight * .3);
+        root.querySelectorAll('.opw-leesindeling').forEach(layout => {
+            const bounds = layout.getBoundingClientRect();
+            if (bounds.bottom < readingLine || bounds.top > window.innerHeight) return;
+            const links = [...layout.querySelectorAll('.opw-word-link')];
+            const visible = links.filter(link => {
+                const rect = link.getBoundingClientRect();
+                return rect.bottom > 90 && rect.top < window.innerHeight - 60;
+            });
+            const nearest = visible.reduce((best, link) => !best ||
+                Math.abs(link.getBoundingClientRect().top - readingLine) < Math.abs(best.getBoundingClientRect().top - readingLine)
+                ? link : best, null);
+            if (nearest) showExplanation(nearest);
+            else if (links.length) {
+                const previous = links.filter(link => link.getBoundingClientRect().top <= readingLine).pop();
+                showExplanation(previous || links[0]);
+            }
+        });
+    }
+
+    function onScroll() {
+        if (scrollQueued) return;
+        scrollQueued = true;
+        requestAnimationFrame(() => { scrollQueued = false; followReading(); });
     }
 
     async function words(layout, book, chapter) {
@@ -120,6 +181,7 @@
             }
             cell.dataset.liveWords = 'true';
         });
+        followReading();
     }
 
     function enhance() {
@@ -145,6 +207,26 @@
                 let aside = layout.querySelector('.opw-hoofdstukbeelden');
                 if (!aside) { aside = node('aside', 'opw-hoofdstukbeelden'); layout.append(aside); }
                 layout.classList.add('heeft-beelden');
+                aside.classList.add('opw-sidecar');
+                const map = node('section', 'opw-chapter-map');
+                const frame = node('iframe');
+                frame.src = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}&embed=1`;
+                frame.title = `Kaart bij ${book} ${chapter} — Open Gods Word`;
+                frame.loading = 'lazy';
+                const mapLink = node('a', '', 'Kaart bij dit hoofdstuk · Open Gods Word');
+                mapLink.href = `${origin}/kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}`;
+                map.append(frame, mapLink);
+                aside.prepend(map);
+                const explanation = node('section', 'opw-word-explanation');
+                explanation.id = `opw-uitleg-${++explanationId}`;
+                explanation.setAttribute('aria-label', 'Uitleg bij de leestekst');
+                explanation.append(node('h2', '', 'Uitleg bij de tekst'),
+                    node('p', 'opw-explanation-text', 'Klik op een onderstreept woord voor uitleg. Tijdens het lezen volgt de uitleg het gemarkeerde woord.'),
+                    node('p', 'opw-word-reference'), node('p', 'opw-word-source', 'Uitleg uit Open Gods Word · concept'));
+                const source = node('a', '', 'Lees verder bij Open Gods Word');
+                source.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
+                explanation.append(source);
+                aside.append(explanation);
                 const card = node('section', 'opw-background');
                 card.append(node('h2', '', 'Kaart en achtergrond'));
                 for (const [kind, label, path] of [
@@ -164,4 +246,7 @@
     }
     document.addEventListener('DOMContentLoaded', enhance);
     document.addEventListener('opv:hoofdstuk-getoond', enhance);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    document.getElementById('content')?.addEventListener('scroll', onScroll, { passive: true });
 })();
