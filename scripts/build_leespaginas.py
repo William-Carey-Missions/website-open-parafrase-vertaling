@@ -174,8 +174,13 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 '''
 
 
+def default_godsnaam(text: str) -> str:
+    """Volg de standaard Godsnaam van de lezer zonder de broneditie te wijzigen."""
+    return re.sub(r"\bHEERE\b", "YHWH", re.sub(r"\b(?:[Dd]e|DE) HEERE\b", "YHWH", text))
+
+
 def sentence_lines(text: str) -> str:
-    return re.sub(r'([.!?…][”’"\')\]]*)\s+(?=\S)', r'\1<br>', escape(text, quote=False))
+    return re.sub(r'([.!?…][”’"\')\]]*)\s+(?=\S)', r'\1<br>', escape(default_godsnaam(text), quote=False))
 
 
 class CitationHTML(HTMLParser):
@@ -203,7 +208,7 @@ class CitationHTML(HTMLParser):
                 self.parts.append(f"</{tag}>")
 
     def handle_data(self, text):
-        self.parts.append(escape(text, quote=False))
+        self.parts.append(escape(default_godsnaam(text), quote=False))
 
 
 def verse_html(verse: dict) -> str:

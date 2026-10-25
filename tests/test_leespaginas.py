@@ -228,3 +228,9 @@ def test_markdown_en_achtergrondpagina(tmp_path):
     guide = (site / "llms.txt").read_text(encoding="utf-8")
     assert "https://open-parafrase-weergave.nl/markdown/index.md" in guide and "/achtergrond.md" in guide
     assert "https://open-parafrase-weergave.nl/achtergrond.html" in (site / "sitemap.xml").read_text(encoding="utf-8")
+
+
+def test_statische_verzen_gebruiken_de_standaard_godsnaam():
+    module = builder()
+    assert module.verse_html({'tekst': 'De HEERE God sprak. De Heere hoorde.'}) == 'YHWH God sprak.<br>De Heere hoorde.<br>'
+    assert module.verse_html({'tekst': 'de HEERE sprak', 'html': '<span class="god-speaks">de HEERE sprak</span>'}) == '<span class="god-speaks">YHWH sprak</span>'
