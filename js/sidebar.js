@@ -159,7 +159,7 @@ const Sidebar = {
                     bookEl.classList.toggle('collapsed');
                     // Als net geopend, navigeer naar eerste hoofdstuk
                     if (!bookEl.classList.contains('collapsed') && book.chaptersIncluded.length > 0) {
-                        location.href = Navigation.chapterUrl(book.id, book.chaptersIncluded[0]);
+                        Navigation.navigateChapter(book.id, book.chaptersIncluded[0]);
                     }
                 });
                 bookEl.appendChild(bookLabel);
@@ -181,7 +181,7 @@ const Sidebar = {
                     btn.dataset.chapter = ch;
                     btn.addEventListener('click', (e) => {
                         e.stopPropagation();
-                        location.href = Navigation.chapterUrl(book.id, ch);
+                        Navigation.navigateChapter(book.id, ch);
                     });
                     chaptersEl.appendChild(btn);
                 }

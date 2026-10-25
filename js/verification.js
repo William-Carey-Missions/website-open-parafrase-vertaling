@@ -327,6 +327,10 @@
     }
 
     function loadChapters(owner) {
+        if (window.TekstEditie && TekstEditie.code() !== 'nl-ov') {
+            owner.VERIFIED_CHAPTERS = {};
+            return Promise.resolve();
+        }
         if (!owner._verifiedGeladen) owner._verifiedGeladen = fetch('/api/collaboration/verified-chapters', { cache: 'no-store' })
             .then(response => { if (!response.ok) throw new Error(ERROR); return response.json(); })
             .then(data => { owner.VERIFIED_CHAPTERS = data; })

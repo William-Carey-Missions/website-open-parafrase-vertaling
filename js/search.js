@@ -461,7 +461,7 @@
                 history.replaceState(null, '', `${target}#vers-${verse}`);
                 return;
             }
-            location.href = `${target}#vers-${verse}`;
+            Navigation.navigateChapter(bookId, chapter, verse);
         },
 
         _scrollAndHighlightWhenReady(verseNum, maxAttempts) {

@@ -231,7 +231,7 @@ const MobileNav = {
                     const chapters = b.chaptersIncluded || [];
                     if (chapters.length === 1) {
                         // 1-hoofdstuk-boek: direct navigeren, picker dicht
-                        location.href = Navigation.chapterUrl(b.id, chapters[0]);
+                        Navigation.navigateChapter(b.id, chapters[0]);
                         this.closePicker();
                         setTimeout(() => this.syncFromState(), 80);
                     } else {
@@ -268,7 +268,7 @@ const MobileNav = {
                 document.querySelectorAll('#mobile-book-btn .mp-label, #opv-hfst .mp-label').forEach(lbl => {
                     lbl.textContent = `${book.nameDutch} ${ch}`;
                 });
-                location.href = Navigation.chapterUrl(book.id, ch);
+                Navigation.navigateChapter(book.id, ch);
                 this.closePicker();
                 // Backup: sync na korte delay (na Navigation hashchange handler)
                 setTimeout(() => this.syncFromState(), 80);

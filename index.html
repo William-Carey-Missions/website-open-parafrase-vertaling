@@ -2,6 +2,20 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <base href="/">
+    <style id="opw-theme-canvas">
+    :root { --opv-paper:#fbf8f2; --opv-ink:#1b2b38; color-scheme:light; }
+    :root[data-theme="donker"] { --opv-paper:#0f1c27; --opv-ink:#e7e1d4; color-scheme:dark; }
+    @media (prefers-color-scheme:dark) { :root:not([data-theme]) { --opv-paper:#0f1c27; --opv-ink:#e7e1d4; color-scheme:dark; } }
+    html,body { background:var(--opv-paper); color:var(--opv-ink); }
+    </style>
+    <script>
+    (function () {
+        var choice = 'auto';
+        try { var saved = JSON.parse(localStorage.getItem('sv2026_vertaalopties')); if (saved && (saved.thema === 'licht' || saved.thema === 'donker')) choice = saved.thema; } catch (_) {}
+        document.documentElement.dataset.theme = choice === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'donker' : 'licht') : choice;
+    })();
+    </script>
     <script src="/js/theme.js"></script>
     <script src="/js/sites.js"></script>
     <!-- Zonder #boek/hoofdstuk opent het startscherm; meteen zetten, zodat de lezer niet eerst knippert. -->
@@ -563,11 +577,11 @@
     <script src="js/teksteditie.js?v=0.38.3"></script>
     <script src="js/review-components.js"></script>
     <script src="js/verification-display.js"></script>
-    <script src="js/verification.js"></script>
+    <script src="js/verification.js?v=2"></script>
     <script src="js/data-loader.js?v=0.45.2"></script>
     <script src="js/book-orders.js"></script>
     <script src="js/geez-lexicon.js"></script>
-    <script src="js/navigation.js?v=1.1.0"></script>
+    <script src="js/navigation.js?v=1.2.0"></script>
     <script src="js/chapter-swipe.js"></script>
     <script src="js/editor.js?v=0.38.3"></script>
     <script src="js/export.js"></script>
@@ -937,8 +951,8 @@
     }
 </script>
     <script src="js/options-panel.js?v=0.58.2"></script>
-    <script src="js/sidebar.js?v=0.44.3"></script>
-    <script src="js/mobile-nav.js"></script>
+    <script src="js/sidebar.js?v=0.44.4"></script>
+    <script src="js/mobile-nav.js?v=2"></script>
     <script src="js/opv.js?v=1.0.1"></script>
     <script src="js/column-resize.js"></script>
     <script src="js/column-reorder.js"></script>
@@ -953,10 +967,10 @@
     <script src="js/audio-available.js"></script>
     <script src="js/chunked-audio.js"></script>
     <script src="js/verse-witness-reader.js"></script>
-  <script src="js/chapter-renderer.js?v=1.1.1"></script>
-  <script src="js/app.js?v=0.58.6"></script>
+  <script src="js/chapter-renderer.js?v=1.2.0"></script>
+  <script src="js/app.js?v=0.58.7"></script>
   <script src="js/kolom-chips.js?v=0.58.9"></script>
-    <script src="js/search.js?v=2"></script>
+    <script src="js/search.js?v=3"></script>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         if (window.Search) {
@@ -978,18 +992,9 @@
     <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            const hadActiveController = Boolean(navigator.serviceWorker.controller);
-            navigator.serviceWorker.register('/sw.js').then(reg => {
-                // Listen for updates
-                reg.addEventListener('updatefound', () => {
-                    const sw = reg.installing;
-                    sw && sw.addEventListener('statechange', () => {
-                        if (sw.state === 'activated' && hadActiveController) {
-                            window.location.reload();
-                        }
-                    });
-                });
-            }).catch(err => console.warn('SW registration failed:', err));
+            // Een cache-update onderbreekt het geopende hoofdstuk niet.
+            navigator.serviceWorker.register('/sw.js')
+                .catch(err => console.warn('SW registration failed:', err));
         });
     }
     </script>

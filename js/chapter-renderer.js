@@ -10,15 +10,21 @@ const ChapterRenderer = {
         return this._bookImagesPromise;
     },
     async renderChapter(bookId, chapterNum, opts = {}) {
+        if (opts.isCurrent && !opts.isCurrent()) return;
+        const generation = opts.append || opts.prepend ? (App._renderGeneration || 0)
+            : (App._renderGeneration = (App._renderGeneration || 0) + 1);
+        const isCurrent = () => generation === (App._renderGeneration || 0) && (!opts.isCurrent || opts.isCurrent());
         if (!opts.append && !opts.prepend) document.getElementById('chapter-verification')?.remove();
         await App._laadVerified();   // banner mag niet op verouderde info draaien
         const append = !!opts.append;    // doorlopend-lezen: hoofdstuk onderaan toevoegen
         const prepend = !!opts.prepend;  // doorlopend-lezen: hoofdstuk bovenaan toevoegen
         // Manifest (klein) + chapter (klein) parallel
-        const [book, chapter] = await Promise.all([
+        const [book, chapter, bookImages] = await Promise.all([
             DataLoader.loadBook(bookId),                      // bouwt lazy book-object
             DataLoader.loadChapter(bookId, chapterNum),       // alleen huidige chapter
+            this._bookImages(),
         ]);
+        if (!isCurrent()) return;
         if (!book) {
             document.getElementById('verses-container').innerHTML = '<p>Boek niet gevonden.</p>';
             return;
@@ -66,6 +72,7 @@ const ChapterRenderer = {
             }));
             parallelEditions.push(...loadedParallels.filter(Boolean));
         }
+        if (!isCurrent()) return;
         // Pre-fetch buurchapters bij idle (volgende klik = instant)
         DataLoader.prefetchAdjacent(bookId, chapterNum);
         // Boeknaam onthouden (gebruikt door scroll-spy bij doorlopend lezen)
@@ -97,7 +104,7 @@ const ChapterRenderer = {
         }  // einde if(!append): bovenstaande chrome alleen bij normaal renderen
 
         // Pericoop-kopjes (NBG-stijl indeling, eigen koppen) — eenmalig laden
-        if (App._pericopen === undefined) {
+        if (!isExternalTranslation && App._pericopen === undefined) {
             App._pericopen = null;
             try { App._pericopen = await (await fetch('data/pericopen.json')).json(); }
             catch (e) { App._pericopen = {}; }
@@ -110,19 +117,19 @@ const ChapterRenderer = {
         for (const kop of (isExternalTranslation && Array.isArray(chapter.blokkoppen) ? chapter.blokkoppen : [])) {
             if (!pericMap[kop.vers]) pericMap[kop.vers] = kop.tekst;
         }
+        if (!isCurrent()) return;
 
         // Verzen renderen
         const container = document.getElementById('verses-container');
         // sink = waar de nieuwe nodes heen gaan. Bij prepend bouwen we eerst in een
         // fragment, en plaatsen dat daarna bovenaan (met scroll-compensatie).
-        const sink = prepend ? document.createDocumentFragment() : container;
+        const sink = append ? container : document.createDocumentFragment();
         if (!append && !prepend) {
-            container.innerHTML = '';
             if (unavailableParallelNames.length) {
                 const unavailable = document.createElement('div');
                 unavailable.className = 'parallel-editions-unavailable';
                 unavailable.textContent = `Niet beschikbaar voor dit hoofdstuk: ${unavailableParallelNames.join(', ')}.`;
-                container.appendChild(unavailable);
+                sink.appendChild(unavailable);
             }
         }
         const layout = document.createElement('section');
@@ -132,7 +139,6 @@ const ChapterRenderer = {
         // Hoofdstukkop: boek en hoofdstuk boven het onderwerp. Bij doorlopend lezen
         // is dezelfde kop ook de scheiding tussen twee hoofdstukken.
         textColumn.appendChild(this._hoofdstukKop(book, chapter, chapterNum, append || prepend));
-        const bookImages = await this._bookImages();
         const chapterImages = (bookImages[bookId] || []).filter(item => Number(item.chapter) === Number(chapterNum));
         if (!chapterImages.length) chapterImages.push({
             src: `/images/boeken/${bookId}.webp`,
@@ -420,6 +426,8 @@ const ChapterRenderer = {
             const prevTop = scroller ? scroller.scrollTop : 0;
             container.insertBefore(sink, container.firstChild);
             if (scroller) scroller.scrollTop = prevTop + (scroller.scrollHeight - prevH);
+        } else if (!append) {
+            container.replaceChildren(sink);
         }
 
         this.updateProgress();

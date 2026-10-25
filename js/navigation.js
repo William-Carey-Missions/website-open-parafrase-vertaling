@@ -10,7 +10,54 @@ const Navigation = {
     },
 
     init() {
+        if (this._initialized) return;
+        this._initialized = true;
         window.addEventListener('hashchange', () => this.handleHash());
+        window.addEventListener('popstate', () => this.handleHash());
+        document.addEventListener('click', event => {
+            if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+            const link = event.target.closest('a[href]');
+            if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+            const url = new URL(link.href, location.href);
+            const route = url.pathname.match(/^\/bijbel\/([a-z0-9]+)\/(\d+)\.html$/);
+            if (url.origin !== location.origin || url.search || !route || (url.hash && !/^#vers-\d+$/.test(url.hash))) return;
+            event.preventDefault();
+            this.navigateChapter(route[1], Number(route[2]), url.hash ? Number(url.hash.slice(6)) : null);
+        });
+    },
+
+    navigateChapter(bookId, chapter, verse = null) {
+        const target = this.chapterUrl(bookId, chapter, verse);
+        if (location.pathname + location.search + location.hash !== target) history.pushState(null, '', target);
+        return this.handleHash();
+    },
+
+    _updateDocument(bookId, chapter) {
+        const title = document.querySelector('#verses-container h1')?.textContent || `${bookId} ${chapter}`;
+        const url = new URL(this.chapterUrl(bookId, chapter), location.origin).href;
+        document.title = `${title} | Open Parafrase Weergave`;
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.href = url;
+        const description = document.querySelector('.verse-cell.col-2026')?.textContent.trim().slice(0, 200) || title;
+        for (const [selector, value] of [
+            ['meta[property="og:url"]', url], ['meta[property="og:title"]', title],
+            ['meta[name="twitter:title"]', title], ['meta[name="description"]', description],
+            ['meta[property="og:description"]', description], ['meta[name="twitter:description"]', description],
+        ]) document.querySelector(selector)?.setAttribute('content', value);
+        const picture = document.querySelector('.opw-hoofdstukbeeld img');
+        if (picture) for (const selector of ['meta[property="og:image"]', 'meta[name="twitter:image"]']) {
+            document.querySelector(selector)?.setAttribute('content', picture.src);
+        }
+        const json = document.querySelector('link[rel="alternate"][type="application/json"]');
+        if (json) json.href = `/data/llm/${bookId}/${chapter}.json`;
+        const plain = document.querySelector('link[rel="alternate"][type="text/plain"][href*="/bijbel/"]');
+        if (plain) plain.href = `/bijbel/${bookId}/${chapter}.txt`;
+        const schema = document.querySelector('script[type="application/ld+json"]');
+        if (schema) schema.textContent = JSON.stringify({
+            '@context': 'https://schema.org', '@type': 'WebPage', '@id': url,
+            url, name: title, description, inLanguage: 'nl-NL',
+            isPartOf: { '@id': location.origin + '/#website' },
+        });
     },
 
     async renderBookNav() {
@@ -40,7 +87,7 @@ const Navigation = {
                 btn.dataset.bookId = book.id;
                 btn.addEventListener('click', () => {
                     const firstCh = book.chaptersIncluded[0];
-                    location.href = Navigation.chapterUrl(book.id, firstCh);
+                    Navigation.navigateChapter(book.id, firstCh);
                 });
                 group.appendChild(btn);
             }
@@ -58,24 +105,24 @@ const Navigation = {
         if (unassigned.length > 0) addGroup('Overig', unassigned);
     },
 
-    async renderChapterNav(bookId) {
+    async renderChapterNav(bookId, isCurrent = () => true) {
         const manifest = await DataLoader.loadManifest();
         const bookMeta = manifest.books.find(b => b.id === bookId);
         if (!bookMeta) return;
 
+        // Laad boekdata om status per hoofdstuk te bepalen
+        const book = await DataLoader.loadBook(bookId);
+        if (!isCurrent()) return;
         const nav = document.getElementById('chapter-nav');
         nav.innerHTML = '';
         nav.className = 'nav-bar';
-
-        // Laad boekdata om status per hoofdstuk te bepalen
-        const book = await DataLoader.loadBook(bookId);
 
         for (const ch of bookMeta.chaptersIncluded) {
             const btn = document.createElement('button');
             btn.textContent = ch;
             btn.dataset.chapter = ch;
             btn.addEventListener('click', () => {
-                location.href = Navigation.chapterUrl(bookId, ch);
+                Navigation.navigateChapter(bookId, ch);
             });
 
             // Groen kleuren als alle verzen "final" zijn
@@ -103,16 +150,18 @@ const Navigation = {
     },
 
     async handleHash() {
+        const generation = this._routeGeneration = (this._routeGeneration || 0) + 1;
+        const current = () => this._routeGeneration === generation;
         let hash = location.hash.slice(1);
         const legacy = hash.match(/^([a-z0-9]+)\/(\d+)(?:\/(\d+)|\?v=(\d+))?$/);
         if (legacy) {
             const target = this.chapterUrl(legacy[1], legacy[2], legacy[3] || legacy[4]);
-            location.replace(target);
-            return;
+            history.replaceState(history.state, '', target);
+            hash = `${legacy[1]}/${legacy[2]}` + ((legacy[3] || legacy[4]) ? `/${legacy[3] || legacy[4]}` : '');
         }
         const route = location.pathname.match(/^\/bijbel\/([a-z0-9]+)\/(\d+)\.html$/);
         if (route) {
-            const verse = hash.match(/^vers-(\d+)$/);
+            const verse = location.hash.slice(1).match(/^vers-(\d+)$/);
             hash = `${route[1]}/${route[2]}` + (verse ? `/${verse[1]}` : '');
         }
         if (!hash) {
@@ -126,7 +175,7 @@ const Navigation = {
             const manifest = await DataLoader.loadManifest();
             if (manifest.books.length > 0) {
                 const first = manifest.books[0];
-                location.href = Navigation.chapterUrl(first.id, first.chaptersIncluded[0]);
+                this.navigateChapter(first.id, first.chaptersIncluded[0]);
             }
             return;
         }
@@ -137,10 +186,14 @@ const Navigation = {
         const chapter = parseInt(parts[1]) || 1;
         const targetVerse = parts[2] ? parseInt(parts[2]) : null;
 
-        if (bookId !== this.currentBook) {
-            this.currentBook = bookId;
-            await this.renderChapterNav(bookId);
-        }
+        const holder = document.getElementById('verses-container');
+        const previous = { book: this.currentBook, chapter: this.currentChapter, url: this._lastRenderedUrl };
+        holder?.setAttribute('aria-busy', 'true');
+        try {
+        this.currentBook = bookId;
+        this.currentChapter = chapter;
+        await this.renderChapterNav(bookId, current);
+        if (!current()) return;
         this.currentChapter = chapter;
         this.updateActiveButtons();
 
@@ -151,7 +204,16 @@ const Navigation = {
         }
 
         // Laad en render het hoofdstuk
-        await App.renderChapter(bookId, chapter);
+        const key = `${bookId}/${chapter}`;
+        if (this._renderedChapter !== key) {
+            await App.renderChapter(bookId, chapter, { isCurrent: current });
+        }
+        if (!current()) return;
+        this._renderedChapter = key;
+        this._lastRenderedUrl = location.pathname + location.search + location.hash;
+        if (typeof MobileNav !== 'undefined') MobileNav.syncFromState();
+        document.getElementById('chapter-load-error')?.remove();
+        this._updateDocument(bookId, chapter);
 
         // Naar een specifiek vers scrollen + selecteren, anders naar boven
         if (targetVerse && App.focusVerse) {
@@ -163,6 +225,26 @@ const Navigation = {
             const sc = (App._getScroller && App._getScroller()) || document.getElementById('content');
             if (sc && sc !== document.scrollingElement && sc !== document.documentElement) sc.scrollTop = 0;
         }
+        } catch (error) {
+            if (!current()) return;
+            console.warn('[Navigation] Hoofdstuk kon niet worden geladen.', error);
+            this.currentBook = previous.book;
+            this.currentChapter = previous.chapter;
+            if (previous.url) history.replaceState(history.state, '', previous.url);
+            document.getElementById('chapter-load-error')?.remove();
+            const message = document.createElement('p');
+            message.id = 'chapter-load-error';
+            message.setAttribute('role', 'alert');
+            message.textContent = 'Dit hoofdstuk kon niet worden geladen. ';
+            const retry = document.createElement('button');
+            retry.type = 'button';
+            retry.textContent = 'Opnieuw proberen';
+            retry.addEventListener('click', () => this.navigateChapter(bookId, chapter, targetVerse));
+            message.append(retry);
+            holder?.before(message);
+        } finally {
+            if (current()) holder?.removeAttribute('aria-busy');
+        }
     },
 
     async navigateRelative(offset) {
@@ -172,8 +254,7 @@ const Navigation = {
         const idx = chapters.indexOf(this.currentChapter);
         const newIdx = idx + offset;
         if (newIdx >= 0 && newIdx < chapters.length) {
-            location.href = Navigation.chapterUrl(this.currentBook, chapters[newIdx]);
-            return;
+            return this.navigateChapter(this.currentBook, chapters[newIdx]);
         }
         // Voorbij de boekgrens → naar het aangrenzende boek (in de actieve volgorde)
         try {
@@ -189,11 +270,11 @@ const Navigation = {
                 // Laatste hoofdstuk van het vorige boek
                 const prev = byId[orderIds[bIdx - 1]];
                 const last = prev.chaptersIncluded[prev.chaptersIncluded.length - 1];
-                location.href = Navigation.chapterUrl(prev.id, last);
+                return this.navigateChapter(prev.id, last);
             } else if (newIdx >= chapters.length && bIdx < orderIds.length - 1) {
                 // Eerste hoofdstuk van het volgende boek
                 const next = byId[orderIds[bIdx + 1]];
-                location.href = Navigation.chapterUrl(next.id, next.chaptersIncluded[0]);
+                return this.navigateChapter(next.id, next.chaptersIncluded[0]);
             }
         } catch (e) { console.warn('[Navigation] cross-book nav faalde:', e); }
     }

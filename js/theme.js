@@ -4,11 +4,16 @@
     var storageKey = 'sv2026_vertaalopties';
 
     function readOptions() {
-        var saved = localStorage.getItem(storageKey);
-        return saved === null ? {} : JSON.parse(saved);
+        try {
+            var saved = JSON.parse(localStorage.getItem(storageKey));
+            return saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
+        } catch (error) {
+            return {};
+        }
     }
 
     function apply(choice) {
+        if (choice !== 'licht' && choice !== 'donker') choice = 'auto';
         var theme = choice === 'auto'
             ? (global.matchMedia('(prefers-color-scheme: dark)').matches ? 'donker' : 'licht')
             : choice;

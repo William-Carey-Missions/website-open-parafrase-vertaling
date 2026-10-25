@@ -17,6 +17,20 @@ BASE = "https://open-parafrase-weergave.nl"
 NAME = "Open Parafrase Weergave"
 GROUPS = {"OT": "Oude Testament", "NT": "Nieuwe Testament",
           "AP": "Apocriefe boeken", "ET": "Ethiopische boeken"}
+# Het canvas staat al goed terwijl de externe scripts en stijlen nog laden.
+THEME_CANVAS = '''<style id="opw-theme-canvas">
+:root { --opv-paper:#fbf8f2; --opv-ink:#1b2b38; color-scheme:light; }
+:root[data-theme="donker"] { --opv-paper:#0f1c27; --opv-ink:#e7e1d4; color-scheme:dark; }
+@media (prefers-color-scheme:dark) { :root:not([data-theme]) { --opv-paper:#0f1c27; --opv-ink:#e7e1d4; color-scheme:dark; } }
+html,body { background:var(--opv-paper); color:var(--opv-ink); }
+</style>
+<script>
+(function () {
+    var choice = 'auto';
+    try { var saved = JSON.parse(localStorage.getItem('sv2026_vertaalopties')); if (saved && (saved.thema === 'licht' || saved.thema === 'donker')) choice = saved.thema; } catch (_) {}
+    document.documentElement.dataset.theme = choice === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'donker' : 'licht') : choice;
+})();
+</script>'''
 IMAGE = "/images/psalm-23-herder.webp"
 BOOK_ORDER = """genesis exodus leviticus numeri deuteronomium jozua richteren ruth
 1samuel 2samuel 1koningen 2koningen 1kronieken 2kronieken ezra nehemia esther
@@ -109,6 +123,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <head>
 <base href="/">
 <meta charset="UTF-8">
+{THEME_CANVAS}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} | {NAME}</title>
 <meta name="description" content="{escape(description, quote=True)}">

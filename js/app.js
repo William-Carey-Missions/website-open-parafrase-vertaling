@@ -503,6 +503,8 @@ const App = {
 
     async _loadNextContinuous() {
         if (App._contLoading || localStorage.getItem('doorlopend') !== 'true') return;
+        const generation = App._renderGeneration;
+        const isCurrent = () => generation === App._renderGeneration;
         const last = App._contLast;
         if (!last) return;
         App._contLoading = true;
@@ -526,15 +528,17 @@ const App = {
                 }
             }
             if (nextCh != null) {
-                await App.renderChapter(nextBook, nextCh, { append: true });
-                App._contLast = { bookId: nextBook, chapterNum: nextCh };
+                await App.renderChapter(nextBook, nextCh, { append: true, isCurrent });
+                if (isCurrent()) App._contLast = { bookId: nextBook, chapterNum: nextCh };
             }
         } catch (e) { console.warn('[doorlopend] laden volgende hoofdstuk faalde:', e); }
-        App._contLoading = false;
+        if (isCurrent()) App._contLoading = false;
     },
 
     async _loadPrevContinuous() {
         if (App._contLoading || localStorage.getItem('doorlopend') !== 'true') return;
+        const generation = App._renderGeneration;
+        const isCurrent = () => generation === App._renderGeneration;
         const first = App._contFirst;
         if (!first) return;
         App._contLoading = true;
@@ -558,11 +562,11 @@ const App = {
                 }
             }
             if (prevCh != null) {
-                await App.renderChapter(prevBook, prevCh, { prepend: true });
-                App._contFirst = { bookId: prevBook, chapterNum: prevCh };
+                await App.renderChapter(prevBook, prevCh, { prepend: true, isCurrent });
+                if (isCurrent()) App._contFirst = { bookId: prevBook, chapterNum: prevCh };
             }
         } catch (e) { console.warn('[doorlopend] vorige hoofdstuk laden faalde:', e); }
-        App._contLoading = false;
+        if (isCurrent()) App._contLoading = false;
     },
 
     // Scroll-spy: werk de hoofdstuktitel bovenaan (en de URL) bij naar het
