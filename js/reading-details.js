@@ -29,6 +29,42 @@
         close.type = 'button';
         close.addEventListener('click', () => box.close());
         box.append(close, heading);
+        if (typeof box.showModal !== 'function') {
+            const opener = document.activeElement;
+            const backdrop = node('div', 'opw-dialog-backdrop');
+            backdrop.setAttribute('aria-hidden', 'true');
+            const layer = 2200 + document.querySelectorAll('dialog[open]').length * 2;
+            backdrop.style.zIndex = layer;
+            box.style.zIndex = layer + 1;
+            box.classList.add('opw-dialog-fallback');
+            box.setAttribute('role', 'dialog');
+            box.setAttribute('aria-modal', 'true');
+            backdrop.addEventListener('click', () => box.close());
+            const keys = event => {
+                const open = document.querySelectorAll('dialog[open]');
+                if (open[open.length - 1] !== box) return;
+                if (event.key === 'Escape') { event.preventDefault(); box.close(); }
+                if (event.key === 'Tab') {
+                    const controls = [...box.querySelectorAll('button,a[href],input,[tabindex="0"]')];
+                    const first = controls[0], last = controls[controls.length - 1];
+                    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+                    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+                }
+            };
+            box.showModal = () => {
+                document.body.append(backdrop);
+                box.setAttribute('open', '');
+                document.addEventListener('keydown', keys);
+                close.focus();
+            };
+            box.close = () => {
+                backdrop.remove();
+                document.removeEventListener('keydown', keys);
+                box.removeAttribute('open');
+                box.dispatchEvent(new Event('close'));
+                if (opener?.isConnected) opener.focus();
+            };
+        }
         box.addEventListener('click', event => {
             if (event.target !== box) return;
             const rect = box.getBoundingClientRect();
