@@ -33,7 +33,7 @@
             const opener = document.activeElement;
             const backdrop = node('div', 'opw-dialog-backdrop');
             backdrop.setAttribute('aria-hidden', 'true');
-            const layer = 2200 + document.querySelectorAll('dialog[open]').length * 2;
+            const layer = 12000 + document.querySelectorAll('dialog[open]').length * 2;
             backdrop.style.zIndex = layer;
             box.style.zIndex = layer + 1;
             box.classList.add('opw-dialog-fallback');
