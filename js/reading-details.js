@@ -7,6 +7,7 @@
     const selected = new Set(('afgrond|firmament|hemelgewelf|Eden|adem des levens|levende ziel|boom des levens|boom van de kennis van goed en kwaad|scheppen|sabbat|heilig|zegen|vloek|zonde|verbond|ark|brandoffer|altaar|offer|aartsvader|eerstgeboorterecht|eerstgeborene|besnijdenis|bijvrouw|hongersnood|balsemen|farao|engel|tienden|gelofte|erfenis|erfgenaam|barmhartigheid|genade|gerechtigheid|geloof|Almachtige|Allerhoogste|verzoening|Messias|Christus|Woord|Lam van God|Zoon van God|Zoon van de Mensen|Heilige Geest|doop|dopen|discipel|discipelen|apostel|Rabbi|Rabbouni|Farizeeën|Samaritanen|tempel|synagoge|Pascha|Vernieuwingsfeest|opnieuw geboren|wedergeboorte|eeuwig leven|brood des levens|levend water|opstanding|Trooster|waarheid|wereld|vlees geworden|voetwassing|Wijnstok|ranken|profeet|profetie|Schrift|wet|heerlijkheid|verheerlijken|teken|gelijkenis|aanbidden').toLocaleLowerCase('nl').split('|'));
     const sources = new Map();
     const linkedWords = new WeakMap();
+    const chosenWords = new WeakMap();
     let sourceScript;
     let scrollQueued = false;
     let explanationId = 0;
@@ -61,7 +62,8 @@
     function loadTerms(book) {
         if (!sourceScript) sourceScript = new Promise(resolve => {
             const script = node('script');
-            script.src = `${origin}/data/opw-begrippen.js`;
+            // Eén verse bron per bezoek; hoofdstukwissels delen dezelfde bron.
+            script.src = `${origin}/data/opw-begrippen.js?vers=${Date.now()}`;
             script.async = true;
             script.onload = () => resolve(window.OGWReadingTerms || {});
             script.onerror = () => resolve({});
@@ -69,7 +71,7 @@
         });
         if (!sources.has(book)) sources.set(book, sourceScript.then(books => {
             const entries = books[book] || [];
-            return entries.filter(entry => selected.has(String(entry.woord).toLocaleLowerCase('nl')) && entry.uitleg);
+            return entries.filter(entry => entry.uitleg);
         }));
         return sources.get(book);
     }
@@ -83,14 +85,24 @@
         link.dataset.wordReady = 'true';
         linkedWords.set(link, { entry, book, chapter });
         link.addEventListener('focus', () => {
-            if (window.matchMedia('(min-width: 801px)').matches) showExplanation(link);
+            if (window.matchMedia('(min-width: 801px)').matches) chooseExplanation(link);
         });
         link.addEventListener('click', event => {
             if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
             event.preventDefault();
-            if (window.matchMedia('(min-width: 801px)').matches) showExplanation(link, true);
+            if (window.matchMedia('(min-width: 801px)').matches) chooseExplanation(link, true);
             else explain(entry, book, chapter);
         });
+    }
+
+    function readingPosition() {
+        return `${window.scrollY}:${document.getElementById('content')?.scrollTop || 0}`;
+    }
+
+    function chooseExplanation(link, reveal = false) {
+        const layout = link.closest('.opw-leesindeling');
+        if (layout) chosenWords.set(layout, readingPosition());
+        showExplanation(link, reveal);
     }
 
     function showExplanation(link, reveal = false) {
@@ -124,6 +136,10 @@
         root.querySelectorAll('.opw-leesindeling').forEach(layout => {
             const bounds = layout.getBoundingClientRect();
             if (bounds.bottom < readingLine || bounds.top > window.innerHeight) return;
+            // Een nog wachtend scroll-event mag een klik of toetsenbordkeuze
+            // niet overschrijven. Pas bij verder scrollen weer meelezen.
+            if (chosenWords.get(layout) === readingPosition()) return;
+            chosenWords.delete(layout);
             const links = [...layout.querySelectorAll('.opw-word-link')];
             const visible = links.filter(link => {
                 const rect = link.getBoundingClientRect();
@@ -148,11 +164,19 @@
 
     async function words(layout, book, chapter) {
         if (!supported.has(book)) return;
-        const entries = await loadTerms(book);
+        const entries = (await loadTerms(book)).filter(entry => Array.isArray(entry.hoofdstukken)
+            ? entry.hoofdstukken.includes(Number(chapter))
+            : selected.has(String(entry.woord).toLocaleLowerCase('nl')));
         if (!entries.length || !layout.isConnected) return;
         const lookup = new Map();
         for (const entry of entries) for (const word of [entry.woord, ...(entry.ook || [])]) lookup.set(word.toLocaleLowerCase('nl'), entry);
         const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(${[...lookup.keys()].sort((a, b) => b.length - a.length).map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![\\p{L}\\p{N}])`, 'giu');
+        // De hoofdstukuitleg herkent eerst volledige uitdrukkingen. Oude
+        // woordenboeklinks om losse woorden mogen die niet opsplitsen.
+        if (book === 'genesis' && Number(chapter) <= 3) {
+            layout.querySelectorAll('.verse-cell.col-2026:not([data-live-words]) .opw-lemma-link:not(.opw-word-link)')
+                .forEach(link => { const parent = link.parentNode; link.replaceWith(...link.childNodes); parent.normalize(); });
+        }
         layout.querySelectorAll('.opw-lemma-link').forEach(link => {
             const entry = lookup.get(link.textContent.toLocaleLowerCase('nl'));
             if (entry) wordLink(link, entry, book, chapter);
