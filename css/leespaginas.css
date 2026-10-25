@@ -12,6 +12,7 @@
 .opw-boeken span, .opw-hoofdstukken span { display: block; margin-top: 5px; color: var(--opv-muted); font-size: 13px; }
 .opw-boeken .opw-boeknaam { color: var(--opv-kop); font-size: 18px; font-weight: 500; }
 .opw-boekbeeld { display: block; width: calc(100% + 32px); max-width: none; height: auto; aspect-ratio: 1; object-fit: cover; margin: -16px -16px 16px; border-radius: 11px 11px 0 0; }
+.opw-hoofdstukpreview { display: block; width: calc(100% + 32px); max-width: none; height: auto; aspect-ratio: 3 / 2; object-fit: cover; margin: -16px -16px 16px; border-radius: 11px 11px 0 0; }
 .opw-boekintro { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 28px; align-items: center; }
 .opw-boekillustratie { display: block; width: 100%; height: auto; border-radius: 16px; }
 .opw-boekserie { margin: 32px 0; }

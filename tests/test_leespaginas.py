@@ -1,6 +1,7 @@
 """Publieke hoofdstukken blijven leesbaar en vindbaar zonder JavaScript."""
 import importlib.util
 import json
+import re
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -106,6 +107,42 @@ def test_boekvolgorde_is_niet_de_importvolgorde(tmp_path):
     data["books"].reverse()
     path.write_text(json.dumps(data), encoding="utf-8")
     assert [book["id"] for book in builder().catalog(root)] == ["genesis", "johannes"]
+
+
+def test_hoofdstukkaartjes_tonen_hun_eigen_beelden_en_behouden_de_leesserie(tmp_path):
+    root = fixture_site(tmp_path)
+    path = root / "data/book-images.json"
+    images = json.loads(path.read_text(encoding="utf-8"))
+    for suffix in ("land", "dieren"):
+        images["books"]["genesis"].append({"chapter": 1, "file": f"1-{suffix}.webp",
+            "alt": suffix, "scene": suffix})
+        (root / f"images/boekseries/genesis/1-{suffix}.webp").write_bytes(b"fixture")
+    path.write_text(json.dumps(images), encoding="utf-8")
+    legacy = root / "images/hoofdstukken/genesis"
+    legacy.mkdir(parents=True)
+    (legacy / "2.webp").write_bytes(b"fixture")
+    builder().build_site(root)
+    overview = (root / "bijbel/genesis/index.html").read_text(encoding="utf-8")
+    cards = overview.split('<ol class="opw-hoofdstukken">', 1)[1].split("</ol>", 1)[0]
+    for chapter, image in ((1, "/images/boekseries/genesis/1.webp"),
+                           (2, "/images/hoofdstukken/genesis/2.webp")):
+        card = re.search(f'<a href="/bijbel/genesis/{chapter}.html">(.*?)</a>', cards).group(1)
+        assert f'src="{image}"' in card
+        assert 'class="opw-hoofdstukpreview"' in card
+        assert 'loading="lazy"' in card
+    reading = (root / "bijbel/genesis/1.html").read_text(encoding="utf-8")
+    for image in ("1.webp", "1-land.webp", "1-dieren.webp"):
+        assert f'src="/images/boekseries/genesis/{image}"' in reading
+
+
+def test_hoofdstuk_zonder_eigen_beeld_krijgt_geen_onjuiste_afbeelding(tmp_path):
+    root = fixture_site(tmp_path)
+    builder().build_site(root)
+    overview = (root / "bijbel/genesis/index.html").read_text(encoding="utf-8")
+    cards = overview.split('<ol class="opw-hoofdstukken">', 1)[1].split("</ol>", 1)[0]
+    second = re.search('<a href="/bijbel/genesis/2.html">(.*?)</a>', cards).group(1)
+    assert "<img" not in second
+    assert "Hoofdstuk 2" in second
 
 
 def test_citaatopmaak_en_zinsregels_blijven_behouden():

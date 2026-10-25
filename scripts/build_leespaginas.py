@@ -67,6 +67,17 @@ def book_cover(book_id: str, book_images: dict) -> str:
             else f"/images/boeken/{book_id}.webp")
 
 
+def chapter_preview(root: Path, book_id: str, number: int, book_images: dict) -> str:
+    scenes = [scene for scene in book_images.get(book_id, []) if scene["chapter"] == number]
+    legacy = f"/images/hoofdstukken/{book_id}/{number}.webp"
+    image = (f"/images/boekseries/{book_id}/{scenes[0]['file']}" if scenes
+             else legacy if (root / legacy.lstrip("/")).is_file() else None)
+    if image is None:
+        return ""
+    return (f'<img class="opw-hoofdstukpreview" src="{escape(image, quote=True)}" '
+            'width="1536" height="1024" loading="lazy" decoding="async" alt="">')
+
+
 def schema_json(value: dict) -> str:
     return json.dumps(value, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 
@@ -396,7 +407,7 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         book_path = f"/bijbel/{book['id']}/"
         urls.append((book_path, None))
         title = book["nameDutch"]
-        links = "".join(f'<li><a href="{chapter_path(book, chapter)}">Hoofdstuk {chapter["hoofdstuk"]}<span>{escape(chapter.get("kop", ""))}</span></a></li>' for chapter in book["chapters"])
+        links = "".join(f'<li><a href="{chapter_path(book, chapter)}">{chapter_preview(root, book["id"], chapter["hoofdstuk"], book_images)}Hoofdstuk {chapter["hoofdstuk"]}<span>{escape(chapter.get("kop", ""))}</span></a></li>' for chapter in book["chapters"])
         scenes = book_images.get(book['id'], [])[:3]
         gallery = ('<section class="opw-boekserie" aria-labelledby="boekserie-titel"><h2 id="boekserie-titel">Beelden bij dit boek</h2><div class="opw-boekserie-grid">' +
                    ''.join(f'<figure><a href="/bijbel/{book["id"]}/{scene["chapter"]}.html"><img src="/images/boekseries/{book["id"]}/{scene["file"]}" width="1536" height="1024" loading="lazy" alt="{escape(scene["alt"], quote=True)}"><span>{escape(title)} {scene["chapter"]}: {escape(scene["scene"])}</span></a></figure>' for scene in scenes) +
