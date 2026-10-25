@@ -442,6 +442,8 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 .opw-book-choice { display: flex; gap: 12px; align-items: center; margin: 24px 0; font: 500 16px/1.5 var(--opv-sans); }
 .opw-book-choice input { width: 20px; height: 20px; }
 @media (max-width: 800px) {
+    .opw-leeskolom > .opw-hoofdstukbeeld { display: block; margin: 28px 0; }
+    .opw-leeskolom > .opw-hoofdstukbeeld img { display: block; width: 100%; height: auto; border-radius: 12px; }
     .opw-word-explanation { display: none; }
     .opw-leesindeling.heeft-beelden { grid-template-columns: minmax(0, 36em); }
     .opw-leesindeling .opw-hoofdstukbeelden { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); margin-top: 28px; }

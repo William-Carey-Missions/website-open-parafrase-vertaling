@@ -1,110 +1,9 @@
-/* Meebewegende hoofdstukbeelden, schematische locatiekaartjes en lemma-links. */
+/* Hoofdstukbeelden bij de leestekst en woordverwijzingen. */
 (function () {
-    const NS = 'http://www.w3.org/2000/svg';
     const root = document.getElementById('verses-container');
     if (!root) return;
-    const support = {
-        // Kaarten openen rechtstreeks bij Open Gods Woord; geen lokale kopie.
-        locations: Promise.resolve({ books: {} }),
-        ground: fetch('/data/reading-groundwords.json').then(r => r.ok ? r.json() : { books: {} }).catch(() => ({ books: {} })),
-        terms: fetch('/data/reading-term-index.json').then(r => r.ok ? r.json() : []).catch(() => []),
-        busy: false,
-    };
-
-    function svg(tag, attributes) {
-        const node = document.createElementNS(NS, tag);
-        for (const [name, value] of Object.entries(attributes)) node.setAttribute(name, String(value));
-        return node;
-    }
-
-    function mapCard(card) {
-        const section = document.createElement('section');
-        section.className = 'opw-sidecar-item opw-kaartkaart';
-        section.dataset.verse = card.verse;
-        const label = document.createElement('p');
-        label.className = 'opw-sidecar-label';
-        label.textContent = `Locaties bij ${card.heading}`;
-        section.appendChild(label);
-
-        const map = svg('svg', { viewBox: '0 0 320 180', role: 'img', 'aria-label':
-            `Schematische ligging van ${card.places.map(place => place.naam).join(', ')}` });
-        map.appendChild(svg('rect', { x: 0, y: 0, width: 320, height: 180, rx: 14, class: 'opw-map-bg' }));
-        for (let n = 1; n < 4; n++) {
-            map.appendChild(svg('path', { d: `M ${n * 80} 0 V 180 M 0 ${n * 45} H 320`, class: 'opw-map-grid' }));
-        }
-        const lons = card.places.map(place => place.lon);
-        const lats = card.places.map(place => place.lat);
-        const lonMid = (Math.min(...lons) + Math.max(...lons)) / 2;
-        const latMid = (Math.min(...lats) + Math.max(...lats)) / 2;
-        const lonSpan = Math.max(1.5, (Math.max(...lons) - Math.min(...lons)) * 1.5);
-        const latSpan = Math.max(1.5, (Math.max(...lats) - Math.min(...lats)) * 1.5);
-        const plotted = [];
-        card.places.forEach((place, index) => {
-            const x = Math.min(294, Math.max(26, 160 + (place.lon - lonMid) / lonSpan * 260));
-            const y = Math.min(153, Math.max(27, 90 - (place.lat - latMid) / latSpan * 125));
-            const cluster = plotted.find(dot => Math.hypot(dot.x - x, dot.y - y) < 25);
-            if (cluster) cluster.numbers.push(index + 1);
-            else plotted.push({ x, y, numbers: [index + 1] });
-        });
-        plotted.forEach(dot => {
-            map.appendChild(svg('circle', { cx: dot.x, cy: dot.y, r: dot.numbers.length > 1 ? 17 : 12, class: 'opw-map-dot' }));
-            const number = svg('text', { x: dot.x, y: dot.y + 4, 'text-anchor': 'middle', class: 'opw-map-number' });
-            number.textContent = dot.numbers.length > 1 ? `${dot.numbers[0]}–${dot.numbers[dot.numbers.length - 1]}` : dot.numbers[0];
-            map.appendChild(number);
-        });
-        section.appendChild(map);
-        const list = document.createElement('ol');
-        list.className = 'opw-map-places';
-        card.places.forEach(place => {
-            const item = document.createElement('li');
-            const link = document.createElement('a');
-            link.href = `https://opengodsword.com/plaats.html?plaats=${encodeURIComponent(place.id)}`;
-            link.dataset.ogwHref = `plaats.html?plaats=${encodeURIComponent(place.id)}`;
-            link.textContent = place.naam;
-            link.title = `${place.zekerheid}; ${place.precisie}`;
-            item.appendChild(link);
-            list.appendChild(item);
-        });
-        section.appendChild(list);
-        const note = document.createElement('p');
-        note.className = 'opw-map-note';
-        note.textContent = `Schematische ligging${card.more ? ` · ${card.more} meer in de bron` : ''}. Locaties zijn niet allemaal zeker.`;
-        section.appendChild(note);
-        return section;
-    }
-
-    function groundCard(card) {
-        const section = document.createElement('section');
-        section.className = 'opw-sidecar-item opw-grondkaart';
-        section.dataset.verse = card.verse;
-        section.setAttribute('aria-label', `Grondtekst bij vers ${card.verse}`);
-        const label = document.createElement('p');
-        label.className = 'opw-sidecar-label';
-        label.textContent = `Grondtekst · vers ${card.verse}`;
-        section.appendChild(label);
-        const word = document.createElement('p');
-        word.className = 'opw-grondwoord';
-        word.lang = card.taal === 'Hebreeuws' ? 'he' : 'el';
-        word.dir = card.taal === 'Hebreeuws' ? 'rtl' : 'ltr';
-        word.textContent = card.woord;
-        section.appendChild(word);
-        const meaning = document.createElement('p');
-        meaning.className = 'opw-grondbetekenis';
-        meaning.textContent = card.betekenis;
-        section.appendChild(meaning);
-        const link = document.createElement('a');
-        const path = `lexicon-viewer.html?taal=${card.taal === 'Hebreeuws' ? 'hebreeuws' : 'grieks'}&entry=${encodeURIComponent(card.strongs)}`;
-        link.href = `https://opengodsword.com/${path}`;
-        link.dataset.ogwHref = path;
-        link.textContent = `Lees meer · ${card.strongs}`;
-        section.appendChild(link);
-        const note = document.createElement('p');
-        note.className = 'opw-map-note';
-        note.textContent = 'Lexiconbetekenis; de precieze betekenis hangt af van de tekst. De OPV is een parafrase.';
-        section.appendChild(note);
-        return section;
-    }
-
+    const termsPromise = fetch('/data/reading-term-index.json').then(r => r.ok ? r.json() : []).catch(() => []);
+    let busy = false;
     function linkTerms(layout, terms) {
         if (!terms.length) return;
         const book = layout.querySelector('.verse-row')?.dataset.book || '';
@@ -145,21 +44,29 @@
         });
     }
 
-    function enhanceLayout(layout, locations, ground, terms) {
+    function arrangeImages(layout) {
+        const mobile = window.matchMedia('(max-width: 800px)').matches;
+        const placement = mobile ? 'inline' : 'aside';
+        if (layout.dataset.imagePlacement === placement) return;
+        const gallery = layout.querySelector('.opw-hoofdstukbeelden');
+        const rows = [...layout.querySelectorAll('.verse-row')];
+        const figures = [...layout.querySelectorAll('.opw-hoofdstukbeeld')];
+        if (!gallery || !rows.length) return;
+        figures.forEach((figure, index) => {
+            if (mobile) {
+                const row = rows.find(row => Number(row.dataset.verse) >= Number(figure.dataset.verse)) || rows[rows.length - 1];
+                row.before(figure);
+                if (index) figure.querySelector('img').loading = 'lazy';
+            } else gallery.appendChild(figure);
+        });
+        layout.dataset.imagePlacement = placement;
+    }
+
+    function enhanceLayout(layout, terms) {
         if (layout.dataset.readingReady) return;
         const rows = layout.querySelectorAll('.verse-row');
         if (!rows.length) return;
-        const book = rows[0].dataset.book;
-        const chapter = rows[0].dataset.chapter;
-        const chapterCards = locations.books?.[book]?.[chapter] || [];
-        const groundCards = ground.books?.[book]?.[chapter] || [];
-        let gallery = layout.querySelector('.opw-hoofdstukbeelden');
-        if (!gallery && (chapterCards.length || groundCards.length)) {
-            gallery = document.createElement('aside');
-            gallery.className = 'opw-hoofdstukbeelden';
-            gallery.setAttribute('aria-label', 'Beelden en locaties bij dit hoofdstuk');
-            layout.appendChild(gallery);
-        }
+        const gallery = layout.querySelector('.opw-hoofdstukbeelden');
         if (gallery) {
             gallery.classList.add('opw-sidecar');
             layout.classList.add('heeft-beelden');
@@ -167,24 +74,18 @@
             const maxVerse = Number(rows[rows.length - 1].dataset.verse) || rows.length;
             figures.forEach((figure, index) => {
                 figure.classList.add('opw-sidecar-item');
-                if (!Number(figure.dataset.verse)) {
-                    figure.dataset.verse = Math.max(1, Math.round(index * maxVerse / Math.max(1, figures.length)));
-                }
+                if (!Number(figure.dataset.verse)) figure.dataset.verse = Math.max(1, Math.round(index * maxVerse / Math.max(1, figures.length)));
             });
-            chapterCards.forEach(card => gallery.appendChild(mapCard(card)));
-            groundCards.forEach(card => gallery.appendChild(groundCard(card)));
-            const cards = [...gallery.querySelectorAll('.opw-sidecar-item')];
-            cards.sort((a, b) => Number(a.dataset.verse) - Number(b.dataset.verse));
-            cards.forEach(card => gallery.appendChild(card));
         }
         linkTerms(layout, terms);
         layout.dataset.readingReady = 'true';
+        arrangeImages(layout);
         if (window.KASites) window.KASites.vulLinks(layout);
     }
 
     async function enhance() {
-        const [locations, ground, terms] = await Promise.all([support.locations, support.ground, support.terms]);
-        root.querySelectorAll('.opw-leesindeling').forEach(layout => enhanceLayout(layout, locations, ground, terms));
+        const terms = await termsPromise;
+        root.querySelectorAll('.opw-leesindeling').forEach(layout => enhanceLayout(layout, terms));
         activate();
     }
 
@@ -192,48 +93,27 @@
         for (const layout of root.querySelectorAll('.opw-leesindeling.heeft-beelden')) {
             const rect = layout.getBoundingClientRect();
             if (rect.bottom < 130 || rect.top > window.innerHeight) continue;
-            const rows = layout.querySelectorAll('.verse-row');
-            let verse = Number(rows[rows.length - 1]?.dataset.verse) || 1;
-            for (const row of rows) {
-                if (row.getBoundingClientRect().bottom > 170) {
-                    verse = Number(row.dataset.verse) || 1;
-                    break;
-                }
-            }
-            const cards = [...layout.querySelectorAll('.opw-sidecar-item')];
-            const cardType = card => card.classList.contains('opw-hoofdstukbeeld') ? 'image'
-                : card.classList.contains('opw-grondkaart') ? 'ground' : 'location';
-            // Een hoofdstukbeeld blijft zichtbaar, ook vóór het eerste scènevers.
-            // Locatiekaartjes kiezen hun eigen moment en verdringen het beeld niet.
-            const firstImage = cards.find(card => cardType(card) === 'image');
-            const activeByType = { image: firstImage ? Number(firstImage.dataset.verse) : null, location: null, ground: null };
-            for (const card of cards) {
-                if (Number(card.dataset.verse) <= verse) {
-                    const type = cardType(card);
-                    activeByType[type] = Number(card.dataset.verse);
-                }
-                else break;
-            }
-            for (const card of cards) {
-                const type = cardType(card);
-                if (activeByType[type] === null && Number(card.dataset.verse) <= verse + 5) {
-                    activeByType[type] = Number(card.dataset.verse);
-                }
-            }
-            cards.forEach(card => {
-                const type = cardType(card);
-                card.classList.toggle('is-active', activeByType[type] !== null && Number(card.dataset.verse) === activeByType[type]);
-            });
+            const rows = [...layout.querySelectorAll('.verse-row')];
+            const row = rows.find(row => row.getBoundingClientRect().bottom > 170) || rows[rows.length - 1];
+            const verse = Number(row?.dataset.verse) || 1;
+            const figures = [...layout.querySelectorAll('.opw-hoofdstukbeeld')].sort((a,b) => Number(a.dataset.verse) - Number(b.dataset.verse));
+            let active = figures[0];
+            for (const figure of figures) if (Number(figure.dataset.verse) <= verse) active = figure;
+            figures.forEach(figure => figure.classList.toggle('is-active', figure === active));
         }
     }
 
     function onScroll() {
-        if (support.busy) return;
-        support.busy = true;
-        requestAnimationFrame(() => { support.busy = false; activate(); });
+        if (busy) return;
+        busy = true;
+        requestAnimationFrame(() => { busy = false; activate(); });
     }
     document.addEventListener('DOMContentLoaded', enhance);
     document.addEventListener('opv:hoofdstuk-getoond', enhance);
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', () => {
+        root.querySelectorAll('.opw-leesindeling[data-reading-ready]').forEach(arrangeImages);
+        onScroll();
+    }, { passive: true });
     document.getElementById('content')?.addEventListener('scroll', onScroll, { passive: true });
 })();

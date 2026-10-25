@@ -11,6 +11,7 @@
     let sourceScript;
     let scrollQueued = false;
     let explanationId = 0;
+    const explanationText = entry => entry.eenvoudig || entry.uitleg;
 
     function node(tag, className, text) {
         const element = document.createElement(tag);
@@ -50,7 +51,7 @@
 
     function explain(entry, book, chapter) {
         const box = dialog('opw-word-dialog', entry.woord);
-        box.append(node('p', '', entry.uitleg));
+        box.append(node('p', '', explanationText(entry)));
         if (entry.ref) box.append(node('p', 'opw-word-reference', entry.ref));
         box.append(node('p', 'opw-word-source', 'Uitleg uit Open Gods Word · concept'));
         const link = node('a', '', 'Lees verder bij Open Gods Word →');
@@ -79,7 +80,7 @@
     function wordLink(link, entry, book, chapter) {
         link.classList.add('opw-word-link');
         link.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
-        link.title = entry.uitleg;
+        link.title = explanationText(entry);
         if (!window.matchMedia('(min-width: 801px)').matches) link.setAttribute('aria-haspopup', 'dialog');
         if (link.dataset.wordReady) return;
         link.dataset.wordReady = 'true';
@@ -117,7 +118,7 @@
         link.classList.add('is-reading-word');
         link.setAttribute('aria-describedby', panel.id);
         panel.querySelector('h2').textContent = data.entry.woord;
-        panel.querySelector('.opw-explanation-text').textContent = data.entry.uitleg;
+        panel.querySelector('.opw-explanation-text').textContent = explanationText(data.entry);
         panel.querySelector('.opw-word-reference').textContent = data.entry.ref || '';
         panel.querySelector('a').href = link.href;
         panel.dataset.word = data.entry.woord;
@@ -227,7 +228,7 @@
                 image.replaceWith(link);
                 link.append(image);
             });
-            if (!layout.querySelector('.opw-background')) {
+            if (!layout.querySelector('.opw-chapter-map')) {
                 let aside = layout.querySelector('.opw-hoofdstukbeelden');
                 if (!aside) { aside = node('aside', 'opw-hoofdstukbeelden'); layout.append(aside); }
                 layout.classList.add('heeft-beelden');
@@ -251,19 +252,7 @@
                 source.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
                 explanation.append(source);
                 aside.append(explanation);
-                const card = node('section', 'opw-background');
-                card.append(node('h2', '', 'Kaart en achtergrond'));
-                for (const [kind, label, path] of [
-                    ['map', 'Bekijk de kaart en plaatsen →', `kaart.html?boek=${encodeURIComponent(book)}&hoofdstuk=${chapter}`],
-                    ['context', 'Lees de achtergrond bij dit hoofdstuk →', `index.html#${encodeURIComponent(book)}/${chapter}`],
-                ]) {
-                    const link = node('a', '', label);
-                    link.href = `${origin}/${path}`;
-                    link.dataset.background = kind;
-                    card.append(link);
-                }
-                card.append(node('p', '', 'Bron: Open Gods Word. De links openen de actuele bronpagina’s.'));
-                aside.append(card);
+
             }
             words(layout, book, chapter);
         });
