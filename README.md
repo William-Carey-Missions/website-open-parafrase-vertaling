@@ -1,5 +1,7 @@
 # Open Parafrase Weergave (OPW)
 
+Beheer van de bezoekersstatistieken: [Google Analytics en meet-ID](docs/analytics.md).
+
 ![Logo van Open Parafrase Weergave](images/branding/open-parafrase-weergave-logo-horizontal.svg)
 
 Gods Woord in begrijpelijke taal. **Proef**: alle verzen hebben de status *concept*.
