@@ -163,7 +163,7 @@ const ChapterRenderer = {
             figure.appendChild(illustration);
             if (bookImage.scene) {
                 const caption = document.createElement('figcaption');
-                caption.textContent = bookImage.scene;
+                caption.textContent = (typeof Opties !== 'undefined' && Opties.transformOPV) ? Opties.transformOPV(bookImage.scene) : bookImage.scene;
                 figure.appendChild(caption);
             }
             imageGallery.appendChild(figure);

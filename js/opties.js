@@ -673,11 +673,18 @@ const Opties = {
     transformOPV(html) {
         if (!html) return html;
         const naam = { jahweh: 'JAHWEH', jehovah: 'Jehovah', yehovah: 'Yehováh', jhwh: 'יהוה', yhwh: 'YHWH' }[this.state.godsnaamOPV];
-        if (!naam) return html;
-        return this._replaceOutsideTags(html, [
-            [/\b(?:[Dd]e|DE) HEERE\b/g, naam],
-            [/\bHEERE\b/g, naam],
-        ]);
+        let out = html;
+        if (naam) {
+            out = this._replaceOutsideTags(out, [
+                [/\b(?:[Dd]e|DE) HEERE\b/g, naam],
+                [/\bHEERE\b/g, naam],
+            ]);
+        }
+        // Weergave voor moslimlezers. "Jezus Sirach" is Ben Sira, een andere persoon.
+        if (this.state.arabischeNamen === 'aan' && this._arNamen) {
+            out = this._replaceOutsideTags(out, this._arNamen.concat([[/\bJezus\b(?! Sirach)/g, 'Isa']]));
+        }
+        return out;
     },
 
     /**

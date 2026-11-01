@@ -103,7 +103,7 @@ const OptionsPanel = {
             {
                 key: 'bijbel', label: 'Bijbel',
                 selectors: [
-                    '[data-option-summary="godsnaamOPV"]', '#opt-boekvolgorde',
+                    '[data-option-summary="godsnaamOPV"]', '[data-option-summary="arabischeNamen"]', '#opt-boekvolgorde',
                     '#toggle-apocriefe-boeken', '#toggle-ethiopische-boeken',
                 ],
             },
