@@ -327,8 +327,8 @@ def integrated_reader(template: str, document: str, path: str) -> str:
 <link rel="stylesheet" href="/css/print.css" media="print">
 <script src="/js/reading-support.js?v=6" defer></script>
 <script src="/js/reading-details.js?v=12" defer></script>
-<link rel="stylesheet" href="/css/reading-genealogy.css?v=2">
-<script src="/js/reading-genealogy.js?v=3" defer></script>
+<link rel="stylesheet" href="/css/reading-genealogy.css?v=3">
+<script src="/js/reading-genealogy.js?v=4" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
 </head><body class="opv-lezerpagina opw-hoofdstukpagina">''' + skip + body + '</body></html>\n'
 

@@ -5,7 +5,9 @@
 
     function stamboomAdres() {
         const arabisch = window.Opties?.state?.arabischeNamen === 'aan';
-        return 'https://opengodsword.com/stamboom-embed.html' + (arabisch ? '?namen=arabisch' : '');
+        const donker = document.documentElement.getAttribute('data-theme') === 'donker';
+        const opties = [arabisch && 'namen=arabisch', donker && 'thema=donker'].filter(Boolean).join('&');
+        return 'https://opengodsword.com/stamboom-embed.html' + (opties ? '?' + opties : '');
     }
 
     function enhance() {
@@ -48,6 +50,7 @@
                 panel.dataset.klapGezet = 'ja';
             }
             if (!destination) return;
+            layout.querySelector('.opw-sidecar')?.classList.toggle('heeft-stamboom', !mobile);
             if (mobile) {
                 const heading = destination.querySelector('.opv-hoofdstukkop');
                 if (heading && panel.previousElementSibling !== heading) heading.after(panel);
@@ -58,4 +61,5 @@
     document.addEventListener('opv:hoofdstuk-getoond', enhance);
     window.addEventListener('resize', enhance);
     window.addEventListener('ov:opties-gewijzigd', enhance);
+    new MutationObserver(enhance).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 })();
