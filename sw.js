@@ -10,7 +10,7 @@
 
 const VERSION = 'v0.60.2';
 // New reader modules must not be mixed with HTML from before verification.
-const CACHE_VERSION = `${VERSION}-naam1x20261101-arabisch20261101-opv7-tablet-dialoog20261025-yhwh20261025-darkcells2-mobilehelp-gevallenen20261101`;
+const CACHE_VERSION = `${VERSION}-mobiel20261101-naam1x20261101-arabisch20261101-opv7-tablet-dialoog20261025-yhwh20261025-darkcells2-mobilehelp-gevallenen20261101`;
 const SHELL_CACHE   = `shell-${CACHE_VERSION}`;
 const DATA_CACHE    = `data-${CACHE_VERSION}`;
 const LEXICON_CACHE = `lexicon-${CACHE_VERSION}`;
@@ -20,7 +20,7 @@ const PRECACHE_URLS = [
     '/',
     '/index.html',
     '/js/theme.js',
-    '/js/analytics.js?v=1',
+    '/js/analytics.js?v=2',
     '/js/auth-bootstrap.js',
     '/js/firebase-config.js',
     '/js/auth.js',

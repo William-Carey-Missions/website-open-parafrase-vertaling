@@ -55,7 +55,9 @@
         figures.forEach((figure, index) => {
             if (mobile) {
                 const row = rows.find(row => Number(row.dataset.verse) >= Number(figure.dataset.verse)) || rows[rows.length - 1];
-                row.before(figure);
+                // Een hoofdstuk begint met tekst: een openingsbeeld komt op de telefoon na het eerste vers.
+                if (row === layout.querySelector('.opw-leeskolom .verse-row') && window.matchMedia('(max-width: 768px)').matches) row.after(figure);
+                else row.before(figure);
                 if (index) figure.querySelector('img').loading = 'lazy';
             } else gallery.appendChild(figure);
         });

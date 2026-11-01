@@ -308,7 +308,9 @@
         if (!help) {
             help = node('section', 'opw-mobile-help');
             help.setAttribute('aria-label', 'Hulp bij dit hoofdstuk');
-            help.append(node('h2', '', 'Bij dit hoofdstuk'), node('div', 'opw-mobile-map-slot'));
+            const kaart = node('details', 'opw-mobile-kaart');
+            kaart.append(node('summary', '', 'Kaart bij dit hoofdstuk'), node('div', 'opw-mobile-map-slot'));
+            help.append(node('h2', '', 'Bij dit hoofdstuk'), kaart);
             const list = node('details', 'opw-mobile-words');
             list.append(node('summary', '', 'Woorden met uitleg'),
                 node('p', '', 'Tik op een woord voor uitleg. Dat kan ook in de tekst.'),
@@ -338,7 +340,8 @@
             });
             list.dataset.words = signature;
         }
-        help.querySelector('details').hidden = !unique.size;
+        help.querySelector('.opw-mobile-words').hidden = !unique.size;
+        help.querySelector('.opw-mobile-kaart').hidden = !map;
         help.hidden = !map && !unique.size;
     }
 

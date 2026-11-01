@@ -28,7 +28,13 @@
                 link.target = '_blank';
                 link.rel = 'noopener';
                 link.textContent = 'Bekijk de hele stamboom bij Open Gods Word →';
-                panel.append(heading, frame, link);
+                // Op de telefoon ingeklapt: de Bijbeltekst hoort op het eerste scherm te staan.
+                const klap = document.createElement('details');
+                klap.className = 'opw-genealogy-klap';
+                const titel = document.createElement('summary');
+                titel.append(heading);
+                klap.append(titel, frame, link);
+                panel.append(klap);
             }
             const kop = panel.querySelector('h2');
             if (kop) kop.textContent = window.Opties?.transformOPV ? Opties.transformOPV('Van Adam tot Noach') : 'Van Adam tot Noach';
@@ -36,6 +42,11 @@
             if (frame && frame.getAttribute('src') !== stamboomAdres()) frame.setAttribute('src', stamboomAdres());
             const mobile = window.matchMedia('(max-width: 1100px), (hover: none), (pointer: coarse)').matches;
             const destination = mobile ? layout.querySelector('.opw-leeskolom') : layout.querySelector('.opw-sidecar');
+            const klap = panel.querySelector('details');
+            if (klap && !panel.dataset.klapGezet) {
+                klap.open = !mobile;
+                panel.dataset.klapGezet = 'ja';
+            }
             if (!destination) return;
             if (mobile) {
                 const heading = destination.querySelector('.opv-hoofdstukkop');

@@ -210,7 +210,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.16">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.17">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.4">
 </head>
 <body class="opw-statisch">
@@ -219,7 +219,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <a class="opv-merk" href="/" aria-label="{NAME}, naar de startpagina"><img class="opw-logo opw-logo--dark" src="/images/branding/open-parafrase-weergave-logo-horizontal.svg?v=20261024" alt="{NAME}" width="238" height="70"><img class="opw-logo opw-logo--light" src="/images/branding/open-parafrase-weergave-logo-horizontal-light.svg?v=20261024" alt="" width="238" height="70"></a>
 <nav aria-label="Hoofdmenu"><a href="/bijbel/">Alle boeken</a><a href="{escape(reader_path)}">Lezen</a><a href="/over-opv.html">Over OPW</a></nav>
 </header>
-<script src="/js/topnav.js?v=0.39.1"></script>
+<script src="/js/topnav.js?v=0.39.2"></script>
 <main class="opv-pagina" id="inhoud" tabindex="-1">
 <nav class="opw-kruimels" aria-label="Broodkruimelpad">{breadcrumb}</nav>
 {body}
@@ -310,10 +310,10 @@ def integrated_reader(template: str, document: str, path: str) -> str:
     return head + '''<link rel="stylesheet" href="/css/verification.css">
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
-<script src="/js/reading-support.js?v=5" defer></script>
-<script src="/js/reading-details.js?v=11" defer></script>
-<link rel="stylesheet" href="/css/reading-genealogy.css?v=1">
-<script src="/js/reading-genealogy.js?v=2" defer></script>
+<script src="/js/reading-support.js?v=6" defer></script>
+<script src="/js/reading-details.js?v=12" defer></script>
+<link rel="stylesheet" href="/css/reading-genealogy.css?v=2">
+<script src="/js/reading-genealogy.js?v=3" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
 </head><body class="opv-lezerpagina opw-hoofdstukpagina">''' + skip + body + '</body></html>\n'
 

@@ -19,11 +19,14 @@ def test_mobiele_kaart_en_woordhulp_staan_boven_de_tekst(browser, site, width):
     page.goto(site + '/bijbel/genesis/2.html', wait_until='networkidle')
     help = page.locator('.opw-mobile-help')
     assert help.is_visible()
+    # De kaart staat ingeklapt boven de tekst, zodat de Bijbeltekst op het eerste scherm komt.
+    assert help.locator('.opw-mobile-kaart').get_attribute('open') is None
+    help.locator('.opw-mobile-kaart > summary').tap()
     map = help.locator('.opw-chapter-map iframe')
     assert map.is_visible()
     assert map.bounding_box()['y'] < page.locator('.verse-row').first.bounding_box()['y']
     assert len(maps) == 1
-    help.locator('summary').tap()
+    help.locator('.opw-mobile-words > summary').tap()
     help.get_by_role('link', name='Eden', exact=True).tap()
     assert page.locator('.opw-word-dialog[open]').is_visible()
     assert 'De tuin waar de eerste mensen woonden.' in page.locator('.opw-word-dialog[open]').inner_text()
