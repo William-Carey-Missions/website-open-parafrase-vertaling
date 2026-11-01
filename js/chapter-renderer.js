@@ -192,6 +192,7 @@ const ChapterRenderer = {
             textColumn.appendChild(intro);
         }
 
+        const uitgelegdeNamen = new Set();
         for (const verse of chapter.verses) {
             // Pericoop-kop vóór dit vers?
             if (pericMap[verse.number]) {
@@ -276,8 +277,8 @@ const ChapterRenderer = {
             // Optioneel: "het negende uur" vervangen door moderne kloktijd.
             // Het testament bepaalt of de nacht drie of vier waken telt.
             if (!isExternalTranslation && typeof Opties !== 'undefined' && Opties.rekenTijden) openVertaling = Opties.rekenTijden(openVertaling, bookId, chapterNum, verse.number, book.testament);
-            // De parafrase zet de betekenis achter elke naam; de brontekst blijft zonder.
-            if (primaryEditionCode === 'nl-opv' && window.NaamUitleg) openVertaling = NaamUitleg.voegToe(openVertaling);
+            // De parafrase zet de betekenis één keer per hoofdstuk achter een naam; de brontekst blijft zonder.
+            if (primaryEditionCode === 'nl-opv' && window.NaamUitleg) openVertaling = NaamUitleg.voegToe(openVertaling, undefined, uitgelegdeNamen);
 
             // Alleen gecontroleerde koppelingen staan inline in de Nederlandse OV-tekst.
             // Nooit een extra grondtekstregel: de lezer ziet uitsluitend aanklikbare nummers

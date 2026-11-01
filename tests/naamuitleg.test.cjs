@@ -45,3 +45,24 @@ test('de gegevens voldoen aan de vorm', { skip: !existsSync(resolve(__dirname, '
     assert.ok(alleenMiddenInZin.includes('Dan') || !namen.Dan);
     assert.ok(alleenMiddenInZin.includes('Er') || !namen.Er);
 });
+
+test('een naam krijgt zijn betekenis maar één keer per hoofdstuk', () => {
+    const { voegToe } = uitleg({ namen: { Abraham: 'vader van velen', Abrahams: 'vader van velen', Izak: 'hij lacht' }, alleenMiddenInZin: [] });
+    const gezien = new Set();
+    assert.equal(voegToe('Abraham en Izak gingen.', undefined, gezien), 'Abraham (vader van velen) en Izak (hij lacht) gingen.');
+    assert.equal(voegToe('Toen zag Abraham het, en Izak ook.', undefined, gezien), 'Toen zag Abraham het, en Izak ook.');
+    assert.equal(voegToe('Dat is Abrahams zoon.', undefined, gezien), 'Dat is Abrahams zoon.');
+    assert.equal(voegToe('Abraham ging.', undefined, new Set()), 'Abraham (vader van velen) ging.', 'een nieuw hoofdstuk begint opnieuw');
+    assert.equal(voegToe('Abraham en Abraham.', undefined, new Set()), 'Abraham (vader van velen) en Abraham.', 'ook binnen een vers');
+});
+
+test('een overgeslagen woord telt niet als genoemde naam', () => {
+    const { voegToe } = uitleg({ namen: { Dan: 'rechter' }, alleenMiddenInZin: ['Dan'] });
+    const gezien = new Set();
+    assert.equal(voegToe('Dan ging hij naar Dan.', undefined, gezien), 'Dan ging hij naar Dan (rechter).');
+    assert.equal(voegToe('En Dan kwam.', undefined, gezien), 'En Dan kwam.');
+});
+
+test('de lezer houdt per hoofdstuk bij welke namen al zijn uitgelegd', () => {
+    assert.match(lees('js/chapter-renderer.js'), /NaamUitleg\.voegToe\(openVertaling, undefined, uitgelegdeNamen\)/);
+});

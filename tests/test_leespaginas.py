@@ -268,3 +268,24 @@ def test_statische_verzen_gebruiken_de_standaard_godsnaam():
     module = builder()
     assert module.verse_html({'tekst': 'De HEERE God sprak. De Heere hoorde.'}) == 'YHWH God sprak.<br>De Heere hoorde.<br>'
     assert module.verse_html({'tekst': 'de HEERE sprak', 'html': '<span class="god-speaks">de HEERE sprak</span>'}) == '<span class="god-speaks">YHWH sprak</span>'
+
+
+def test_naamsbetekenis_staat_een_keer_per_hoofdstuk():
+    import re as _re
+
+    from scripts.build_leespaginas import public_chapter
+
+    namen = {
+        "namen": {"Noach": "rust", "Noachs": "rust"},
+        "alleenMiddenInZin": [],
+        "patroon": _re.compile(r"(^|[^\w-])(Noachs|Noach)(?![\w-])"),
+    }
+    hoofdstuk = {"verzen": [
+        {"tekst": "Noach ging, en Noach zag het.", "html": "<b>Noach</b> ging, en Noach zag het."},
+        {"tekst": "Dat is Noachs zoon.", "html": "Dat is Noachs zoon."},
+    ]}
+    uit = public_chapter(hoofdstuk, namen)["verzen"]
+    assert uit[0]["tekst"] == "Noach (rust) ging, en Noach zag het."
+    assert uit[0]["html"] == "<b>Noach (rust)</b> ging, en Noach zag het."
+    assert uit[1]["tekst"] == "Dat is Noachs zoon."
+    assert uit[1]["html"] == "Dat is Noachs zoon."

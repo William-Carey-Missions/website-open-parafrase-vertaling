@@ -67,8 +67,10 @@ def load_names(root: Path) -> dict | None:
     return data
 
 
-def add_name_meanings(text: str, names: dict | None) -> str:
-    """Zet de betekenis achter elke naam, net als js/naamuitleg.js in de lezer."""
+def add_name_meanings(text: str, names: dict | None, seen: set | None = None) -> str:
+    """Zet de betekenis achter een naam, net als js/naamuitleg.js in de lezer.
+
+    Met `seen` (per hoofdstuk één set) krijgt elke naam dat één keer."""
     if not names:
         return text
 
@@ -78,6 +80,12 @@ def add_name_meanings(text: str, names: dict | None) -> str:
             before = part[:match.start(2)]
             if name in names["alleenMiddenInZin"] and (not before.strip() or re.search(r"[.!?:;…‘’“”\"'(]\s*$", before)):
                 return match.group(0)
+            if seen is not None:
+                # Abrahams is dezelfde persoon als Abraham.
+                person = name[:-1] if name.endswith('s') and name[:-1] in names['namen'] else name
+                if person in seen:
+                    return match.group(0)
+                seen.add(person)
             return f"{match.group(1)}{name} ({names['namen'][name]})"
         return names["patroon"].sub(replace, part)
 
@@ -92,10 +100,11 @@ def public_chapter(chapter: dict, names: dict | None = None) -> dict:
     for block in chapter.get("blokken", []):
         if block.get("tekst"):
             block["tekst"] = default_godsnaam(block["tekst"])
+    seen_text, seen_html = set(), set()
     for verse in chapter.get("verzen", []):
-        verse["tekst"] = add_name_meanings(default_godsnaam(verse["tekst"]), names)
+        verse["tekst"] = add_name_meanings(default_godsnaam(verse["tekst"]), names, seen_text)
         if verse.get("html"):
-            verse["html"] = add_name_meanings(default_godsnaam(verse["html"]), names)
+            verse["html"] = add_name_meanings(default_godsnaam(verse["html"]), names, seen_html)
     return chapter
 
 

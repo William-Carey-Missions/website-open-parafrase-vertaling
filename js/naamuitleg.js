@@ -1,4 +1,5 @@
-/* Zet de betekenis van een naam tussen haakjes achter de naam.
+/* Zet de betekenis van een naam tussen haakjes achter de naam, één keer per
+   hoofdstuk: de aanroeper geeft daarvoor per hoofdstuk één Set mee.
    De gegevens staan in js/naamsbetekenissen.js; Open Gods Woord is de bron.
    scripts/build_leespaginas.py doet hetzelfde voor de vooraf gebouwde pagina's.
 
@@ -19,20 +20,31 @@
         return !ervoor.trim() || NIET_NA.test(ervoor);
     }
 
-    function inTekst(tekst, gegevens) {
+    /* Abrahams is dezelfde persoon als Abraham. */
+    function persoon(naam, namen) {
+        const stam = naam.endsWith('s') ? naam.slice(0, -1) : naam;
+        return namen[stam] ? stam : naam;
+    }
+
+    function inTekst(tekst, gegevens, gezien) {
         patroon.lastIndex = 0;
         return tekst.replace(patroon, (geheel, voor, naam, positie) => {
             const start = positie + voor.length;
             if (gegevens.alleenMiddenInZin.includes(naam) && zinsbegin(tekst, start)) return geheel;
+            if (gezien) {
+                const wie = persoon(naam, gegevens.namen);
+                if (gezien.has(wie)) return geheel;
+                gezien.add(wie);
+            }
             return `${voor}${naam} (${gegevens.namen[naam]})`;
         });
     }
 
-    function voegToe(html, gegevens = global.NAAMSBETEKENISSEN) {
+    function voegToe(html, gegevens = global.NAAMSBETEKENISSEN, gezien = null) {
         if (!html || !gegevens) return html;
         if (!patroon) patroon = maakPatroon(gegevens.namen);
         if (!patroon) return html;
-        return html.split(/(<[^>]+>)/).map((deel, index) => index % 2 ? deel : inTekst(deel, gegevens)).join('');
+        return html.split(/(<[^>]+>)/).map((deel, index) => index % 2 ? deel : inTekst(deel, gegevens, gezien)).join('');
     }
 
     global.NaamUitleg = { voegToe };
