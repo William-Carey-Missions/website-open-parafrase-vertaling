@@ -98,13 +98,13 @@
         } catch { return null; }
     }
 
-    function termMedia(entry, includeImage = true) {
+    function termMedia(entry) {
         const media = node('div', 'opw-term-media');
         const detail = entry.naslag;
         if (!detail) return media;
         const name = detail.naam || entry.woord;
         const imageUrl = sourceUrl(detail.afbeelding, true);
-        if (imageUrl && includeImage) {
+        if (imageUrl) {
             const figure = node('figure');
             const zoom = node('button', 'opw-term-image');
             zoom.type = 'button';
@@ -211,6 +211,34 @@
         showExplanation(link, reveal);
     }
 
+    /* Drie uitleggen tegelijk: het woord waar je bent en de volgende twee, zodat
+       snel scrollen er geen overslaat. Aan het eind vult het aan met eerdere woorden. */
+    function explanationWindow(layout, link) {
+        const links = [...layout.querySelectorAll('.verse-cell .opw-word-link')];
+        const start = Math.max(0, links.indexOf(link));
+        const shown = [linkedWords.get(link)];
+        const add = other => {
+            const data = linkedWords.get(other);
+            if (data && shown.length < 3 && !shown.some(item => item.entry === data.entry)) shown.push(data);
+        };
+        links.slice(start + 1).forEach(add);
+        links.slice(0, start).reverse().forEach(add);
+        return shown;
+    }
+
+    function explanationItem(entry, current) {
+        const item = node('li', 'opw-uitleg' + (current ? ' is-huidig' : ''));
+        const heading = node('h2');
+        const detailUrl = sourceUrl(entry.naslag?.url);
+        if (detailUrl) {
+            const link = node('a', '', entry.woord);
+            link.href = detailUrl;
+            heading.append(link);
+        } else heading.textContent = entry.woord;
+        item.append(heading, node('span', '', explanationText(entry)));
+        return item;
+    }
+
     function showExplanation(link, reveal = false) {
         const data = linkedWords.get(link);
         const layout = link.closest('.opw-leesindeling');
@@ -222,13 +250,15 @@
         });
         link.classList.add('is-reading-word');
         link.setAttribute('aria-describedby', panel.id);
-        panel.querySelector('h2').textContent = data.entry.woord;
-        panel.querySelector('.opw-explanation-text').textContent = explanationText(data.entry);
-        panel.querySelector('.opw-word-reference').textContent = data.entry.ref || '';
-        if (panel.dataset.word !== data.entry.woord) panel.querySelector('.opw-term-media').replaceWith(termMedia(data.entry, false));
+        const shown = explanationWindow(layout, link);
+        const signature = shown.map(item => item.entry.woord).join('|');
+        if (panel.dataset.words !== signature) {
+            panel.querySelector('.opw-uitleg-lijst').replaceChildren(...shown.map((item, index) => explanationItem(item.entry, !index)));
+            panel.dataset.words = signature;
+        }
+        panel.hidden = false;
         definitionImage(layout, data.entry);
-        panel.querySelector('.opw-word-more').href = link.href;
-        panel.dataset.word = data.entry.woord;
+        panel.querySelector('.opw-word-source a').href = link.href;
         if (reveal) {
             const aside = panel.closest('.opw-sidecar');
             if (aside) {
@@ -408,12 +438,12 @@
                 const explanation = node('section', 'opw-word-explanation');
                 explanation.id = `opw-uitleg-${++explanationId}`;
                 explanation.setAttribute('aria-label', 'Uitleg bij de leestekst');
-                explanation.append(node('h2', '', 'Uitleg bij de tekst'),
-                    node('p', 'opw-explanation-text', 'Klik op een onderstreept woord voor uitleg. Tijdens het lezen volgt de uitleg het gemarkeerde woord.'),
-                    node('p', 'opw-word-reference'), node('div', 'opw-term-media'), node('p', 'opw-word-source', 'Uitleg uit Open Gods Word · concept'));
-                const source = node('a', 'opw-word-more', 'Lees verder bij Open Gods Word');
+                explanation.hidden = true;
+                const credit = node('p', 'opw-word-source', 'Uitleg uit ');
+                const source = node('a', '', 'Open Gods Word');
                 source.href = `${origin}/index.html#${encodeURIComponent(book)}/${chapter}`;
-                explanation.append(source);
+                credit.append(source, ' · concept');
+                explanation.append(node('ul', 'opw-uitleg-lijst'), credit);
                 aside.append(explanation);
 
             }

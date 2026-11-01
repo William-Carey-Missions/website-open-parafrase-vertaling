@@ -51,6 +51,20 @@ def write(path: Path, text: str) -> None:
         output.write(text)
 
 
+def public_chapter(chapter: dict) -> dict:
+    """Alles wat de site uit een hoofdstuk bouwt, gebruikt de standaard Godsnaam."""
+    if chapter.get("kop"):
+        chapter["kop"] = default_godsnaam(chapter["kop"])
+    for block in chapter.get("blokken", []):
+        if block.get("tekst"):
+            block["tekst"] = default_godsnaam(block["tekst"])
+    for verse in chapter.get("verzen", []):
+        verse["tekst"] = default_godsnaam(verse["tekst"])
+        if verse.get("html"):
+            verse["html"] = default_godsnaam(verse["html"])
+    return chapter
+
+
 def catalog(root: Path) -> list[dict]:
     manifest = json.loads((root / "data/vertalingen/manifest.json").read_text(encoding="utf-8"))
     published = set(next(e["boeken"] for e in manifest["edities"] if e["code"] == "nl-opv"))
@@ -64,7 +78,7 @@ def catalog(root: Path) -> list[dict]:
         files = sorted((p for p in folder.glob("*.json") if p.stem.isdigit()), key=lambda p: int(p.stem))
         if not files:
             raise ValueError(f"Geen leeseditie voor {book['id']}")
-        chapters = [json.loads(path.read_text(encoding="utf-8")) for path in files]
+        chapters = [public_chapter(json.loads(path.read_text(encoding="utf-8"))) for path in files]
         if any(not chapter.get("verzen") for chapter in chapters):
             raise ValueError(f"Leeg hoofdstuk in {book['id']}")
         result.append({**book, "chapters": chapters})
@@ -152,8 +166,8 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.15">
-<link rel="stylesheet" href="/css/leespaginas.css?v=1.0.3">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.16">
+<link rel="stylesheet" href="/css/leespaginas.css?v=1.0.4">
 </head>
 <body class="opw-statisch">
 <a class="opw-skip" href="{escape(path)}#inhoud">Direct naar de inhoud</a>
@@ -253,7 +267,7 @@ def integrated_reader(template: str, document: str, path: str) -> str:
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
 <script src="/js/reading-support.js?v=5" defer></script>
-<script src="/js/reading-details.js?v=10" defer></script>
+<script src="/js/reading-details.js?v=11" defer></script>
 <link rel="stylesheet" href="/css/reading-genealogy.css?v=1">
 <script src="/js/reading-genealogy.js?v=2" defer></script>
 <noscript><style>#mobile-footer-nav,#chapter-footer,.chapter-swipe-nav {display:none!important}</style></noscript>
@@ -444,12 +458,8 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         urls.append((book_path, None))
         title = book["nameDutch"]
         links = "".join(f'<li><a href="{chapter_path(book, chapter)}">{chapter_preview(root, book["id"], chapter["hoofdstuk"], book_images)}Hoofdstuk {chapter["hoofdstuk"]}<span>{escape(chapter.get("kop", ""))}</span></a></li>' for chapter in book["chapters"])
-        scenes = book_images.get(book['id'], [])[:3]
-        gallery = ('<section class="opw-boekserie" aria-labelledby="boekserie-titel"><h2 id="boekserie-titel">Beelden bij dit boek</h2><div class="opw-boekserie-grid">' +
-                   ''.join(f'<figure><a href="/bijbel/{book["id"]}/{scene["chapter"]}.html"><img src="/images/boekseries/{book["id"]}/{scene["file"]}" width="1536" height="1024" loading="lazy" alt="{escape(scene["alt"], quote=True)}"><span>{escape(title)} {scene["chapter"]}: {escape(scene["scene"])}</span></a></figure>' for scene in scenes) +
-                   '</div></section>') if scenes else ''
         cover = book_cover(book['id'], book_images)
-        body = f'<div class="opw-boekintro"><div><h1>{escape(title)} in eenvoudig Nederlands</h1><p class="opv-lead">Lees {escape(title)} in de {NAME}. Kies een hoofdstuk om te beginnen.</p><p class="opv-pil">Proeftekst · alle verzen concept</p></div><img class="opw-boekillustratie" src="{cover}" width="1536" height="1024" alt=""></div>{gallery}<ol class="opw-hoofdstukken">{links}</ol>'
+        body = f'<div class="opw-boekintro"><div><h1>{escape(title)} in eenvoudig Nederlands</h1><p class="opv-lead">Lees {escape(title)} in de {NAME}. Kies een hoofdstuk om te beginnen.</p></div><img class="opw-boekillustratie" src="{cover}" width="1536" height="1024" alt=""></div><ol class="opw-hoofdstukken">{links}</ol>'
         write(root / book_path.strip("/") / "index.html", page(
             f"{title} in eenvoudig Nederlands", f"Lees alle {len(book['chapters'])} hoofdstukken van {title} in de Open Parafrase Weergave. Gratis Bijbeltekst in eenvoudig Nederlands; proefversie.",
             book_path, body, [("Start", "/"), ("Bijbel", "/bijbel/"), (title, book_path)],
@@ -537,7 +547,7 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         if links:
             attributes = ' data-ethiopic-books hidden' if group == 'ET' else ''
             sections.append(f'<section aria-labelledby="groep-{group}"{attributes}><h2 id="groep-{group}">{label}</h2><ul class="opw-boeken">{links}</ul></section>')
-    body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Lees de {NAME}. Kies een boek en daarna een hoofdstuk.</p><p class="opv-pil">Proeftekst · alle verzen concept</p><p>De aanvullende boeken staan apart; hun plaats in de Bijbelcanon verschilt per traditie.</p>{"".join(sections)}'
+    body = f'<h1>De Bijbel in eenvoudig Nederlands</h1><p class="opv-lead">Lees de {NAME}. Kies een boek en daarna een hoofdstuk.</p>{"".join(sections)}'
     write(root / "bijbel/index.html", page("Alle Bijbelboeken in eenvoudig Nederlands", f"Lees de Bijbel gratis in eenvoudig Nederlands: {len(books)} boeken en {len(sequence)} hoofdstukken. Open Parafrase Weergave, proefversie.", "/bijbel/", body, [("Start", "/"), ("Bijbel", "/bijbel/")]))
     guide += f'''\n## Verwante bronnen
 - [Open Vertaling](https://openvertaling.nl/llms.txt): voor wie een meer woordelijke weergave wil lezen; de herziene Statenvertaling met kanttekeningen, ook als [Markdown](https://openvertaling.nl/markdown/index.md).

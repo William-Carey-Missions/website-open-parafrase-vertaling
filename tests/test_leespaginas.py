@@ -66,7 +66,7 @@ def test_volledige_tekst_metadata_en_navigatie(tmp_path):
     assert 'id="sidebar-right"' in first
     assert 'js/app.js' in first
     assert '/js/reading-support.js?v=5' in first
-    assert '/js/reading-details.js?v=9' in first
+    assert '/js/reading-details.js?v=11' in first
     assert 'Lees met instellingen' not in first
     assert 'Lezer met instellingen' not in first
     assert 'type="application/ld+json"' in first
@@ -77,6 +77,19 @@ def test_volledige_tekst_metadata_en_navigatie(tmp_path):
     plain = (root / "bijbel/genesis/2.txt").read_text(encoding="utf-8")
     assert 'Een tuin met <bomen> & water. Hij rustte.' in plain
     assert 'href="/bijbel/genesis/"' in (root / "bijbel/index.html").read_text(encoding="utf-8")
+
+
+def test_boek_en_bijbelpagina_blijven_kaal(tmp_path):
+    root = fixture_site(tmp_path)
+    builder().build_site(root)
+    book = (root / "bijbel/genesis/index.html").read_text(encoding="utf-8")
+    overview = (root / "bijbel/index.html").read_text(encoding="utf-8")
+    assert "Beelden bij dit boek" not in book
+    assert 'class="opw-hoofdstukken"' in book
+    for page in (book, overview):
+        assert "alle verzen concept" not in page
+    assert "aanvullende boeken" not in overview
+    assert "Bijbelcanon" not in overview
 
 
 def test_sitemap_en_ai_ingangen_volgen_de_beschikbare_tekst(tmp_path):
@@ -228,6 +241,14 @@ def test_markdown_en_achtergrondpagina(tmp_path):
     guide = (site / "llms.txt").read_text(encoding="utf-8")
     assert "https://open-parafrase-weergave.nl/markdown/index.md" in guide and "/achtergrond.md" in guide
     assert "https://open-parafrase-weergave.nl/achtergrond.html" in (site / "sitemap.xml").read_text(encoding="utf-8")
+
+
+def test_platte_tekst_en_koppen_gebruiken_de_standaard_godsnaam():
+    chapter = builder().public_chapter({'kop': 'De HEERE roept', 'blokken': [{'vers': 1, 'tekst': 'Woord van de HEERE'}],
+                                        'verzen': [{'nummer': 1, 'tekst': 'De HEERE sprak.', 'html': '<i>De HEERE sprak.</i>'}]})
+    assert chapter['kop'] == 'YHWH roept'
+    assert chapter['blokken'][0]['tekst'] == 'Woord van YHWH'
+    assert chapter['verzen'][0] == {'nummer': 1, 'tekst': 'YHWH sprak.', 'html': '<i>YHWH sprak.</i>'}
 
 
 def test_statische_verzen_gebruiken_de_standaard_godsnaam():

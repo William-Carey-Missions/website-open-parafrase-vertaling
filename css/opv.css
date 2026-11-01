@@ -447,16 +447,19 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 .opw-chapter-map { min-width: 0; order: -2; }
 .opw-chapter-map iframe { display: block; width: 100%; aspect-ratio: 1; border: 1px solid var(--opv-line); border-radius: 12px; box-sizing: border-box; }
 .opw-chapter-map > a { display: block; margin-top: 9px; color: var(--opv-kop); font: 500 13px/1.4 var(--opv-sans); }
-.opw-word-explanation { min-width: 0; padding: 20px 0; border-top: 2px solid var(--opv-accent-ink); }
-.opw-word-explanation h2 { margin: 0 0 10px; color: var(--opv-kop); font: 600 22px/1.3 var(--opv-serif); }
-.opw-explanation-text { margin: 0 0 12px; font: 400 17px/1.65 var(--opv-serif); }
-.opw-word-explanation > a { color: var(--opv-kop); font: 500 13px/1.5 var(--opv-sans); }
+.opw-word-explanation { min-width: 0; padding: 12px 0 0; border-top: 2px solid var(--opv-accent-ink); }
+.opw-uitleg-lijst { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.opw-uitleg { padding-left: 10px; border-left: 3px solid var(--opv-line); font: 400 15px/1.45 var(--opv-sans); }
+.opw-uitleg.is-huidig { border-left-color: var(--opv-accent-ink); }
+.opw-uitleg h2 { display: inline; margin: 0 .4em 0 0; color: var(--opv-kop); font: 600 15px/1.45 var(--opv-sans); }
+.opw-word-explanation .opw-word-source { margin: 8px 0 0; font-size: 12px; }
+.opw-word-source a { color: inherit; }
 .opw-word-link.is-reading-word { background: var(--opv-sand); color: var(--opv-accent-ink); text-decoration-style: solid; outline: 2px solid var(--opv-sand-line); outline-offset: 2px; border-radius: 2px; }
 :root[data-theme="donker"] a { color: var(--opv-link); }
 :root[data-theme="donker"] a:visited { color: var(--opv-link); }
 :root[data-theme="donker"] .opv-pagina a,
 :root[data-theme="donker"] .opw-word-dialog a,
-:root[data-theme="donker"] .opw-word-explanation > a,
+:root[data-theme="donker"] .opw-word-explanation a,
 :root[data-theme="donker"] .opw-term-media a { color: var(--opv-link); }
 :root[data-theme="donker"] #verses-container .opw-lemma-link {
     color: inherit;
@@ -638,13 +641,12 @@ body.dyslexia-mode #content #verses-container .verse-row .col-2026 {
 }
 body.dyslexia-mode, body.dyslexia-mode main { background: var(--opv-paper); }
 
-/* ---------- 6. Citaten: rood en cursief, met aanhalingstekens ---------- */
+/* ---------- 6. Citaten: cursief met aanhalingstekens, alleen God in rood ---------- */
 :root :is(#verses-container, #sidebar-right) :is(span.direct-speech, span.god-speaks, span.angel-speaks, span.devil-speaks),
 :root :is(#verses-container, #sidebar-right) :is(span.direct-speech, span.god-speaks, span.angel-speaks, span.devil-speaks) i {
     font-style: italic !important;
     font-weight: inherit !important;
     text-decoration: none !important;
-    color: var(--opv-jz) !important;
 }
 :root :is(#verses-container, #sidebar-right) span.god-speaks,
 :root :is(#verses-container, #sidebar-right) span.god-speaks i,
@@ -654,6 +656,7 @@ body.dyslexia-mode, body.dyslexia-mode main { background: var(--opv-paper); }
 :root :is(#verses-container, #sidebar-right) :is(span.direct-speech, span.angel-speaks, span.devil-speaks) span.god-speaks i {
     color: var(--opv-jz) !important;
 }
+.opv-optie-uitleg { display: block; margin-top: 8px; color: var(--opv-kop); font: 500 13px/1.5 var(--opv-sans); }
 body.citaten-uit :is(#verses-container, #sidebar-right) :is(span.god-speaks, span.direct-speech, span.angel-speaks, span.devil-speaks),
 body.citaten-uit :is(#verses-container, #sidebar-right) :is(span.god-speaks, span.direct-speech, span.angel-speaks, span.devil-speaks) :is(span, i) { color: inherit !important; font-style: normal !important; }
 :root :is(#verses-container, #sidebar-right) :is(span.direct-speech, span.god-speaks, span.angel-speaks, span.devil-speaks)::before {
