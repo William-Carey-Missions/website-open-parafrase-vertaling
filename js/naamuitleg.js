@@ -26,11 +26,23 @@
         return namen[stam] ? stam : naam;
     }
 
-    function inTekst(tekst, gegevens, gezien) {
+    /* Haran de stad is niet Haran de broer van Abram: sommige namen tellen alleen
+       in de verzen waar de persoon bedoeld is. */
+    function persoonBedoeld(naam, gegevens, plek) {
+        if (!plek) return true;
+        const wie = persoon(naam, gegevens.namen);
+        const alleen = gegevens.alleenInVerzen && gegevens.alleenInVerzen[wie];
+        if (alleen && !alleen.includes(plek)) return false;
+        const niet = gegevens.nietInVerzen && gegevens.nietInVerzen[wie];
+        return !(niet && niet.includes(plek));
+    }
+
+    function inTekst(tekst, gegevens, gezien, plek) {
         patroon.lastIndex = 0;
         return tekst.replace(patroon, (geheel, voor, naam, positie) => {
             const start = positie + voor.length;
             if (gegevens.alleenMiddenInZin.includes(naam) && zinsbegin(tekst, start)) return geheel;
+            if (!persoonBedoeld(naam, gegevens, plek)) return geheel;
             if (gezien) {
                 const wie = persoon(naam, gegevens.namen);
                 if (gezien.has(wie)) return geheel;
@@ -40,11 +52,11 @@
         });
     }
 
-    function voegToe(html, gegevens = global.NAAMSBETEKENISSEN, gezien = null) {
+    function voegToe(html, gegevens = global.NAAMSBETEKENISSEN, gezien = null, plek = null) {
         if (!html || !gegevens) return html;
         if (!patroon) patroon = maakPatroon(gegevens.namen);
         if (!patroon) return html;
-        return html.split(/(<[^>]+>)/).map((deel, index) => index % 2 ? deel : inTekst(deel, gegevens, gezien)).join('');
+        return html.split(/(<[^>]+>)/).map((deel, index) => index % 2 ? deel : inTekst(deel, gegevens, gezien, plek)).join('');
     }
 
     global.NaamUitleg = { voegToe };

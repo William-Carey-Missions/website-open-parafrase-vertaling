@@ -256,6 +256,16 @@ def test_namen_krijgen_hun_betekenis_maar_gewone_woorden_niet():
     assert module.add_name_meanings('Mozes-Dan en Dan-Mozes', names) == 'Mozes-Dan en Dan-Mozes'
 
 
+def test_een_plaats_met_de_naam_van_een_persoon_krijgt_de_betekenis_niet():
+    module = builder()
+    forms = {'Haran': 'bergbewoner'}
+    names = {'namen': forms, 'alleenMiddenInZin': [], 'patroon': module.name_pattern(forms), 'alleenInVerzen': {'Haran': ['genesis 11:27']}}
+    chapter = module.public_chapter({'boek': 'genesis', 'hoofdstuk': 11, 'verzen': [
+        {'nummer': 26, 'tekst': 'Hij stierf in Haran.'}, {'nummer': 27, 'tekst': 'Terah kreeg Haran.'}]}, names)
+    assert chapter['verzen'][0]['tekst'] == 'Hij stierf in Haran.'
+    assert chapter['verzen'][1]['tekst'] == 'Terah kreeg Haran (bergbewoner).'
+
+
 def test_platte_tekst_en_koppen_gebruiken_de_standaard_godsnaam():
     chapter = builder().public_chapter({'kop': 'De HEERE roept', 'blokken': [{'vers': 1, 'tekst': 'Woord van de HEERE'}],
                                         'verzen': [{'nummer': 1, 'tekst': 'De HEERE sprak.', 'html': '<i>De HEERE sprak.</i>'}]})

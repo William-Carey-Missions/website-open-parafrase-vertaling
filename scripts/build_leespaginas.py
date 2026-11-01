@@ -67,7 +67,18 @@ def load_names(root: Path) -> dict | None:
     return data
 
 
-def add_name_meanings(text: str, names: dict | None, seen: set | None = None) -> str:
+def person_meant(name: str, names: dict, place: str | None) -> bool:
+    """Haran de stad is niet Haran de broer van Abram: zie alleenInVerzen en nietInVerzen."""
+    if not place:
+        return True
+    person = name[:-1] if name.endswith('s') and name[:-1] in names['namen'] else name
+    only = names.get('alleenInVerzen', {}).get(person)
+    if only and place not in only:
+        return False
+    return place not in names.get('nietInVerzen', {}).get(person, [])
+
+
+def add_name_meanings(text: str, names: dict | None, seen: set | None = None, place: str | None = None) -> str:
     """Zet de betekenis achter een naam, net als js/naamuitleg.js in de lezer.
 
     Met `seen` (per hoofdstuk één set) krijgt elke naam dat één keer."""
@@ -79,6 +90,8 @@ def add_name_meanings(text: str, names: dict | None, seen: set | None = None) ->
             name = match.group(2)
             before = part[:match.start(2)]
             if name in names["alleenMiddenInZin"] and (not before.strip() or re.search(r"[.!?:;…‘’“”\"'(]\s*$", before)):
+                return match.group(0)
+            if not person_meant(name, names, place):
                 return match.group(0)
             if seen is not None:
                 # Abrahams is dezelfde persoon als Abraham.
@@ -101,10 +114,12 @@ def public_chapter(chapter: dict, names: dict | None = None) -> dict:
         if block.get("tekst"):
             block["tekst"] = default_godsnaam(block["tekst"])
     seen_text, seen_html = set(), set()
+    where = f"{chapter.get('boek')} {chapter.get('hoofdstuk')}:" if chapter.get('boek') else None
     for verse in chapter.get("verzen", []):
-        verse["tekst"] = add_name_meanings(default_godsnaam(verse["tekst"]), names, seen_text)
+        place = f"{where}{verse['nummer']}" if where else None
+        verse["tekst"] = add_name_meanings(default_godsnaam(verse["tekst"]), names, seen_text, place)
         if verse.get("html"):
-            verse["html"] = add_name_meanings(default_godsnaam(verse["html"]), names, seen_html)
+            verse["html"] = add_name_meanings(default_godsnaam(verse["html"]), names, seen_html, place)
     return chapter
 
 

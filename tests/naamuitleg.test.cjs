@@ -28,6 +28,19 @@ test('namen met accenten en een lege invoer', () => {
     assert.equal(voegToe(''), '');
 });
 
+test('een plaats met dezelfde naam als een persoon krijgt de betekenis niet', () => {
+    const { voegToe } = uitleg({ namen: { Haran: 'bergbewoner', Abel: 'adem' }, alleenMiddenInZin: [],
+        alleenInVerzen: { Haran: ['genesis 11:27'] }, nietInVerzen: { Abel: ['2samuel 20:18'] } });
+    assert.equal(voegToe('Hij stierf in Haran.', undefined, null, 'genesis 11:32'), 'Hij stierf in Haran.');
+    assert.equal(voegToe('Terah kreeg Haran.', undefined, null, 'genesis 11:27'), 'Terah kreeg Haran (bergbewoner).');
+    assert.equal(voegToe('Vraag het in Abel.', undefined, null, '2samuel 20:18'), 'Vraag het in Abel.');
+    assert.equal(voegToe('Abel bracht een offer.', undefined, null, 'genesis 4:4'), 'Abel (adem) bracht een offer.');
+    // Een plaats telt niet als de eerste keer in het hoofdstuk.
+    const gezien = new Set();
+    assert.equal(voegToe('In Haran.', undefined, gezien, 'genesis 11:32'), 'In Haran.');
+    assert.equal(voegToe('Haran stierf.', undefined, gezien, 'genesis 11:27'), 'Haran (bergbewoner) stierf.');
+});
+
 test('geen lookbehind: die breekt de lezer op iPadOS 15', () => {
     assert.doesNotMatch(lees('js/naamuitleg.js'), /\(\?<[=!]/);
 });
@@ -64,5 +77,5 @@ test('een overgeslagen woord telt niet als genoemde naam', () => {
 });
 
 test('de lezer houdt per hoofdstuk bij welke namen al zijn uitgelegd', () => {
-    assert.match(lees('js/chapter-renderer.js'), /NaamUitleg\.voegToe\(openVertaling, undefined, uitgelegdeNamen\)/);
+    assert.match(lees('js/chapter-renderer.js'), /NaamUitleg\.voegToe\(openVertaling, undefined, uitgelegdeNamen, /);
 });
