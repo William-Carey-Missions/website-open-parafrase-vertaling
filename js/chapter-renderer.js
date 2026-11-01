@@ -276,6 +276,8 @@ const ChapterRenderer = {
             // Optioneel: "het negende uur" vervangen door moderne kloktijd.
             // Het testament bepaalt of de nacht drie of vier waken telt.
             if (!isExternalTranslation && typeof Opties !== 'undefined' && Opties.rekenTijden) openVertaling = Opties.rekenTijden(openVertaling, bookId, chapterNum, verse.number, book.testament);
+            // De parafrase zet de betekenis achter elke naam; de brontekst blijft zonder.
+            if (primaryEditionCode === 'nl-opv' && window.NaamUitleg) openVertaling = NaamUitleg.voegToe(openVertaling);
 
             // Alleen gecontroleerde koppelingen staan inline in de Nederlandse OV-tekst.
             // Nooit een extra grondtekstregel: de lezer ziet uitsluitend aanklikbare nummers

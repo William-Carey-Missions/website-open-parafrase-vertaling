@@ -51,17 +51,51 @@ def write(path: Path, text: str) -> None:
         output.write(text)
 
 
-def public_chapter(chapter: dict) -> dict:
-    """Alles wat de site uit een hoofdstuk bouwt, gebruikt de standaard Godsnaam."""
+def name_pattern(forms) -> re.Pattern:
+    alternatives = "|".join(map(re.escape, sorted(forms, key=len, reverse=True)))
+    return re.compile(rf"(^|[^\w-])({alternatives})(?![\w-])")
+
+
+def load_names(root: Path) -> dict | None:
+    """De naamsbetekenissen die de lezer ook gebruikt (js/naamsbetekenissen.js)."""
+    source = root / "js/naamsbetekenissen.js"
+    if not source.is_file():
+        return None
+    text = source.read_text(encoding="utf-8")
+    data = json.loads(text[text.index("{"):text.rindex("}") + 1])
+    data["patroon"] = name_pattern(data["namen"])
+    return data
+
+
+def add_name_meanings(text: str, names: dict | None) -> str:
+    """Zet de betekenis achter elke naam, net als js/naamuitleg.js in de lezer."""
+    if not names:
+        return text
+
+    def in_text(part: str) -> str:
+        def replace(match: re.Match) -> str:
+            name = match.group(2)
+            before = part[:match.start(2)]
+            if name in names["alleenMiddenInZin"] and (not before.strip() or re.search(r"[.!?:;…‘’“”\"'(]\s*$", before)):
+                return match.group(0)
+            return f"{match.group(1)}{name} ({names['namen'][name]})"
+        return names["patroon"].sub(replace, part)
+
+    parts = re.split(r"(<[^>]+>)", text)
+    return "".join(part if index % 2 else in_text(part) for index, part in enumerate(parts))
+
+
+def public_chapter(chapter: dict, names: dict | None = None) -> dict:
+    """Alles wat de site uit een hoofdstuk bouwt, gebruikt de standaard Godsnaam en de naamsbetekenissen."""
     if chapter.get("kop"):
         chapter["kop"] = default_godsnaam(chapter["kop"])
     for block in chapter.get("blokken", []):
         if block.get("tekst"):
             block["tekst"] = default_godsnaam(block["tekst"])
     for verse in chapter.get("verzen", []):
-        verse["tekst"] = default_godsnaam(verse["tekst"])
+        verse["tekst"] = add_name_meanings(default_godsnaam(verse["tekst"]), names)
         if verse.get("html"):
-            verse["html"] = default_godsnaam(verse["html"])
+            verse["html"] = add_name_meanings(default_godsnaam(verse["html"]), names)
     return chapter
 
 
@@ -70,6 +104,7 @@ def catalog(root: Path) -> list[dict]:
     published = set(next(e["boeken"] for e in manifest["edities"] if e["code"] == "nl-opv"))
     books = json.loads((root / "data/books.json").read_text(encoding="utf-8"))["books"]
     published &= set(BOOK_ORDER[:82])
+    names = load_names(root)
     result = []
     for book in books:
         if book["id"] not in published:
@@ -78,7 +113,7 @@ def catalog(root: Path) -> list[dict]:
         files = sorted((p for p in folder.glob("*.json") if p.stem.isdigit()), key=lambda p: int(p.stem))
         if not files:
             raise ValueError(f"Geen leeseditie voor {book['id']}")
-        chapters = [public_chapter(json.loads(path.read_text(encoding="utf-8"))) for path in files]
+        chapters = [public_chapter(json.loads(path.read_text(encoding="utf-8")), names) for path in files]
         if any(not chapter.get("verzen") for chapter in chapters):
             raise ValueError(f"Leeg hoofdstuk in {book['id']}")
         result.append({**book, "chapters": chapters})

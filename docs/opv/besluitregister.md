@@ -799,3 +799,7 @@ Twee plaatsen zijn in de bron zelf verschreven. In 44:1 vertrekt Israël uit Har
 ### Godsnaam: standaard YHWH
 
 De leeseditie schrijft de naam van God standaard als YHWH, de vier medeklinkers van יהוה in Latijnse letters. Het Hebreeuws schreef alleen de medeklinkers, dus hoe de naam precies klonk en met welke klinkers hij hoort, is niet exact bekend; daarom vullen we geen klinkers in. De werkbron houdt HEERE. De omzetting gebeurt bij het bouwen (`default_godsnaam` in `scripts/build_leespaginas.py`) en in de lezer (`js/opties.js`), waar de lezer ook een andere vorm kan kiezen. De uitleg voor lezers staat op `over-opv.html#godsnaam`.
+
+### Betekenis achter namen
+
+Achter elke persoonsnaam staat in de lezer, de leespagina's en de downloads de betekenis tussen haakjes. De werkbron en de leeseditie blijven zonder; de toevoeging gebeurt bij het tonen (`js/naamuitleg.js` en `add_name_meanings` in `scripts/build_leespaginas.py`). Getoond worden alleen uitleggen met zekerheid "zeker" of "waarschijnlijk"; namen zonder gangbare uitleg blijven zonder haakjes. Namen die ook een gewoon woord zijn (Dan, Lot, Ram) krijgen de betekenis alleen midden in een zin. Koppen blijven zonder. De bron is `data/naamsbetekenissen.json` van Open Gods Word; `js/naamsbetekenissen.js` is de kopie hier. De betekenissen zijn door AI opgesteld en nog niet door mensen nagekeken.

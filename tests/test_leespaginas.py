@@ -243,6 +243,19 @@ def test_markdown_en_achtergrondpagina(tmp_path):
     assert "https://open-parafrase-weergave.nl/achtergrond.html" in (site / "sitemap.xml").read_text(encoding="utf-8")
 
 
+def test_namen_krijgen_hun_betekenis_maar_gewone_woorden_niet():
+    module = builder()
+    forms = {'Dan': 'rechter', 'Mozes': 'uit het water getrokken', 'Abrahams': 'vader van velen'}
+    names = {'namen': forms, 'alleenMiddenInZin': ['Dan'],
+             'patroon': module.name_pattern(forms)}
+    assert module.add_name_meanings('Dan ging Mozes weg. Dan zag Dan het.', names) == \
+        'Dan ging Mozes (uit het water getrokken) weg. Dan zag Dan (rechter) het.'
+    assert module.add_name_meanings('<span class="Mozes">Mozes</span> en Abrahams zoon', names) == \
+        '<span class="Mozes">Mozes (uit het water getrokken)</span> en Abrahams (vader van velen) zoon'
+    assert module.add_name_meanings('Mozesje en Dan', names) == 'Mozesje en Dan (rechter)'
+    assert module.add_name_meanings('Mozes-Dan en Dan-Mozes', names) == 'Mozes-Dan en Dan-Mozes'
+
+
 def test_platte_tekst_en_koppen_gebruiken_de_standaard_godsnaam():
     chapter = builder().public_chapter({'kop': 'De HEERE roept', 'blokken': [{'vers': 1, 'tekst': 'Woord van de HEERE'}],
                                         'verzen': [{'nummer': 1, 'tekst': 'De HEERE sprak.', 'html': '<i>De HEERE sprak.</i>'}]})
