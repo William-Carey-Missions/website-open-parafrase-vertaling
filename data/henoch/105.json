@@ -213,6 +213,99 @@
               16
             ]
           }
+        },
+        {
+          "tekst": "zei",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7755"
+          ],
+          "bronwoorden": [
+            "ይቤ"
+          ],
+          "transliteraties": [
+            "yǝbe"
+          ],
+          "glossen": [
+            "hij zei"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "7249cf898f91a5a2523cfa58f7ac8c9bfcb303df5cee6c748771d1ab21609a87",
+            "referentie": "henoch 105:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "kinderen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ለውሉደ"
+          ],
+          "transliteraties": [
+            "läwǝludä"
+          ],
+          "glossen": [
+            "voor de kinderen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "7249cf898f91a5a2523cfa58f7ac8c9bfcb303df5cee6c748771d1ab21609a87",
+            "referentie": "henoch 105:1",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "wijsheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8898"
+          ],
+          "bronwoorden": [
+            "በጥበቦሙ"
+          ],
+          "transliteraties": [
+            "bäṭǝbäbomu"
+          ],
+          "glossen": [
+            "in hun wijsheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "7249cf898f91a5a2523cfa58f7ac8c9bfcb303df5cee6c748771d1ab21609a87",
+            "referentie": "henoch 105:1",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -379,6 +472,192 @@
             "grondindices": [
               1
             ]
+          }
+        },
+        {
+          "tekst": "en Mijn Zoon",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ወወልድየ"
+          ],
+          "transliteraties": [
+            "wäwälǝdǝyä"
+          ],
+          "glossen": [
+            "en mijn zoon"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "329db038f8c831561ea673681bd07495d2d17f64c40406bd6d79849a78fe9ab8",
+            "referentie": "henoch 105:2",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "voor eeuwig",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6918"
+          ],
+          "bronwoorden": [
+            "ለዓለም"
+          ],
+          "transliteraties": [
+            "lälämǝ"
+          ],
+          "glossen": [
+            "voor eeuwig"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "329db038f8c831561ea673681bd07495d2d17f64c40406bd6d79849a78fe9ab8",
+            "referentie": "henoch 105:2",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "in hun leven",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG944"
+          ],
+          "bronwoorden": [
+            "በሕይወቶሙ"
+          ],
+          "transliteraties": [
+            "bäḥǝyǝwätomu"
+          ],
+          "glossen": [
+            "in hun leven"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "329db038f8c831561ea673681bd07495d2d17f64c40406bd6d79849a78fe9ab8",
+            "referentie": "henoch 105:2",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en vrede",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2435"
+          ],
+          "bronwoorden": [
+            "ወሰላም"
+          ],
+          "transliteraties": [
+            "wäsälamǝ"
+          ],
+          "glossen": [
+            "en vrede"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "329db038f8c831561ea673681bd07495d2d17f64c40406bd6d79849a78fe9ab8",
+            "referentie": "henoch 105:2",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Verheugt u",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9875"
+          ],
+          "bronwoorden": [
+            "ተፈሥሑ"
+          ],
+          "transliteraties": [
+            "täfäśǝḥu"
+          ],
+          "glossen": [
+            "verheugt u"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "329db038f8c831561ea673681bd07495d2d17f64c40406bd6d79849a78fe9ab8",
+            "referentie": "henoch 105:2",
+            "bronindices": [
+              13
+            ],
+            "grondindices": [
+              13
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "kinderen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ውሉደ"
+          ],
+          "transliteraties": [
+            "wǝludä"
+          ],
+          "glossen": [
+            "kinderen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "329db038f8c831561ea673681bd07495d2d17f64c40406bd6d79849a78fe9ab8",
+            "referentie": "henoch 105:2",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

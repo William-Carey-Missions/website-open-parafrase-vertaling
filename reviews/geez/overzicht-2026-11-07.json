@@ -1,0 +1,305 @@
+{
+  "versie": "geez-koppelingen-2026-11-07-v1",
+  "scope": "Zes Ethiopische boeken; technische corpuscontrole en conservatieve glosseprojectie. Geen volledige filologische controle van alle woorden of OVG-lemma-identificaties.",
+  "voor": {
+    "henoch": {
+      "verzen": 1058,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 13559,
+      "grondwoorden_zonder_nummer": 4325,
+      "koppelingen": 2759,
+      "zichtbare_koppelingen": 2759,
+      "gekoppelde_grondwoorden": 2759,
+      "genummerde_grondwoorden_zonder_koppeling": 10800
+    },
+    "jubileeen": {
+      "verzen": 1306,
+      "verzen_zonder_grondtekst": 49,
+      "genummerde_grondwoorden": 17292,
+      "grondwoorden_zonder_nummer": 2395,
+      "gekoppelde_grondwoorden": 575,
+      "genummerde_grondwoorden_zonder_koppeling": 16717,
+      "koppelingen": 635,
+      "zichtbare_koppelingen": 575
+    },
+    "1meqabyan": {
+      "verzen": 753,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 7921,
+      "grondwoorden_zonder_nummer": 4140,
+      "koppelingen": 1841,
+      "zichtbare_koppelingen": 1841,
+      "gekoppelde_grondwoorden": 1841,
+      "genummerde_grondwoorden_zonder_koppeling": 6080
+    },
+    "2meqabyan": {
+      "verzen": 424,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 4718,
+      "grondwoorden_zonder_nummer": 1933,
+      "koppelingen": 1073,
+      "zichtbare_koppelingen": 1073,
+      "gekoppelde_grondwoorden": 1073,
+      "genummerde_grondwoorden_zonder_koppeling": 3645
+    },
+    "3meqabyan": {
+      "verzen": 208,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 2617,
+      "grondwoorden_zonder_nummer": 913,
+      "koppelingen": 490,
+      "zichtbare_koppelingen": 490,
+      "gekoppelde_grondwoorden": 490,
+      "genummerde_grondwoorden_zonder_koppeling": 2127
+    },
+    "4baruch": {
+      "verzen": 197,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 2283,
+      "grondwoorden_zonder_nummer": 380,
+      "koppelingen": 660,
+      "zichtbare_koppelingen": 660,
+      "gekoppelde_grondwoorden": 659,
+      "genummerde_grondwoorden_zonder_koppeling": 1624
+    }
+  },
+  "na": {
+    "henoch": {
+      "verzen": 1058,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 13559,
+      "grondwoorden_zonder_nummer": 4325,
+      "koppelingen": 4762,
+      "zichtbare_koppelingen": 4761,
+      "gekoppelde_grondwoorden": 4761,
+      "genummerde_grondwoorden_zonder_koppeling": 8798,
+      "koppelingen_in_afwachting": 1
+    },
+    "jubileeen": {
+      "verzen": 1306,
+      "verzen_zonder_grondtekst": 6,
+      "genummerde_grondwoorden": 17292,
+      "grondwoorden_zonder_nummer": 2395,
+      "koppelingen": 3751,
+      "zichtbare_koppelingen": 3751,
+      "gekoppelde_grondwoorden": 3751,
+      "genummerde_grondwoorden_zonder_koppeling": 13541
+    },
+    "1meqabyan": {
+      "verzen": 753,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 7921,
+      "grondwoorden_zonder_nummer": 4140,
+      "koppelingen": 3213,
+      "zichtbare_koppelingen": 3212,
+      "gekoppelde_grondwoorden": 3212,
+      "genummerde_grondwoorden_zonder_koppeling": 4709,
+      "koppelingen_in_afwachting": 1
+    },
+    "2meqabyan": {
+      "verzen": 424,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 4718,
+      "grondwoorden_zonder_nummer": 1933,
+      "koppelingen": 1788,
+      "zichtbare_koppelingen": 1788,
+      "gekoppelde_grondwoorden": 1788,
+      "genummerde_grondwoorden_zonder_koppeling": 2930
+    },
+    "3meqabyan": {
+      "verzen": 208,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 2604,
+      "grondwoorden_zonder_nummer": 909,
+      "koppelingen": 884,
+      "zichtbare_koppelingen": 884,
+      "gekoppelde_grondwoorden": 884,
+      "genummerde_grondwoorden_zonder_koppeling": 1720
+    },
+    "4baruch": {
+      "verzen": 197,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 2283,
+      "grondwoorden_zonder_nummer": 380,
+      "koppelingen": 1338,
+      "zichtbare_koppelingen": 1338,
+      "gekoppelde_grondwoorden": 1338,
+      "genummerde_grondwoorden_zonder_koppeling": 945
+    }
+  },
+  "technische_problemen": [
+    {
+      "referentie": [
+        "jubileeen",
+        28,
+        1
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        29,
+        1
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        1,
+        21
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        8,
+        3
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        8,
+        6
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        10,
+        3
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        14,
+        2
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        8,
+        23
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        9,
+        8
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        10,
+        26
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        11,
+        10
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        13,
+        1
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        13,
+        9
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        16,
+        15
+      ],
+      "probleem": "versgrens_controleren"
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        2,
+        13
+      ],
+      "probleem": "versgrens_controleren"
+    }
+  ],
+  "aantallen_wijzigingen": {
+    "versgrens": 135,
+    "dubbel_bronfragment_gearchiveerd": 1,
+    "inhoudelijke_aanvulling": 25,
+    "inhoudelijke_correctie": 24,
+    "inhoudelijk_uitgeschakeld": 2,
+    "aanvulling": 8253
+  },
+  "versen_zonder_grondtekst": [
+    [
+      "jubileeen",
+      12,
+      30
+    ],
+    [
+      "jubileeen",
+      12,
+      31
+    ],
+    [
+      "jubileeen",
+      14,
+      11
+    ],
+    [
+      "jubileeen",
+      15,
+      4
+    ],
+    [
+      "jubileeen",
+      15,
+      6
+    ],
+    [
+      "jubileeen",
+      15,
+      8
+    ]
+  ],
+  "volledig_inhoudelijk_gecontroleerd": false,
+  "vervolg": "Resterende grondwoordvoorkomens inhoudelijk beoordelen, bronmarkeringen oplossen en onjuiste of ontbrekende OVG-lemma-identificaties afzonderlijk controleren. Niet ieder Nederlands woord heeft een apart bronwoord.",
+  "verificatie": {
+    "unittests": 11,
+    "unittests_resultaat": "geslaagd",
+    "renderInline_verzen": 3946,
+    "renderInline_linkknoppen": 15734,
+    "renderInline_fouten": 0,
+    "nederlandse_tekst_ongewijzigd": true,
+    "bronobjecten_behouden_in_corpus_of_variantarchief": true,
+    "herhaalde_run": "geen nieuwe wijzigingen",
+    "publicatie": "lokaal aangepast; niet gepubliceerd"
+  }
+}

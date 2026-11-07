@@ -310,6 +310,37 @@
               4
             ]
           }
+        },
+        {
+          "tekst": "koningen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5190"
+          ],
+          "bronwoorden": [
+            "ለነገሥት"
+          ],
+          "transliteraties": [
+            "länägäśǝtǝ"
+          ],
+          "glossen": [
+            "voor de koningen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "87caa9a898374349fdfd7c7bc90327da58a694369f1cd931b6132d5e14e25a50",
+            "referentie": "henoch 54:2",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -478,6 +509,68 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "engel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG355"
+          ],
+          "bronwoorden": [
+            "ለመልአከ"
+          ],
+          "transliteraties": [
+            "lämälǝkä"
+          ],
+          "glossen": [
+            "voor de engel van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e18b117e5b6729767a91112cce866fb18d920d8c2bd5ea387d33931484991b2f",
+            "referentie": "henoch 54:4",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "vrede",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2435"
+          ],
+          "bronwoorden": [
+            "ሰላም"
+          ],
+          "transliteraties": [
+            "sälamǝ"
+          ],
+          "glossen": [
+            "vrede"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e18b117e5b6729767a91112cce866fb18d920d8c2bd5ea387d33931484991b2f",
+            "referentie": "henoch 54:4",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -716,6 +809,68 @@
             "grondindices": [
               15
             ]
+          }
+        },
+        {
+          "tekst": "stenen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5640"
+          ],
+          "bronwoorden": [
+            "ወአእባነ"
+          ],
+          "transliteraties": [
+            "wäbanä"
+          ],
+          "glossen": [
+            "en stenen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "41ab99df2392b7476bd219c1e6acb6866ecbe03d19726c54400208a1c0dfa3cd",
+            "referentie": "henoch 54:5",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "bedekken",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6355"
+          ],
+          "bronwoorden": [
+            "ይከድኑ"
+          ],
+          "transliteraties": [
+            "yǝkädǝnu"
+          ],
+          "glossen": [
+            "zij bedekken"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "41ab99df2392b7476bd219c1e6acb6866ecbe03d19726c54400208a1c0dfa3cd",
+            "referentie": "henoch 54:5",
+            "bronindices": [
+              13
+            ],
+            "grondindices": [
+              13
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1085,6 +1240,37 @@
             "grondindices": [
               24
             ]
+          }
+        },
+        {
+          "tekst": "satan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3023"
+          ],
+          "bronwoorden": [
+            "ለሰይጣን"
+          ],
+          "transliteraties": [
+            "läsäyǝṭanǝ"
+          ],
+          "glossen": [
+            "voor de satan"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "43d19ffebfe3e19026cb216ffbaeb2741951c6e2f523fea46b0da466a139a831",
+            "referentie": "henoch 54:6",
+            "bronindices": [
+              25
+            ],
+            "grondindices": [
+              25
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1747,6 +1933,37 @@
             "grondindices": [
               10
             ]
+          }
+        },
+        {
+          "tekst": "einden van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9419"
+          ],
+          "bronwoorden": [
+            "አጽናፈ"
+          ],
+          "transliteraties": [
+            "ṣǝnafä"
+          ],
+          "glossen": [
+            "einden van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f40a6f2ac863d222e36f9d700865a0ee53616962dc9b688dccddcf2881cbfd3c",
+            "referentie": "henoch 54:9",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

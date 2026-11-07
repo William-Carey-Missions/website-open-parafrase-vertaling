@@ -149,6 +149,99 @@
               5
             ]
           }
+        },
+        {
+          "tekst": "de dag",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6714"
+          ],
+          "bronwoorden": [
+            "ዕለት"
+          ],
+          "transliteraties": [
+            "ʿəlätə"
+          ],
+          "glossen": [
+            "de dag"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "1ece5d32fcc76ed34ef57e65a5bbe29797281e92214e78aa2ee14d6d2c7d44aa",
+            "referentie": "4baruch 8:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "het volk",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG911"
+          ],
+          "bronwoorden": [
+            "ለሕዝብ"
+          ],
+          "transliteraties": [
+            "läḥəzəbə"
+          ],
+          "glossen": [
+            "het volk"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "1ece5d32fcc76ed34ef57e65a5bbe29797281e92214e78aa2ee14d6d2c7d44aa",
+            "referentie": "4baruch 8:1",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "uit Babylon",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10544"
+          ],
+          "bronwoorden": [
+            "እምባቢሎን"
+          ],
+          "transliteraties": [
+            "ʾəməbabilonə"
+          ],
+          "glossen": [
+            "uit Babylon"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "1ece5d32fcc76ed34ef57e65a5bbe29797281e92214e78aa2ee14d6d2c7d44aa",
+            "referentie": "4baruch 8:1",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -366,6 +459,130 @@
             "grondindices": [
               11
             ]
+          }
+        },
+        {
+          "tekst": "tot Jeremia",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10721"
+          ],
+          "bronwoorden": [
+            "ለኤርምያስ"
+          ],
+          "transliteraties": [
+            "läʾerəməyasə"
+          ],
+          "glossen": [
+            "tot Jeremia"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6f14e2592479cc97b283b5b1f582e2c92872241703eefcb1a8f7a45ca837b220",
+            "referentie": "4baruch 8:2",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Sta op",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4308"
+          ],
+          "bronwoorden": [
+            "ተንሥእ"
+          ],
+          "transliteraties": [
+            "tänəśəʾə"
+          ],
+          "glossen": [
+            "sta op"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6f14e2592479cc97b283b5b1f582e2c92872241703eefcb1a8f7a45ca837b220",
+            "referentie": "4baruch 8:2",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "de Jordaan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG11059"
+          ],
+          "bronwoorden": [
+            "ዮርዳኖስ"
+          ],
+          "transliteraties": [
+            "yorədanosə"
+          ],
+          "glossen": [
+            "de Jordaan"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6f14e2592479cc97b283b5b1f582e2c92872241703eefcb1a8f7a45ca837b220",
+            "referentie": "4baruch 8:2",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "de werken",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12395"
+          ],
+          "bronwoorden": [
+            "ምግባረ"
+          ],
+          "transliteraties": [
+            "məgəbarä"
+          ],
+          "glossen": [
+            "de werken"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6f14e2592479cc97b283b5b1f582e2c92872241703eefcb1a8f7a45ca837b220",
+            "referentie": "4baruch 8:2",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -683,6 +900,99 @@
               9
             ]
           }
+        },
+        {
+          "tekst": "En Jeremia",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10721"
+          ],
+          "bronwoorden": [
+            "ወኤርምያስ"
+          ],
+          "transliteraties": [
+            "wäʾerəməyasə"
+          ],
+          "glossen": [
+            "en Jeremia"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c275299df4ee4a7e1fb2abc8a48f58f3771580470326469644cec2e0d09a8f8a",
+            "referentie": "4baruch 8:4",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en hij bracht hen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1654"
+          ],
+          "bronwoorden": [
+            "ወአምጽኦሙ"
+          ],
+          "transliteraties": [
+            "wäʾäməṣəʾomu"
+          ],
+          "glossen": [
+            "en hij bracht hen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c275299df4ee4a7e1fb2abc8a48f58f3771580470326469644cec2e0d09a8f8a",
+            "referentie": "4baruch 8:4",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "de Jordaan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG11059"
+          ],
+          "bronwoorden": [
+            "ዮርዳኖስ"
+          ],
+          "transliteraties": [
+            "yorədanosə"
+          ],
+          "glossen": [
+            "de Jordaan"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c275299df4ee4a7e1fb2abc8a48f58f3771580470326469644cec2e0d09a8f8a",
+            "referentie": "4baruch 8:4",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -861,6 +1171,254 @@
               10
             ]
           }
+        },
+        {
+          "tekst": "de Heere",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5914"
+          ],
+          "bronwoorden": [
+            "እግዚእ"
+          ],
+          "transliteraties": [
+            "ʾəgəziʾə"
+          ],
+          "glossen": [
+            "de Heere"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "weigerden zij",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5332"
+          ],
+          "bronwoorden": [
+            "ናፈቁ"
+          ],
+          "transliteraties": [
+            "nafäqu"
+          ],
+          "glossen": [
+            "weigerden zij"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "getrouwd waren",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5813"
+          ],
+          "bronwoorden": [
+            "አውሰቡ"
+          ],
+          "transliteraties": [
+            "ʾäwəsäbu"
+          ],
+          "glossen": [
+            "getrouwd waren"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "naar Jeremia",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10721"
+          ],
+          "bronwoorden": [
+            "ለኤርምያስ"
+          ],
+          "transliteraties": [
+            "läʾerəməyasə"
+          ],
+          "glossen": [
+            "naar Jeremia"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "tot hem zeiden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7755"
+          ],
+          "bronwoorden": [
+            "ይቤልዎ"
+          ],
+          "transliteraties": [
+            "yəbeləwo"
+          ],
+          "glossen": [
+            "tot hem zeiden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "onze vrouwen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5722"
+          ],
+          "bronwoorden": [
+            "አንስቲያነ"
+          ],
+          "transliteraties": [
+            "ʾänəsətiyanä"
+          ],
+          "glossen": [
+            "onze vrouwen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              17
+            ],
+            "grondindices": [
+              17
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "in eeuwigheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6918"
+          ],
+          "bronwoorden": [
+            "ለዓለም"
+          ],
+          "transliteraties": [
+            "läʿalämə"
+          ],
+          "glossen": [
+            "in eeuwigheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              18
+            ],
+            "grondindices": [
+              18
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "de Jordaan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG11059"
+          ],
+          "bronwoorden": [
+            "እምዮርዳኖስ"
+          ],
+          "transliteraties": [
+            "ʾəməyorədanosə"
+          ],
+          "glossen": [
+            "de Jordaan"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "fe2cf44c6cbc06957baafdd75668e1c1fdb03ab18f7a3f61c903a7b4a5fcb815",
+            "referentie": "4baruch 8:5",
+            "bronindices": [
+              23
+            ],
+            "grondindices": [
+              23
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -918,6 +1476,37 @@
             "grondindices": [
               2
             ]
+          }
+        },
+        {
+          "tekst": "en zij kwamen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4190"
+          ],
+          "bronwoorden": [
+            "ወበጽሑ"
+          ],
+          "transliteraties": [
+            "wäbäṣəḥu"
+          ],
+          "glossen": [
+            "en zij kwamen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "17007a0f6eb20a37101c9fa04569727109782050efd0d23b8f9843a0b5ef2f70",
+            "referentie": "4baruch 8:6",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1124,6 +1713,99 @@
               11
             ]
           }
+        },
+        {
+          "tekst": "stonden op",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3245"
+          ],
+          "bronwoorden": [
+            "ወቆሙ"
+          ],
+          "transliteraties": [
+            "wäqomu"
+          ],
+          "glossen": [
+            "en zij stonden op"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f8f27b0bf7082960a86d741448ac75c0c450db5e571459e01ca03b0b8fa0721a",
+            "referentie": "4baruch 8:7",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en Baruch",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10532"
+          ],
+          "bronwoorden": [
+            "ወባሮክ"
+          ],
+          "transliteraties": [
+            "wäbarokə"
+          ],
+          "glossen": [
+            "en Baruch"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f8f27b0bf7082960a86d741448ac75c0c450db5e571459e01ca03b0b8fa0721a",
+            "referentie": "4baruch 8:7",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "uit Babylon",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10544"
+          ],
+          "bronwoorden": [
+            "እምባቢሎን"
+          ],
+          "transliteraties": [
+            "ʾəməbabilonə"
+          ],
+          "glossen": [
+            "uit Babylon"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f8f27b0bf7082960a86d741448ac75c0c450db5e571459e01ca03b0b8fa0721a",
+            "referentie": "4baruch 8:7",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -1312,6 +1994,130 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "getrouwd hadden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5813"
+          ],
+          "bronwoorden": [
+            "አውሰቡ"
+          ],
+          "transliteraties": [
+            "ʾäwəsäbu"
+          ],
+          "glossen": [
+            "getrouwd hadden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8b4af7f4572932ab508fbd2e778a49c87a5065550d3ccd796c30dac3aeea796f",
+            "referentie": "4baruch 8:8",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "van hun makkers",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4138"
+          ],
+          "bronwoorden": [
+            "ለቢጾሙ"
+          ],
+          "transliteraties": [
+            "läbiṣomu"
+          ],
+          "glossen": [
+            "van hun makkers"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8b4af7f4572932ab508fbd2e778a49c87a5065550d3ccd796c30dac3aeea796f",
+            "referentie": "4baruch 8:8",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Staat op",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4308"
+          ],
+          "bronwoorden": [
+            "ተንሥኡ"
+          ],
+          "transliteraties": [
+            "tänəśəʾu"
+          ],
+          "glossen": [
+            "staat op"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8b4af7f4572932ab508fbd2e778a49c87a5065550d3ccd796c30dac3aeea796f",
+            "referentie": "4baruch 8:8",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "En zij vertrokken",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4432"
+          ],
+          "bronwoorden": [
+            "ወኀለፉ"
+          ],
+          "transliteraties": [
+            "wäḫäläfu"
+          ],
+          "glossen": [
+            "en zij vertrokken"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8b4af7f4572932ab508fbd2e778a49c87a5065550d3ccd796c30dac3aeea796f",
+            "referentie": "4baruch 8:8",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1565,6 +2371,192 @@
               8
             ]
           }
+        },
+        {
+          "tekst": "hen zagen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG13661"
+          ],
+          "bronwoorden": [
+            "ርእይዎሙ"
+          ],
+          "transliteraties": [
+            "rəʾəyəwomu"
+          ],
+          "glossen": [
+            "hen zagen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c9aab65e293f9753d1a9a5a624479e3e69d276bbd0ea1abeb980ab4db9e7c25e",
+            "referentie": "4baruch 8:9",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "de mannen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2714"
+          ],
+          "bronwoorden": [
+            "ሰብአ"
+          ],
+          "transliteraties": [
+            "säbəʾä"
+          ],
+          "glossen": [
+            "de mannen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c9aab65e293f9753d1a9a5a624479e3e69d276bbd0ea1abeb980ab4db9e7c25e",
+            "referentie": "4baruch 8:9",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "ingingen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4054"
+          ],
+          "bronwoorden": [
+            "ይባኡ"
+          ],
+          "transliteraties": [
+            "yəbaʾu"
+          ],
+          "glossen": [
+            "zij ingingen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c9aab65e293f9753d1a9a5a624479e3e69d276bbd0ea1abeb980ab4db9e7c25e",
+            "referentie": "4baruch 8:9",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en in het geheim",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4564"
+          ],
+          "bronwoorden": [
+            "ወበኅቡእ"
+          ],
+          "transliteraties": [
+            "wäbäḫəbuʾə"
+          ],
+          "glossen": [
+            "en in het geheim"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c9aab65e293f9753d1a9a5a624479e3e69d276bbd0ea1abeb980ab4db9e7c25e",
+            "referentie": "4baruch 8:9",
+            "bronindices": [
+              18
+            ],
+            "grondindices": [
+              18
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "deze zaak",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7625"
+          ],
+          "bronwoorden": [
+            "ዝንቱ"
+          ],
+          "transliteraties": [
+            "zənətu"
+          ],
+          "glossen": [
+            "deze zaak"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c9aab65e293f9753d1a9a5a624479e3e69d276bbd0ea1abeb980ab4db9e7c25e",
+            "referentie": "4baruch 8:9",
+            "bronindices": [
+              22
+            ],
+            "grondindices": [
+              22
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "onze stad",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG127"
+          ],
+          "bronwoorden": [
+            "ሀገርነ"
+          ],
+          "transliteraties": [
+            "hägärənä"
+          ],
+          "glossen": [
+            "onze stad"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "c9aab65e293f9753d1a9a5a624479e3e69d276bbd0ea1abeb980ab4db9e7c25e",
+            "referentie": "4baruch 8:9",
+            "bronindices": [
+              25
+            ],
+            "grondindices": [
+              25
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -1735,6 +2727,192 @@
             "grondindices": [
               5
             ]
+          }
+        },
+        {
+          "tekst": "wij hebben gezworen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1136"
+          ],
+          "bronwoorden": [
+            "ተማሐልነ"
+          ],
+          "transliteraties": [
+            "tämaḥälənä"
+          ],
+          "glossen": [
+            "wij hebben gezworen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5c9cbe140cb5d63402298a0c9e98aac3c5f7426e308042c87e3b0dd1449dcf6d",
+            "referentie": "4baruch 8:10",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "bij de naam",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3935"
+          ],
+          "bronwoorden": [
+            "በስመ"
+          ],
+          "transliteraties": [
+            "bäsəmä"
+          ],
+          "glossen": [
+            "bij de naam"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5c9cbe140cb5d63402298a0c9e98aac3c5f7426e308042c87e3b0dd1449dcf6d",
+            "referentie": "4baruch 8:10",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "van onze god",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1108"
+          ],
+          "bronwoorden": [
+            "አምላክነ"
+          ],
+          "transliteraties": [
+            "ʾäməlakənä"
+          ],
+          "glossen": [
+            "van onze god"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5c9cbe140cb5d63402298a0c9e98aac3c5f7426e308042c87e3b0dd1449dcf6d",
+            "referentie": "4baruch 8:10",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "dochters",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6431"
+          ],
+          "bronwoorden": [
+            "ወአዋልዲክሙ"
+          ],
+          "transliteraties": [
+            "wäʾäwalədikəmu"
+          ],
+          "glossen": [
+            "en uw dochters"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5c9cbe140cb5d63402298a0c9e98aac3c5f7426e308042c87e3b0dd1449dcf6d",
+            "referentie": "4baruch 8:10",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "in het geheim",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4566"
+          ],
+          "bronwoorden": [
+            "በኅቡእ"
+          ],
+          "transliteraties": [
+            "bäḫəbuʾə"
+          ],
+          "glossen": [
+            "in het geheim"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5c9cbe140cb5d63402298a0c9e98aac3c5f7426e308042c87e3b0dd1449dcf6d",
+            "referentie": "4baruch 8:10",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "zijt uitgegaan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4432"
+          ],
+          "bronwoorden": [
+            "ኀለፍክሙ"
+          ],
+          "transliteraties": [
+            "ḫäläfəkəmu"
+          ],
+          "glossen": [
+            "gij zijt uitgegaan"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5c9cbe140cb5d63402298a0c9e98aac3c5f7426e308042c87e3b0dd1449dcf6d",
+            "referentie": "4baruch 8:10",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -2015,6 +3193,68 @@
               8
             ]
           }
+        },
+        {
+          "tekst": "keerden zij terug",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8455"
+          ],
+          "bronwoorden": [
+            "ገብኡ"
+          ],
+          "transliteraties": [
+            "gäbəʾu"
+          ],
+          "glossen": [
+            "keerden zij terug"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "7dff72e29afef7385f9ff2f647da1ea48b68ecf5ef3cb70f199e98cd5accb87a",
+            "referentie": "4baruch 8:11",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en zij bouwden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG825"
+          ],
+          "bronwoorden": [
+            "ወሐነጹ"
+          ],
+          "transliteraties": [
+            "wäḥänäṣu"
+          ],
+          "glossen": [
+            "en zij bouwden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "7dff72e29afef7385f9ff2f647da1ea48b68ecf5ef3cb70f199e98cd5accb87a",
+            "referentie": "4baruch 8:11",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -2227,6 +3467,161 @@
             "grondindices": [
               11
             ]
+          }
+        },
+        {
+          "tekst": "zond",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10022"
+          ],
+          "bronwoorden": [
+            "ወፈነወ"
+          ],
+          "transliteraties": [
+            "wäfänäwä"
+          ],
+          "glossen": [
+            "en hij zond"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "babeea0b4394d71994b9d5b42f0ea0564dc1dee9a220ec48e2d529da792a96ea",
+            "referentie": "4baruch 8:12",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Bekeert u",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4820"
+          ],
+          "bronwoorden": [
+            "ነስሑ"
+          ],
+          "transliteraties": [
+            "näsəḥu"
+          ],
+          "glossen": [
+            "bekeert u"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "babeea0b4394d71994b9d5b42f0ea0564dc1dee9a220ec48e2d529da792a96ea",
+            "referentie": "4baruch 8:12",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en zie",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5050"
+          ],
+          "bronwoorden": [
+            "ወንዋ"
+          ],
+          "transliteraties": [
+            "wänəwa"
+          ],
+          "glossen": [
+            "en zie"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "babeea0b4394d71994b9d5b42f0ea0564dc1dee9a220ec48e2d529da792a96ea",
+            "referentie": "4baruch 8:12",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "de engel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG355"
+          ],
+          "bronwoorden": [
+            "መልአከ"
+          ],
+          "transliteraties": [
+            "mäləʾäkä"
+          ],
+          "glossen": [
+            "de engel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "babeea0b4394d71994b9d5b42f0ea0564dc1dee9a220ec48e2d529da792a96ea",
+            "referentie": "4baruch 8:12",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "plaats",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1457"
+          ],
+          "bronwoorden": [
+            "መካንክሙ"
+          ],
+          "transliteraties": [
+            "mäkanəkəmu"
+          ],
+          "glossen": [
+            "uw plaats"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "babeea0b4394d71994b9d5b42f0ea0564dc1dee9a220ec48e2d529da792a96ea",
+            "referentie": "4baruch 8:12",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

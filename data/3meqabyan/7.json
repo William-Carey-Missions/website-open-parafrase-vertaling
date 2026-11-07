@@ -198,6 +198,37 @@
               15
             ]
           }
+        },
+        {
+          "tekst": "vrees",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6893"
+          ],
+          "bronwoorden": [
+            "ወፍርሃት"
+          ],
+          "transliteraties": [
+            "wäfǝrǝhatǝ"
+          ],
+          "glossen": [
+            "en vrees"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f680adf876f391eb24f9cacd1651ad686f1a808252e6507a2b4a30868969eca5",
+            "referentie": "3meqabyan 7:1",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -389,6 +420,37 @@
               19
             ]
           }
+        },
+        {
+          "tekst": "God",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8605"
+          ],
+          "bronwoorden": [
+            "ለእግዚአብሔር"
+          ],
+          "transliteraties": [
+            "lägǝzibǝḥerǝ"
+          ],
+          "glossen": [
+            "voor God"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "a5e609ba8617327f84135c996d25b60fd9e754e81ea3776b29fdab4c0e072ebb",
+            "referentie": "3meqabyan 7:2",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -441,6 +503,70 @@
         {
           "woord": "ወተፀመሞ",
           "transliteratie": "wätäṣ́ämämo"
+        }
+      ],
+      "woordnummers": [
+        {
+          "tekst": "God",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8605"
+          ],
+          "bronwoorden": [
+            "በእግዚአብሔር"
+          ],
+          "transliteraties": [
+            "bägǝzibǝḥerǝ"
+          ],
+          "glossen": [
+            "in God"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8cce6b3cb3b77c0176167e00cd6b1cd4fd2a155e2ad7de8b61d86ca2e77bfe34",
+            "referentie": "3meqabyan 7:3",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "werd beschaamd",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4736"
+          ],
+          "bronwoorden": [
+            "ወተኃፍረ"
+          ],
+          "transliteraties": [
+            "wätäḫafǝrä"
+          ],
+          "glossen": [
+            "en hij werd beschaamd"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8cce6b3cb3b77c0176167e00cd6b1cd4fd2a155e2ad7de8b61d86ca2e77bfe34",
+            "referentie": "3meqabyan 7:3",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -591,6 +717,37 @@
             "grondindices": [
               5
             ]
+          }
+        },
+        {
+          "tekst": "werd beschaamd",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4736"
+          ],
+          "bronwoorden": [
+            "ወተኃፍረ"
+          ],
+          "transliteraties": [
+            "wätäḫafǝrä"
+          ],
+          "glossen": [
+            "en hij werd beschaamd"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "837ad170fd5915ef61e6312ab9df56fef63d2d42536f4f8cd67e101dc5afac3d",
+            "referentie": "3meqabyan 7:4",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -881,6 +1038,68 @@
             "grondindices": [
               21
             ]
+          }
+        },
+        {
+          "tekst": "ziel van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5320"
+          ],
+          "bronwoorden": [
+            "ነፍሰ"
+          ],
+          "transliteraties": [
+            "näfǝsä"
+          ],
+          "glossen": [
+            "ziel van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d746f7a616e691fc1cb4b2f68736f730e3061bf830c3f8040109bf49ef608355",
+            "referentie": "3meqabyan 7:5",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "geslacht van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6432"
+          ],
+          "bronwoorden": [
+            "ትውልደ"
+          ],
+          "transliteraties": [
+            "tǝwǝlǝdä"
+          ],
+          "glossen": [
+            "geslacht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d746f7a616e691fc1cb4b2f68736f730e3061bf830c3f8040109bf49ef608355",
+            "referentie": "3meqabyan 7:5",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

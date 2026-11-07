@@ -189,6 +189,99 @@
               14
             ]
           }
+        },
+        {
+          "tekst": "En zij namen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4801"
+          ],
+          "bronwoorden": [
+            "ወነሥኡ"
+          ],
+          "transliteraties": [
+            "wänäśǝ"
+          ],
+          "glossen": [
+            "en zij namen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "326a84af8d7f492b3d82b99662e76e1d38f827143e182fe892b0a3a812b6b551",
+            "referentie": "henoch 7:1",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en zij begonnen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6846"
+          ],
+          "bronwoorden": [
+            "ወወጠኑ"
+          ],
+          "transliteraties": [
+            "wäwäṭänu"
+          ],
+          "glossen": [
+            "en zij begonnen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "326a84af8d7f492b3d82b99662e76e1d38f827143e182fe892b0a3a812b6b551",
+            "referentie": "henoch 7:1",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "snijden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1345"
+          ],
+          "bronwoorden": [
+            "ወመቲረ"
+          ],
+          "transliteraties": [
+            "wämätirä"
+          ],
+          "glossen": [
+            "en snijden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "326a84af8d7f492b3d82b99662e76e1d38f827143e182fe892b0a3a812b6b551",
+            "referentie": "henoch 7:1",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -245,6 +338,101 @@
           "transliteratie": "bämätǝ",
           "betekenis": "in ellen",
           "strongs": "OVG5443"
+        }
+      ],
+      "woordnummers": [
+        {
+          "tekst": "werden zwanger",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9730"
+          ],
+          "bronwoorden": [
+            "ፀንሳ"
+          ],
+          "transliteraties": [
+            "ṣ́änǝsa"
+          ],
+          "glossen": [
+            "zij werden zwanger"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "138788a358af9b8fa10490b5b08baba2188ebb1ebda6aa334ff808281944f011",
+            "referentie": "henoch 7:2",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "baarden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ወወለዳ"
+          ],
+          "transliteraties": [
+            "wäwäläda"
+          ],
+          "glossen": [
+            "en zij baarden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "138788a358af9b8fa10490b5b08baba2188ebb1ebda6aa334ff808281944f011",
+            "referentie": "henoch 7:2",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "gestalte",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3245"
+          ],
+          "bronwoorden": [
+            "ወቆሞሙ"
+          ],
+          "transliteraties": [
+            "wäqomomu"
+          ],
+          "glossen": [
+            "en hun gestalte"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "138788a358af9b8fa10490b5b08baba2188ebb1ebda6aa334ff808281944f011",
+            "referentie": "henoch 7:2",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -454,6 +642,99 @@
             "grondindices": [
               4
             ]
+          }
+        },
+        {
+          "tekst": "En zij begonnen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6846"
+          ],
+          "bronwoorden": [
+            "ወወጠኑ"
+          ],
+          "transliteraties": [
+            "wäwäṭänu"
+          ],
+          "glossen": [
+            "en zij begonnen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6e236a1710a4444454f4c598e2d67280b9bb940fbd2f9fbe889c33b82d0b909d",
+            "referentie": "henoch 7:5",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "vlees",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2003"
+          ],
+          "bronwoorden": [
+            "ወሥጋሆሙ"
+          ],
+          "transliteraties": [
+            "wäśǝgahomu"
+          ],
+          "glossen": [
+            "en hun vlees"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6e236a1710a4444454f4c598e2d67280b9bb940fbd2f9fbe889c33b82d0b909d",
+            "referentie": "henoch 7:5",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "bloed",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG11996"
+          ],
+          "bronwoorden": [
+            "ወደመ"
+          ],
+          "transliteraties": [
+            "wädämä"
+          ],
+          "glossen": [
+            "en het bloed van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6e236a1710a4444454f4c598e2d67280b9bb940fbd2f9fbe889c33b82d0b909d",
+            "referentie": "henoch 7:5",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

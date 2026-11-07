@@ -228,6 +228,68 @@
               11
             ]
           }
+        },
+        {
+          "tekst": "En opnieuw",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8172"
+          ],
+          "bronwoorden": [
+            "ወዳግመ"
+          ],
+          "transliteraties": [
+            "wädagǝmä"
+          ],
+          "glossen": [
+            "en opnieuw"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6c3d167cc5c089f5b3150887996f34e18a2dccb061133db175b77ce38aa3da9d",
+            "referentie": "henoch 4:1",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "dagen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6717"
+          ],
+          "bronwoorden": [
+            "መዋዕለ"
+          ],
+          "transliteraties": [
+            "mäwalä"
+          ],
+          "glossen": [
+            "dagen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6c3d167cc5c089f5b3150887996f34e18a2dccb061133db175b77ce38aa3da9d",
+            "referentie": "henoch 4:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     }

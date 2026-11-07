@@ -1,0 +1,673 @@
+{
+  "versie": "geez-koppelingen-2026-11-07-v1",
+  "toelichting": "Inhoudelijk beoordeelde koppelingen; bronindices na herstel van versgrenzen. Nederlandse tekst en bronwoorden zijn met hashes vastgelegd.",
+  "correcties": [
+    {
+      "referentie": [
+        "henoch",
+        1,
+        1
+      ],
+      "grondindex": 0,
+      "grondtekst_sha256": "dad2ea9dc930c7f169e86ace0857d9865a361380d00f1d2550c889cc1a70a1f5",
+      "tekst_sha256": "be901e05d8bd08cfb29677cad3355c827b862107c8af3adaa0fafbdfbcd3f48f",
+      "tekst": "woorden",
+      "voorkomen": 1,
+      "reden": "De openingsformule: de woorden van de zegen; qalä is hier als woorden weergegeven."
+    },
+    {
+      "referentie": [
+        "henoch",
+        1,
+        1
+      ],
+      "grondindex": 11,
+      "grondtekst_sha256": "dad2ea9dc930c7f169e86ace0857d9865a361380d00f1d2550c889cc1a70a1f5",
+      "tekst_sha256": "be901e05d8bd08cfb29677cad3355c827b862107c8af3adaa0fafbdfbcd3f48f",
+      "tekst": "benauwdheid",
+      "voorkomen": 1,
+      "reden": "Benauwdheid is hier de weergave van verdrukking/nood op die dag."
+    },
+    {
+      "referentie": [
+        "henoch",
+        1,
+        1
+      ],
+      "grondindex": 13,
+      "grondtekst_sha256": "dad2ea9dc930c7f169e86ace0857d9865a361380d00f1d2550c889cc1a70a1f5",
+      "tekst_sha256": "be901e05d8bd08cfb29677cad3355c827b862107c8af3adaa0fafbdfbcd3f48f",
+      "tekst": "alle",
+      "voorkomen": 1,
+      "reden": "Alle kwalificeert de bozen; niet het eerdere alle/alles elders."
+    },
+    {
+      "referentie": [
+        "henoch",
+        1,
+        2
+      ],
+      "grondindex": 9,
+      "grondtekst_sha256": "6b4fd49dc6b9ecf458b2d7db4e9f4298430d283cebfac401bf8c4921aa8a4977",
+      "tekst_sha256": "34fe757f59bd08974f5a775689165f643d6fcc0a7c41264c182c1d7043b41d6c",
+      "tekst": "geopend",
+      "voorkomen": 1,
+      "reden": "De geopende ogen: de verbogen glosse geopende correspondeert met geopend waren."
+    },
+    {
+      "referentie": [
+        "henoch",
+        1,
+        2
+      ],
+      "grondindex": 11,
+      "grondtekst_sha256": "6b4fd49dc6b9ecf458b2d7db4e9f4298430d283cebfac401bf8c4921aa8a4977",
+      "tekst_sha256": "34fe757f59bd08974f5a775689165f643d6fcc0a7c41264c182c1d7043b41d6c",
+      "tekst": "gezicht",
+      "voorkomen": 1,
+      "reden": "Het heilige gezicht dat hij zag is het visioen; geen lichaamsdeel."
+    },
+    {
+      "referentie": [
+        "henoch",
+        1,
+        2
+      ],
+      "grondindex": 10,
+      "grondtekst_sha256": "6b4fd49dc6b9ecf458b2d7db4e9f4298430d283cebfac401bf8c4921aa8a4977",
+      "tekst_sha256": "34fe757f59bd08974f5a775689165f643d6fcc0a7c41264c182c1d7043b41d6c",
+      "tekst": "zag",
+      "voorkomen": 1,
+      "reden": "Henoch zag een heilig gezicht; het eerste zag is de hoofdzin."
+    },
+    {
+      "referentie": [
+        "henoch",
+        1,
+        2
+      ],
+      "grondindex": 21,
+      "grondtekst_sha256": "6b4fd49dc6b9ecf458b2d7db4e9f4298430d283cebfac401bf8c4921aa8a4977",
+      "tekst_sha256": "34fe757f59bd08974f5a775689165f643d6fcc0a7c41264c182c1d7043b41d6c",
+      "tekst": "zag",
+      "voorkomen": 2,
+      "reden": "Wat ik zag aan het einde van de waarnemingszin; het tweede zag."
+    },
+    {
+      "referentie": [
+        "henoch",
+        22,
+        3
+      ],
+      "grondindex": 20,
+      "grondtekst_sha256": "165d13778a001efdfb253525788f9db52abc5a477842a5c6b90287e85117b4cc",
+      "tekst_sha256": "2153fcff64a8279278747429da81cdf63ab30250d6d29791302217b4a0f4d89a",
+      "tekst": "deze",
+      "voorkomen": 2,
+      "reden": "Dit is het tweede deze, na voor hen zijn; het eerste hoort bij bronindex 10."
+    },
+    {
+      "referentie": [
+        "henoch",
+        22,
+        3
+      ],
+      "grondindex": 0,
+      "grondtekst_sha256": "165d13778a001efdfb253525788f9db52abc5a477842a5c6b90287e85117b4cc",
+      "tekst_sha256": "2153fcff64a8279278747429da81cdf63ab30250d6d29791302217b4a0f4d89a",
+      "tekst": "die",
+      "voorkomen": 1,
+      "reden": "De bronpositie staat in de openingsformule vóór antwoordde; het Nederlandse die bij mij was hoort bij de relatieve bijzin, niet bij deze bronpositie.",
+      "uitschakelen": true
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        11,
+        23
+      ],
+      "grondindex": 15,
+      "grondtekst_sha256": "0b5fe9ac22531d28aa5585e1da8512369b5bc3b63053850f98428abb18880415",
+      "tekst_sha256": "2d6207d243f271d632c8392fb68f37b56a53f52085f5019f83a70b5876396499",
+      "tekst": "bovenkant",
+      "voorkomen": 1,
+      "reden": "De plaatsing van het werktuig op de bovenkant van de aarde."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        11,
+        23
+      ],
+      "grondindex": 20,
+      "grondtekst_sha256": "0b5fe9ac22531d28aa5585e1da8512369b5bc3b63053850f98428abb18880415",
+      "tekst_sha256": "2d6207d243f271d632c8392fb68f37b56a53f52085f5019f83a70b5876396499",
+      "tekst": "om",
+      "voorkomen": 1,
+      "reden": "De doelzin om daarop het zaad te leggen; zoals staat niet in deze zin."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        18,
+        2
+      ],
+      "grondindex": 13,
+      "grondtekst_sha256": "748db4badc1c0ae8b6433bd789d996a509733e56d95306708321456dbc00df84",
+      "tekst_sha256": "1307efb0e24b8f515bdfbcc9f289d84f393c435ee803d75eee0d31f18c24a1be",
+      "tekst": "een",
+      "voorkomen": 1,
+      "reden": "Offer hem op een van de bergen; het Nederlands heeft hier geen accent op een."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        18,
+        2
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "748db4badc1c0ae8b6433bd789d996a509733e56d95306708321456dbc00df84",
+      "tekst_sha256": "1307efb0e24b8f515bdfbcc9f289d84f393c435ee803d75eee0d31f18c24a1be",
+      "tekst": "op",
+      "voorkomen": 1,
+      "reden": "De tweede plaatsaanduiding: offer hem op een van de bergen."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        18,
+        3
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "1712f72447daad29c915a12426dc1b0491285a9d1272212253b2525e6019a292",
+      "tekst_sha256": "38e1dcfcb508ce5b5dc17e12504ecce630ee33f07f1a338b4c3ba85c9b4bdae7",
+      "tekst": "brandoffer",
+      "voorkomen": 1,
+      "reden": "Het hout is bestemd voor het brandoffer; offer is onderdeel van dat Nederlandse woord."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        18,
+        11
+      ],
+      "grondindex": 4,
+      "grondtekst_sha256": "09108aff8cc697e455e356990c4e2dc607244f384918d62f5bbcd249bdda8d6d",
+      "tekst_sha256": "8cbd2de432d95d64016d1b260c42168a2f8365239960115bd664b0597d043522",
+      "tekst": "tegen",
+      "voorkomen": 1,
+      "reden": "Strek uw hand niet uit tegen het kind; de voorzetselgroep hoort bij kind."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        19,
+        23
+      ],
+      "grondindex": 3,
+      "grondtekst_sha256": "4ac798c4b1e142857a70c3bffe0e0d4b56041e0435e48291ffa92289bd0f3e18",
+      "tekst_sha256": "2a487ce6da686882e89b6deea9f458dba55df8271d09d183298dac1b49736648",
+      "tekst": "waarmee",
+      "voorkomen": 1,
+      "reden": "De relatieve bijzin bij zegeningen: waarmee God mij gezegend heeft."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        20,
+        2
+      ],
+      "grondindex": 17,
+      "grondtekst_sha256": "a6fa8b75fce71e0f8471961b4af915fbfe9ec5169b3c73e158a8f38b4a96e091",
+      "tekst_sha256": "60649026aab43d125bf58523a8f7d4b8847720e0bd61ba7117cecb2fbe269c82",
+      "tekst": "allen",
+      "voorkomen": 1,
+      "reden": "Te midden van allen: de kwantor is hier allen, niet al."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        20,
+        2
+      ],
+      "grondindex": 21,
+      "grondtekst_sha256": "a6fa8b75fce71e0f8471961b4af915fbfe9ec5169b3c73e158a8f38b4a96e091",
+      "tekst_sha256": "60649026aab43d125bf58523a8f7d4b8847720e0bd61ba7117cecb2fbe269c82",
+      "tekst": "tegenover",
+      "voorkomen": 1,
+      "reden": "De een tegenover de ander: deze bronpositie hoort bij de onderlinge verhouding, niet bij op de aarde."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        20,
+        2
+      ],
+      "grondindex": 27,
+      "grondtekst_sha256": "a6fa8b75fce71e0f8471961b4af915fbfe9ec5169b3c73e158a8f38b4a96e091",
+      "tekst_sha256": "60649026aab43d125bf58523a8f7d4b8847720e0bd61ba7117cecb2fbe269c82",
+      "tekst": "op",
+      "voorkomen": 1,
+      "reden": "De slotbepaling op de aarde heeft een eigen bronwoord."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        20,
+        12
+      ],
+      "grondindex": 14,
+      "grondtekst_sha256": "5d8a594d4946af9b4478e4537cf593eea6730cc4bae83a5a6e5919fbbc182d3b",
+      "tekst_sha256": "4c464c9c3ba3f7d115618d339f6afda5861eb5d2bdc990f033adecbe8d1df114",
+      "tekst": "heel",
+      "voorkomen": 1,
+      "reden": "In heel het land: al/alles is hier als heel weergegeven."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        31,
+        26
+      ],
+      "grondindex": 19,
+      "grondtekst_sha256": "a617778c56b5f93e8c3de19773c871b4d35e761371b66702f438211b01be4dae",
+      "tekst_sha256": "eb64670d6720fcac5256b04a07683621e288eb93fc5a1cdd2e9344793d1bd9ba",
+      "tekst": "God",
+      "voorkomen": 2,
+      "reden": "Voor God gebracht zou worden: het tweede God; de eerdere gelofte aan God is bronindex 8."
+    },
+    {
+      "referentie": [
+        "jubileeen",
+        31,
+        27
+      ],
+      "grondindex": 6,
+      "grondtekst_sha256": "3fe2806a37ea1d2b7e3e63ab8a84dbf3dbba997c66e9ea10b67edefa05c7ccfa",
+      "tekst_sha256": "17be1be77f2bf14bb72bc67ca7f2b507829b841d3470b0e1e7befb89eca5a03f",
+      "tekst": "meegaan",
+      "voorkomen": 1,
+      "reden": "De woorden kan niet met u meegaan staan in de eerste zin van het antwoord van Izak."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        1,
+        1
+      ],
+      "grondindex": 4,
+      "grondtekst_sha256": "b3fa2ef7074ddbd6d049be374a7509473b2cd5a3c25e7aea665a8234a8025b06",
+      "tekst_sha256": "b034eb09f4d27582992810caafa7d4bc8f157486ed83a426ba1a61d833adbc33",
+      "tekst": "Tsiruts'aidan",
+      "voorkomen": 1,
+      "reden": "De genoemde persoon in de openingszin correspondeert met de aanwezige naamvorm ጺሩጻይዳን."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        1,
+        4
+      ],
+      "grondindex": 6,
+      "grondtekst_sha256": "62e58d62ebe3c4adae6a5ab1063275fae38ad042fde1a43c8ca8ffd08af37d35",
+      "tekst_sha256": "2e7e54d7d4c8f5ef230636ccf46edbca0d5012967a8d4fc6c5f1d9dcac891360",
+      "tekst": "heerschappij",
+      "voorkomen": 1,
+      "reden": "De gegeven macht/het gezag is hier heerschappij over het koninkrijk."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        1,
+        4
+      ],
+      "grondindex": 8,
+      "grondtekst_sha256": "62e58d62ebe3c4adae6a5ab1063275fae38ad042fde1a43c8ca8ffd08af37d35",
+      "tekst_sha256": "2e7e54d7d4c8f5ef230636ccf46edbca0d5012967a8d4fc6c5f1d9dcac891360",
+      "tekst": "heel",
+      "voorkomen": 1,
+      "reden": "De omvang van zijn koninkrijk: heel zijn koninkrijk."
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        1,
+        1
+      ],
+      "grondindex": 3,
+      "grondtekst_sha256": "7841ac0d3191746d91d79fa9b3cab1c4ff3105bd983be50105d14ef56902960a",
+      "tekst_sha256": "b0d9316aa9074d9b5feec30121065e641c1438c4384aec3b1129bfde3195949f",
+      "tekst": "Meqabis",
+      "voorkomen": 1,
+      "reden": "De naam መቃቢስ correspondeert met Meqabis, het onderwerp van aandeed."
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        1,
+        1
+      ],
+      "grondindex": 11,
+      "grondtekst_sha256": "7841ac0d3191746d91d79fa9b3cab1c4ff3105bd983be50105d14ef56902960a",
+      "tekst_sha256": "b0d9316aa9074d9b5feec30121065e641c1438c4384aec3b1129bfde3195949f",
+      "tekst": "omgeving",
+      "voorkomen": 1,
+      "reden": "De plaatsaanduiding rondom is hier tot aan de omgeving van Jeruzalem."
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        1,
+        2
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "81efdec42f283bb6517dc861bf6544df3a692040aac111cac491818ecae39777",
+      "tekst_sha256": "b39f110f50f51278820ada9f179ff24db44e4c898e24a57c45e0ede092c44883",
+      "tekst": "totdat",
+      "voorkomen": 1,
+      "reden": "De grensbepaling bij niemand overlaten begint met totdat; tot aan Jeruzalem is een eerdere plaatsbepaling."
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        1,
+        3
+      ],
+      "grondindex": 8,
+      "grondtekst_sha256": "047ebde6f9eca9ef942ba90ff51d44213bb80791eea9c8b72b430072acf31cdd",
+      "tekst_sha256": "8ac5514d97d92de84a3aafbabecbe4cb126e814e871f3a46134ddc1a26cd6c50",
+      "tekst": "Meqabis",
+      "voorkomen": 1,
+      "reden": "De Moabiet Meqabis in de hoofdzin correspondeert met de aanwezige naamvorm."
+    },
+    {
+      "referentie": [
+        "2meqabyan",
+        1,
+        4
+      ],
+      "grondindex": 5,
+      "grondtekst_sha256": "c1d7ba7534b39dffca569c3562d57be6f5ba9de0cb160e416f2acab69e67afef",
+      "tekst_sha256": "1b4cbdc127ffd698d6fd2d2f1ff37cdebd642e5ccc2cdc108af1856d642cf24b",
+      "tekst": "Gods",
+      "voorkomen": 1,
+      "reden": "De vijanden Gods: Gods is de Nederlandse genitief van God."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        1,
+        1
+      ],
+      "grondindex": 4,
+      "grondtekst_sha256": "c946f9f1f93b5d394e3b2bd2f9fe0495de35b55c9dadb5be883b665d236fa111",
+      "tekst_sha256": "f6d6d0556c130e5003d4c4ac86c0453f36cffb936dfab0fb6d6305877772d72d",
+      "tekst": "laatste",
+      "voorkomen": 1,
+      "reden": "In de laatste dagen: laatste hoort bij deze tijdsbepaling."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        1,
+        1
+      ],
+      "grondindex": 9,
+      "grondtekst_sha256": "c946f9f1f93b5d394e3b2bd2f9fe0495de35b55c9dadb5be883b665d236fa111",
+      "tekst_sha256": "f6d6d0556c130e5003d4c4ac86c0453f36cffb936dfab0fb6d6305877772d72d",
+      "tekst": "goede",
+      "voorkomen": 1,
+      "reden": "De goede is de zelfstandig gebruikte verbogen vorm van goed."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        1,
+        1
+      ],
+      "grondindex": 10,
+      "grondtekst_sha256": "c946f9f1f93b5d394e3b2bd2f9fe0495de35b55c9dadb5be883b665d236fa111",
+      "tekst_sha256": "f6d6d0556c130e5003d4c4ac86c0453f36cffb936dfab0fb6d6305877772d72d",
+      "tekst": "zachtmoedige",
+      "voorkomen": 1,
+      "reden": "De zachtmoedige is de zelfstandig gebruikte verbogen vorm van zachtmoedig."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        1,
+        2
+      ],
+      "grondindex": 5,
+      "grondtekst_sha256": "95b100f6fb962b2c7ae4abf8132e751730790a764d8b09a97ce7700fc7afbf77",
+      "tekst_sha256": "5eb35963c63c639ceccbaade269c44c005d456c2e2746677c15b2a1b7ec388f7",
+      "tekst": "tot",
+      "voorkomen": 1,
+      "reden": "Doet zijn eer wederkeren tot stof: de grondtekstpositie staat direct vóór aarde/stof."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        1,
+        3
+      ],
+      "grondindex": 13,
+      "grondtekst_sha256": "ebc0d4f791c2e18a42b9abfb85851ab94d130185bed43c4e1d61421731dcff00",
+      "tekst_sha256": "003d05d3876dad2ebb024d1ae49ec122d99b824c5a90b158bf38f5697f73386c",
+      "tekst": "hoogte",
+      "voorkomen": 1,
+      "reden": "Ik klim op in de hoogte: deze bronpositie staat na ik stijg op en in; boven mij is een andere zin."
+    },
+    {
+      "referentie": [
+        "4baruch",
+        1,
+        1
+      ],
+      "grondindex": 9,
+      "grondtekst_sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+      "tekst_sha256": "66e0b08a8d690bf77f68d081e06f0d16218415a2aec17b73c60979df291dee9c",
+      "tekst": "Jeremia",
+      "voorkomen": 1,
+      "reden": "Tot Jeremia sprak: de eerste naam is de ontvanger vóór de directe rede."
+    },
+    {
+      "referentie": [
+        "4baruch",
+        1,
+        1
+      ],
+      "grondindex": 11,
+      "grondtekst_sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+      "tekst_sha256": "66e0b08a8d690bf77f68d081e06f0d16218415a2aec17b73c60979df291dee9c",
+      "tekst": "Jeremia",
+      "voorkomen": 2,
+      "reden": "Jeremia, Mijn uitverkorene: de tweede naam is de aanspreking in de directe rede."
+    },
+    {
+      "referentie": [
+        "4baruch",
+        1,
+        1
+      ],
+      "grondindex": 10,
+      "grondtekst_sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+      "tekst_sha256": "66e0b08a8d690bf77f68d081e06f0d16218415a2aec17b73c60979df291dee9c",
+      "tekst": "zei",
+      "voorkomen": 1,
+      "reden": "En tot hem zei is de introductie van de directe rede; de glosse luidt en zeide tot hem."
+    },
+    {
+      "referentie": [
+        "4baruch",
+        1,
+        4
+      ],
+      "grondindex": 7,
+      "grondtekst_sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+      "tekst_sha256": "fe812d42396cf536efaa2a4785baddeb56f9a22796f31266473574bcf9f9f508",
+      "tekst": "dienaar",
+      "voorkomen": 1,
+      "reden": "Gebied uw dienaar: dienaar correspondeert met dienstknecht."
+    },
+    {
+      "referentie": [
+        "4baruch",
+        1,
+        4
+      ],
+      "grondindex": 9,
+      "grondtekst_sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+      "tekst_sha256": "fe812d42396cf536efaa2a4785baddeb56f9a22796f31266473574bcf9f9f508",
+      "tekst": "spreke",
+      "voorkomen": 1,
+      "reden": "Dat hij voor uw aangezicht spreke: het werkwoord staat na de aangesproken dienaar."
+    },
+    {
+      "referentie": [
+        "4baruch",
+        5,
+        5
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "24f2a27122df68d040f8d297ce3a4ad6d743c2c4365e0452c296c328229c0518",
+      "tekst_sha256": "7a9d3ed4a084f357f087f54158bdcf35c9808ae230b266b2ca68f6e937d5e2bb",
+      "tekst": "opdat",
+      "voorkomen": 1,
+      "reden": "De doelzin opdat mijn vader mij niet berispt heeft bronindex 12; index 9 hoort bij dat ik zal slapen.",
+      "oude_grondindex": 9,
+      "oud_anker": "opdat"
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        8,
+        17
+      ],
+      "grondindex": 16,
+      "grondtekst_sha256": "074f97d2de4f7e6587b489b61851e952dd167b16c6a369fa96fc9521e02c6950",
+      "tekst_sha256": "d6fae2691806dc24f1afe4665a708cd87d2002b24067bd076f5c0baf5da0e13e",
+      "tekst": "duisternis",
+      "voorkomen": 2,
+      "reden": "De duisternis van de nacht in de slotzin: het tweede duisternis."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        8,
+        17
+      ],
+      "grondindex": 9,
+      "grondtekst_sha256": "074f97d2de4f7e6587b489b61851e952dd167b16c6a369fa96fc9521e02c6950",
+      "tekst_sha256": "d6fae2691806dc24f1afe4665a708cd87d2002b24067bd076f5c0baf5da0e13e",
+      "tekst": "duisternis",
+      "voorkomen": 1,
+      "reden": "De wereld die geheel van duisternis is: het eerste duisternis."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        8,
+        17
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "074f97d2de4f7e6587b489b61851e952dd167b16c6a369fa96fc9521e02c6950",
+      "tekst_sha256": "d6fae2691806dc24f1afe4665a708cd87d2002b24067bd076f5c0baf5da0e13e",
+      "tekst": "wereld",
+      "voorkomen": 2,
+      "reden": "De hele wereld slaapt daarin: het tweede wereld."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        8,
+        22
+      ],
+      "grondindex": 30,
+      "grondtekst_sha256": "8538cdba9982b9830561ac52748579b00d1cfe23ff627476680796e534bb2a54",
+      "tekst_sha256": "739a2fade963d486e087c0e33595a6a9030c77d77ac1995f41bb8600fa557925",
+      "tekst": "op",
+      "voorkomen": 2,
+      "reden": "De plaatsbepaling op heel de aarde, niet het eerdere op in wekt op."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        14,
+        2
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+      "tekst_sha256": "418c58fb35cb59b96012a84ba44d4b447a1c6951b7d4d39fb96d0afb68ac20ee",
+      "tekst": "allen",
+      "voorkomen": 1,
+      "reden": "De tweede vernietigingszin luidt Hij vernietigde allen; het eerdere al hoort bij bronindex 2."
+    },
+    {
+      "referentie": [
+        "1meqabyan",
+        14,
+        2
+      ],
+      "grondindex": 7,
+      "grondtekst_sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+      "tekst_sha256": "418c58fb35cb59b96012a84ba44d4b447a1c6951b7d4d39fb96d0afb68ac20ee",
+      "tekst": "over",
+      "voorkomen": 1,
+      "reden": "De bronpositie introduceert de reden voor berouw; het Nederlandse over is onderdeel van liet niemand over en hoort bij een later werkwoord.",
+      "uitschakelen": true
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        4,
+        6
+      ],
+      "grondindex": 15,
+      "grondtekst_sha256": "956fb8ad537d58aa8ac8c2ef7d5cae03b88ae7928dd8f470dbd1c3afbfaeda54",
+      "tekst_sha256": "7c3bd1e0003a273ef796100493f7de197707b47c74f079c64d76eb9ec9a4efad",
+      "tekst": "die",
+      "voorkomen": 2,
+      "reden": "De serafim die Hem prijzen: het tweede die in het vers."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        4,
+        9
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "a25786779eef01c84378dddd63d9a7622bc2625b11b283bd52541e3a451f066f",
+      "tekst_sha256": "6c6ca05ba265687d13ee83c5949984bb65141ab5f8e294481a2e328848aeb959",
+      "tekst": "in",
+      "voorkomen": 3,
+      "reden": "De slotbepaling in de siddering van de hel: het derde in."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        4,
+        14
+      ],
+      "grondindex": 10,
+      "grondtekst_sha256": "47b62aca05e9c290ef791f44f1e1479aed7c49bcb2f0d96a3154e9852c7069c7",
+      "tekst_sha256": "2250334b03524b7ed9eca07acc9e7e3e50b268eb2f44dc34841df98bfa8b7a1f",
+      "tekst": "dat",
+      "voorkomen": 1,
+      "reden": "De inhoudszin dat Zijn gebod overtreden zou worden; Zoals ontbreekt in dit vers."
+    },
+    {
+      "referentie": [
+        "3meqabyan",
+        4,
+        17
+      ],
+      "grondindex": 12,
+      "grondtekst_sha256": "1c784539491550e80806849236c77dcabac85580c0f1c9f3f99af9e6fc279197",
+      "tekst_sha256": "7f0d290b5e750712f40b28ac25693c02a92f210a1b9f64415fa9cd35bece02e4",
+      "tekst": "wat geworden is",
+      "voorkomen": 1,
+      "reden": "De relatieve omschrijving van alles: wat geworden is; werd staat niet in dit vers."
+    }
+  ]
+}

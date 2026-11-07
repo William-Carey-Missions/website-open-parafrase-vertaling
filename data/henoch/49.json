@@ -191,6 +191,37 @@
               9
             ]
           }
+        },
+        {
+          "tekst": "heerlijkheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2695"
+          ],
+          "bronwoorden": [
+            "ወስብሐት"
+          ],
+          "transliteraties": [
+            "wäsǝbǝḥätǝ"
+          ],
+          "glossen": [
+            "en heerlijkheid/lof"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "dde9ca89a9c2ab51e9068113930ff21daf743be96648ac13771c9498c3cfb053",
+            "referentie": "henoch 49:1",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -523,6 +554,68 @@
               20
             ]
           }
+        },
+        {
+          "tekst": "onrecht",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6962"
+          ],
+          "bronwoorden": [
+            "ወዐመፃ"
+          ],
+          "transliteraties": [
+            "wämäṣ́a"
+          ],
+          "glossen": [
+            "en onrecht"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "da7279ebefa1be6ca2ff2907207a21a23e9d5cdced51336175f7e71a3e21286f",
+            "referentie": "henoch 49:2",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en zijn heerlijkheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2695"
+          ],
+          "bronwoorden": [
+            "ወስብሐቲሁ"
+          ],
+          "transliteraties": [
+            "wäsǝbǝḥätihu"
+          ],
+          "glossen": [
+            "en zijn heerlijkheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "da7279ebefa1be6ca2ff2907207a21a23e9d5cdced51336175f7e71a3e21286f",
+            "referentie": "henoch 49:2",
+            "bronindices": [
+              18
+            ],
+            "grondindices": [
+              18
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -667,6 +760,68 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "kracht",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4628"
+          ],
+          "bronwoorden": [
+            "ወኀይል"
+          ],
+          "transliteraties": [
+            "wäḫäyǝlǝ"
+          ],
+          "glossen": [
+            "en kracht"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "97b5e7deb1d6d0118573b31618ddd6d08d5fb4e8149cd664779642cb8b3eccd3",
+            "referentie": "henoch 49:3",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "in gerechtigheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9563"
+          ],
+          "bronwoorden": [
+            "በጽድቅ"
+          ],
+          "transliteraties": [
+            "bäṣǝdǝqǝ"
+          ],
+          "glossen": [
+            "in gerechtigheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "97b5e7deb1d6d0118573b31618ddd6d08d5fb4e8149cd664779642cb8b3eccd3",
+            "referentie": "henoch 49:3",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -813,6 +968,37 @@
             "grondindices": [
               9
             ]
+          }
+        },
+        {
+          "tekst": "verborgen dingen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4567"
+          ],
+          "bronwoorden": [
+            "ዘኅቡኣት"
+          ],
+          "transliteraties": [
+            "zäḫǝbutǝ"
+          ],
+          "glossen": [
+            "van de verborgen dingen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e67c592912f465bd8d17ff3d5149a6b556f1bcfaa2152d5934bc49bf41bd0513",
+            "referentie": "henoch 49:4",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

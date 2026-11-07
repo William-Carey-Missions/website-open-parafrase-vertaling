@@ -236,6 +236,37 @@
               15
             ]
           }
+        },
+        {
+          "tekst": "westen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7006"
+          ],
+          "bronwoorden": [
+            "ወእምዕራብ"
+          ],
+          "transliteraties": [
+            "wämǝrabǝ"
+          ],
+          "glossen": [
+            "en uit het westen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "2ed9fe06c8260f097620496a0379cdad11739b3a596b64da39fc223632733b65",
+            "referentie": "henoch 57:1",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },

@@ -71,6 +71,70 @@
           "betekenis": "en hij zei tegen hem",
           "strongs": "OVG6741"
         }
+      ],
+      "woordnummers": [
+        {
+          "tekst": "sprak",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5197"
+          ],
+          "bronwoorden": [
+            "ተናገረ"
+          ],
+          "transliteraties": [
+            "tänagärä"
+          ],
+          "glossen": [
+            "hij sprak"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "94397c02f72e95596ea444511c8b5660646fe5acb7bebe0a912d70540163ccdd",
+            "referentie": "henoch 10:1",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "zoon van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ወልደ"
+          ],
+          "transliteraties": [
+            "wälǝdä"
+          ],
+          "glossen": [
+            "zoon van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "94397c02f72e95596ea444511c8b5660646fe5acb7bebe0a912d70540163ccdd",
+            "referentie": "henoch 10:1",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        }
       ]
     },
     {
@@ -296,6 +360,37 @@
               17
             ]
           }
+        },
+        {
+          "tekst": "naam",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3935"
+          ],
+          "bronwoorden": [
+            "በስመ"
+          ],
+          "transliteraties": [
+            "bäsǝmä"
+          ],
+          "glossen": [
+            "in de naam van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "907753c121fd76852a442dd3df0f463e3a3fd06d807c2fce1534b9a28e49e378",
+            "referentie": "henoch 10:2",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -374,6 +469,37 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "zijn zaad",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7547"
+          ],
+          "bronwoorden": [
+            "ዘርኡ"
+          ],
+          "transliteraties": [
+            "zärǝ"
+          ],
+          "glossen": [
+            "zijn zaad"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "9ccea964569280901c18a7c637838e030791f32f0a431f3fe448da33bf1c36d4",
+            "referentie": "henoch 10:3",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -566,6 +692,68 @@
               13
             ]
           }
+        },
+        {
+          "tekst": "Azazel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10915"
+          ],
+          "bronwoorden": [
+            "ለአዛዝኤል"
+          ],
+          "transliteraties": [
+            "läzazǝlǝ"
+          ],
+          "glossen": [
+            "voor Azazel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "a9633bc73a9b3f9efd6984439424db661c539525c4825502c80b0dd7a40f95cf",
+            "referentie": "henoch 10:4",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en zijn voeten",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5910"
+          ],
+          "bronwoorden": [
+            "ወእገሪሁ"
+          ],
+          "transliteraties": [
+            "wägärihu"
+          ],
+          "glossen": [
+            "en zijn voeten"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "a9633bc73a9b3f9efd6984439424db661c539525c4825502c80b0dd7a40f95cf",
+            "referentie": "henoch 10:4",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -705,6 +893,37 @@
               12
             ]
           }
+        },
+        {
+          "tekst": "licht",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3865"
+          ],
+          "bronwoorden": [
+            "ብርሃነ"
+          ],
+          "transliteraties": [
+            "bǝrǝhanä"
+          ],
+          "glossen": [
+            "licht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f756b7fef520a574b7da959313d9ba59a43166e247123015580f82774456bd1a",
+            "referentie": "henoch 10:5",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -789,6 +1008,68 @@
             "grondindices": [
               6
             ]
+          }
+        },
+        {
+          "tekst": "dag",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6714"
+          ],
+          "bronwoorden": [
+            "ወበዕለት"
+          ],
+          "transliteraties": [
+            "wäbälätǝ"
+          ],
+          "glossen": [
+            "en op de dag"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e9dfaade1805c3524ff388f93f5fd28a0e0b2774e67641a46585a3fa752e0531",
+            "referentie": "henoch 10:6",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "oordeel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6244"
+          ],
+          "bronwoorden": [
+            "ኲነኔ"
+          ],
+          "transliteraties": [
+            "ኲnäne"
+          ],
+          "glossen": [
+            "oordeel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e9dfaade1805c3524ff388f93f5fd28a0e0b2774e67641a46585a3fa752e0531",
+            "referentie": "henoch 10:6",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1144,6 +1425,68 @@
               7
             ]
           }
+        },
+        {
+          "tekst": "Azazel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10915"
+          ],
+          "bronwoorden": [
+            "ለአዛዝኤል"
+          ],
+          "transliteraties": [
+            "läzazǝlǝ"
+          ],
+          "glossen": [
+            "voor Azazel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "720d2b67052fe8910deb22db0ed8441f22f28c8970d50635575296bb8e558246",
+            "referentie": "henoch 10:8",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "zonde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4694"
+          ],
+          "bronwoorden": [
+            "ኀጢአተ"
+          ],
+          "transliteraties": [
+            "ḫäṭitä"
+          ],
+          "glossen": [
+            "zonde van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "720d2b67052fe8910deb22db0ed8441f22f28c8970d50635575296bb8e558246",
+            "referentie": "henoch 10:8",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -1406,6 +1749,68 @@
               25
             ]
           }
+        },
+        {
+          "tekst": "mensen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2714"
+          ],
+          "bronwoorden": [
+            "እምሰብእ"
+          ],
+          "transliteraties": [
+            "mǝsäbǝ"
+          ],
+          "glossen": [
+            "uit de mensen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e6d98fc670db1100f9eb9d6891f9f765582c6d94e61292f3b0e42b6fe3dfa95",
+            "referentie": "henoch 10:9",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "lengte van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5074"
+          ],
+          "bronwoorden": [
+            "ኑኃ"
+          ],
+          "transliteraties": [
+            "nuḫa"
+          ],
+          "glossen": [
+            "lengte van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e6d98fc670db1100f9eb9d6891f9f765582c6d94e61292f3b0e42b6fe3dfa95",
+            "referentie": "henoch 10:9",
+            "bronindices": [
+              24
+            ],
+            "grondindices": [
+              24
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -1509,6 +1914,37 @@
             "grondindices": [
               5
             ]
+          }
+        },
+        {
+          "tekst": "vaderen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5603"
+          ],
+          "bronwoorden": [
+            "ለአበዊሆሙ"
+          ],
+          "transliteraties": [
+            "läbäwihomu"
+          ],
+          "glossen": [
+            "aan hun vaderen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "4a09fd7de48b9bdbbb8f595fc154b3cdfc03853b6761320681d981813cdf67fb",
+            "referentie": "henoch 10:10",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1916,6 +2352,99 @@
               21
             ]
           }
+        },
+        {
+          "tekst": "zien",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2239"
+          ],
+          "bronwoorden": [
+            "ይሬእዩ"
+          ],
+          "transliteraties": [
+            "yǝreyu"
+          ],
+          "glossen": [
+            "zij zien"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5cee0dce0072989e9d0a96cf1302375398756e2fbf61bf2cc5f38ed7a086ea56",
+            "referentie": "henoch 10:12",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "verderf",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG962"
+          ],
+          "bronwoorden": [
+            "ሐጒሎሙ"
+          ],
+          "transliteraties": [
+            "ḥäጒlomu"
+          ],
+          "glossen": [
+            "hun verderf"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5cee0dce0072989e9d0a96cf1302375398756e2fbf61bf2cc5f38ed7a086ea56",
+            "referentie": "henoch 10:12",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "dag van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6714"
+          ],
+          "bronwoorden": [
+            "ዕለተ"
+          ],
+          "transliteraties": [
+            "lätä"
+          ],
+          "glossen": [
+            "dag van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5cee0dce0072989e9d0a96cf1302375398756e2fbf61bf2cc5f38ed7a086ea56",
+            "referentie": "henoch 10:12",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -2147,6 +2676,68 @@
               7
             ]
           }
+        },
+        {
+          "tekst": "samen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4542"
+          ],
+          "bronwoorden": [
+            "ኅቡረ"
+          ],
+          "transliteraties": [
+            "ḫǝburä"
+          ],
+          "glossen": [
+            "samen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d33fda148acd348cff62d96a123fb73682409e88a50ebf5e202b3cd0a7f0e7a6",
+            "referentie": "henoch 10:14",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "voleinding van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10131"
+          ],
+          "bronwoorden": [
+            "ተፍጻሜተ"
+          ],
+          "transliteraties": [
+            "täfǝṣametä"
+          ],
+          "glossen": [
+            "voleinding van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d33fda148acd348cff62d96a123fb73682409e88a50ebf5e202b3cd0a7f0e7a6",
+            "referentie": "henoch 10:14",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -2228,6 +2819,37 @@
             "grondindices": [
               6
             ]
+          }
+        },
+        {
+          "tekst": "zielen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5326"
+          ],
+          "bronwoorden": [
+            "ነፍሳተ"
+          ],
+          "transliteraties": [
+            "näfǝsatä"
+          ],
+          "glossen": [
+            "zielen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "698a5d2270b6ce347f41aab9cffa5d36c61237655e646f155cbb62c00715702f",
+            "referentie": "henoch 10:15",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -2417,6 +3039,37 @@
               10
             ]
           }
+        },
+        {
+          "tekst": "van het aangezicht van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8728"
+          ],
+          "bronwoorden": [
+            "እምገጸ"
+          ],
+          "transliteraties": [
+            "mǝgäṣä"
+          ],
+          "glossen": [
+            "van het aangezicht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "88a369daa24038d0cfcea823bf6b3e83730d4a2517e5b6dae389e3dff1983903",
+            "referentie": "henoch 10:16",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -2514,6 +3167,132 @@
           "transliteratie": "bäsälamǝ",
           "betekenis": "in vrede",
           "strongs": "OVG2431"
+        }
+      ],
+      "woordnummers": [
+        {
+          "tekst": "dagen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6717"
+          ],
+          "bronwoorden": [
+            "መዋዕለ"
+          ],
+          "transliteraties": [
+            "mäwalä"
+          ],
+          "glossen": [
+            "dagen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "969513ad86a96bce8df8c77d27cf34e9cd35c4f8aec11a6495d579acd308f8c7",
+            "referentie": "henoch 10:17",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "hun jeugd",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6553"
+          ],
+          "bronwoorden": [
+            "ውርዙቶሙ"
+          ],
+          "transliteraties": [
+            "wǝrǝzutomu"
+          ],
+          "glossen": [
+            "hun jeugd"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "969513ad86a96bce8df8c77d27cf34e9cd35c4f8aec11a6495d579acd308f8c7",
+            "referentie": "henoch 10:17",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "voltooien",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10120"
+          ],
+          "bronwoorden": [
+            "ይፌጽሙ"
+          ],
+          "transliteraties": [
+            "yǝfeṣǝmu"
+          ],
+          "glossen": [
+            "zij voltooien"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "969513ad86a96bce8df8c77d27cf34e9cd35c4f8aec11a6495d579acd308f8c7",
+            "referentie": "henoch 10:17",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "in vrede",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2431"
+          ],
+          "bronwoorden": [
+            "በሰላም"
+          ],
+          "transliteraties": [
+            "bäsälamǝ"
+          ],
+          "glossen": [
+            "in vrede"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "969513ad86a96bce8df8c77d27cf34e9cd35c4f8aec11a6495d579acd308f8c7",
+            "referentie": "henoch 10:17",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -2670,6 +3449,99 @@
             "grondindices": [
               3
             ]
+          }
+        },
+        {
+          "tekst": "in gerechtigheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9559"
+          ],
+          "bronwoorden": [
+            "በጽድቅ"
+          ],
+          "transliteraties": [
+            "bäṣǝdǝqǝ"
+          ],
+          "glossen": [
+            "in gerechtigheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6118b0593d9f27bb298ee80db9a4131ab39acc885ec18f9490e4385dcd1ecac0",
+            "referentie": "henoch 10:18",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "bomen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7418"
+          ],
+          "bronwoorden": [
+            "ዕፀወ"
+          ],
+          "transliteraties": [
+            "ṣ́äwä"
+          ],
+          "glossen": [
+            "bomen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6118b0593d9f27bb298ee80db9a4131ab39acc885ec18f9490e4385dcd1ecac0",
+            "referentie": "henoch 10:18",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "zegen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3907"
+          ],
+          "bronwoorden": [
+            "በረከተ"
+          ],
+          "transliteraties": [
+            "bäräkätä"
+          ],
+          "glossen": [
+            "zegen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6118b0593d9f27bb298ee80db9a4131ab39acc885ec18f9490e4385dcd1ecac0",
+            "referentie": "henoch 10:18",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -2882,6 +3754,68 @@
             "grondindices": [
               15
             ]
+          }
+        },
+        {
+          "tekst": "bomen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7418"
+          ],
+          "bronwoorden": [
+            "ዕፀወ"
+          ],
+          "transliteraties": [
+            "ṣ́äwä"
+          ],
+          "glossen": [
+            "bomen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "2689e4d3535fb8c44f2b102638e3eee7f3c5a25182e55ea7f722ed1261c6cdea",
+            "referentie": "henoch 10:19",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "planten",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4329"
+          ],
+          "bronwoorden": [
+            "ይተክሉ"
+          ],
+          "transliteraties": [
+            "yǝtäkǝlu"
+          ],
+          "glossen": [
+            "zij planten"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "2689e4d3535fb8c44f2b102638e3eee7f3c5a25182e55ea7f722ed1261c6cdea",
+            "referentie": "henoch 10:19",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -3428,6 +4362,37 @@
             "grondindices": [
               21
             ]
+          }
+        },
+        {
+          "tekst": "kinderen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ውሉደ"
+          ],
+          "transliteraties": [
+            "wǝludä"
+          ],
+          "glossen": [
+            "kinderen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e80320b25125e2c83b2d847874a9257017e0e98e1f55f88d79105db926d98db0",
+            "referentie": "henoch 10:21",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

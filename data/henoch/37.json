@@ -642,6 +642,37 @@
               1
             ]
           }
+        },
+        {
+          "tekst": "wijsheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8899"
+          ],
+          "bronwoorden": [
+            "ለጥበብ"
+          ],
+          "transliteraties": [
+            "läṭǝbäbǝ"
+          ],
+          "glossen": [
+            "voor de wijsheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "7ff69abf26675602e593e6ee3d967272ecdfb703bd4436de039bb090dd4b6885",
+            "referentie": "henoch 37:3",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -879,6 +910,37 @@
             "grondindices": [
               17
             ]
+          }
+        },
+        {
+          "tekst": "deel van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6372"
+          ],
+          "bronwoorden": [
+            "ክፍለ"
+          ],
+          "transliteraties": [
+            "kǝfǝlä"
+          ],
+          "glossen": [
+            "deel van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d7680d55d81a2ed8936ee563876f71235dfc8493fba19e96a61c97b22d76283b",
+            "referentie": "henoch 37:4",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

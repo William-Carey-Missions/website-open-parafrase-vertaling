@@ -149,6 +149,37 @@
               6
             ]
           }
+        },
+        {
+          "tekst": "berg",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7972"
+          ],
+          "bronwoorden": [
+            "ደብረ"
+          ],
+          "transliteraties": [
+            "däbǝrä"
+          ],
+          "glossen": [
+            "berg van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f7ed330f4a7c29e73c3efc4b203dbd568334841386d49bd7de90ed3931243938",
+            "referentie": "henoch 31:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },

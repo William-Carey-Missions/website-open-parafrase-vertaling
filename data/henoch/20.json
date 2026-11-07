@@ -88,6 +88,37 @@
               7
             ]
           }
+        },
+        {
+          "tekst": "waken",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4382"
+          ],
+          "bronwoorden": [
+            "ይተግሁ"
+          ],
+          "transliteraties": [
+            "yǝtägǝhu"
+          ],
+          "glossen": [
+            "zij waken"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "1c44e62f384541fcb50dbead1b12a995bcb863edd945ffb3fafe5cc0e4ab0968",
+            "referentie": "henoch 20:1",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -228,6 +259,37 @@
             "grondindices": [
               4
             ]
+          }
+        },
+        {
+          "tekst": "donder",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2310"
+          ],
+          "bronwoorden": [
+            "ዘረዓም"
+          ],
+          "transliteraties": [
+            "zärämǝ"
+          ],
+          "glossen": [
+            "van donder"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8ed4894db43172a42f7978c954c4eaa8564436597baf9b99df4574739fdab470",
+            "referentie": "henoch 20:2",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

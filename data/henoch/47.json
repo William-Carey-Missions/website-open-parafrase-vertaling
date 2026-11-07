@@ -172,6 +172,68 @@
               9
             ]
           }
+        },
+        {
+          "tekst": "gebed van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9169"
+          ],
+          "bronwoorden": [
+            "ጸሎተ"
+          ],
+          "transliteraties": [
+            "ṣälotä"
+          ],
+          "glossen": [
+            "gebed van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e7507f4dca88566541d09b775138b68f00df496e62f2d55f139fc58b728e45c2",
+            "referentie": "henoch 47:1",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en het bloed van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG11996"
+          ],
+          "bronwoorden": [
+            "ወደመ"
+          ],
+          "transliteraties": [
+            "wädämä"
+          ],
+          "glossen": [
+            "en het bloed van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "e7507f4dca88566541d09b775138b68f00df496e62f2d55f139fc58b728e45c2",
+            "referentie": "henoch 47:1",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -533,6 +595,130 @@
               25
             ]
           }
+        },
+        {
+          "tekst": "wonen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4922"
+          ],
+          "bronwoorden": [
+            "ይነብሩ"
+          ],
+          "transliteraties": [
+            "yǝnäbǝru"
+          ],
+          "glossen": [
+            "zij wonen/zitten"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f41cc618410b871e89b0c444ae351c104a56ea4986243b9432a6dfc56100071e",
+            "referentie": "henoch 47:2",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Naam",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2517"
+          ],
+          "bronwoorden": [
+            "ለስሙ"
+          ],
+          "transliteraties": [
+            "läsǝmu"
+          ],
+          "glossen": [
+            "voor zijn naam"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f41cc618410b871e89b0c444ae351c104a56ea4986243b9432a6dfc56100071e",
+            "referentie": "henoch 47:2",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "bloed van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7838"
+          ],
+          "bronwoorden": [
+            "ደመ"
+          ],
+          "transliteraties": [
+            "dämä"
+          ],
+          "glossen": [
+            "bloed van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f41cc618410b871e89b0c444ae351c104a56ea4986243b9432a6dfc56100071e",
+            "referentie": "henoch 47:2",
+            "bronindices": [
+              18
+            ],
+            "grondindices": [
+              18
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "gebed",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9169"
+          ],
+          "bronwoorden": [
+            "ወጸሎቶሙ"
+          ],
+          "transliteraties": [
+            "wäṣälotomu"
+          ],
+          "glossen": [
+            "en hun gebed"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f41cc618410b871e89b0c444ae351c104a56ea4986243b9432a6dfc56100071e",
+            "referentie": "henoch 47:2",
+            "bronindices": [
+              21
+            ],
+            "grondindices": [
+              21
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -725,6 +911,99 @@
             "grondindices": [
               10
             ]
+          }
+        },
+        {
+          "tekst": "Hoofd",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2227"
+          ],
+          "bronwoorden": [
+            "ለርእሰ"
+          ],
+          "transliteraties": [
+            "lärǝsä"
+          ],
+          "glossen": [
+            "voor het hoofd van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "21a248ecc4c0815f4a0bd20e67c53f3224f5a9ef8bddd40d3100b18b708e5e77",
+            "referentie": "henoch 47:3",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "op de troon van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4931"
+          ],
+          "bronwoorden": [
+            "በመንበረ"
+          ],
+          "transliteraties": [
+            "bämänǝbärä"
+          ],
+          "glossen": [
+            "op de troon van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "21a248ecc4c0815f4a0bd20e67c53f3224f5a9ef8bddd40d3100b18b708e5e77",
+            "referentie": "henoch 47:3",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Zijn heerlijkheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2695"
+          ],
+          "bronwoorden": [
+            "ስብሐቲሁ"
+          ],
+          "transliteraties": [
+            "sǝbǝḥätihu"
+          ],
+          "glossen": [
+            "zijn heerlijkheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "21a248ecc4c0815f4a0bd20e67c53f3224f5a9ef8bddd40d3100b18b708e5e77",
+            "referentie": "henoch 47:3",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -925,6 +1204,192 @@
             "grondindices": [
               13
             ]
+          }
+        },
+        {
+          "tekst": "hart",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6412"
+          ],
+          "bronwoorden": [
+            "ወልቦሙ"
+          ],
+          "transliteraties": [
+            "wälǝbomu"
+          ],
+          "glossen": [
+            "en hun hart"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b91076e2e16f524186f39575fd688c31c27f3bc7f3a6fcd8ec91903f326c5d55",
+            "referentie": "henoch 47:4",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "heiligen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3637"
+          ],
+          "bronwoorden": [
+            "ለቅዱሳን"
+          ],
+          "transliteraties": [
+            "läqǝdusanǝ"
+          ],
+          "glossen": [
+            "voor de heiligen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b91076e2e16f524186f39575fd688c31c27f3bc7f3a6fcd8ec91903f326c5d55",
+            "referentie": "henoch 47:4",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "getal",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4415"
+          ],
+          "bronwoorden": [
+            "ኊልቋ"
+          ],
+          "transliteraties": [
+            "ኊlǝቋ"
+          ],
+          "glossen": [
+            "haar getal"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b91076e2e16f524186f39575fd688c31c27f3bc7f3a6fcd8ec91903f326c5d55",
+            "referentie": "henoch 47:4",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "gebed",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9169"
+          ],
+          "bronwoorden": [
+            "ወጸሎቶሙ"
+          ],
+          "transliteraties": [
+            "wäṣälotomu"
+          ],
+          "glossen": [
+            "en hun gebed"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b91076e2e16f524186f39575fd688c31c27f3bc7f3a6fcd8ec91903f326c5d55",
+            "referentie": "henoch 47:4",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "bloed",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG11996"
+          ],
+          "bronwoorden": [
+            "ወደሙ"
+          ],
+          "transliteraties": [
+            "wädämu"
+          ],
+          "glossen": [
+            "en hun bloed"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b91076e2e16f524186f39575fd688c31c27f3bc7f3a6fcd8ec91903f326c5d55",
+            "referentie": "henoch 47:4",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "rechtvaardige",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9564"
+          ],
+          "bronwoorden": [
+            "ለጻድቅ"
+          ],
+          "transliteraties": [
+            "läṣadǝqǝ"
+          ],
+          "glossen": [
+            "voor de rechtvaardige"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b91076e2e16f524186f39575fd688c31c27f3bc7f3a6fcd8ec91903f326c5d55",
+            "referentie": "henoch 47:4",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

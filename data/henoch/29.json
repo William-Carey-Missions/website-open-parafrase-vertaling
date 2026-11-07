@@ -297,6 +297,68 @@
               6
             ]
           }
+        },
+        {
+          "tekst": "oordeel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6244"
+          ],
+          "bronwoorden": [
+            "ኲነኔ"
+          ],
+          "transliteraties": [
+            "ኲnäne"
+          ],
+          "glossen": [
+            "oordeel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "2121c2d7a31af3c5b11013b0cf0a48611d1a3e312fa35153450e93fcc5051f00",
+            "referentie": "henoch 29:2",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en mirre",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6099"
+          ],
+          "bronwoorden": [
+            "ወከርቤ"
+          ],
+          "transliteraties": [
+            "wäkärǝbe"
+          ],
+          "glossen": [
+            "en mirre"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "2121c2d7a31af3c5b11013b0cf0a48611d1a3e312fa35153450e93fcc5051f00",
+            "referentie": "henoch 29:2",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     }

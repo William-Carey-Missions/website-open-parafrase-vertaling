@@ -232,6 +232,68 @@
               10
             ]
           }
+        },
+        {
+          "tekst": "zijn mond",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5939"
+          ],
+          "bronwoorden": [
+            "አፉሁ"
+          ],
+          "transliteraties": [
+            "fuhu"
+          ],
+          "glossen": [
+            "zijn mond"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "daa3683dc7045174432502e25469e2ea8563638b0f82e66d20ecbde348bd86e8",
+            "referentie": "henoch 53:1",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en de zee",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3818"
+          ],
+          "bronwoorden": [
+            "ወባሕር"
+          ],
+          "transliteraties": [
+            "wäbaḥǝrǝ"
+          ],
+          "glossen": [
+            "en de zee"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "daa3683dc7045174432502e25469e2ea8563638b0f82e66d20ecbde348bd86e8",
+            "referentie": "henoch 53:1",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -418,6 +480,37 @@
               19
             ]
           }
+        },
+        {
+          "tekst": "hun handen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5893"
+          ],
+          "bronwoorden": [
+            "እደዊሆሙ"
+          ],
+          "transliteraties": [
+            "däwihomu"
+          ],
+          "glossen": [
+            "hun handen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d3338b572c8584141393b4bba69713a8c35047a0ea57ea9bf6558a0fb42d3d24",
+            "referentie": "henoch 53:2",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -543,6 +636,68 @@
               3
             ]
           }
+        },
+        {
+          "tekst": "engelen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG353"
+          ],
+          "bronwoorden": [
+            "ለመላእክተ"
+          ],
+          "transliteraties": [
+            "lämälakǝtä"
+          ],
+          "glossen": [
+            "voor de engelen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d7fd2479badc35a7a85da9262615da3bb38128152777eebdae6cdfbc7be64815",
+            "referentie": "henoch 53:3",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Satan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3023"
+          ],
+          "bronwoorden": [
+            "ለሰይጣን"
+          ],
+          "transliteraties": [
+            "läsäyǝṭanǝ"
+          ],
+          "glossen": [
+            "voor de satan"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d7fd2479badc35a7a85da9262615da3bb38128152777eebdae6cdfbc7be64815",
+            "referentie": "henoch 53:3",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -630,6 +785,37 @@
             "grondindices": [
               5
             ]
+          }
+        },
+        {
+          "tekst": "vrede",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2435"
+          ],
+          "bronwoorden": [
+            "ሰላም"
+          ],
+          "transliteraties": [
+            "sälamǝ"
+          ],
+          "glossen": [
+            "vrede"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "271513adba7b36740410d514f7147eb7033936861188a1ede93cbd890365cf61",
+            "referentie": "henoch 53:4",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -787,6 +973,37 @@
               7
             ]
           }
+        },
+        {
+          "tekst": "voor de koningen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5190"
+          ],
+          "bronwoorden": [
+            "ለነገሥት"
+          ],
+          "transliteraties": [
+            "länägäśǝtǝ"
+          ],
+          "glossen": [
+            "voor de koningen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "77a204a5236de95754ab7a90181984b219ab8bbb2f86ecbf3ef43a35d24dd66f",
+            "referentie": "henoch 53:5",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -901,6 +1118,68 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "huis van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4112"
+          ],
+          "bronwoorden": [
+            "ቤተ"
+          ],
+          "transliteraties": [
+            "betä"
+          ],
+          "glossen": [
+            "huis van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "45574b970bcd76782019fa8ae4ebe96518803bd15da734439726282f6996545e",
+            "referentie": "henoch 53:6",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "naam",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3935"
+          ],
+          "bronwoorden": [
+            "በስሙ"
+          ],
+          "transliteraties": [
+            "bäsǝmu"
+          ],
+          "glossen": [
+            "in zijn naam"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "45574b970bcd76782019fa8ae4ebe96518803bd15da734439726282f6996545e",
+            "referentie": "henoch 53:6",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

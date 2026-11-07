@@ -199,6 +199,99 @@
               12
             ]
           }
+        },
+        {
+          "tekst": "berg",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7972"
+          ],
+          "bronwoorden": [
+            "ደብረ"
+          ],
+          "transliteraties": [
+            "däbǝrä"
+          ],
+          "glossen": [
+            "berg van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8d1614e55ccaad07a46a0595fbb66cdd12064b09f923df6120c3e0b6c8deabb7",
+            "referentie": "henoch 30:1",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "plaats",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1452"
+          ],
+          "bronwoorden": [
+            "መካነ"
+          ],
+          "transliteraties": [
+            "mäkanä"
+          ],
+          "glossen": [
+            "plaats van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8d1614e55ccaad07a46a0595fbb66cdd12064b09f923df6120c3e0b6c8deabb7",
+            "referentie": "henoch 30:1",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "boom",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7419"
+          ],
+          "bronwoorden": [
+            "ዕፀ"
+          ],
+          "transliteraties": [
+            "ṣ́ä"
+          ],
+          "glossen": [
+            "boom van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8d1614e55ccaad07a46a0595fbb66cdd12064b09f923df6120c3e0b6c8deabb7",
+            "referentie": "henoch 30:1",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },

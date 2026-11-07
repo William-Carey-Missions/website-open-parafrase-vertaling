@@ -159,6 +159,68 @@
               8
             ]
           }
+        },
+        {
+          "tekst": "En vandaar",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG74"
+          ],
+          "bronwoorden": [
+            "ወእምህየ"
+          ],
+          "transliteraties": [
+            "wämǝhǝyä"
+          ],
+          "glossen": [
+            "en vandaar"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5f70b75a6c1b7b1568aaa0e0f643638eb04e0a1d1880ead786e92ccba7c203a8",
+            "referentie": "henoch 28:1",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "midden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5783"
+          ],
+          "bronwoorden": [
+            "ማእከላ"
+          ],
+          "transliteraties": [
+            "makäla"
+          ],
+          "glossen": [
+            "haar midden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5f70b75a6c1b7b1568aaa0e0f643638eb04e0a1d1880ead786e92ccba7c203a8",
+            "referentie": "henoch 28:1",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -378,6 +440,68 @@
               9
             ]
           }
+        },
+        {
+          "tekst": "bomen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7418"
+          ],
+          "bronwoorden": [
+            "ዕፀወ"
+          ],
+          "transliteraties": [
+            "ṣ́äwä"
+          ],
+          "glossen": [
+            "bomen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "72c7dc6b9dcd614b9f76453191f8b315cb26d377abc1f58917a2d59456fa6a03",
+            "referentie": "henoch 28:2",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en water",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1555"
+          ],
+          "bronwoorden": [
+            "ወማይ"
+          ],
+          "transliteraties": [
+            "wämayǝ"
+          ],
+          "glossen": [
+            "en water"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "72c7dc6b9dcd614b9f76453191f8b315cb26d377abc1f58917a2d59456fa6a03",
+            "referentie": "henoch 28:2",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -532,6 +656,37 @@
             "grondindices": [
               13
             ]
+          }
+        },
+        {
+          "tekst": "en dauw",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8761"
+          ],
+          "bronwoorden": [
+            "ወጠል"
+          ],
+          "transliteraties": [
+            "wäṭälǝ"
+          ],
+          "glossen": [
+            "en dauw"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "6d51ca25e547824c6e7c86725c6b8d392cbb9a03ddbc24688abd1ffb944da5bc",
+            "referentie": "henoch 28:3",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

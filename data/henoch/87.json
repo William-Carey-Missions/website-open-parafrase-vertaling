@@ -73,6 +73,101 @@
           "betekenis": "zij schreeuwt",
           "strongs": "OVG9257"
         }
+      ],
+      "woordnummers": [
+        {
+          "tekst": "en zij begonnen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5693"
+          ],
+          "bronwoorden": [
+            "ወአኀዙ"
+          ],
+          "transliteraties": [
+            "wäḫäzu"
+          ],
+          "glossen": [
+            "en zij begonnen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e098ee2ac646c13eefcb99b5c95746a3447587759e96584c5f3bcbbe20cd793",
+            "referentie": "henoch 87:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "aarde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1586"
+          ],
+          "bronwoorden": [
+            "ወምድር"
+          ],
+          "transliteraties": [
+            "wämǝdǝrǝ"
+          ],
+          "glossen": [
+            "en aarde"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e098ee2ac646c13eefcb99b5c95746a3447587759e96584c5f3bcbbe20cd793",
+            "referentie": "henoch 87:1",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "begon",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5693"
+          ],
+          "bronwoorden": [
+            "አኀዘት"
+          ],
+          "transliteraties": [
+            "ḫäzätǝ"
+          ],
+          "glossen": [
+            "zij begon"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e098ee2ac646c13eefcb99b5c95746a3447587759e96584c5f3bcbbe20cd793",
+            "referentie": "henoch 87:1",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        }
       ]
     },
     {
@@ -304,6 +399,68 @@
             "grondindices": [
               16
             ]
+          }
+        },
+        {
+          "tekst": "en zie",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5050"
+          ],
+          "bronwoorden": [
+            "ወነዋ"
+          ],
+          "transliteraties": [
+            "wänäwa"
+          ],
+          "glossen": [
+            "en zie"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "0259ce9514af6cfffae85b1fe39b594aa904c98af3671c8685fe3b40f0960f60",
+            "referentie": "henoch 87:2",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "gelijkenis van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1261"
+          ],
+          "bronwoorden": [
+            "አምሳለ"
+          ],
+          "transliteraties": [
+            "mǝsalä"
+          ],
+          "glossen": [
+            "gelijkenis van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "0259ce9514af6cfffae85b1fe39b594aa904c98af3671c8685fe3b40f0960f60",
+            "referentie": "henoch 87:2",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -588,6 +745,130 @@
             "grondindices": [
               20
             ]
+          }
+        },
+        {
+          "tekst": "grepen mij",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5693"
+          ],
+          "bronwoorden": [
+            "አኀዙኒ"
+          ],
+          "transliteraties": [
+            "ḫäzuni"
+          ],
+          "glossen": [
+            "zij grepen mij"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "0c7a957ce82b186f7dd544f39daa465434ea2223e7cb9a26eae1c40f684a8bc7",
+            "referentie": "henoch 87:3",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "hand",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5872"
+          ],
+          "bronwoorden": [
+            "በእዴየ"
+          ],
+          "transliteraties": [
+            "bädeyä"
+          ],
+          "glossen": [
+            "met mijn hand"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "0c7a957ce82b186f7dd544f39daa465434ea2223e7cb9a26eae1c40f684a8bc7",
+            "referentie": "henoch 87:3",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "hieven mij op",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG410"
+          ],
+          "bronwoorden": [
+            "ወአልዐሉኒ"
+          ],
+          "transliteraties": [
+            "wälǝluni"
+          ],
+          "glossen": [
+            "en zij hieven mij op"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "0c7a957ce82b186f7dd544f39daa465434ea2223e7cb9a26eae1c40f684a8bc7",
+            "referentie": "henoch 87:3",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en zij toonden mij",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2240"
+          ],
+          "bronwoorden": [
+            "ወአርአዩኒ"
+          ],
+          "transliteraties": [
+            "wärǝyuni"
+          ],
+          "glossen": [
+            "en zij toonden mij"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "0c7a957ce82b186f7dd544f39daa465434ea2223e7cb9a26eae1c40f684a8bc7",
+            "referentie": "henoch 87:3",
+            "bronindices": [
+              13
+            ],
+            "grondindices": [
+              13
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

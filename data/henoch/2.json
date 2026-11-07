@@ -188,6 +188,37 @@
               8
             ]
           }
+        },
+        {
+          "tekst": "werk",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8417"
+          ],
+          "bronwoorden": [
+            "ግብረ"
+          ],
+          "transliteraties": [
+            "gǝbǝrä"
+          ],
+          "glossen": [
+            "werk van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "94aee25f32214ce59bcc2bf270364a29cadf3911a0c71f32acbf96430520fb50",
+            "referentie": "henoch 2:1",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -387,6 +418,68 @@
               12
             ]
           }
+        },
+        {
+          "tekst": "aarde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1586"
+          ],
+          "bronwoorden": [
+            "ለምድር"
+          ],
+          "transliteraties": [
+            "lämǝdǝrǝ"
+          ],
+          "glossen": [
+            "voor de aarde"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d1b2fb54c1aae7ca37c3853e925333b5ffd6fc6bc1dffe26d69262841c0fb876",
+            "referentie": "henoch 2:2",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "zijn voleinding",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10131"
+          ],
+          "bronwoorden": [
+            "ተፍጻሜቱ"
+          ],
+          "transliteraties": [
+            "täfǝṣametu"
+          ],
+          "glossen": [
+            "zijn voleinding"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d1b2fb54c1aae7ca37c3853e925333b5ffd6fc6bc1dffe26d69262841c0fb876",
+            "referentie": "henoch 2:2",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -533,6 +626,130 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "zomer",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG970"
+          ],
+          "bronwoorden": [
+            "ለሐጋይ"
+          ],
+          "transliteraties": [
+            "läḥägayǝ"
+          ],
+          "glossen": [
+            "tot de zomer"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "63f6162b5f0e58917a94747372821db69eaad3ce693e9754c71b90f1312c2fe9",
+            "referentie": "henoch 2:3",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "wolk",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7880"
+          ],
+          "bronwoorden": [
+            "ወደመና"
+          ],
+          "transliteraties": [
+            "wädämäna"
+          ],
+          "glossen": [
+            "en wolk"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "63f6162b5f0e58917a94747372821db69eaad3ce693e9754c71b90f1312c2fe9",
+            "referentie": "henoch 2:3",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en dauw",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8761"
+          ],
+          "bronwoorden": [
+            "ወጠል"
+          ],
+          "transliteraties": [
+            "wäṭälǝ"
+          ],
+          "glossen": [
+            "en dauw"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "63f6162b5f0e58917a94747372821db69eaad3ce693e9754c71b90f1312c2fe9",
+            "referentie": "henoch 2:3",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en regen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7621"
+          ],
+          "bronwoorden": [
+            "ወዝናም"
+          ],
+          "transliteraties": [
+            "wäzǝnamǝ"
+          ],
+          "glossen": [
+            "en regen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "63f6162b5f0e58917a94747372821db69eaad3ce693e9754c71b90f1312c2fe9",
+            "referentie": "henoch 2:3",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

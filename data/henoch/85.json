@@ -49,6 +49,39 @@
           "betekenis": "mijn zoon",
           "strongs": "OVG10214"
         }
+      ],
+      "woordnummers": [
+        {
+          "tekst": "mijn zoon",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10214"
+          ],
+          "bronwoorden": [
+            "ወልድየ"
+          ],
+          "transliteraties": [
+            "wälǝdǝyä"
+          ],
+          "glossen": [
+            "mijn zoon"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "51ef39150230109699a9a14b0e4f0c356919c2453b615dde8ab730ad812de1b8",
+            "referentie": "henoch 85:1",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        }
       ]
     },
     {
@@ -195,6 +228,37 @@
             "grondindices": [
               8
             ]
+          }
+        },
+        {
+          "tekst": "zei",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7755"
+          ],
+          "bronwoorden": [
+            "ወይቤ"
+          ],
+          "transliteraties": [
+            "wäyǝbe"
+          ],
+          "glossen": [
+            "en hij zei"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "a6bcdf1b2caf2bd44cee33024211eae24005f3ef24f2b8a88328a9983e7ceae5",
+            "referentie": "henoch 85:2",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -470,6 +534,68 @@
             "grondindices": [
               27
             ]
+          }
+        },
+        {
+          "tekst": "en zie",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4761"
+          ],
+          "bronwoorden": [
+            "ወናሁ"
+          ],
+          "transliteraties": [
+            "wänahu"
+          ],
+          "glossen": [
+            "en zie"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d23209508fd269d3095553dc49edb92cfa6d31a7ba2c28a750ec76ce23cbb471",
+            "referentie": "henoch 85:3",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "uit de aarde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7892"
+          ],
+          "bronwoorden": [
+            "እምድር"
+          ],
+          "transliteraties": [
+            "mǝdǝrǝ"
+          ],
+          "glossen": [
+            "uit de aarde"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d23209508fd269d3095553dc49edb92cfa6d31a7ba2c28a750ec76ce23cbb471",
+            "referentie": "henoch 85:3",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -870,6 +996,37 @@
               17
             ]
           }
+        },
+        {
+          "tekst": "ging uit",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9546"
+          ],
+          "bronwoorden": [
+            "ወጽአት"
+          ],
+          "transliteraties": [
+            "wäṣǝtǝ"
+          ],
+          "glossen": [
+            "zij ging uit"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "bb7b26788ef55a2fac41935f921f112a1a24f51562b91468ff214ba5373fed3c",
+            "referentie": "henoch 85:6",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -1028,6 +1185,37 @@
             "grondindices": [
               9
             ]
+          }
+        },
+        {
+          "tekst": "kwam",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1653"
+          ],
+          "bronwoorden": [
+            "መጽአ"
+          ],
+          "transliteraties": [
+            "mäṣǝ"
+          ],
+          "glossen": [
+            "hij kwam"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "4ab94b0301d2161fbf34d9fa274f243aeec01799c1f283e1451da6d2e654f24a",
+            "referentie": "henoch 85:7",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -1298,6 +1486,68 @@
             "grondindices": [
               21
             ]
+          }
+        },
+        {
+          "tekst": "in mijn slaap",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5057"
+          ],
+          "bronwoorden": [
+            "በንዋምየ"
+          ],
+          "transliteraties": [
+            "bänǝwamǝyä"
+          ],
+          "glossen": [
+            "in mijn slaap"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "43d0e945e8dcc5a8dac5fd7178655c814b0a0ad1b545eafe244da41fec9c1d44",
+            "referentie": "henoch 85:9",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "En zij begonnen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6846"
+          ],
+          "bronwoorden": [
+            "ወወጠኑ"
+          ],
+          "transliteraties": [
+            "wäwäṭänu"
+          ],
+          "glossen": [
+            "en zij begonnen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "43d0e945e8dcc5a8dac5fd7178655c814b0a0ad1b545eafe244da41fec9c1d44",
+            "referentie": "henoch 85:9",
+            "bronindices": [
+              17
+            ],
+            "grondindices": [
+              17
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

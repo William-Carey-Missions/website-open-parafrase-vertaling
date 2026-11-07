@@ -289,6 +289,99 @@
               18
             ]
           }
+        },
+        {
+          "tekst": "hun bladeren",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3681"
+          ],
+          "bronwoorden": [
+            "አቊጽሊሆሙ"
+          ],
+          "transliteraties": [
+            "ቊṣǝlihomu"
+          ],
+          "glossen": [
+            "hun bladeren"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b3b958fae61c76f250168b165520e267505d648436e860127ad82d79e7272249",
+            "referentie": "henoch 3:1",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "oude",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3807"
+          ],
+          "bronwoorden": [
+            "እምብሉይ"
+          ],
+          "transliteraties": [
+            "mǝbǝluyǝ"
+          ],
+          "glossen": [
+            "van het oude"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b3b958fae61c76f250168b165520e267505d648436e860127ad82d79e7272249",
+            "referentie": "henoch 3:1",
+            "bronindices": [
+              17
+            ],
+            "grondindices": [
+              17
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "komt",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1653"
+          ],
+          "bronwoorden": [
+            "ይመጽእ"
+          ],
+          "transliteraties": [
+            "yǝmäṣǝ"
+          ],
+          "glossen": [
+            "hij komt"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b3b958fae61c76f250168b165520e267505d648436e860127ad82d79e7272249",
+            "referentie": "henoch 3:1",
+            "bronindices": [
+              19
+            ],
+            "grondindices": [
+              19
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     }

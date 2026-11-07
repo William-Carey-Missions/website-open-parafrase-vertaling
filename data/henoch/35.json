@@ -226,6 +226,99 @@
               7
             ]
           }
+        },
+        {
+          "tekst": "En vandaar",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG74"
+          ],
+          "bronwoorden": [
+            "ወእምህየ"
+          ],
+          "transliteraties": [
+            "wämǝhǝyä"
+          ],
+          "glossen": [
+            "en vandaar"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "ec68ad51a1ce6af1ee2b8bcd81b8f7517843c243712985a0044306ddc6b5ad6e",
+            "referentie": "henoch 35:1",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "in het oosten",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1775"
+          ],
+          "bronwoorden": [
+            "በምሥራቅ"
+          ],
+          "transliteraties": [
+            "bämǝśǝraqǝ"
+          ],
+          "glossen": [
+            "in het oosten"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "ec68ad51a1ce6af1ee2b8bcd81b8f7517843c243712985a0044306ddc6b5ad6e",
+            "referentie": "henoch 35:1",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "uitgangen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6880"
+          ],
+          "bronwoorden": [
+            "ሙፃኣቱ"
+          ],
+          "transliteraties": [
+            "muṣ́atu"
+          ],
+          "glossen": [
+            "zijn uitgangen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "ec68ad51a1ce6af1ee2b8bcd81b8f7517843c243712985a0044306ddc6b5ad6e",
+            "referentie": "henoch 35:1",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     }

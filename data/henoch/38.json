@@ -171,6 +171,37 @@
               2
             ]
           }
+        },
+        {
+          "tekst": "aangezicht",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8728"
+          ],
+          "bronwoorden": [
+            "ወእምገጸ"
+          ],
+          "transliteraties": [
+            "wämǝgäṣä"
+          ],
+          "glossen": [
+            "en van het aangezicht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "a77d7538edc5b142b3c13941fc91a25246ba0096733c98a33d21f564360b11ff",
+            "referentie": "henoch 38:1",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -446,6 +477,37 @@
               29
             ]
           }
+        },
+        {
+          "tekst": "rustplaats",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7054"
+          ],
+          "bronwoorden": [
+            "ምዕራፎሙ"
+          ],
+          "transliteraties": [
+            "mǝrafomu"
+          ],
+          "glossen": [
+            "hun rustplaats"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "d2761af7c85fb9b3bfcc096097ea438be79373d94f3e2a305a6bfa1348dd8ec9",
+            "referentie": "henoch 38:2",
+            "bronindices": [
+              23
+            ],
+            "grondindices": [
+              23
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -547,6 +609,68 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "verborgen dingen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4567"
+          ],
+          "bronwoorden": [
+            "ኅቡኣቲሆሙ"
+          ],
+          "transliteraties": [
+            "ḫǝbutihomu"
+          ],
+          "glossen": [
+            "hun verborgen dingen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "84253c677673feac68d3a1f82061d1486ff5216be6c744c3be8ca4d1b6be10ed",
+            "referentie": "henoch 38:3",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "van het aangezicht van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5437"
+          ],
+          "bronwoorden": [
+            "እምገጸ"
+          ],
+          "transliteraties": [
+            "mǝgäṣä"
+          ],
+          "glossen": [
+            "van het aangezicht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "84253c677673feac68d3a1f82061d1486ff5216be6c744c3be8ca4d1b6be10ed",
+            "referentie": "henoch 38:3",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]
@@ -702,6 +826,68 @@
               11
             ]
           }
+        },
+        {
+          "tekst": "aarde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1586"
+          ],
+          "bronwoorden": [
+            "ለምድር"
+          ],
+          "transliteraties": [
+            "lämǝdǝrǝ"
+          ],
+          "glossen": [
+            "voor de aarde"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e3716676d528be68ef742f86a7c8935656c08c469ebd45f7194010f15b07241",
+            "referentie": "henoch 38:4",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "Zijn licht",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3865"
+          ],
+          "bronwoorden": [
+            "ብርሃኑ"
+          ],
+          "transliteraties": [
+            "bǝrǝhanu"
+          ],
+          "glossen": [
+            "zijn licht"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "5e3716676d528be68ef742f86a7c8935656c08c469ebd45f7194010f15b07241",
+            "referentie": "henoch 38:4",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -797,6 +983,68 @@
             "grondindices": [
               3
             ]
+          }
+        },
+        {
+          "tekst": "koningen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5190"
+          ],
+          "bronwoorden": [
+            "ወነገሥት"
+          ],
+          "transliteraties": [
+            "wänägäśǝtǝ"
+          ],
+          "glossen": [
+            "en koningen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8c52ea889ba3dfb661437ccdd949ed4289fb125886b35c953ac6a8d628586ad9",
+            "referentie": "henoch 38:5",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en heiligen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3637"
+          ],
+          "bronwoorden": [
+            "ወቅዱሳን"
+          ],
+          "transliteraties": [
+            "wäqǝdusanǝ"
+          ],
+          "glossen": [
+            "en heiligen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "8c52ea889ba3dfb661437ccdd949ed4289fb125886b35c953ac6a8d628586ad9",
+            "referentie": "henoch 38:5",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

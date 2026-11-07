@@ -233,6 +233,130 @@
               16
             ]
           }
+        },
+        {
+          "tekst": "in de hemel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2564"
+          ],
+          "bronwoorden": [
+            "በሰማይ"
+          ],
+          "transliteraties": [
+            "bäsämayǝ"
+          ],
+          "glossen": [
+            "in de hemel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "650598b5d2d947bb5803092366ae9807bf3f9bd4fc973546154cd3bc473d1aba",
+            "referentie": "henoch 11:1",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "werk",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8417"
+          ],
+          "bronwoorden": [
+            "ግብሮሙ"
+          ],
+          "transliteraties": [
+            "gǝbǝromu"
+          ],
+          "glossen": [
+            "hun werk"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "650598b5d2d947bb5803092366ae9807bf3f9bd4fc973546154cd3bc473d1aba",
+            "referentie": "henoch 11:1",
+            "bronindices": [
+              12
+            ],
+            "grondindices": [
+              12
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "arbeid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9649"
+          ],
+          "bronwoorden": [
+            "ፃማሆሙ"
+          ],
+          "transliteraties": [
+            "ṣ́amahomu"
+          ],
+          "glossen": [
+            "hun arbeid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "650598b5d2d947bb5803092366ae9807bf3f9bd4fc973546154cd3bc473d1aba",
+            "referentie": "henoch 11:1",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "kinderen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6430"
+          ],
+          "bronwoorden": [
+            "ለውሉደ"
+          ],
+          "transliteraties": [
+            "läwǝludä"
+          ],
+          "glossen": [
+            "voor de kinderen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "650598b5d2d947bb5803092366ae9807bf3f9bd4fc973546154cd3bc473d1aba",
+            "referentie": "henoch 11:1",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -332,6 +456,68 @@
             "grondindices": [
               0
             ]
+          }
+        },
+        {
+          "tekst": "en gerechtigheid",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2197"
+          ],
+          "bronwoorden": [
+            "ወርትዐ"
+          ],
+          "transliteraties": [
+            "wärǝtǝ"
+          ],
+          "glossen": [
+            "en gerechtigheid"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "cc1b3e227c52746e223b5335411b58dba7803690660825533a1ed9dbf64dc8ae",
+            "referentie": "henoch 11:2",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "dagen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6717"
+          ],
+          "bronwoorden": [
+            "መዋዕለ"
+          ],
+          "transliteraties": [
+            "mäwalä"
+          ],
+          "glossen": [
+            "dagen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "cc1b3e227c52746e223b5335411b58dba7803690660825533a1ed9dbf64dc8ae",
+            "referentie": "henoch 11:2",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

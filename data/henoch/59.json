@@ -127,6 +127,99 @@
               1
             ]
           }
+        },
+        {
+          "tekst": "en hun oordeel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6244"
+          ],
+          "bronwoorden": [
+            "ወኲነኔሆሙ"
+          ],
+          "transliteraties": [
+            "wäኲnänehomu"
+          ],
+          "glossen": [
+            "en hun oordeel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "493e94f97a8b80bf118637a3e460a89243078bb39509bdb7b0af8f04d929c750",
+            "referentie": "henoch 59:1",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "zegen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3907"
+          ],
+          "bronwoorden": [
+            "ለበረከት"
+          ],
+          "transliteraties": [
+            "läbäräkätǝ"
+          ],
+          "glossen": [
+            "tot zegen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "493e94f97a8b80bf118637a3e460a89243078bb39509bdb7b0af8f04d929c750",
+            "referentie": "henoch 59:1",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "vervloeking",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2376"
+          ],
+          "bronwoorden": [
+            "ወለመርገም"
+          ],
+          "transliteraties": [
+            "wälämärǝgämǝ"
+          ],
+          "glossen": [
+            "en voor de vervloeking"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "493e94f97a8b80bf118637a3e460a89243078bb39509bdb7b0af8f04d929c750",
+            "referentie": "henoch 59:1",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -295,6 +388,68 @@
               7
             ]
           }
+        },
+        {
+          "tekst": "tot vrede",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2435"
+          ],
+          "bronwoorden": [
+            "ለሰላም"
+          ],
+          "transliteraties": [
+            "läsälamǝ"
+          ],
+          "glossen": [
+            "tot vrede"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b0c3d5abef4e9f1aa135dd41c1acf93e0a24d7b62b00ed588105c202da98e8a3",
+            "referentie": "henoch 59:2",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en tot zegen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3907"
+          ],
+          "bronwoorden": [
+            "ወለበረከት"
+          ],
+          "transliteraties": [
+            "wäläbäräkätǝ"
+          ],
+          "glossen": [
+            "en tot zegen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "b0c3d5abef4e9f1aa135dd41c1acf93e0a24d7b62b00ed588105c202da98e8a3",
+            "referentie": "henoch 59:2",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -391,6 +546,37 @@
             "grondindices": [
               3
             ]
+          }
+        },
+        {
+          "tekst": "tot zegen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3907"
+          ],
+          "bronwoorden": [
+            "ለበረከት"
+          ],
+          "transliteraties": [
+            "läbäräkätǝ"
+          ],
+          "glossen": [
+            "tot zegen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "3ce13d1afdd95a3b115160d55a17334e09a5f608a93168d02be2bf59914c4e5f",
+            "referentie": "henoch 59:3",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

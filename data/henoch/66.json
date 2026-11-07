@@ -304,6 +304,161 @@
               14
             ]
           }
+        },
+        {
+          "tekst": "engelen van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG353"
+          ],
+          "bronwoorden": [
+            "መላእክተ"
+          ],
+          "transliteraties": [
+            "mälakǝtä"
+          ],
+          "glossen": [
+            "engelen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "37bb4c6e7c010139dbc2d051c25e87f00a459a52b6b9e737d96dacdaaec09ad3",
+            "referentie": "henoch 66:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "komen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1653"
+          ],
+          "bronwoorden": [
+            "ይምጽኡ"
+          ],
+          "transliteraties": [
+            "yǝmǝṣǝ"
+          ],
+          "glossen": [
+            "zij komen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "37bb4c6e7c010139dbc2d051c25e87f00a459a52b6b9e737d96dacdaaec09ad3",
+            "referentie": "henoch 66:1",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "kracht van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4624"
+          ],
+          "bronwoorden": [
+            "ኀይለ"
+          ],
+          "transliteraties": [
+            "ḫäyǝlä"
+          ],
+          "glossen": [
+            "kracht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "37bb4c6e7c010139dbc2d051c25e87f00a459a52b6b9e737d96dacdaaec09ad3",
+            "referentie": "henoch 66:1",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "oordeel",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6244"
+          ],
+          "bronwoorden": [
+            "ለኲነኔ"
+          ],
+          "transliteraties": [
+            "läኲnäne"
+          ],
+          "glossen": [
+            "voor het oordeel"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "37bb4c6e7c010139dbc2d051c25e87f00a459a52b6b9e737d96dacdaaec09ad3",
+            "referentie": "henoch 66:1",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "en tot verderf",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG962"
+          ],
+          "bronwoorden": [
+            "ወለሐጒል"
+          ],
+          "transliteraties": [
+            "wäläḥäጒlǝ"
+          ],
+          "glossen": [
+            "en tot verderf"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "37bb4c6e7c010139dbc2d051c25e87f00a459a52b6b9e737d96dacdaaec09ad3",
+            "referentie": "henoch 66:1",
+            "bronindices": [
+              17
+            ],
+            "grondindices": [
+              17
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -533,6 +688,37 @@
             "grondindices": [
               15
             ]
+          }
+        },
+        {
+          "tekst": "kracht van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4624"
+          ],
+          "bronwoorden": [
+            "ኀይለ"
+          ],
+          "transliteraties": [
+            "ḫäyǝlä"
+          ],
+          "glossen": [
+            "kracht van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f6b12913fc73c76de309f1f3ae91a39528d08c553cd64d3166803a32b6f8519a",
+            "referentie": "henoch 66:2",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

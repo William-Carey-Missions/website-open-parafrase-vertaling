@@ -108,6 +108,99 @@
               3
             ]
           }
+        },
+        {
+          "tekst": "En vandaar",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG74"
+          ],
+          "bronwoorden": [
+            "ወእምህየ"
+          ],
+          "transliteraties": [
+            "wämǝhǝyä"
+          ],
+          "glossen": [
+            "en vandaar"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "96ee444933a2a4a466a58945a5433d0b45ec01c0935e0fea1f22c3afec0045a4",
+            "referentie": "henoch 26:1",
+            "bronindices": [
+              0
+            ],
+            "grondindices": [
+              0
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "midden van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5783"
+          ],
+          "bronwoorden": [
+            "ማእከለ"
+          ],
+          "transliteraties": [
+            "makälä"
+          ],
+          "glossen": [
+            "midden van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "96ee444933a2a4a466a58945a5433d0b45ec01c0935e0fea1f22c3afec0045a4",
+            "referentie": "henoch 26:1",
+            "bronindices": [
+              2
+            ],
+            "grondindices": [
+              2
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
+        },
+        {
+          "tekst": "plaats",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1452"
+          ],
+          "bronwoorden": [
+            "መካነ"
+          ],
+          "transliteraties": [
+            "mäkanä"
+          ],
+          "glossen": [
+            "plaats van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "96ee444933a2a4a466a58945a5433d0b45ec01c0935e0fea1f22c3afec0045a4",
+            "referentie": "henoch 26:1",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
+          }
         }
       ]
     },
@@ -242,6 +335,37 @@
             "grondindices": [
               7
             ]
+          }
+        },
+        {
+          "tekst": "het noorden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2526"
+          ],
+          "bronwoorden": [
+            "ሰሜን"
+          ],
+          "transliteraties": [
+            "sämenǝ"
+          ],
+          "glossen": [
+            "het noorden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-koppelingen-2026-11-07-v1",
+            "sha256": "f65fea1c12c22fc8354f9a4e44ceb85f8be16636396391a2464211e5dd452a5b",
+            "referentie": "henoch 26:2",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse"
           }
         }
       ]

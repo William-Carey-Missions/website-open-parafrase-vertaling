@@ -122,6 +122,193 @@
      "woord": "ፀሐይ",
      "strongs": "OVG9643"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "Gedenk",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG7648"
+     ],
+     "bronwoorden": [
+      "ተዘከር"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "gedenk"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "330c3cd4d1231ceb539339e847389a12009b46ded87503c30facc532496a9b84",
+      "referentie": "jubileeen 49:1",
+      "bronindices": [
+       0
+      ],
+      "grondindices": [
+       0
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       18,
+       1,
+       1
+      ]
+     }
+    },
+    {
+     "tekst": "gebod",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG5842"
+     ],
+     "bronwoorden": [
+      "ትእዛዘ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "gebod van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "330c3cd4d1231ceb539339e847389a12009b46ded87503c30facc532496a9b84",
+      "referentie": "jubileeen 49:1",
+      "bronindices": [
+       1
+      ],
+      "grondindices": [
+       1
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       5,
+       4,
+       3
+      ]
+     }
+    },
+    {
+     "tekst": "eerste",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3620"
+     ],
+     "bronwoorden": [
+      "ቀዳማዊ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "eerste"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "330c3cd4d1231ceb539339e847389a12009b46ded87503c30facc532496a9b84",
+      "referentie": "jubileeen 49:1",
+      "bronindices": [
+       13
+      ],
+      "grondindices": [
+       13
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       40,
+       4,
+       1
+      ]
+     }
+    },
+    {
+     "tekst": "in de nacht",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG386"
+     ],
+     "bronwoorden": [
+      "በሌሊት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "in de nacht"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "330c3cd4d1231ceb539339e847389a12009b46ded87503c30facc532496a9b84",
+      "referentie": "jubileeen 49:1",
+      "bronindices": [
+       20
+      ],
+      "grondindices": [
+       20
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       78,
+       13,
+       10
+      ]
+     }
+    },
+    {
+     "tekst": "zon",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG9643"
+     ],
+     "bronwoorden": [
+      "ፀሐይ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zon"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "330c3cd4d1231ceb539339e847389a12009b46ded87503c30facc532496a9b84",
+      "referentie": "jubileeen 49:1",
+      "bronindices": [
+       27
+      ],
+      "grondindices": [
+       27
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       4,
+       1,
+       6
+      ]
+     }
+    }
    ]
   },
   {
@@ -184,6 +371,82 @@
     {
      "woord": "በግብጽ",
      "strongs": "OVG11183"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "nacht",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG386"
+     ],
+     "bronwoorden": [
+      "ሌሊት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "nacht"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "77adbe8d86ffb3d7dbd1aca33c69111af56baf505db1a1689a83c10e857d1ebc",
+      "referentie": "jubileeen 49:2",
+      "bronindices": [
+       2
+      ],
+      "grondindices": [
+       2
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       72,
+       9,
+       6
+      ]
+     }
+    },
+    {
+     "tekst": "vreugde",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG9874"
+     ],
+     "bronwoorden": [
+      "ፍሥሐ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "vreugde/blijdschap"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "77adbe8d86ffb3d7dbd1aca33c69111af56baf505db1a1689a83c10e857d1ebc",
+      "referentie": "jubileeen 49:2",
+      "bronindices": [
+       7
+      ],
+      "grondindices": [
+       7
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       47,
+       4,
+       3
+      ]
+     }
     }
    ]
   },
@@ -312,6 +575,45 @@
      "woord": "አንቀጹ",
      "strongs": "OVG4903"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "zagen",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG7550"
+     ],
+     "bronwoorden": [
+      "ዘርእዩ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "die zagen"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "653e44cd5ac5244f10d91a7ec62c48e2c1e03837e15334a2f87f9db850c76779",
+      "referentie": "jubileeen 49:3",
+      "bronindices": [
+       7
+      ],
+      "grondindices": [
+       7
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       24,
+       16,
+       18
+      ]
+     }
+    }
    ]
   },
   {
@@ -411,6 +713,82 @@
      "woord": "ከልብ",
      "strongs": "OVG6003"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "deden",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG8420"
+     ],
+     "bronwoorden": [
+      "ወገብሩ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "en zij deden"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "1483b2e6b34a3eefabcd11afeb1ef68092151da4910b922e00843bf0652f2130",
+      "referentie": "jubileeen 49:4",
+      "bronindices": [
+       0
+      ],
+      "grondindices": [
+       0
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       12,
+       4,
+       17
+      ]
+     }
+    },
+    {
+     "tekst": "plaag",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3289"
+     ],
+     "bronwoorden": [
+      "መቅሠፍት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "plaag/straf"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "1483b2e6b34a3eefabcd11afeb1ef68092151da4910b922e00843bf0652f2130",
+      "referentie": "jubileeen 49:4",
+      "bronindices": [
+       13
+      ],
+      "grondindices": [
+       13
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       10,
+       21,
+       21
+      ]
+     }
+    }
    ]
   },
   {
@@ -469,6 +847,82 @@
     {
      "woord": "ወዐውያተ",
      "strongs": "OVG7248"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "plaag",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3289"
+     ],
+     "bronwoorden": [
+      "መቅሠፍት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "plaag/straf"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "cdcc5f8409dca84c7724bc99ee3b1ab916b9f3176b142844c9ba029e3e59aad7",
+      "referentie": "jubileeen 49:5",
+      "bronindices": [
+       1
+      ],
+      "grondindices": [
+       1
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       10,
+       21,
+       21
+      ]
+     }
+    },
+    {
+     "tekst": "en geween",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG4035"
+     ],
+     "bronwoorden": [
+      "ወብካየ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "en geween"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "cdcc5f8409dca84c7724bc99ee3b1ab916b9f3176b142844c9ba029e3e59aad7",
+      "referentie": "jubileeen 49:5",
+      "bronindices": [
+       11
+      ],
+      "grondindices": [
+       11
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       65,
+       5,
+       11
+      ]
+     }
     }
    ]
   },
@@ -566,6 +1020,156 @@
     {
      "woord": "እኪት",
      "strongs": "OVG5797"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "vlees",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG2003"
+     ],
+     "bronwoorden": [
+      "ሥጋ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "vlees"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fdf294aa6dacd5b65ff6a567b4045dbc4c71cca58146a53928e048fd0e09723d",
+      "referentie": "jubileeen 49:6",
+      "bronindices": [
+       5
+      ],
+      "grondindices": [
+       5
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       15,
+       4,
+       10
+      ]
+     }
+    },
+    {
+     "tekst": "wijn",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6741"
+     ],
+     "bronwoorden": [
+      "ወይነ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "wijn van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fdf294aa6dacd5b65ff6a567b4045dbc4c71cca58146a53928e048fd0e09723d",
+      "referentie": "jubileeen 49:6",
+      "bronindices": [
+       9
+      ],
+      "grondindices": [
+       9
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       45,
+       5,
+       8
+      ]
+     }
+    },
+    {
+     "tekst": "vaderen",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG5603"
+     ],
+     "bronwoorden": [
+      "አበዊሁ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zijn vaderen"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fdf294aa6dacd5b65ff6a567b4045dbc4c71cca58146a53928e048fd0e09723d",
+      "referentie": "jubileeen 49:6",
+      "bronindices": [
+       15
+      ],
+      "grondindices": [
+       15
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       31,
+       31,
+       14
+      ]
+     }
+    },
+    {
+     "tekst": "Egypte",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG11183"
+     ],
+     "bronwoorden": [
+      "ግብጽ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "Egypte"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fdf294aa6dacd5b65ff6a567b4045dbc4c71cca58146a53928e048fd0e09723d",
+      "referentie": "jubileeen 49:6",
+      "bronindices": [
+       20
+      ],
+      "grondindices": [
+       20
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       13,
+       11,
+       3
+      ]
+     }
     }
    ]
   },
@@ -669,6 +1273,82 @@
     {
      "woord": "ለወርኅ",
      "strongs": "OVG6536"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "gedenk",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG7648"
+     ],
+     "bronwoorden": [
+      "ተዘከር"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "gedenk"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "4da3ce26a5012a5736622bc4cddb30698876b7671f907af4d9b530f8a5a6a3f6",
+      "referentie": "jubileeen 49:7",
+      "bronindices": [
+       1
+      ],
+      "grondindices": [
+       1
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       18,
+       1,
+       1
+      ]
+     }
+    },
+    {
+     "tekst": "zijn wet",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG974"
+     ],
+     "bronwoorden": [
+      "ሕጉ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zijn wet"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "4da3ce26a5012a5736622bc4cddb30698876b7671f907af4d9b530f8a5a6a3f6",
+      "referentie": "jubileeen 49:7",
+      "bronindices": [
+       18
+      ],
+      "grondindices": [
+       18
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       21,
+       11,
+       9
+      ]
+     }
     }
    ]
   },
@@ -791,6 +1471,45 @@
     {
      "woord": "ሥሩዕ",
      "strongs": "OVG1802"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "tafelen",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG9169"
+     ],
+     "bronwoorden": [
+      "ጽላተ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "tafelen"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2f17234ea7f5c440326c40d6d028f83748207d0c974c60f3a0ea5d4f92ccbbe3",
+      "referentie": "jubileeen 49:8",
+      "bronindices": [
+       6
+      ],
+      "grondindices": [
+       6
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       18,
+       19,
+       6
+      ]
+     }
     }
    ]
   },
@@ -933,6 +1652,45 @@
      "woord": "ለርእሱ",
      "strongs": "OVG2227"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "drinken",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG2762"
+     ],
+     "bronwoorden": [
+      "ወለሰቲይ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "en om te drinken"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "46caeebe46b792380a01c7a3923fcfa978f2f3a71f9937073e2aeea259e6b580",
+      "referentie": "jubileeen 49:9",
+      "bronindices": [
+       14
+      ],
+      "grondindices": [
+       14
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       13,
+       27,
+       5
+      ]
+     }
+    }
    ]
   },
   {
@@ -1058,6 +1816,193 @@
     {
      "woord": "ለምሴት",
      "strongs": "OVG1317"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "komen",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG1653"
+     ],
+     "bronwoorden": [
+      "ይመጽኡ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zij komen"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "7ecf8f11803ea0fab04100a3a2f3b3d7357f5eb4ed9f0c2e1d4fd687249a1b4e",
+      "referentie": "jubileeen 49:10",
+      "bronindices": [
+       5
+      ],
+      "grondindices": [
+       5
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       60,
+       21,
+       7
+      ]
+     }
+    },
+    {
+     "tekst": "tijd",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG8647"
+     ],
+     "bronwoorden": [
+      "ጊዜሁ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zijn tijd"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "7ecf8f11803ea0fab04100a3a2f3b3d7357f5eb4ed9f0c2e1d4fd687249a1b4e",
+      "referentie": "jubileeen 49:10",
+      "bronindices": [
+       9
+      ],
+      "grondindices": [
+       9
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       7,
+       25,
+       21
+      ]
+     }
+    },
+    {
+     "tekst": "eerste",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3620"
+     ],
+     "bronwoorden": [
+      "ቀዳማዊ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "eerste"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "7ecf8f11803ea0fab04100a3a2f3b3d7357f5eb4ed9f0c2e1d4fd687249a1b4e",
+      "referentie": "jubileeen 49:10",
+      "bronindices": [
+       14
+      ],
+      "grondindices": [
+       14
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       40,
+       4,
+       1
+      ]
+     }
+    },
+    {
+     "tekst": "twee",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6015"
+     ],
+     "bronwoorden": [
+      "ክልኤ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "twee"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "7ecf8f11803ea0fab04100a3a2f3b3d7357f5eb4ed9f0c2e1d4fd687249a1b4e",
+      "referentie": "jubileeen 49:10",
+      "bronindices": [
+       23
+      ],
+      "grondindices": [
+       23
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       19,
+       1,
+       17
+      ]
+     }
+    },
+    {
+     "tekst": "licht",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3865"
+     ],
+     "bronwoorden": [
+      "ለብርሃን"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "voor het licht"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "7ecf8f11803ea0fab04100a3a2f3b3d7357f5eb4ed9f0c2e1d4fd687249a1b4e",
+      "referentie": "jubileeen 49:10",
+      "bronindices": [
+       27
+      ],
+      "grondindices": [
+       27
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       58,
+       4,
+       1
+      ]
+     }
     }
    ]
   },
@@ -1191,6 +2136,45 @@
     {
      "woord": "ያውዕይዎ"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "met vuur",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG5566"
+     ],
+     "bronwoorden": [
+      "በእሳት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "met vuur"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "86bd1269309848451dea3e92b02a7ad79950f70b5e0edade37fc0d28eb136445",
+      "referentie": "jubileeen 49:12",
+      "bronindices": [
+       21
+      ],
+      "grondindices": [
+       21
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       91,
+       9,
+       5
+      ]
+     }
+    }
    ]
   },
   {
@@ -1264,6 +2248,45 @@
      "woord": "እገሪሁ",
      "strongs": "OVG5910"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "in water",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG1555"
+     ],
+     "bronwoorden": [
+      "በማይ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "in water"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "ae38057bffd8d66bea8971c735f1a000db6d26d03768fecde110ff35e2597df6",
+      "referentie": "jubileeen 49:13",
+      "bronindices": [
+       2
+      ],
+      "grondindices": [
+       2
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       89,
+       3,
+       24
+      ]
+     }
+    }
    ]
   },
   {
@@ -1311,6 +2334,82 @@
     {
      "woord": "ጊዜሁ",
      "strongs": "OVG8647"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "op de dag van",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6714"
+     ],
+     "bronwoorden": [
+      "በዕለተ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "op de dag van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "1e695be24d39fc9271ec588a4e24558eeaafc7f7e3a6013ff748b3b2f4a91e29",
+      "referentie": "jubileeen 49:14",
+      "bronindices": [
+       8
+      ],
+      "grondindices": [
+       8
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       1,
+       1,
+       10
+      ]
+     }
+    },
+    {
+     "tekst": "tijd",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG8647"
+     ],
+     "bronwoorden": [
+      "ጊዜሁ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zijn tijd"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "1e695be24d39fc9271ec588a4e24558eeaafc7f7e3a6013ff748b3b2f4a91e29",
+      "referentie": "jubileeen 49:14",
+      "bronindices": [
+       9
+      ],
+      "grondindices": [
+       9
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       7,
+       25,
+       21
+      ]
+     }
     }
    ]
   },
@@ -1443,6 +2542,119 @@
      "woord": "ተአዘዘ",
      "strongs": "OVG5842"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "in hun dagen",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6717"
+     ],
+     "bronwoorden": [
+      "በመዋዕሊሆሙ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "in hun dagen"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "240542878dc215036272094fdea0eb2ec2606408340b34b0ea987bf86eefa189",
+      "referentie": "jubileeen 49:15",
+      "bronindices": [
+       7
+      ],
+      "grondindices": [
+       7
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       39,
+       6,
+       10
+      ]
+     }
+    },
+    {
+     "tekst": "op de dag van",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6714"
+     ],
+     "bronwoorden": [
+      "በዕለተ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "op de dag van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "240542878dc215036272094fdea0eb2ec2606408340b34b0ea987bf86eefa189",
+      "referentie": "jubileeen 49:15",
+      "bronindices": [
+       12
+      ],
+      "grondindices": [
+       12
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       1,
+       1,
+       10
+      ]
+     }
+    },
+    {
+     "tekst": "plaag",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3289"
+     ],
+     "bronwoorden": [
+      "መቅሠፍት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "plaag/straf"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "240542878dc215036272094fdea0eb2ec2606408340b34b0ea987bf86eefa189",
+      "referentie": "jubileeen 49:15",
+      "bronindices": [
+       20
+      ],
+      "grondindices": [
+       20
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       10,
+       21,
+       21
+      ]
+     }
+    }
    ]
   },
   {
@@ -1517,6 +2729,45 @@
     {
      "woord": "በጊዜሁ",
      "strongs": "OVG11323"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "op zijn tijd",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG11323"
+     ],
+     "bronwoorden": [
+      "በጊዜሁ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "op zijn tijd"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2a51c8eee76caea2649b530cf804db92c937d350988b73804591ad6c5aff0321",
+      "referentie": "jubileeen 49:16",
+      "bronindices": [
+       16
+      ],
+      "grondindices": [
+       16
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       60,
+       15,
+       19
+      ]
+     }
     }
    ]
   },
@@ -1727,6 +2978,119 @@
      "woord": "ምድር",
      "strongs": "OVG1586"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "Kanaän",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG11006"
+     ],
+     "bronwoorden": [
+      "ከናአን"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "Kanaän"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "d6f5230332bac23df2e11f8174c64a81371249309ea7c26a1269544bdcd6cd8a",
+      "referentie": "jubileeen 49:18",
+      "bronindices": [
+       10
+      ],
+      "grondindices": [
+       10
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       20,
+       4,
+       20
+      ]
+     }
+    },
+    {
+     "tekst": "tabernakel",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG7989"
+     ],
+     "bronwoorden": [
+      "ደብተራ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "tent/tabernakel"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "d6f5230332bac23df2e11f8174c64a81371249309ea7c26a1269544bdcd6cd8a",
+      "referentie": "jubileeen 49:18",
+      "bronindices": [
+       12
+      ],
+      "grondindices": [
+       12
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       4,
+       6,
+       8
+      ]
+     }
+    },
+    {
+     "tekst": "heiligdom",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3639"
+     ],
+     "bronwoorden": [
+      "መቅደሱ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zijn heiligdom"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "d6f5230332bac23df2e11f8174c64a81371249309ea7c26a1269544bdcd6cd8a",
+      "referentie": "jubileeen 49:18",
+      "bronindices": [
+       23
+      ],
+      "grondindices": [
+       23
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       31,
+       14,
+       17
+      ]
+     }
+    }
    ]
   },
   {
@@ -1804,6 +3168,193 @@
     {
      "woord": "ለዕለት",
      "strongs": "OVG6714"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "en in de dagen",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6717"
+     ],
+     "bronwoorden": [
+      "ወበመዋዕል"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "en in de dagen"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fc425e60cd1473e415102bdb17c18bc0d69abc4660e675693ef10c35a60484d9",
+      "referentie": "jubileeen 49:19",
+      "bronindices": [
+       0
+      ],
+      "grondindices": [
+       0
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       28,
+       9,
+       1
+      ]
+     }
+    },
+    {
+     "tekst": "huis",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3986"
+     ],
+     "bronwoorden": [
+      "ቤት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "huis"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fc425e60cd1473e415102bdb17c18bc0d69abc4660e675693ef10c35a60484d9",
+      "referentie": "jubileeen 49:19",
+      "bronindices": [
+       3
+      ],
+      "grondindices": [
+       3
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       14,
+       10,
+       6
+      ]
+     }
+    },
+    {
+     "tekst": "in het land van",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG1585"
+     ],
+     "bronwoorden": [
+      "በምድረ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "in het land van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fc425e60cd1473e415102bdb17c18bc0d69abc4660e675693ef10c35a60484d9",
+      "referentie": "jubileeen 49:19",
+      "bronindices": [
+       6
+      ],
+      "grondindices": [
+       6
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       45,
+       13,
+       3
+      ]
+     }
+    },
+    {
+     "tekst": "zon",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG9643"
+     ],
+     "bronwoorden": [
+      "ፀሐይ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zon"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fc425e60cd1473e415102bdb17c18bc0d69abc4660e675693ef10c35a60484d9",
+      "referentie": "jubileeen 49:19",
+      "bronindices": [
+       15
+      ],
+      "grondindices": [
+       15
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       4,
+       1,
+       6
+      ]
+     }
+    },
+    {
+     "tekst": "dag",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG6714"
+     ],
+     "bronwoorden": [
+      "ለዕለት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "voor de dag"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "fc425e60cd1473e415102bdb17c18bc0d69abc4660e675693ef10c35a60484d9",
+      "referentie": "jubileeen 49:19",
+      "bronindices": [
+       17
+      ],
+      "grondindices": [
+       17
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       72,
+       33,
+       1
+      ]
+     }
     }
    ]
   },
@@ -1894,6 +3445,45 @@
     {
      "woord": "እግዚአብሔር",
      "strongs": "OVG8605"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "zij eten",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3794"
+     ],
+     "bronwoorden": [
+      "ይብልዑ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zij eten"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "c6af45b37b3b97fd8cf62dfb4ff25a2c5fe93dfbd3816186530767f6664a8d2c",
+      "referentie": "jubileeen 49:20",
+      "bronindices": [
+       12
+      ],
+      "grondindices": [
+       12
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       11,
+       11,
+       7
+      ]
+     }
     }
    ]
   },
@@ -1986,6 +3576,119 @@
     {
      "woord": "እግዚአብሔር",
      "strongs": "OVG8605"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "tabernakel",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG7989"
+     ],
+     "bronwoorden": [
+      "ደብተራ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "tent/tabernakel"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "43fe160ba48dec707bd0172afe190da553802d52a9f7d01dec87042c19b3d0da",
+      "referentie": "jubileeen 49:21",
+      "bronindices": [
+       8
+      ],
+      "grondindices": [
+       8
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       4,
+       6,
+       8
+      ]
+     }
+    },
+    {
+     "tekst": "huis",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3986"
+     ],
+     "bronwoorden": [
+      "ቤት"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "huis"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "43fe160ba48dec707bd0172afe190da553802d52a9f7d01dec87042c19b3d0da",
+      "referentie": "jubileeen 49:21",
+      "bronindices": [
+       13
+      ],
+      "grondindices": [
+       13
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       14,
+       10,
+       6
+      ]
+     }
+    },
+    {
+     "tekst": "naam",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG2517"
+     ],
+     "bronwoorden": [
+      "ስመ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "naam van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "43fe160ba48dec707bd0172afe190da553802d52a9f7d01dec87042c19b3d0da",
+      "referentie": "jubileeen 49:21",
+      "bronindices": [
+       16
+      ],
+      "grondindices": [
+       16
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       69,
+       14,
+       5
+      ]
+     }
     }
    ]
   },
@@ -2161,6 +3864,156 @@
      "woord": "አምላክክሙ",
      "strongs": "OVG1108"
     }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "Mozes",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG10273"
+     ],
+     "bronwoorden": [
+      "ሙሴ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "Mozes"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2c667b3586e6bffe68ee17b27a22bae0dd923b66588a9a042d282365d382d6ea",
+      "referentie": "jubileeen 49:22",
+      "bronindices": [
+       1
+      ],
+      "grondindices": [
+       1
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "1meqabyan",
+       5,
+       20,
+       11
+      ]
+     }
+    },
+    {
+     "tekst": "eten",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG3794"
+     ],
+     "bronwoorden": [
+      "ይብልዑ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "zij eten"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2c667b3586e6bffe68ee17b27a22bae0dd923b66588a9a042d282365d382d6ea",
+      "referentie": "jubileeen 49:22",
+      "bronindices": [
+       21
+      ],
+      "grondindices": [
+       21
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       11,
+       11,
+       7
+      ]
+     }
+    },
+    {
+     "tekst": "vreugde",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG9874"
+     ],
+     "bronwoorden": [
+      "ፍሥሐ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "vreugde/blijdschap"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2c667b3586e6bffe68ee17b27a22bae0dd923b66588a9a042d282365d382d6ea",
+      "referentie": "jubileeen 49:22",
+      "bronindices": [
+       36
+      ],
+      "grondindices": [
+       36
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       47,
+       4,
+       3
+      ]
+     }
+    },
+    {
+     "tekst": "altaar van",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG1913"
+     ],
+     "bronwoorden": [
+      "ምሥዋዐ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "altaar van"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2c667b3586e6bffe68ee17b27a22bae0dd923b66588a9a042d282365d382d6ea",
+      "referentie": "jubileeen 49:22",
+      "bronindices": [
+       40
+      ],
+      "grondindices": [
+       40
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "jubileeen",
+       13,
+       4,
+       3
+      ]
+     }
+    }
    ]
   },
   {
@@ -2245,6 +4098,45 @@
     },
     {
      "woord": "ሰለጥክምዋ"
+    }
+   ],
+   "woordnummers": [
+    {
+     "tekst": "woestijn",
+     "voorkomen": 1,
+     "strongs": [
+      "OVG8680"
+     ],
+     "bronwoorden": [
+      "ገዳመ"
+     ],
+     "transliteraties": [
+      ""
+     ],
+     "glossen": [
+      "woestijn"
+     ],
+     "confidence": 0.9,
+     "reviewstatus": "automatisch_hoog_vertrouwen",
+     "herkomst": {
+      "dataset": "lokale-grondtekst",
+      "versie": "geez-koppelingen-2026-11-07-v1",
+      "sha256": "2d770e783ea32762a879cb1d5b36d0a3bc72a51eba97fbc43c6eb422480d9920",
+      "referentie": "jubileeen 49:23",
+      "bronindices": [
+       13
+      ],
+      "grondindices": [
+       13
+      ],
+      "methode": "unieke-inhoudswoordmatch-met-glosse",
+      "glosse_bron": [
+       "henoch",
+       28,
+       1,
+       8
+      ]
+     }
     }
    ]
   }
