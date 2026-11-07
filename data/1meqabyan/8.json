@@ -671,6 +671,38 @@
               2
             ]
           }
+        },
+        {
+          "tekst": "water",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12777"
+          ],
+          "bronwoorden": [
+            "እማይ"
+          ],
+          "transliteraties": [
+            "mayǝ"
+          ],
+          "glossen": [
+            "van water"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "e85a45684420ad03e3e20c852c33e96765c757bff78c8f766147c7256a862e42",
+            "referentie": "1meqabyan 8:3",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/8/3"
+          }
         }
       ]
     },
@@ -1254,6 +1286,230 @@
             "grondindices": [
               11
             ]
+          }
+        },
+        {
+          "tekst": "verzamelt",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8459"
+          ],
+          "bronwoorden": [
+            "አስተጋብኦ"
+          ],
+          "transliteraties": [
+            "sǝtägabǝ"
+          ],
+          "glossen": [
+            "verzameling"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "toen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5743"
+          ],
+          "bronwoorden": [
+            "እምከመ"
+          ],
+          "transliteraties": [
+            "mǝkämä"
+          ],
+          "glossen": [
+            "wanneer/zodra"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "uitging",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6863"
+          ],
+          "bronwoorden": [
+            "ወጽአት"
+          ],
+          "transliteraties": [
+            "wäṣǝtǝ"
+          ],
+          "glossen": [
+            "zij ging uit"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "En Hij zei",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7755"
+          ],
+          "bronwoorden": [
+            "ወይቤ"
+          ],
+          "transliteraties": [
+            "wäyǝbe"
+          ],
+          "glossen": [
+            "en hij zei"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              1
+            ],
+            "grondindices": [
+              1
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/8/6"
+          }
+        },
+        {
+          "tekst": "zielen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5326"
+          ],
+          "bronwoorden": [
+            "ነፍሳተ"
+          ],
+          "transliteraties": [
+            "näfǝsatä"
+          ],
+          "glossen": [
+            "zielen van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/8/6"
+          }
+        },
+        {
+          "tekst": "water",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12777"
+          ],
+          "bronwoorden": [
+            "እማይ"
+          ],
+          "transliteraties": [
+            "mayǝ"
+          ],
+          "glossen": [
+            "van water"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/8/6"
+          }
+        },
+        {
+          "tekst": "vlees",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2003"
+          ],
+          "bronwoorden": [
+            "እምሥጋ"
+          ],
+          "transliteraties": [
+            "mǝśǝga"
+          ],
+          "glossen": [
+            "van het vlees"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+            "referentie": "1meqabyan 8:6",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/8/6"
           }
         }
       ]

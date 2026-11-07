@@ -1617,6 +1617,198 @@
               16
             ]
           }
+        },
+        {
+          "tekst": "God",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8605"
+          ],
+          "bronwoorden": [
+            "ለእግዚአብሔር"
+          ],
+          "transliteraties": [
+            "lägǝzibǝḥerǝ"
+          ],
+          "glossen": [
+            "voor God"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+            "referentie": "2meqabyan 9:8",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "God",
+          "voorkomen": 2,
+          "strongs": [
+            "OVG8605"
+          ],
+          "bronwoorden": [
+            "እግዚአብሔር"
+          ],
+          "transliteraties": [
+            "gǝzibǝḥerǝ"
+          ],
+          "glossen": [
+            "God/Heere"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+            "referentie": "2meqabyan 9:8",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "verwaarloosd",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12907"
+          ],
+          "bronwoorden": [
+            "ወተሀከ"
+          ],
+          "transliteraties": [
+            "wätähäkä"
+          ],
+          "glossen": [
+            "en hij verwaarloosde"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+            "referentie": "2meqabyan 9:8",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "hand",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5872"
+          ],
+          "bronwoorden": [
+            "እምእዴሁ"
+          ],
+          "transliteraties": [
+            "mǝdehu"
+          ],
+          "glossen": [
+            "uit zijn hand"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+            "referentie": "2meqabyan 9:8",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/9/8"
+          }
+        },
+        {
+          "tekst": "Zijn toorn",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1510"
+          ],
+          "bronwoorden": [
+            "መዓቶ"
+          ],
+          "transliteraties": [
+            "mäto"
+          ],
+          "glossen": [
+            "zijn toorn"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+            "referentie": "2meqabyan 9:8",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/9/8"
+          }
+        },
+        {
+          "tekst": "aanbidding",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG13217"
+          ],
+          "bronwoorden": [
+            "አምልኮቶ"
+          ],
+          "transliteraties": [
+            "mǝlǝkoto"
+          ],
+          "glossen": [
+            "zijn aanbidding"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+            "referentie": "2meqabyan 9:8",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/9/8"
+          }
         }
       ]
     },

@@ -654,6 +654,198 @@
             "methode": "inhoudelijk-beoordeeld",
             "beoordeling": "De tweede vernietigingszin luidt Hij vernietigde allen; het eerdere al hoort bij bronindex 2."
           }
+        },
+        {
+          "tekst": "vernietigde",
+          "voorkomen": 2,
+          "strongs": [
+            "OVG9070"
+          ],
+          "bronwoorden": [
+            "ወአጥፍአ"
+          ],
+          "transliteraties": [
+            "wäṭǝfǝ"
+          ],
+          "glossen": [
+            "en hij verdelgde"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+            "referentie": "1meqabyan 14:2",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "Hij zei",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7755"
+          ],
+          "bronwoorden": [
+            "ይቤ"
+          ],
+          "transliteraties": [
+            "yǝbe"
+          ],
+          "glossen": [
+            "hij zei"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+            "referentie": "1meqabyan 14:2",
+            "bronindices": [
+              5
+            ],
+            "grondindices": [
+              5
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/14/2"
+          }
+        },
+        {
+          "tekst": "vermenigvuldigde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4101"
+          ],
+          "bronwoorden": [
+            "አስተባዝኀ"
+          ],
+          "transliteraties": [
+            "sǝtäbazǝḫä"
+          ],
+          "glossen": [
+            "hij vermenigvuldigde"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+            "referentie": "1meqabyan 14:2",
+            "bronindices": [
+              18
+            ],
+            "grondindices": [
+              18
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/14/2"
+          }
+        },
+        {
+          "tekst": "aarde",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1586"
+          ],
+          "bronwoorden": [
+            "ለምድር"
+          ],
+          "transliteraties": [
+            "lämǝdǝrǝ"
+          ],
+          "glossen": [
+            "voor de aarde"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+            "referentie": "1meqabyan 14:2",
+            "bronindices": [
+              21
+            ],
+            "grondindices": [
+              21
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/14/2"
+          }
+        },
+        {
+          "tekst": "verdeelden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6374"
+          ],
+          "bronwoorden": [
+            "ወተካፈሉ"
+          ],
+          "transliteraties": [
+            "wätäkafälu"
+          ],
+          "glossen": [
+            "en zij verdeelden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+            "referentie": "1meqabyan 14:2",
+            "bronindices": [
+              22
+            ],
+            "grondindices": [
+              22
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/14/2"
+          }
+        },
+        {
+          "tekst": "hun vader",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5634"
+          ],
+          "bronwoorden": [
+            "አቡሆሙ"
+          ],
+          "transliteraties": [
+            "buhomu"
+          ],
+          "glossen": [
+            "hun vader"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+            "referentie": "1meqabyan 14:2",
+            "bronindices": [
+              24
+            ],
+            "grondindices": [
+              24
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/14/2"
+          }
         }
       ]
     },

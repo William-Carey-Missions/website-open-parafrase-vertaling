@@ -3343,6 +3343,198 @@
               32
             ]
           }
+        },
+        {
+          "tekst": "God",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG8605"
+          ],
+          "bronwoorden": [
+            "እግዚአብሔር"
+          ],
+          "transliteraties": [
+            "gǝzibǝḥerǝ"
+          ],
+          "glossen": [
+            "God/Heere"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+            "referentie": "3meqabyan 2:13",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "beraad",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1444"
+          ],
+          "bronwoorden": [
+            "ምክር"
+          ],
+          "transliteraties": [
+            "mǝkǝrǝ"
+          ],
+          "glossen": [
+            "raad"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+            "referentie": "3meqabyan 2:13",
+            "bronindices": [
+              15
+            ],
+            "grondindices": [
+              15
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "afgedwaald",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG2490"
+          ],
+          "bronwoorden": [
+            "ስሕትክሙ"
+          ],
+          "transliteraties": [
+            "sǝḥǝtǝkǝmu"
+          ],
+          "glossen": [
+            "uw dwaling"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+            "referentie": "3meqabyan 2:13",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "nut",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG3970"
+          ],
+          "bronwoorden": [
+            "ባቍዕ"
+          ],
+          "transliteraties": [
+            "baቍ"
+          ],
+          "glossen": [
+            "nuttig"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+            "referentie": "3meqabyan 2:13",
+            "bronindices": [
+              26
+            ],
+            "grondindices": [
+              26
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "uw harten",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12992"
+          ],
+          "bronwoorden": [
+            "አልባቢክሙ"
+          ],
+          "transliteraties": [
+            "lǝbabikǝmu"
+          ],
+          "glossen": [
+            "uw harten"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+            "referentie": "3meqabyan 2:13",
+            "bronindices": [
+              22
+            ],
+            "grondindices": [
+              22
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "3meqabyan/2/13"
+          }
+        },
+        {
+          "tekst": "en de hoogmoed van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7165"
+          ],
+          "bronwoorden": [
+            "ወትዕቢተ"
+          ],
+          "transliteraties": [
+            "wätǝbitä"
+          ],
+          "glossen": [
+            "en de hoogmoed van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+            "referentie": "3meqabyan 2:13",
+            "bronindices": [
+              23
+            ],
+            "grondindices": [
+              23
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "3meqabyan/2/13"
+          }
         }
       ]
     },

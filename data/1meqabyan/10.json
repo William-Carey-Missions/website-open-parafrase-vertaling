@@ -973,6 +973,134 @@
               13
             ]
           }
+        },
+        {
+          "tekst": "staan",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4804"
+          ],
+          "bronwoorden": [
+            "ይትነሥኡ"
+          ],
+          "transliteraties": [
+            "yǝtǝnäśǝ"
+          ],
+          "glossen": [
+            "zij staan op"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "85106a3ce342f60e074f8edd5e13a0e0a9f940ba3258f2d16f6af3334595fbb3",
+            "referentie": "1meqabyan 10:3",
+            "bronindices": [
+              6
+            ],
+            "grondindices": [
+              6
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "gelegd worden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6769"
+          ],
+          "bronwoorden": [
+            "ይትወደዩ"
+          ],
+          "transliteraties": [
+            "yǝtǝwädäyu"
+          ],
+          "glossen": [
+            "zij worden geworpen"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "85106a3ce342f60e074f8edd5e13a0e0a9f940ba3258f2d16f6af3334595fbb3",
+            "referentie": "1meqabyan 10:3",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "zegt",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4292"
+          ],
+          "bronwoorden": [
+            "ትብል"
+          ],
+          "transliteraties": [
+            "tǝbǝlǝ"
+          ],
+          "glossen": [
+            "zij/jij zegt"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "85106a3ce342f60e074f8edd5e13a0e0a9f940ba3258f2d16f6af3334595fbb3",
+            "referentie": "1meqabyan 10:3",
+            "bronindices": [
+              4
+            ],
+            "grondindices": [
+              4
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/10/3"
+          }
+        },
+        {
+          "tekst": "dood",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1339"
+          ],
+          "bronwoorden": [
+            "ሞቱ"
+          ],
+          "transliteraties": [
+            "motu"
+          ],
+          "glossen": [
+            "zijn dood/zij stierven"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "85106a3ce342f60e074f8edd5e13a0e0a9f940ba3258f2d16f6af3334595fbb3",
+            "referentie": "1meqabyan 10:3",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/10/3"
+          }
         }
       ]
     },

@@ -124,6 +124,230 @@
               6
             ]
           }
+        },
+        {
+          "tekst": "Meqabeeën",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10282"
+          ],
+          "bronwoorden": [
+            "መቃብያን"
+          ],
+          "transliteraties": [
+            "mäqabǝyanǝ"
+          ],
+          "glossen": [
+            "Makkabeeën"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "hun zielen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5320"
+          ],
+          "bronwoorden": [
+            "ነፍሶሙ"
+          ],
+          "transliteraties": [
+            "näfǝsomu"
+          ],
+          "glossen": [
+            "hun ziel"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "weigerden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG10563"
+          ],
+          "bronwoorden": [
+            "አቢዮሙ"
+          ],
+          "transliteraties": [
+            "biyomu"
+          ],
+          "glossen": [
+            "hun weigering"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "afgoden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG9014"
+          ],
+          "bronwoorden": [
+            "ጣዖት"
+          ],
+          "transliteraties": [
+            "ṭatǝ"
+          ],
+          "glossen": [
+            "afgod"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "geloofden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1400"
+          ],
+          "bronwoorden": [
+            "አምኑ"
+          ],
+          "transliteraties": [
+            "mǝnu"
+          ],
+          "glossen": [
+            "zij geloofden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              7
+            ],
+            "grondindices": [
+              7
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/13/1"
+          }
+        },
+        {
+          "tekst": "dood",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1475"
+          ],
+          "bronwoorden": [
+            "ለሞት"
+          ],
+          "transliteraties": [
+            "lämotǝ"
+          ],
+          "glossen": [
+            "voor de dood"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/13/1"
+          }
+        },
+        {
+          "tekst": "offer van",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1912"
+          ],
+          "bronwoorden": [
+            "መሥዋዕተ"
+          ],
+          "transliteraties": [
+            "mäśǝwatä"
+          ],
+          "glossen": [
+            "offer van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+            "referentie": "2meqabyan 13:1",
+            "bronindices": [
+              13
+            ],
+            "grondindices": [
+              13
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/13/1"
+          }
         }
       ]
     },
@@ -2058,6 +2282,166 @@
             "grondindices": [
               12
             ]
+          }
+        },
+        {
+          "tekst": "goed",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1870"
+          ],
+          "bronwoorden": [
+            "ሠናያነ"
+          ],
+          "transliteraties": [
+            "śänayanä"
+          ],
+          "glossen": [
+            "goede"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "573bffdecc80b73dc0d2896fd41742806e2893c5bb3d25b6c2cc7b241bd8ebcf",
+            "referentie": "2meqabyan 13:9",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "hun zielen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG5320"
+          ],
+          "bronwoorden": [
+            "ነፍሶሙ"
+          ],
+          "transliteraties": [
+            "näfǝsomu"
+          ],
+          "glossen": [
+            "hun ziel"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "573bffdecc80b73dc0d2896fd41742806e2893c5bb3d25b6c2cc7b241bd8ebcf",
+            "referentie": "2meqabyan 13:9",
+            "bronindices": [
+              16
+            ],
+            "grondindices": [
+              16
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "aardse",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1587"
+          ],
+          "bronwoorden": [
+            "ምድራዊት"
+          ],
+          "transliteraties": [
+            "mǝdǝrawitǝ"
+          ],
+          "glossen": [
+            "aards"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "573bffdecc80b73dc0d2896fd41742806e2893c5bb3d25b6c2cc7b241bd8ebcf",
+            "referentie": "2meqabyan 13:9",
+            "bronindices": [
+              23
+            ],
+            "grondindices": [
+              23
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "samen",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG4542"
+          ],
+          "bronwoorden": [
+            "ኅቡረ"
+          ],
+          "transliteraties": [
+            "ḫǝburä"
+          ],
+          "glossen": [
+            "samen"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "573bffdecc80b73dc0d2896fd41742806e2893c5bb3d25b6c2cc7b241bd8ebcf",
+            "referentie": "2meqabyan 13:9",
+            "bronindices": [
+              14
+            ],
+            "grondindices": [
+              14
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/13/9"
+          }
+        },
+        {
+          "tekst": "dood",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1475"
+          ],
+          "bronwoorden": [
+            "ለሞት"
+          ],
+          "transliteraties": [
+            "lämotǝ"
+          ],
+          "glossen": [
+            "voor de dood"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "573bffdecc80b73dc0d2896fd41742806e2893c5bb3d25b6c2cc7b241bd8ebcf",
+            "referentie": "2meqabyan 13:9",
+            "bronindices": [
+              17
+            ],
+            "grondindices": [
+              17
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/13/9"
           }
         }
       ]

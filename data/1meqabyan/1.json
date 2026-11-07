@@ -4120,6 +4120,134 @@
               2
             ]
           }
+        },
+        {
+          "tekst": "wachters",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7111"
+          ],
+          "bronwoorden": [
+            "ዓቀብተ"
+          ],
+          "transliteraties": [
+            "qäbǝtä"
+          ],
+          "glossen": [
+            "bewakers"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "184a9a2085d43e1197558b711f4e0163308efdf4aa72ed0585aa39c1a04d0de8",
+            "referentie": "1meqabyan 1:21",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "offergave",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG1912"
+          ],
+          "bronwoorden": [
+            "መሥዋዕተ"
+          ],
+          "transliteraties": [
+            "mäśǝwatä"
+          ],
+          "glossen": [
+            "offer van"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "184a9a2085d43e1197558b711f4e0163308efdf4aa72ed0585aa39c1a04d0de8",
+            "referentie": "1meqabyan 1:21",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "voortdurend",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG7458"
+          ],
+          "bronwoorden": [
+            "ዘልፈ"
+          ],
+          "transliteraties": [
+            "zälǝfä"
+          ],
+          "glossen": [
+            "altijd"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "184a9a2085d43e1197558b711f4e0163308efdf4aa72ed0585aa39c1a04d0de8",
+            "referentie": "1meqabyan 1:21",
+            "bronindices": [
+              10
+            ],
+            "grondindices": [
+              10
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "goden",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG13170"
+          ],
+          "bronwoorden": [
+            "ለአማልክቲሁ"
+          ],
+          "transliteraties": [
+            "lämalǝkǝtihu"
+          ],
+          "glossen": [
+            "voor zijn goden"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "184a9a2085d43e1197558b711f4e0163308efdf4aa72ed0585aa39c1a04d0de8",
+            "referentie": "1meqabyan 1:21",
+            "bronindices": [
+              11
+            ],
+            "grondindices": [
+              11
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "1meqabyan/1/21"
+          }
         }
       ]
     },

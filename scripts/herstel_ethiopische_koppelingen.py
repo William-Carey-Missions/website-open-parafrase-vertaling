@@ -370,8 +370,8 @@ def repair_meqabyan(chapters, changes):
                         'grondtekst':duplicate, 'woordnummers':archived_mappings})
 
 
-def project(verse, book, chapter, known):
-    if suspect_boundary(book, chapter, verse):
+def project(verse, book, chapter, known, *, reviewed_boundary=False):
+    if suspect_boundary(book, chapter, verse) and not reviewed_boundary:
         return []
     text = plain(verse)
     mappings = verse.get('woordnummers', [])

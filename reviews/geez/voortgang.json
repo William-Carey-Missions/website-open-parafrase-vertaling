@@ -1,0 +1,85 @@
+{
+  "datum": "2026-11-07",
+  "toegevoegde_koppelingen_eerste_ronde": 8278,
+  "toegevoegde_koppelingen_vervolg": 132,
+  "toegevoegde_koppelingen_totaal": 8410,
+  "inhoudelijk_gecorrigeerde_bestaande_koppelingen": 24,
+  "onjuist_gekoppeld_en_uitgeschakeld": 2,
+  "genummerde_grondwoordvoorkomens_zonder_koppeling": 32510,
+  "verzen_zonder_grondtekst": 6,
+  "beoordeelde_koppelingen_zonder_bestaand_bronnummer": 15,
+  "volledig_inhoudelijk_gecontroleerd": false,
+  "tellingen_per_boek": {
+    "henoch": {
+      "verzen": 1058,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 13559,
+      "grondwoorden_zonder_nummer": 4325,
+      "koppelingen": 4762,
+      "zichtbare_koppelingen": 4761,
+      "gekoppelde_grondwoorden": 4761,
+      "genummerde_grondwoorden_zonder_koppeling": 8798,
+      "koppelingen_in_afwachting": 1
+    },
+    "jubileeen": {
+      "verzen": 1306,
+      "verzen_zonder_grondtekst": 6,
+      "genummerde_grondwoorden": 17292,
+      "grondwoorden_zonder_nummer": 2395,
+      "koppelingen": 3762,
+      "zichtbare_koppelingen": 3762,
+      "gekoppelde_grondwoorden": 3762,
+      "genummerde_grondwoorden_zonder_koppeling": 13530
+    },
+    "1meqabyan": {
+      "verzen": 753,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 7921,
+      "grondwoorden_zonder_nummer": 4140,
+      "koppelingen": 3235,
+      "zichtbare_koppelingen": 3234,
+      "gekoppelde_grondwoorden": 3234,
+      "genummerde_grondwoorden_zonder_koppeling": 4687,
+      "koppelingen_in_afwachting": 1
+    },
+    "2meqabyan": {
+      "verzen": 424,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 4718,
+      "grondwoorden_zonder_nummer": 1933,
+      "koppelingen": 1842,
+      "zichtbare_koppelingen": 1842,
+      "gekoppelde_grondwoorden": 1842,
+      "genummerde_grondwoorden_zonder_koppeling": 2876
+    },
+    "3meqabyan": {
+      "verzen": 208,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 2604,
+      "grondwoorden_zonder_nummer": 909,
+      "koppelingen": 890,
+      "zichtbare_koppelingen": 890,
+      "gekoppelde_grondwoorden": 890,
+      "genummerde_grondwoorden_zonder_koppeling": 1714
+    },
+    "4baruch": {
+      "verzen": 197,
+      "verzen_zonder_grondtekst": 0,
+      "genummerde_grondwoorden": 2283,
+      "grondwoorden_zonder_nummer": 380,
+      "koppelingen": 1377,
+      "zichtbare_koppelingen": 1377,
+      "gekoppelde_grondwoorden": 1378,
+      "genummerde_grondwoorden_zonder_koppeling": 905
+    }
+  },
+  "controle": {
+    "unittests": 11,
+    "render_verzen": 3946,
+    "render_knoppen": 15867,
+    "render_fouten": 0,
+    "idempotent": true,
+    "tekst_en_bronwoorden_in_vervolgronde_ongewijzigd": true
+  },
+  "publicatie": "Deze bestanden horen bij de tweede publicatieronde. De eerste ronde is op het productiedomein gecontroleerd."
+}

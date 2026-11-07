@@ -6722,6 +6722,102 @@
               4
             ]
           }
+        },
+        {
+          "tekst": "dubbele",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG6315"
+          ],
+          "bronwoorden": [
+            "ምክዕቢተ"
+          ],
+          "transliteraties": [
+            "mǝkǝbitä"
+          ],
+          "glossen": [
+            "dubbel"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "9060f8ae48806c69e7813dcaadf2dd089e22863eda32814f060dabd8d77033b4",
+            "referentie": "2meqabyan 10:26",
+            "bronindices": [
+              3
+            ],
+            "grondindices": [
+              3
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "Geeft acht",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12706"
+          ],
+          "bronwoorden": [
+            "አድምዑ"
+          ],
+          "transliteraties": [
+            "dǝmǝ"
+          ],
+          "glossen": [
+            "luistert"
+          ],
+          "confidence": 1.0,
+          "reviewstatus": "handmatig_gecontroleerd",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "9060f8ae48806c69e7813dcaadf2dd089e22863eda32814f060dabd8d77033b4",
+            "referentie": "2meqabyan 10:26",
+            "bronindices": [
+              9
+            ],
+            "grondindices": [
+              9
+            ],
+            "methode": "inhoudelijk-beoordeeld",
+            "beoordeling": "Inhoudelijk vergeleken met de volledige Nederlandse zin en de aanwezige bronwoordglosse."
+          }
+        },
+        {
+          "tekst": "koninkrijk",
+          "voorkomen": 1,
+          "strongs": [
+            "OVG12665"
+          ],
+          "bronwoorden": [
+            "መንግሥተ"
+          ],
+          "transliteraties": [
+            "mänǝgǝśǝtä"
+          ],
+          "glossen": [
+            "koninkrijk van"
+          ],
+          "confidence": 0.9,
+          "reviewstatus": "automatisch_hoog_vertrouwen",
+          "herkomst": {
+            "dataset": "lokale-grondtekst",
+            "versie": "geez-vervolg-2026-11-07",
+            "sha256": "9060f8ae48806c69e7813dcaadf2dd089e22863eda32814f060dabd8d77033b4",
+            "referentie": "2meqabyan 10:26",
+            "bronindices": [
+              8
+            ],
+            "grondindices": [
+              8
+            ],
+            "methode": "unieke-inhoudswoordmatch-met-glosse",
+            "beoordeelde_bronmarkeringen": "2meqabyan/10/26"
+          }
         }
       ]
     },
