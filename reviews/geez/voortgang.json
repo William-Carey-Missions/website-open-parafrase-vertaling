@@ -2,10 +2,10 @@
   "datum": "2026-11-07",
   "toegevoegde_koppelingen_eerste_ronde": 8278,
   "toegevoegde_koppelingen_vervolg": 132,
-  "toegevoegde_koppelingen_totaal": 8410,
+  "toegevoegde_koppelingen_totaal": 8456,
   "inhoudelijk_gecorrigeerde_bestaande_koppelingen": 24,
   "onjuist_gekoppeld_en_uitgeschakeld": 2,
-  "genummerde_grondwoordvoorkomens_zonder_koppeling": 32510,
+  "genummerde_grondwoordvoorkomens_zonder_koppeling": 32461,
   "verzen_zonder_grondtekst": 6,
   "beoordeelde_koppelingen_zonder_bestaand_bronnummer": 15,
   "volledig_inhoudelijk_gecontroleerd": false,
@@ -67,19 +67,27 @@
       "verzen_zonder_grondtekst": 0,
       "genummerde_grondwoorden": 2283,
       "grondwoorden_zonder_nummer": 380,
-      "koppelingen": 1377,
-      "zichtbare_koppelingen": 1377,
-      "gekoppelde_grondwoorden": 1378,
-      "genummerde_grondwoorden_zonder_koppeling": 905
+      "koppelingen": 1423,
+      "zichtbare_koppelingen": 1423,
+      "gekoppelde_grondwoorden": 1427,
+      "genummerde_grondwoorden_zonder_koppeling": 856
     }
   },
   "controle": {
     "unittests": 11,
     "render_verzen": 3946,
-    "render_knoppen": 15867,
+    "render_knoppen": 15916,
     "render_fouten": 0,
     "idempotent": true,
     "tekst_en_bronwoorden_in_vervolgronde_ongewijzigd": true
   },
-  "publicatie": "Deze bestanden horen bij de tweede publicatieronde. De eerste ronde is op het productiedomein gecontroleerd."
+  "publicatie": "Bijgewerkt voor de publicatieronde met 4 Baruch 2; eerdere rondes zijn op het productiedomein gecontroleerd.",
+  "toegevoegde_koppelingen_baruch2": 46,
+  "vervolgronde_3": {
+    "passage": "4 Baruch 2",
+    "nieuwe_koppelingen": 46,
+    "extra_gekoppelde_grondwoordvoorkomens": 49,
+    "volledig_inhoudelijk_gecontroleerd": false,
+    "controle": "11 tests geslaagd; 3946 verzen en 15916 knoppen gerenderd zonder fouten; fallback en hoofdstukgegevens gelijk; idempotent; Nederlandse teksten en bronwoorden behouden."
+  }
 }

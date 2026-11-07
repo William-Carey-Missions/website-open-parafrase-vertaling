@@ -1,0 +1,703 @@
+{
+  "id": "geez-baruch2-2026-11-07",
+  "snapshots": {
+    "4baruch/1/1": {
+      "grondtekst_sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+      "tekst_sha256": "eb24cca89c3fd2b17ac3be002771301ff67a6abcbf1e00e98dffe968ae25fe35"
+    },
+    "4baruch/1/2": {
+      "grondtekst_sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+      "tekst_sha256": "cb59cff081142bfc77c8df6a93fe378fedd985e71af2feaef293faaf75c1a4fe"
+    },
+    "4baruch/1/3": {
+      "grondtekst_sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+      "tekst_sha256": "89d04df0fa4d8964839c8f8cb05ae86a14e9677a2f9d1547d5ccea451a44c3de"
+    },
+    "4baruch/1/4": {
+      "grondtekst_sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+      "tekst_sha256": "f0b8ac3e511eeae3ece1870e5538c22ad948f14f4b3b96f4dc73512897ec9002"
+    },
+    "4baruch/1/5": {
+      "grondtekst_sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5",
+      "tekst_sha256": "3c0a6e483b369d7ea3a4b20e92c7c717d46635853cd14fae27d1279f71ba0295"
+    },
+    "4baruch/1/6": {
+      "grondtekst_sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+      "tekst_sha256": "9ba9f271eb78eda81dfbff0c82378d52de5730a5abc241ea29b5876abffcc2ce"
+    },
+    "4baruch/1/7": {
+      "grondtekst_sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+      "tekst_sha256": "0c7c1625f1622a78a3656c7cf10f5d9b90d099555718864a7bfe323e53243f98"
+    },
+    "4baruch/1/8": {
+      "grondtekst_sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+      "tekst_sha256": "1ea8af167db85404ae0b31a138f0f0f159f8975e29d567cb1a58eaf02ff0012a"
+    },
+    "4baruch/1/9": {
+      "grondtekst_sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+      "tekst_sha256": "926326bbccbbcec3d7c3936e623e9f8937b456ba2bb827143ee005ec9dee9089"
+    },
+    "4baruch/1/10": {
+      "grondtekst_sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+      "tekst_sha256": "375ff52ec2d3458674ee82ca29e900cf36c4afa54852f7951636568cbd22093f"
+    },
+    "4baruch/1/11": {
+      "grondtekst_sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+      "tekst_sha256": "af61e191826db20b8af9f6f65d2271280ba8807f3e327b899cbb20952dc6d167"
+    },
+    "4baruch/1/12": {
+      "grondtekst_sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+      "tekst_sha256": "4a5657e4865ed16ce2b1134616a5639943b8802d6754673bda3b9098349e4c1a"
+    },
+    "jubileeen/28/1": {
+      "grondtekst_sha256": "d890927b76f02fb1d8ea97c265a772e78acc6fe3f65ecfde3dfcc6c2276510a9",
+      "tekst_sha256": "081b4794a4084999aac8150b4dc6486581f2c154b3e9b24b55c9d57e5fa3cccd"
+    },
+    "jubileeen/29/1": {
+      "grondtekst_sha256": "05fcd1b93947dcb1ead3d475672e076c32364f50c07f11b1252fbbd41baa3572",
+      "tekst_sha256": "d1264612bb8b908d218df488eabda926c0f16daa32437e5c8d38438b3d515eea"
+    },
+    "1meqabyan/1/21": {
+      "grondtekst_sha256": "184a9a2085d43e1197558b711f4e0163308efdf4aa72ed0585aa39c1a04d0de8",
+      "tekst_sha256": "a95f1cb1bef978ef25457cb752e5ce7ff24fe21487719860b899ee7865186e99"
+    },
+    "1meqabyan/8/6": {
+      "grondtekst_sha256": "5e6a0058f78f28ed59619facb2c21d7301732822186eefb9937ed6a98513582c",
+      "tekst_sha256": "919db6b9b5b34df6ab8d97f2f0292deb05ee759fbc03d9a29f3abc43694a6789"
+    },
+    "1meqabyan/10/3": {
+      "grondtekst_sha256": "85106a3ce342f60e074f8edd5e13a0e0a9f940ba3258f2d16f6af3334595fbb3",
+      "tekst_sha256": "67b88d9426d03737b9bec56e163876df94fb6de64694bd7796d691c327ed842f"
+    },
+    "1meqabyan/14/2": {
+      "grondtekst_sha256": "c508539788a50f391320baaad523715a6d548e7971d1a23d9e71b1227a01dac6",
+      "tekst_sha256": "71df07d150a4986221a99da4877302efc819616f696c2d47724281641f9cfe10"
+    },
+    "2meqabyan/8/23": {
+      "grondtekst_sha256": "0f1c9207daff17f20437eb747fc3f622a54a179b024950b84631c712dc80ef76",
+      "tekst_sha256": "7dff7d00100041636066a7cc204676aaae57fe63158885dead3559d31dd4945a"
+    },
+    "2meqabyan/9/8": {
+      "grondtekst_sha256": "7310d50c26c0f66d87e9543301b37b0debe7396bfe0a0ebf86e4e34bc469d054",
+      "tekst_sha256": "cd0060f9cdf1996e1b62ec56b55afd325b66674ffc014f54df54ff483b6a3a6d"
+    },
+    "2meqabyan/10/26": {
+      "grondtekst_sha256": "9060f8ae48806c69e7813dcaadf2dd089e22863eda32814f060dabd8d77033b4",
+      "tekst_sha256": "bca8100706896b9134aa3505444ed615254adf24a1dcfbd9a5d1f3981ead61ab"
+    },
+    "2meqabyan/11/10": {
+      "grondtekst_sha256": "4a2677583dbe9797d53ab91bbcb8c76f612a3bc753b0256dd970b1ffcc464d3c",
+      "tekst_sha256": "a9ac369f557c6a036ef9fbcc4f6f37077cdbb11134e8215ea9cf9bc2319207de"
+    },
+    "2meqabyan/13/1": {
+      "grondtekst_sha256": "4de82605d64f27e488aca261e39ee841298cb19edc106b9edd4aab5203ec6f66",
+      "tekst_sha256": "8a483f94861246f4c45cc36b716f12348f8670719336256d14e9977ec408bd8a"
+    },
+    "2meqabyan/13/9": {
+      "grondtekst_sha256": "573bffdecc80b73dc0d2896fd41742806e2893c5bb3d25b6c2cc7b241bd8ebcf",
+      "tekst_sha256": "69014388ad856adb5b202592b434e080c9bb59ba858c2b6cfc120a0fe7f248bd"
+    },
+    "2meqabyan/16/15": {
+      "grondtekst_sha256": "359fb607aa79b4f6dd796e4ce8d636d3bccbabfca324de890c89e89ebc2ec0a8",
+      "tekst_sha256": "c25d001ad9b9f7499e453ac92ea3ec0d42af9b9c6dfe8a65fd36502141259ab4"
+    },
+    "3meqabyan/2/13": {
+      "grondtekst_sha256": "b01fc4ffffb768b8f9d339ac82a565e1589d740c0607db992e6571fa78853988",
+      "tekst_sha256": "edb72c08a6d0987e023e15401d4e8bb8f1fad4caac7f2bbe0d81874c5fa8ba55"
+    },
+    "1meqabyan/8/3": {
+      "grondtekst_sha256": "e85a45684420ad03e3e20c852c33e96765c757bff78c8f766147c7256a862e42",
+      "tekst_sha256": "8fcee4950b52861eb2634ff6330bf924478b378b5772c3e5ea9e50eedabea2ad"
+    },
+    "4baruch/2/1": {
+      "grondtekst_sha256": "df9e1fa355b126d87d0770ab8de9934deeb28157d1a49676d250576e6f7afeae",
+      "tekst_sha256": "3430fbe4f463fe76b996b36f188dc7c4184736fb23d71478b568786f69fbce73"
+    },
+    "4baruch/2/2": {
+      "grondtekst_sha256": "8cdbfa3b2fe44e13c5df830526b788ab799f44e9594f56521aa18a34e2d37550",
+      "tekst_sha256": "d5898b1d300d857b9defaa367444e88308d8740c49f4866c7c7ddef095b871e3"
+    },
+    "4baruch/2/3": {
+      "grondtekst_sha256": "67ebf3c125b16b44d729df52098c04a9777e36c77f205f98c40dc9058853732f",
+      "tekst_sha256": "830c6faee3c4b3b10b0dfb30ded32b8adf00b6eac42077847c3a91d0c73b1201"
+    },
+    "4baruch/2/4": {
+      "grondtekst_sha256": "b7737dc3121d140ab1b67d7b6037490f352c0ab758dbc47023ea2fa32831ddba",
+      "tekst_sha256": "16a91c3099449e2aca71b90fb464c100b9bd8e73864fc38123463ed6b4a8f580"
+    },
+    "4baruch/2/5": {
+      "grondtekst_sha256": "4b3f09e37f23161a90bb8fd14bbb314b5201a4198a232e0ae0161e32a638e30a",
+      "tekst_sha256": "78a982b1bc1b0de46029706227d2eba6f7a02a29ec857dd50bc343b49355dc86"
+    },
+    "4baruch/2/7": {
+      "grondtekst_sha256": "ad29f9091dab579130a2c54a890236a9550573e958f8dc73965c4638a6ed0cbd",
+      "tekst_sha256": "ea2a1e21fe58ca29aec9bb380b95eea7f535c63d84dc0f86026b8d69aa00ed31"
+    },
+    "4baruch/2/8": {
+      "grondtekst_sha256": "700aedb5bd9c3ade6caf9a728c1835696e3ae87280ab5018ea7213476b48b4b0",
+      "tekst_sha256": "516191c621dd42fb2d932e8d7158aa8a05d541ff56ed1ecca1ea08bacc478f09"
+    },
+    "4baruch/2/9": {
+      "grondtekst_sha256": "a391ae67cdb4e3e12815de9a93364be708874b473a06d943ec1743c3fcdcae02",
+      "tekst_sha256": "c235832d1a958e6831810104247226f011570ac2d4b3208ebade42375fce19d9"
+    },
+    "4baruch/2/10": {
+      "grondtekst_sha256": "d5e29094fb181f24f5a6674fefe18d95027302e7d98562fbb2403321d7816812",
+      "tekst_sha256": "a7f8c2676236a09fa55606e035ab749052baf1c86a4d494461d5a30f15fed6e8"
+    }
+  },
+  "bronmarkeringen_beoordeeld": [
+    {
+      "ref": "jubileeen/28/1",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "jubileeen/29/1",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "1meqabyan/1/21",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "1meqabyan/8/3",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "1meqabyan/8/6",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "1meqabyan/10/3",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "1meqabyan/14/2",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/8/23",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/9/8",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/10/26",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/11/10",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/13/1",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/13/9",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "2meqabyan/16/15",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    },
+    {
+      "ref": "3meqabyan/2/13",
+      "reden": "Volledige zin en glossevolgorde inhoudelijk vergeleken. De afwijkende getalnotatie vormt hier geen verschuiving naar een ander Nederlands vers; bronobjecten blijven intact."
+    }
+  ],
+  "koppelingen": [
+    {
+      "ref": "4baruch/2/1",
+      "indices": [
+        3
+      ],
+      "tekst": "zijn kleren",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        0
+      ],
+      "tekst": "zag",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        2
+      ],
+      "tekst": "Jeremia",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        13,
+        14
+      ],
+      "tekst": "zeggende",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        16
+      ],
+      "tekst": "Jeremia",
+      "voorkomen": 2,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        18
+      ],
+      "tekst": "is u gebeurd",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        19
+      ],
+      "tekst": "Welke",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "indices": [
+        21
+      ],
+      "tekst": "bedreven",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/3",
+      "indices": [
+        3
+      ],
+      "tekst": "het volk",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/3",
+      "indices": [
+        12
+      ],
+      "tekst": "het volk",
+      "voorkomen": 2,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/3",
+      "indices": [
+        17
+      ],
+      "tekst": "het volk",
+      "voorkomen": 3,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/4",
+      "indices": [
+        2,
+        3
+      ],
+      "tekst": "zeggende",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/4",
+      "indices": [
+        6
+      ],
+      "tekst": "wat",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/4",
+      "indices": [
+        7
+      ],
+      "tekst": "is u gebeurd",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/4",
+      "indices": [
+        8
+      ],
+      "tekst": "en wat",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/4",
+      "indices": [
+        9
+      ],
+      "tekst": "overkomen",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        0
+      ],
+      "tekst": "zei tot hem",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        4
+      ],
+      "tekst": "niet scheuren",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        5
+      ],
+      "tekst": "onze kleren",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        6
+      ],
+      "tekst": "maar",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        7
+      ],
+      "tekst": "scheuren",
+      "voorkomen": 2,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        10
+      ],
+      "tekst": "putten",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        12
+      ],
+      "tekst": "voor",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        14
+      ],
+      "tekst": "maar",
+      "voorkomen": 2,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        15
+      ],
+      "tekst": "huilen",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        21
+      ],
+      "tekst": "van nu af",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/5",
+      "indices": [
+        23
+      ],
+      "tekst": "over dit",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/7",
+      "indices": [
+        0
+      ],
+      "tekst": "Want",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/7",
+      "indices": [
+        2
+      ],
+      "tekst": "overgeven",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/7",
+      "indices": [
+        4
+      ],
+      "tekst": "in",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/7",
+      "indices": [
+        6
+      ],
+      "tekst": "van de koning",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/7",
+      "indices": [
+        7
+      ],
+      "tekst": "van de Chaldeeën",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/7",
+      "indices": [
+        8
+      ],
+      "tekst": "want",
+      "voorkomen": 2,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        0
+      ],
+      "tekst": "hoorde",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        1
+      ],
+      "tekst": "dit",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        2
+      ],
+      "tekst": "alles",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        5
+      ],
+      "tekst": "zijn kleren",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        6
+      ],
+      "tekst": "en zei",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        10
+      ],
+      "tekst": "bekendgemaakt",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/8",
+      "indices": [
+        11
+      ],
+      "tekst": "u",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/9",
+      "indices": [
+        0
+      ],
+      "tekst": "zei tot hem",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/9",
+      "indices": [
+        3
+      ],
+      "tekst": "bij mij",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/9",
+      "indices": [
+        4
+      ],
+      "tekst": "tot aan",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/9",
+      "indices": [
+        7
+      ],
+      "tekst": "van de nacht",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/9",
+      "indices": [
+        10
+      ],
+      "tekst": "waarachtig is",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    },
+    {
+      "ref": "4baruch/2/10",
+      "indices": [
+        3,
+        4
+      ],
+      "tekst": "huilend",
+      "voorkomen": 1,
+      "reden": "Gehele zin en aanwezige bronwoordglossen vergeleken; Nederlandse woordvorm en voorkomenspositie handmatig bepaald."
+    }
+  ],
+  "beoordeeld_zonder_bronnummer": [
+    {
+      "ref": "4baruch/2/2",
+      "index": 8,
+      "woord": "ወአልባሲሁኒ",
+      "betekenis": "en zijn klederen"
+    },
+    {
+      "ref": "4baruch/2/3",
+      "index": 4,
+      "woord": "የሐዝን",
+      "betekenis": "treurde"
+    },
+    {
+      "ref": "4baruch/2/5",
+      "index": 9,
+      "woord": "ወኢ",
+      "betekenis": "en niet"
+    },
+    {
+      "ref": "4baruch/2/5",
+      "index": 13,
+      "woord": "ምዕቃላት",
+      "betekenis": "troggen"
+    },
+    {
+      "ref": "4baruch/2/5",
+      "index": 18,
+      "woord": "ንመልኦሙ",
+      "betekenis": "wij ze vullen"
+    },
+    {
+      "ref": "4baruch/2/5",
+      "index": 22,
+      "woord": "ኢይምሐርዎ",
+      "betekenis": "Hij ontfermt zich niet"
+    },
+    {
+      "ref": "4baruch/2/6",
+      "index": 0,
+      "woord": "ውይቤ",
+      "betekenis": "en zeide"
+    },
+    {
+      "ref": "4baruch/2/6",
+      "index": 5,
+      "woord": "ኮንከ ወይቤሎ",
+      "betekenis": "is u geschied? en hij zeide hem"
+    },
+    {
+      "ref": "4baruch/2/7",
+      "index": 9,
+      "woord": "ይፄውዎሙ",
+      "betekenis": "hij voert gevankelijk weg"
+    },
+    {
+      "ref": "4baruch/2/10",
+      "index": 0,
+      "woord": "ውነበሩ",
+      "betekenis": "en zij bleven"
+    }
+  ],
+  "resterende_inhoudelijke_vragen": [
+    {
+      "ref": "4baruch/2/6",
+      "reden": "Het laatste bronwoord Jeremia behoort tot een aansluitende spreekformule die in de Nederlandse versweergave niet is uitgeschreven; geen tweede link naar de eerdere aanspreking gemaakt."
+    },
+    {
+      "ref": "4baruch/2/2",
+      "index": 6,
+      "reden": "Het voorzetsel op is niet afzonderlijk weergegeven in de Nederlandse constructie zijn hoofd vol was van stof."
+    }
+  ]
+}

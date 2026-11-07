@@ -54,10 +54,10 @@ def prepare(plan, chapters):
     return changes
 
 
-def main(write=False):
+def main(write=False, plan_path=PLAN, report_path=None):
     chapters = {(b,int(p.stem)):json.loads(p.read_text()) for b in h.BOOKS for p in (h.ROOT/'data'/b).glob('*.json')}
     before = deepcopy(chapters)
-    plan = json.loads(PLAN.read_text())
+    plan = json.loads(plan_path.read_text())
     changes = prepare(plan,chapters)
     audit = h.audit(chapters)
     reviewed = {tuple([r['ref'].split('/')[0], *map(int,r['ref'].split('/')[1:])]) for r in plan['bronmarkeringen_beoordeeld']}
@@ -81,7 +81,7 @@ def main(write=False):
                   'technische_problemen_na_beoordeling':unresolved,
                   'beoordeeld_zonder_bronnummer':plan['beoordeeld_zonder_bronnummer'],
                   'volledig_inhoudelijk_gecontroleerd':False}
-        (h.ROOT/'reviews/geez/vervolgcontrole-2026-11-07.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+        (report_path or h.ROOT/'reviews/geez/vervolgcontrole-2026-11-07.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'schrijven':write,'wijzigingen':dict(Counter(x['type'] for x in changes)),
                       'open_grondwoorden':sum(x['genummerde_grondwoorden_zonder_koppeling'] for x in audit['tellingen'].values()),
                       'onopgeloste_technische_problemen':len(unresolved)},ensure_ascii=False))
@@ -90,4 +90,7 @@ def main(write=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write',action='store_true')
-    main(parser.parse_args().write)
+    parser.add_argument('--plan', type=Path, default=PLAN)
+    parser.add_argument('--report', type=Path)
+    args = parser.parse_args()
+    main(args.write, args.plan, args.report)
