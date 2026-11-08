@@ -26,6 +26,10 @@ def prepare(plan, chapters):
         mappings = verse.setdefault('woordnummers', [])
         if any(h.indices(m) == ix and m.get('tekst') == anchor and m.get('voorkomen',1) == occurrence for m in mappings):
             continue
+        previous = item.get('vervang_koppeling')
+        if previous is not None:
+            assert sum(m == previous for m in mappings) == 1, 'Oude koppeling gewijzigd: ' + ref
+            mappings.remove(previous)
         assert not any(set(ix) & set(h.indices(m)) for m in mappings), item
         source = [verse['grondtekst'][i] for i in ix]
         assert all(w.get('strongs') for w in source), item
@@ -38,7 +42,7 @@ def prepare(plan, chapters):
         assert span, item
         assert not any(h.visible(m) and h.anchor_span(verse,m) and h.overlap(span,h.anchor_span(verse,m)) for m in mappings), item
         mappings.append(mapping)
-        changes.append({'type':'inhoudelijke_aanvulling','ref':ref,'koppeling':mapping})
+        changes.append({'type':'inhoudelijke_correctie' if previous is not None else 'inhoudelijke_aanvulling','ref':ref,'koppeling':mapping, **({'vorige_koppeling': previous} if previous is not None else {})})
     known = h.glossary(chapters)
     for review in plan['bronmarkeringen_beoordeeld']:
         ref = review['ref']

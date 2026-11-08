@@ -88,6 +88,8 @@
                         marker: index + 1, type: 'footnote', text1637: '', text2026: note.tekst,
                     })),
                     crossReferences: verse.kruisverwijzingen || [],
+                    // Alleen koppelingen die expliciet voor deze leeseditie zijn beoordeeld.
+                    woordnummers: verse.woordnummers || [],
                     grondtekst: [], phraseDiff: [],
                 })),
             };
