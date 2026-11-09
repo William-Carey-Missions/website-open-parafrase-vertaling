@@ -1,5 +1,5 @@
 {
-  "datum": "2026-11-08",
+  "datum": "2026-11-09",
   "toegevoegde_koppelingen_eerste_ronde": 8278,
   "toegevoegde_koppelingen_vervolg": 132,
   "toegevoegde_koppelingen_totaal": 8540,
@@ -81,7 +81,7 @@
     "idempotent": true,
     "tekst_en_bronwoorden_in_vervolgronde_ongewijzigd": true
   },
-  "publicatie": "Vervolgronde 2026-11-08: bronlaag plus eerste expliciete koppelingen in de parafraseleeseditie.",
+  "publicatie": "Vervolgronde 2026-11-09: 4 Baruch 2 afzonderlijk beoordeeld in de parafraseleeseditie; Genesis-inleiding en twee kanttekeningen overgenomen uit Open Vertaling met herzieningsspoor.",
   "toegevoegde_koppelingen_baruch2": 46,
   "vervolgronde_3": {
     "passage": "4 Baruch 2",
@@ -92,10 +92,17 @@
   },
   "toegevoegde_koppelingen_baruch3": 84,
   "leeseditie_nl_opv": {
-    "passage": "4 Baruch 3",
-    "koppelingen": 78,
-    "grondwoordvoorkomens": 88,
+    "passage": "4 Baruch 2–3",
+    "koppelingen": 194,
+    "grondwoordvoorkomens": 207,
     "volledig_inhoudelijk_gecontroleerd": false,
-    "toelichting": "Afzonderlijk beoordeeld tegen de parafrasetekst. Eerdere tellingen betreffen de bronlaag; de hoofdlezer gebruikte die koppelingen niet."
+    "toelichting": "Afzonderlijk beoordeeld tegen de parafrasetekst. Eerdere tellingen betreffen de bronlaag; de hoofdlezer gebruikte die koppelingen niet.",
+    "ronde_2026_11_09": {
+      "passage": "4 Baruch 2",
+      "nieuwe_koppelingen": 116,
+      "grondwoordvoorkomens": 119,
+      "tests": 3,
+      "idempotent": true
+    }
   }
 }
