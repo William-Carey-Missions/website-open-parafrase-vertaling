@@ -4,7 +4,7 @@ const fs=require('node:fs'),path=require('node:path');
 const {JSDOM}=require('jsdom');
 const root=path.resolve(__dirname,'..');
 function runtime(){const d=new JSDOM('',{url:'https://open-parafrase-weergave.nl',runScripts:'outside-only'});for(const p of ['js/teksteditie.js','js/woordnummers.js'])d.window.eval(fs.readFileSync(path.join(root,p),'utf8'));return d;}
-for (const [chapterNumber, expected] of [[2,119],[3,88]]) test(`de parafrase geeft eigen koppelingen door in hoofdstuk ${chapterNumber}`,()=>{
+for (const [chapterNumber, expected] of [[1,132],[2,119],[3,88]]) test(`de parafrase geeft eigen koppelingen door in hoofdstuk ${chapterNumber}`,()=>{
  const d=runtime(),chapter=JSON.parse(fs.readFileSync(path.join(root,`data/vertalingen/nl-opv/4baruch/${chapterNumber}.json`)));
  const reader=d.window.TekstEditie.chapterToReaderData(chapter,{code:'nl-opv'});let total=0;
  for(const verse of reader.verses){

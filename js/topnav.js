@@ -122,6 +122,7 @@
                     '<a href="/downloads.html">Downloads</a>' +
                     '<a href="/woordenboek.html">Woordenboek</a>' +
                     '<a href="over-opv.html">Over OPW</a>' +
+                    '<a href="/changelog.html">Wijzigingen per week</a>' +
                     '<a href="/over-opv.html#comite-van-aanbeveling">Wie steunen dit?</a>' +
                     '<a href="https://opengodsword.com/wiki.html" data-ogw-href="wiki.html" title="Wiki, Bijbelachtergrond en broninformatie op Open Gods Woord">Achtergrond ' + PIJL + '</a>' +
                 '</div>' +

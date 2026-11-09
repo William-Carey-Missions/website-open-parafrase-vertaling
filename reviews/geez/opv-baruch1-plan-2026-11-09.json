@@ -1,0 +1,4606 @@
+{
+  "id": "opv-baruch1-2026-11-09",
+  "editie": "nl-opv",
+  "boek": "4baruch",
+  "hoofdstuk": 1,
+  "verzen": {
+    "1": {
+      "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+      "grondtekst_sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2"
+    },
+    "2": {
+      "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+      "grondtekst_sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea"
+    },
+    "3": {
+      "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+      "grondtekst_sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9"
+    },
+    "4": {
+      "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+      "grondtekst_sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3"
+    },
+    "5": {
+      "tekst_sha256": "1ffa638bfae45aaa8b770daf4f5efa6c144fc686a6c22a3ed9cde399920827ea",
+      "grondtekst_sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5"
+    },
+    "6": {
+      "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+      "grondtekst_sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6"
+    },
+    "7": {
+      "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+      "grondtekst_sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec"
+    },
+    "8": {
+      "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+      "grondtekst_sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325"
+    },
+    "9": {
+      "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+      "grondtekst_sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f"
+    },
+    "10": {
+      "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+      "grondtekst_sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474"
+    },
+    "11": {
+      "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+      "grondtekst_sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e"
+    },
+    "12": {
+      "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+      "grondtekst_sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9"
+    }
+  },
+  "koppelingen": [
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "toen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG2677"
+        ],
+        "bronwoorden": [
+          "ሶበ"
+        ],
+        "transliteraties": [
+          "sobä"
+        ],
+        "glossen": [
+          "toen"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "God",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG8605"
+        ],
+        "bronwoorden": [
+          "እግዚአብሔር"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾäbəḥerə"
+        ],
+        "glossen": [
+          "God"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "stad",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ሀገር"
+        ],
+        "transliteraties": [
+          "hägärə"
+        ],
+        "glossen": [
+          "stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            16
+          ],
+          "bronindices": [
+            16
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "want",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5548"
+        ],
+        "bronwoorden": [
+          "እስመ"
+        ],
+        "transliteraties": [
+          "ʾəsəmä"
+        ],
+        "glossen": [
+          "want"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            19
+          ],
+          "bronindices": [
+            19
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "Jeremia",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ለኤርምያስ"
+        ],
+        "transliteraties": [
+          "läʾerəməyasə"
+        ],
+        "glossen": [
+          "tot Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            9
+          ],
+          "bronindices": [
+            9
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "Jeremia",
+        "voorkomen": 2,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ኤርምያስ"
+        ],
+        "transliteraties": [
+          "ʾerəməyasə"
+        ],
+        "glossen": [
+          "Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            11
+          ],
+          "bronindices": [
+            11
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "zei tegen hem",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6741"
+        ],
+        "bronwoorden": [
+          "ወይቤሎ"
+        ],
+        "transliteraties": [
+          "wäyəbelo"
+        ],
+        "glossen": [
+          "en zeide tot hem"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            10
+          ],
+          "bronindices": [
+            10
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "de koning van",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5187"
+        ],
+        "bronwoorden": [
+          "ንጉሠ"
+        ],
+        "transliteraties": [
+          "nəguśä"
+        ],
+        "glossen": [
+          "de koning van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "de Chaldeeën",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10980"
+        ],
+        "bronwoorden": [
+          "ከላዴዎን"
+        ],
+        "transliteraties": [
+          "käladewonə"
+        ],
+        "glossen": [
+          "de Chaldeeën"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "Mijn uitverkorene",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4511"
+        ],
+        "bronwoorden": [
+          "ኅሩይየ"
+        ],
+        "transliteraties": [
+          "ḫəruyəyä"
+        ],
+        "glossen": [
+          "Mijn uitverkorene"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            12
+          ],
+          "bronindices": [
+            12
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "sta op",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4308"
+        ],
+        "bronwoorden": [
+          "ተንሥእ"
+        ],
+        "transliteraties": [
+          "tänəśəʾə"
+        ],
+        "glossen": [
+          "sta op"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            13
+          ],
+          "bronindices": [
+            13
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "en Baruch",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10532"
+        ],
+        "bronwoorden": [
+          "ወባሮክ"
+        ],
+        "transliteraties": [
+          "wäbarokə"
+        ],
+        "glossen": [
+          "en Baruch"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            18
+          ],
+          "bronindices": [
+            18
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "vernietigen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG1297"
+        ],
+        "bronwoorden": [
+          "ኣማስና"
+        ],
+        "transliteraties": [
+          "ʾamasəna"
+        ],
+        "glossen": [
+          "te verderven"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            21
+          ],
+          "bronindices": [
+            21
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "om de vele",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4097"
+        ],
+        "bronwoorden": [
+          "እምብዝኀ"
+        ],
+        "transliteraties": [
+          "ʾəməbəzəḫä"
+        ],
+        "glossen": [
+          "vanwege de menigte van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            22
+          ],
+          "bronindices": [
+            22
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "zonden",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4694"
+        ],
+        "bronwoorden": [
+          "ኀጢአቶሙ"
+        ],
+        "transliteraties": [
+          "ḫäṭiʾätomu"
+        ],
+        "glossen": [
+          "hun zonden"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            23
+          ],
+          "bronindices": [
+            23
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "gevangen wegvoerde",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG9763"
+        ],
+        "bronwoorden": [
+          "ፄወዎሙ"
+        ],
+        "transliteraties": [
+          "ṣ́ewäwomu"
+        ],
+        "glossen": [
+          "gevangen wegvoerde hen"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "sprak",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4937"
+        ],
+        "bronwoorden": [
+          "ነበቦ"
+        ],
+        "transliteraties": [
+          "näbäbo"
+        ],
+        "glossen": [
+          "sprak tot hem"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "ga",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6870"
+        ],
+        "bronwoorden": [
+          "ወፃእ"
+        ],
+        "transliteraties": [
+          "wäṣ́aʾə"
+        ],
+        "glossen": [
+          "en ga uit"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            14
+          ],
+          "bronindices": [
+            14
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "deze",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7609"
+        ],
+        "bronwoorden": [
+          "እምዛቲ"
+        ],
+        "transliteraties": [
+          "ʾəməzati"
+        ],
+        "glossen": [
+          "uit deze"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            15
+          ],
+          "bronindices": [
+            15
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "jij",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5739"
+        ],
+        "bronwoorden": [
+          "አንተ"
+        ],
+        "transliteraties": [
+          "ʾänətä"
+        ],
+        "glossen": [
+          "gij"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            17
+          ],
+          "bronindices": [
+            17
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "Israëlieten",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10753",
+          "OVG7954"
+        ],
+        "bronwoorden": [
+          "እስራኤል",
+          "ለደቂቀ"
+        ],
+        "transliteraties": [
+          "ʾəsəraʾelə",
+          "lädäqiqä"
+        ],
+        "glossen": [
+          "Israël",
+          "de kinderen van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            4,
+            3
+          ],
+          "bronindices": [
+            4,
+            3
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 1,
+      "koppeling": {
+        "tekst": "haar inwoners",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4922",
+          "OVG5381"
+        ],
+        "bronwoorden": [
+          "ይነብሩ",
+          "ለእለ"
+        ],
+        "transliteraties": [
+          "yənäbəru",
+          "läʾəlä"
+        ],
+        "glossen": [
+          "wonen",
+          "van hen die"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/1",
+          "grondindices": [
+            25,
+            24
+          ],
+          "bronindices": [
+            25,
+            24
+          ],
+          "sha256": "5dbf3865c5600d064e1efaaf5d3fc8420c7ca4b365fedb0aae5da745670125a2",
+          "tekst_sha256": "7bcda305d660c7eed848d1dfb8f0e8c9bde50e9947ebe2d16c27a0dd8d0a6e91",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "pilaar",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6951"
+        ],
+        "bronwoorden": [
+          "ዐምድ"
+        ],
+        "transliteraties": [
+          "ʿämədə"
+        ],
+        "glossen": [
+          "pilaar"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "muur",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG3692"
+        ],
+        "bronwoorden": [
+          "ቅጽር"
+        ],
+        "transliteraties": [
+          "qəṣərə"
+        ],
+        "glossen": [
+          "muur"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "ook jouw gebed",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG9169"
+        ],
+        "bronwoorden": [
+          "ጸሎትከኒ"
+        ],
+        "transliteraties": [
+          "ṣälotəkäni"
+        ],
+        "glossen": [
+          "ook uw gebed"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "midden in",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5784"
+        ],
+        "bronwoorden": [
+          "በማእከለ"
+        ],
+        "transliteraties": [
+          "bämaʾəkälä"
+        ],
+        "glossen": [
+          "in het midden van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "de stad",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ሀገር"
+        ],
+        "transliteraties": [
+          "hägärə"
+        ],
+        "glossen": [
+          "de stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "van diamant",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5889"
+        ],
+        "bronwoorden": [
+          "ዘአድማስ"
+        ],
+        "transliteraties": [
+          "zäʾädəmasə"
+        ],
+        "glossen": [
+          "van diamant"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "als",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5743"
+        ],
+        "bronwoorden": [
+          "ከመ"
+        ],
+        "transliteraties": [
+          "kämä"
+        ],
+        "glossen": [
+          "als"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "stevige",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG9398"
+        ],
+        "bronwoorden": [
+          "ጽኑዕ"
+        ],
+        "transliteraties": [
+          "ṣənuʿə"
+        ],
+        "glossen": [
+          "vast, sterk"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 2,
+      "koppeling": {
+        "tekst": "en als",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5743"
+        ],
+        "bronwoorden": [
+          "ወከመ"
+        ],
+        "transliteraties": [
+          "wäkämä"
+        ],
+        "glossen": [
+          "en als"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/2",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "1871d8027a893bc117201e538486748433f934f51bdff39d5f010bffcf7dffea",
+          "tekst_sha256": "19ce017e24ce62e45cb04ce7db0978690fe35c0af62873b6f0104b6e74e1bb51",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "voordat",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7641"
+        ],
+        "bronwoorden": [
+          "ዘእንበለ"
+        ],
+        "transliteraties": [
+          "zäʾənəbälä"
+        ],
+        "glossen": [
+          "eer, voordat"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "komt",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG1653"
+        ],
+        "bronwoorden": [
+          "ይምጻእ"
+        ],
+        "transliteraties": [
+          "yəməṣaʾə"
+        ],
+        "glossen": [
+          "komt"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "ga weg",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG617"
+        ],
+        "bronwoorden": [
+          "ወሖሩ"
+        ],
+        "transliteraties": [
+          "wäḥoru"
+        ],
+        "glossen": [
+          "en gaat heen"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "en trek eruit",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6870"
+        ],
+        "bronwoorden": [
+          "ወፃኡ"
+        ],
+        "transliteraties": [
+          "wäṣ́aʾu"
+        ],
+        "glossen": [
+          "en trekt uit"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "de macht van",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4624"
+        ],
+        "bronwoorden": [
+          "ኀይለ"
+        ],
+        "transliteraties": [
+          "ḫäyəlä"
+        ],
+        "glossen": [
+          "de macht van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "de Chaldeeën",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10980"
+        ],
+        "bronwoorden": [
+          "ከላዴዎን"
+        ],
+        "transliteraties": [
+          "käladewonə"
+        ],
+        "glossen": [
+          "de Chaldeeën"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "omsingelt",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6741"
+        ],
+        "bronwoorden": [
+          "ወይዑዳ"
+        ],
+        "transliteraties": [
+          "wäyəʿuda"
+        ],
+        "glossen": [
+          "en omsingelt"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "de stad",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ለሀገር"
+        ],
+        "transliteraties": [
+          "lähägärə"
+        ],
+        "glossen": [
+          "de stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 3,
+      "koppeling": {
+        "tekst": "Sta dus op",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4308"
+        ],
+        "bronwoorden": [
+          "ተንሥኡ"
+        ],
+        "transliteraties": [
+          "tänəśəʾu"
+        ],
+        "glossen": [
+          "staat op"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/3",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "47201569ec9328abd46b5c0410d213f29eea617468fb25d28b4ab173fb2ef8e9",
+          "tekst_sha256": "ff0ac4de96a293e8e0ff369eb11bcf50125ff9584a3b53c53e467eb892e48fd5",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "Jeremia",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ኤርምያስ"
+        ],
+        "transliteraties": [
+          "ʾerəməyasə"
+        ],
+        "glossen": [
+          "Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "geef",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5840"
+        ],
+        "bronwoorden": [
+          "አዝዞ"
+        ],
+        "transliteraties": [
+          "ʾäzəzo"
+        ],
+        "glossen": [
+          "gebied"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "om",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5743"
+        ],
+        "bronwoorden": [
+          "ከመ"
+        ],
+        "transliteraties": [
+          "kämä"
+        ],
+        "glossen": [
+          "dat"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "dienaar",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG8420"
+        ],
+        "bronwoorden": [
+          "ለገብርከ"
+        ],
+        "transliteraties": [
+          "lägäbərəkä"
+        ],
+        "glossen": [
+          "aan uw dienstknecht"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "spreken",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5197"
+        ],
+        "bronwoorden": [
+          "ይትናገር"
+        ],
+        "transliteraties": [
+          "yətənagärə"
+        ],
+        "glossen": [
+          "hij spreke"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            9
+          ],
+          "bronindices": [
+            9
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "Ik smeek U",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG3969"
+        ],
+        "bronwoorden": [
+          "ኣስተበቍዐከ"
+        ],
+        "transliteraties": [
+          "ʾasətäbäqwəʿäkä"
+        ],
+        "glossen": [
+          "ik smeek U"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "mijn Heere",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5914"
+        ],
+        "bronwoorden": [
+          "እግዚእየ"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾəyä"
+        ],
+        "glossen": [
+          "mijn Heere"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "voor U",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG3610"
+        ],
+        "bronwoorden": [
+          "ቅድሜከ"
+        ],
+        "transliteraties": [
+          "qədəmekä"
+        ],
+        "glossen": [
+          "voor uw aangezicht"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            10
+          ],
+          "bronindices": [
+            10
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 4,
+      "koppeling": {
+        "tekst": "zei",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4937",
+          "OVG5756",
+          "OVG3760"
+        ],
+        "bronwoorden": [
+          "ወነበበ",
+          "እንዘ",
+          "ይብል"
+        ],
+        "transliteraties": [
+          "wänäbäbä",
+          "ʾənəzä",
+          "yəbələ"
+        ],
+        "glossen": [
+          "en sprak",
+          "terwijl",
+          "hij zeide"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/4",
+          "grondindices": [
+            0,
+            2,
+            3
+          ],
+          "bronindices": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "738f190aebd97f58a8e2dcb5a8e671def5932cf0f73c4eef7187168ffc93b7a3",
+          "tekst_sha256": "89f6b277d31e5867f1fa6d900009cd8a3ede7c2110d3e388dff37e3fb4833e97",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 5,
+      "koppeling": {
+        "tekst": "Spreek",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4937"
+        ],
+        "bronwoorden": [
+          "ንብብ"
+        ],
+        "transliteraties": [
+          "nəbəbə"
+        ],
+        "glossen": [
+          "spreek"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/5",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5",
+          "tekst_sha256": "1ffa638bfae45aaa8b770daf4f5efa6c144fc686a6c22a3ed9cde399920827ea",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 5,
+      "koppeling": {
+        "tekst": "Jeremia",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ኤርምያስ"
+        ],
+        "transliteraties": [
+          "ʾerəməyasə"
+        ],
+        "glossen": [
+          "Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/5",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5",
+          "tekst_sha256": "1ffa638bfae45aaa8b770daf4f5efa6c144fc686a6c22a3ed9cde399920827ea",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 5,
+      "koppeling": {
+        "tekst": "Mijn uitverkorene",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4511"
+        ],
+        "bronwoorden": [
+          "ኅሩይየ"
+        ],
+        "transliteraties": [
+          "ḫəruyəyä"
+        ],
+        "glossen": [
+          "Mijn uitverkorene"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/5",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5",
+          "tekst_sha256": "1ffa638bfae45aaa8b770daf4f5efa6c144fc686a6c22a3ed9cde399920827ea",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 5,
+      "koppeling": {
+        "tekst": "zei tegen hem",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6741"
+        ],
+        "bronwoorden": [
+          "ወይቤሎ"
+        ],
+        "transliteraties": [
+          "wäyəbelo"
+        ],
+        "glossen": [
+          "en Hij zeide tot hem"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/5",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5",
+          "tekst_sha256": "1ffa638bfae45aaa8b770daf4f5efa6c144fc686a6c22a3ed9cde399920827ea",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 5,
+      "koppeling": {
+        "tekst": "Heere",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG8605"
+        ],
+        "bronwoorden": [
+          "እግዚአብሔር"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾäbəḥerə"
+        ],
+        "glossen": [
+          "God"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/5",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "e554ad3db0d5fbdecb0fe5329cdcaddedc8680b9964d62ada7189fb7ae8decb5",
+          "tekst_sha256": "1ffa638bfae45aaa8b770daf4f5efa6c144fc686a6c22a3ed9cde399920827ea",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "Jeremia",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ኤርምያስ"
+        ],
+        "transliteraties": [
+          "ʾerəməyasə"
+        ],
+        "glossen": [
+          "Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "omvat",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5695"
+        ],
+        "bronwoorden": [
+          "ትእኅዝ"
+        ],
+        "transliteraties": [
+          "təʾəḫəzə"
+        ],
+        "glossen": [
+          "bevat, vasthoudt"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "deze",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7609"
+        ],
+        "bronwoorden": [
+          "ዛተ"
+        ],
+        "transliteraties": [
+          "zatä"
+        ],
+        "glossen": [
+          "deze"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "uitverkoren",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4638"
+        ],
+        "bronwoorden": [
+          "ኅሪተ"
+        ],
+        "transliteraties": [
+          "ḫəritä"
+        ],
+        "glossen": [
+          "uitverkoren"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            9
+          ],
+          "bronindices": [
+            9
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "in",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6579"
+        ],
+        "bronwoorden": [
+          "ውስተ"
+        ],
+        "transliteraties": [
+          "wəsətä"
+        ],
+        "glossen": [
+          "in"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            10
+          ],
+          "bronindices": [
+            10
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "zodat",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5743"
+        ],
+        "bronwoorden": [
+          "ከመ"
+        ],
+        "transliteraties": [
+          "kämä"
+        ],
+        "glossen": [
+          "opdat"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            13
+          ],
+          "bronindices": [
+            13
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "met",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG1270"
+        ],
+        "bronwoorden": [
+          "ምስለ"
+        ],
+        "transliteraties": [
+          "məsəlä"
+        ],
+        "glossen": [
+          "met"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            16
+          ],
+          "bronindices": [
+            16
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "Heere",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5914"
+        ],
+        "bronwoorden": [
+          "እግዚኦ"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾo"
+        ],
+        "glossen": [
+          "o Heere"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "die alles",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5981"
+        ],
+        "bronwoorden": [
+          "ዘኵሎ"
+        ],
+        "transliteraties": [
+          "zäkwəlo"
+        ],
+        "glossen": [
+          "Die alle dingen"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "hand",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5872"
+        ],
+        "bronwoorden": [
+          "እዴሆሙ"
+        ],
+        "transliteraties": [
+          "ʾədehomu"
+        ],
+        "glossen": [
+          "hun hand"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            11
+          ],
+          "bronindices": [
+            11
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "van de Chaldeeën",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10980"
+        ],
+        "bronwoorden": [
+          "ለከላዴዎን"
+        ],
+        "transliteraties": [
+          "läkäladewonə"
+        ],
+        "glossen": [
+          "van de Chaldeeën"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            12
+          ],
+          "bronindices": [
+            12
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "opscheppen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7611"
+        ],
+        "bronwoorden": [
+          "ይዘኀር"
+        ],
+        "transliteraties": [
+          "yəzäḫärə"
+        ],
+        "glossen": [
+          "zich beroeme"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            14
+          ],
+          "bronindices": [
+            14
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "de koning",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5189"
+        ],
+        "bronwoorden": [
+          "ንጉሥ"
+        ],
+        "transliteraties": [
+          "nəguśə"
+        ],
+        "glossen": [
+          "de koning"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            15
+          ],
+          "bronindices": [
+            15
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "zijn volken",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG903"
+        ],
+        "bronwoorden": [
+          "ሕዘቢሁ"
+        ],
+        "transliteraties": [
+          "ḥəzäbihu"
+        ],
+        "glossen": [
+          "zijn volken"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            17
+          ],
+          "bronindices": [
+            17
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "en zeggen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6741"
+        ],
+        "bronwoorden": [
+          "ወይበል"
+        ],
+        "transliteraties": [
+          "wäyəbälə"
+        ],
+        "glossen": [
+          "en zegge"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            18
+          ],
+          "bronindices": [
+            18
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "overgeven",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG1632"
+        ],
+        "bronwoorden": [
+          "ትሜጡኑ"
+        ],
+        "transliteraties": [
+          "təmeṭunu"
+        ],
+        "glossen": [
+          "zoudt Gij overgeven"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "stad",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ሀገረ"
+        ],
+        "transliteraties": [
+          "hägärä"
+        ],
+        "glossen": [
+          "stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "stad",
+        "voorkomen": 2,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ሀገረ"
+        ],
+        "transliteraties": [
+          "hägärä"
+        ],
+        "glossen": [
+          "stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            21
+          ],
+          "bronindices": [
+            21
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 6,
+      "koppeling": {
+        "tekst": "zei",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4937",
+          "OVG7755"
+        ],
+        "bronwoorden": [
+          "ወነበበ",
+          "ወይቤ"
+        ],
+        "transliteraties": [
+          "wänäbäbä",
+          "wäyəbe"
+        ],
+        "glossen": [
+          "en sprak",
+          "en zeide"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/6",
+          "grondindices": [
+            0,
+            2
+          ],
+          "bronindices": [
+            0,
+            2
+          ],
+          "sha256": "36ab2dd29d0d3152b1df609169dfe5c98e48e22fe55a99abbf263f8cce3b8ca6",
+          "tekst_sha256": "6bb5db62c0f2272749cb4cb2f983266b990d80eceb0cd58eb19c1f2e32380f73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 7,
+      "koppeling": {
+        "tekst": "haar",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6672"
+        ],
+        "bronwoorden": [
+          "ውእቱ"
+        ],
+        "transliteraties": [
+          "wəʾətu"
+        ],
+        "glossen": [
+          "zij"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/7",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+          "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 7,
+      "koppeling": {
+        "tekst": "Heere",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5914"
+        ],
+        "bronwoorden": [
+          "እግዚኦ"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾo"
+        ],
+        "glossen": [
+          "o Heere"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/7",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+          "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 7,
+      "koppeling": {
+        "tekst": "wilt",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG9950"
+        ],
+        "bronwoorden": [
+          "ፈቀድከ"
+        ],
+        "transliteraties": [
+          "fäqädəkä"
+        ],
+        "glossen": [
+          "Gij het wilt"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/7",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+          "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 7,
+      "koppeling": {
+        "tekst": "door Uw hand",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5872"
+        ],
+        "bronwoorden": [
+          "በእዴከ"
+        ],
+        "transliteraties": [
+          "bäʾədekä"
+        ],
+        "glossen": [
+          "door uw hand"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/7",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+          "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 7,
+      "koppeling": {
+        "tekst": "maar als",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5436"
+        ],
+        "bronwoorden": [
+          "እመሰ"
+        ],
+        "transliteraties": [
+          "ʾəmäsä"
+        ],
+        "glossen": [
+          "maar indien"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/7",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+          "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 7,
+      "koppeling": {
+        "tekst": "vernietigd worden",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG1298"
+        ],
+        "bronwoorden": [
+          "ታማስና"
+        ],
+        "transliteraties": [
+          "tamasəna"
+        ],
+        "glossen": [
+          "worde verdorven"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/7",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "951f331e515b4caf81d2c6f4f67b025017b9bc9b44542c60d645810ae2d889ec",
+          "tekst_sha256": "0019b5b0c7b69f2cfe8ea5c23ca7a877101122a0bebd304b6c6d4362d4be0c55",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "want",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5548"
+        ],
+        "bronwoorden": [
+          "እስመ"
+        ],
+        "transliteraties": [
+          "ʾəsəmä"
+        ],
+        "glossen": [
+          "want"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            10
+          ],
+          "bronindices": [
+            10
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "de Heere",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5914"
+        ],
+        "bronwoorden": [
+          "እግዚእ"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾə"
+        ],
+        "glossen": [
+          "de Heere"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "tegen Jeremia",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ለኤርምያስ"
+        ],
+        "transliteraties": [
+          "läʾerəməyasə"
+        ],
+        "glossen": [
+          "tot Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "Mijn uitverkorene",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4511"
+        ],
+        "bronwoorden": [
+          "ኅሩይየ"
+        ],
+        "transliteraties": [
+          "ḫəruyəyä"
+        ],
+        "glossen": [
+          "Mijn uitverkorene"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "sta op",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4308"
+        ],
+        "bronwoorden": [
+          "ተንሥእ"
+        ],
+        "transliteraties": [
+          "tänəśəʾə"
+        ],
+        "glossen": [
+          "sta op"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "en Baruch",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10532"
+        ],
+        "bronwoorden": [
+          "ወባሮክ"
+        ],
+        "transliteraties": [
+          "wäbarokə"
+        ],
+        "glossen": [
+          "en Baruch"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            9
+          ],
+          "bronindices": [
+            9
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "vernietigen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG1297"
+        ],
+        "bronwoorden": [
+          "ኣማስና"
+        ],
+        "transliteraties": [
+          "ʾamasəna"
+        ],
+        "glossen": [
+          "te verderven"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            12
+          ],
+          "bronindices": [
+            12
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "zonden",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4694"
+        ],
+        "bronwoorden": [
+          "በኀጢአቶሙ"
+        ],
+        "transliteraties": [
+          "bäḫäṭiʾätomu"
+        ],
+        "glossen": [
+          "om hun zonden"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            13
+          ],
+          "bronindices": [
+            13
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "zei",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6741"
+        ],
+        "bronwoorden": [
+          "ወይቤሎ"
+        ],
+        "transliteraties": [
+          "wäyəbelo"
+        ],
+        "glossen": [
+          "en Hij zeide tot hem"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "Omdat",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5548"
+        ],
+        "bronwoorden": [
+          "እስመ"
+        ],
+        "transliteraties": [
+          "ʾəsəmä"
+        ],
+        "glossen": [
+          "dewijl, want"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "jij",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5739"
+        ],
+        "bronwoorden": [
+          "አንተ"
+        ],
+        "transliteraties": [
+          "ʾänətä"
+        ],
+        "glossen": [
+          "gij zijt"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "en trek eruit",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6870"
+        ],
+        "bronwoorden": [
+          "ውፃኡ"
+        ],
+        "transliteraties": [
+          "wəṣ́aʾu"
+        ],
+        "glossen": [
+          "en trekt uit"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "jij",
+        "voorkomen": 2,
+        "strongs": [
+          "OVG5739"
+        ],
+        "bronwoorden": [
+          "አንተ"
+        ],
+        "transliteraties": [
+          "ʾänətä"
+        ],
+        "glossen": [
+          "gij"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 8,
+      "koppeling": {
+        "tekst": "haar inwoners",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4922",
+          "OVG5381"
+        ],
+        "bronwoorden": [
+          "ይነብሩ",
+          "ለእለ"
+        ],
+        "transliteraties": [
+          "yənäbəru",
+          "läʾəlä"
+        ],
+        "glossen": [
+          "wonen",
+          "van hen die"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/8",
+          "grondindices": [
+            15,
+            14
+          ],
+          "bronindices": [
+            15,
+            14
+          ],
+          "sha256": "69fd7671646f8da59aa9202def404f998a6e0c38c72665c4b1aad89ea2ad0325",
+          "tekst_sha256": "f53048799ad1e38c03f4a0f977f578dae893c55c3418a1fe040f2a688751e756",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 9,
+      "koppeling": {
+        "tekst": "zijn",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7642"
+        ],
+        "bronwoorden": [
+          "ዚአሁ"
+        ],
+        "transliteraties": [
+          "ziʾähu"
+        ],
+        "glossen": [
+          "van hem, zijn"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/9",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+          "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 9,
+      "koppeling": {
+        "tekst": "Ik",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5706"
+        ],
+        "bronwoorden": [
+          "አነ"
+        ],
+        "transliteraties": [
+          "ʾänä"
+        ],
+        "glossen": [
+          "Ik"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/9",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+          "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 9,
+      "koppeling": {
+        "tekst": "de stad",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ሀገር"
+        ],
+        "transliteraties": [
+          "hägärə"
+        ],
+        "glossen": [
+          "de stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/9",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+          "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 9,
+      "koppeling": {
+        "tekst": "leger",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4625"
+        ],
+        "bronwoorden": [
+          "ወኢኀይለ"
+        ],
+        "transliteraties": [
+          "wäʾiḫäyəlä"
+        ],
+        "glossen": [
+          "noch de macht"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/9",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+          "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 9,
+      "koppeling": {
+        "tekst": "als",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG345"
+        ],
+        "bronwoorden": [
+          "ለእመ"
+        ],
+        "transliteraties": [
+          "läʾəmä"
+        ],
+        "glossen": [
+          "indien"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/9",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+          "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 9,
+      "koppeling": {
+        "tekst": "binnen kunnen komen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG6579",
+          "OVG4060"
+        ],
+        "bronwoorden": [
+          "ውስተ",
+          "በዊአ"
+        ],
+        "transliteraties": [
+          "wəsətä",
+          "bäwiʾä"
+        ],
+        "glossen": [
+          "in",
+          "binnengaan"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/9",
+          "grondindices": [
+            4,
+            3
+          ],
+          "bronindices": [
+            4,
+            3
+          ],
+          "sha256": "81f3f6d8ce0555a5ce1b9138962dfcee92903c5d16036605e0a81d976261f01f",
+          "tekst_sha256": "e4b2404113b2fd6174007da62f310ea3e8dfa06fe1febd1dfaf5d6af8f4622b4",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 10,
+      "koppeling": {
+        "tekst": "naar",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4532"
+        ],
+        "bronwoorden": [
+          "ኀበ"
+        ],
+        "transliteraties": [
+          "ḫäbä"
+        ],
+        "glossen": [
+          "tot"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/10",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+          "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 10,
+      "koppeling": {
+        "tekst": "Baruch",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10532"
+        ],
+        "bronwoorden": [
+          "ባሮክ"
+        ],
+        "transliteraties": [
+          "barokə"
+        ],
+        "glossen": [
+          "Baruch"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/10",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+          "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 10,
+      "koppeling": {
+        "tekst": "deze",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7625"
+        ],
+        "bronwoorden": [
+          "ዘንተ"
+        ],
+        "transliteraties": [
+          "zänətä"
+        ],
+        "glossen": [
+          "deze"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/10",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+          "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 10,
+      "koppeling": {
+        "tekst": "en vertel hem",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7627"
+        ],
+        "bronwoorden": [
+          "ወዜንዎ"
+        ],
+        "transliteraties": [
+          "wäzenəwo"
+        ],
+        "glossen": [
+          "en verkondig hem"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/10",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+          "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 10,
+      "koppeling": {
+        "tekst": "nu",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7767"
+        ],
+        "bronwoorden": [
+          "ይእዜኒ"
+        ],
+        "transliteraties": [
+          "yəʾəzeni"
+        ],
+        "glossen": [
+          "nu dan"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/10",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+          "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 10,
+      "koppeling": {
+        "tekst": "ga",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG617"
+        ],
+        "bronwoorden": [
+          "ወሖር"
+        ],
+        "transliteraties": [
+          "wäḥorə"
+        ],
+        "glossen": [
+          "en ga heen"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/10",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "d8bc086130be7636ae60a9cbcbc7f16d804e221da66689ff1aeba6003b51a474",
+          "tekst_sha256": "623fdf7ba4ff0e1b2997ee74cf61f6899e8d1db46ec453376508eee84e939c73",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "uur",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG2978"
+        ],
+        "bronwoorden": [
+          "ሰዓት"
+        ],
+        "transliteraties": [
+          "säʿatə"
+        ],
+        "glossen": [
+          "uur"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "kom",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5085"
+        ],
+        "bronwoorden": [
+          "ንዑ"
+        ],
+        "transliteraties": [
+          "nəʿu"
+        ],
+        "glossen": [
+          "komt"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "op",
+        "voorkomen": 2,
+        "strongs": [
+          "OVG6579"
+        ],
+        "bronwoorden": [
+          "ውስተ"
+        ],
+        "transliteraties": [
+          "wəsətä"
+        ],
+        "glossen": [
+          "op"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            6
+          ],
+          "bronindices": [
+            6
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "binnen kunnen komen",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4061"
+        ],
+        "bronwoorden": [
+          "በዊኦታ"
+        ],
+        "transliteraties": [
+          "bäwiʾota"
+        ],
+        "glossen": [
+          "binnengaan"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            17
+          ],
+          "bronindices": [
+            17
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "van de nacht",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG386"
+        ],
+        "bronwoorden": [
+          "ዘሌሊት"
+        ],
+        "transliteraties": [
+          "zälelitə"
+        ],
+        "glossen": [
+          "van de nacht"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "de muur van",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG11127"
+        ],
+        "bronwoorden": [
+          "ቅጽረ"
+        ],
+        "transliteraties": [
+          "qəṣərä"
+        ],
+        "glossen": [
+          "de muur van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            7
+          ],
+          "bronindices": [
+            7
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "zal je laten zien",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG2240"
+        ],
+        "bronwoorden": [
+          "ኣርእየክሙ"
+        ],
+        "transliteraties": [
+          "ʾarəʾəyäkəmu"
+        ],
+        "glossen": [
+          "zal u tonen"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            10
+          ],
+          "bronindices": [
+            10
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "vernietig",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG11650"
+        ],
+        "bronwoorden": [
+          "አማስኖታ"
+        ],
+        "transliteraties": [
+          "ʾämasənota"
+        ],
+        "glossen": [
+          "haar verderf"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            14
+          ],
+          "bronindices": [
+            14
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "zesde",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG3032"
+        ],
+        "bronwoorden": [
+          "ስድስቱ"
+        ],
+        "transliteraties": [
+          "sədəsətu"
+        ],
+        "glossen": [
+          "zes"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "stad",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ሀገር"
+        ],
+        "transliteraties": [
+          "hägärə"
+        ],
+        "glossen": [
+          "de stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            8
+          ],
+          "bronindices": [
+            8
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "Ik",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5706"
+        ],
+        "bronwoorden": [
+          "ወአነ"
+        ],
+        "transliteraties": [
+          "wäʾänä"
+        ],
+        "glossen": [
+          "en ik"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            9
+          ],
+          "bronindices": [
+            9
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "als",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG345"
+        ],
+        "bronwoorden": [
+          "ወለእመ"
+        ],
+        "transliteraties": [
+          "wäläʾəmä"
+        ],
+        "glossen": [
+          "dat indien"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            11
+          ],
+          "bronindices": [
+            11
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "Ik",
+        "voorkomen": 2,
+        "strongs": [
+          "OVG5706"
+        ],
+        "bronwoorden": [
+          "አነ"
+        ],
+        "transliteraties": [
+          "ʾänä"
+        ],
+        "glossen": [
+          "ik"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            12
+          ],
+          "bronindices": [
+            12
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 11,
+      "koppeling": {
+        "tekst": "stad",
+        "voorkomen": 2,
+        "strongs": [
+          "OVG127"
+        ],
+        "bronwoorden": [
+          "ለሀገር"
+        ],
+        "transliteraties": [
+          "lähägärə"
+        ],
+        "glossen": [
+          "de stad"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/11",
+          "grondindices": [
+            15
+          ],
+          "bronindices": [
+            15
+          ],
+          "sha256": "a2f44f7ff61edb99347a6ad4f87932acbbe90d12837a210c43b251ddd406076e",
+          "tekst_sha256": "c1d645baf97ba4480331c4b3cb291c6eb4e6d8cbded0731da23712193aece63f",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 12,
+      "koppeling": {
+        "tekst": "bij",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4532"
+        ],
+        "bronwoorden": [
+          "እምኀበ"
+        ],
+        "transliteraties": [
+          "ʾəməḫäbä"
+        ],
+        "glossen": [
+          "van"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/12",
+          "grondindices": [
+            4
+          ],
+          "bronindices": [
+            4
+          ],
+          "sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+          "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 12,
+      "koppeling": {
+        "tekst": "Jeremia",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG10721"
+        ],
+        "bronwoorden": [
+          "ኤርምያስ"
+        ],
+        "transliteraties": [
+          "ʾerəməyasə"
+        ],
+        "glossen": [
+          "Jeremia"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/12",
+          "grondindices": [
+            5
+          ],
+          "bronindices": [
+            5
+          ],
+          "sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+          "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 12,
+      "koppeling": {
+        "tekst": "de Heere",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG5914"
+        ],
+        "bronwoorden": [
+          "እግዚእ"
+        ],
+        "transliteraties": [
+          "ʾəgəziʾə"
+        ],
+        "glossen": [
+          "de Heere"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/12",
+          "grondindices": [
+            2
+          ],
+          "bronindices": [
+            2
+          ],
+          "sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+          "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 12,
+      "koppeling": {
+        "tekst": "dit",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG7625"
+        ],
+        "bronwoorden": [
+          "ወዘንተ"
+        ],
+        "transliteraties": [
+          "wäzänətä"
+        ],
+        "glossen": [
+          "en dit"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/12",
+          "grondindices": [
+            0
+          ],
+          "bronindices": [
+            0
+          ],
+          "sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+          "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 12,
+      "koppeling": {
+        "tekst": "gezegd had",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG3743"
+        ],
+        "bronwoorden": [
+          "ብሂሎ"
+        ],
+        "transliteraties": [
+          "bəhilo"
+        ],
+        "glossen": [
+          "gezegd hebbende"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/12",
+          "grondindices": [
+            1
+          ],
+          "bronindices": [
+            1
+          ],
+          "sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+          "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    },
+    {
+      "vers": 12,
+      "koppeling": {
+        "tekst": "ging Hij weg",
+        "voorkomen": 1,
+        "strongs": [
+          "OVG4432"
+        ],
+        "bronwoorden": [
+          "ኀለፈ"
+        ],
+        "transliteraties": [
+          "ḫäläfä"
+        ],
+        "glossen": [
+          "ging weg"
+        ],
+        "reviewstatus": "handmatig_gecontroleerd",
+        "confidence": 1.0,
+        "herkomst": {
+          "dataset": "lokale-geez-grondtekst",
+          "versie": "opv-baruch1-2026-11-09",
+          "editie": "nl-opv",
+          "referentie": "4baruch/1/12",
+          "grondindices": [
+            3
+          ],
+          "bronindices": [
+            3
+          ],
+          "sha256": "bb5f6a58dc774cc34d92275a505dbae1d924f3f8d03affdaafca8f430f7451f9",
+          "tekst_sha256": "e3ef8ce1db359a4fb394577b572fc5255594266b13be21b6cdda093f0eb2336d",
+          "beoordeling": "AI-ondersteunde inhoudelijke vergelijking van bronzin en parafrase; samengevoegde spreekformules en Nederlandse voorkomens afzonderlijk beoordeeld."
+        }
+      }
+    }
+  ],
+  "restpunten": [
+    {
+      "vers": 10,
+      "reden": "Wisseling tussen jij en jullie in 1:10–11 blijft buiten deze woordkoppelingsronde; geen getalscorrectie zonder verdere tekstbeoordeling."
+    }
+  ]
+}
