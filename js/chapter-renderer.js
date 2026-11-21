@@ -156,8 +156,8 @@ const ChapterRenderer = {
             if (bookImage.verse) figure.dataset.verse = bookImage.verse;
             const illustration = document.createElement('img');
             illustration.src = bookImage.src || `/images/boekseries/${bookId}/${bookImage.file}`;
-            illustration.width = bookImage.bookImage ? 1024 : 1536;
-            illustration.height = 1024;
+            illustration.width = bookImage.width || (bookImage.bookImage ? 1024 : 1536);
+            illustration.height = bookImage.height || 1024;
             illustration.alt = bookImage.alt;
             illustration.loading = append || prepend ? 'lazy' : 'eager';
             figure.appendChild(illustration);

@@ -187,6 +187,21 @@ def test_breed_beeld_kan_groot_open_en_met_escape_sluiten(browser, site):
     assert not dialog.count()
 
 
+@pytest.mark.parametrize("width", [390, 1440])
+def test_staand_detailbeeld_behoudt_verhouding_en_versplaatsing(browser, site, width):
+    page = page_for(browser, site, viewport={"width": width, "height": 900})
+    page.goto(site + "/bijbel/openbaring/12.html", wait_until="networkidle")
+    figure = page.locator('.opw-leeskolom figure[data-verse="2"]')
+    assert figure.evaluate('el => el.previousElementSibling.dataset.verse') == '2'
+    image = figure.locator('img')
+    image.scroll_into_view_if_needed()
+    page.wait_for_function('img => img.complete && img.naturalWidth > 0', arg=image.element_handle())
+    assert image.evaluate('el => Number(el.width) / Number(el.height)') == pytest.approx(2 / 3, abs=.02)
+    assert image.get_attribute('width') == '1024'
+    assert image.get_attribute('height') == '1536'
+    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+
+
 def test_ethioopische_boeken_en_vinkje_zijn_verborgen_ook_bij_oude_voorkeur(browser, site):
     page = page_for(browser, site)
     page.add_init_script("localStorage.setItem('sv2026_vertaalopties', JSON.stringify({ethiopischeBoeken:'aan'}))")

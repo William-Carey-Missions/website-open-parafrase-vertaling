@@ -302,7 +302,7 @@ def reading_image(book_id: str, scene: dict) -> str:
     anchor = f' data-verse="{int(scene["verse"])}"' if scene.get("verse") else ""
     return (f'<figure class="opw-hoofdstukbeeld"{anchor}>'
             f'<img src="/images/boekseries/{book_id}/{escape(scene["file"], quote=True)}" '
-            f'width="1536" height="1024" alt="{escape(scene["alt"], quote=True)}" loading="lazy">'
+            f'width="{int(scene.get("width", 1536))}" height="{int(scene.get("height", 1024))}" alt="{escape(scene["alt"], quote=True)}" loading="lazy">'
             f'<figcaption>{escape(scene["scene"])}</figcaption></figure>')
 
 
