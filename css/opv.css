@@ -393,6 +393,11 @@ html.opv-startscherm .opv-hfst { display: none !important; }
 }
 .opw-leesindeling .opw-sidecar-item { display: none; }
 .opw-leesindeling .opw-sidecar-item.is-active { display: block; }
+.opw-leeskolom .opw-hoofdstukbeeld { display: block; margin: 24px 0 36px; }
+.opw-leesindeling .opw-leeskolom .opw-hoofdstukbeeld img { display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
+@media (max-width: 360px) {
+    #ka-fam .ka-fam-links { flex-wrap: wrap; justify-content: center; min-width: 0; }
+}
 .opw-leesindeling .opw-hoofdstukbeeld,
 .opw-leesindeling .opw-kaartkaart { order: -1; }
 .opw-sidecar-item figcaption,

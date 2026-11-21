@@ -225,7 +225,7 @@ def page(title: str, description: str, path: str, body: str, crumbs: list[tuple[
 <script src="/js/sites.js" defer></script>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/opv.css?v=1.0.17">
+<link rel="stylesheet" href="/css/opv.css?v=1.0.18">
 <link rel="stylesheet" href="/css/leespaginas.css?v=1.0.4">
 </head>
 <body class="opw-statisch">
@@ -325,7 +325,7 @@ def integrated_reader(template: str, document: str, path: str) -> str:
     return head + '''<link rel="stylesheet" href="/css/verification.css">
 <link rel="stylesheet" href="/css/verwijzing-popup.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
-<script src="/js/reading-support.js?v=6" defer></script>
+<script src="/js/reading-support.js?v=7" defer></script>
 <script src="/js/reading-details.js?v=12" defer></script>
 <link rel="stylesheet" href="/css/reading-genealogy.css?v=3">
 <script src="/js/reading-genealogy.js?v=4" defer></script>
@@ -473,9 +473,6 @@ def build_site(root: Path = ROOT) -> dict:
         if not scenes or len({scene["file"] for scene in scenes}) != len(scenes):
             raise ValueError(f"Boekbeelden ontbreken of bestandsnamen zijn dubbel voor {book_id}")
         chapters = {chapter["hoofdstuk"] for chapter in catalog_by_id[book_id]["chapters"]}
-        chapter_counts = {chapter: sum(scene["chapter"] == chapter for scene in scenes) for chapter in chapters}
-        if any(count > 3 for count in chapter_counts.values()):
-            raise ValueError(f"Meer dan drie beelden in een hoofdstuk van {book_id}")
         for scene in scenes:
             if scene["chapter"] not in chapters:
                 raise ValueError(f"Geen gepubliceerd hoofdstuk voor boekbeeld: {book_id} {scene['chapter']}")
@@ -543,11 +540,20 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         if len(description) > 170:
             description = description[:166].rsplit(" ", 1)[0] + "…"
         headings = {int(item["vers"]): item["tekst"] for item in chapter.get("blokken", []) if item.get("vers") and item.get("tekst")}
+        chapter_images = [dict(scene) for scene in book_images.get(book['id'], []) if scene['chapter'] == number]
+        image_anchors = {}
+        max_verse = max(int(verse['nummer']) for verse in chapter['verzen'])
+        verse_numbers = sorted(int(verse['nummer']) for verse in chapter['verzen'])
+        for image_index, scene in enumerate(chapter_images):
+            scene.setdefault('verse', max(1, int(image_index * max_verse / len(chapter_images) + .5)))
+            anchor = next((v for v in verse_numbers if v >= int(scene['verse'])), max_verse)
+            image_anchors.setdefault(anchor, []).append(reading_image(book['id'], scene))
         verses = []
         for verse in chapter["verzen"]:
             if int(verse["nummer"]) in headings:
                 verses.append(f'<div class="pericope-heading" role="heading" aria-level="2">{escape(headings[int(verse["nummer"])])}</div>')
             verses.append(f'<div class="verse-row" id="vers-{int(verse["nummer"])}" data-book="{book["id"]}" data-chapter="{number}" data-verse="{int(verse["nummer"])}"><div class="verse-cell col-2026" lang="nl">{verse_html(verse)}</div></div>')
+            verses.extend(image_anchors.get(int(verse['nummer']), []))
         navigation = []
         for neighbor, relation, label in [(index - 1, "prev", "Vorige"), (index + 1, "next", "Volgende")]:
             if 0 <= neighbor < len(sequence):
@@ -556,13 +562,11 @@ Hoofdstukken staan op `/bijbel/BOEK/NUMMER.html`, met dezelfde tekst als platte 
         subtitle = f'<p class="opv-hoofdstuktitel opw-hoofdstuktitel">{escape(heading)}</p>' if heading != ref else ''
         minutes = max(1, int(sum(len(v['tekst'].split()) for v in chapter['verzen']) / 150 + .5))
         read_time = '1 minuut' if minutes == 1 else f'ongeveer {minutes} minuten'
-        chapter_images = [scene for scene in book_images.get(book['id'], []) if scene['chapter'] == number]
         legacy_image = f"/images/hoofdstukken/{book['id']}/{number}.webp"
         has_legacy = (root / legacy_image.lstrip('/')).is_file()
         chapter_cover = (f"/images/boekseries/{book['id']}/{chapter_images[0]['file']}" if chapter_images
                          else legacy_image if has_legacy else f"/images/boeken/{book['id']}.webp")
         illustration = ('<aside class="opw-hoofdstukbeelden" aria-label="Beelden en locaties bij dit hoofdstuk">' +
-                        ''.join(reading_image(book['id'], scene) for scene in chapter_images) +
                         '</aside>') if chapter_images else ''
         if not chapter_images and has_legacy:
             illustration = (f'<aside class="opw-hoofdstukbeelden" aria-label="Beeld bij dit hoofdstuk">'

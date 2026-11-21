@@ -1,6 +1,6 @@
 {
   "source": "Open Parafrase Weergave — beelden bij alle gepubliceerde boeken",
-  "description": "Fotorealistische beelden bij hoofdstukken. Doel: drie verschillende beelden per gepubliceerd hoofdstuk; de uitbreiding is in uitvoering.",
+  "description": "Beelden bij de hoofdstukken, geplaatst bij de bijbehorende verzen. Het aantal hangt af van de inhoud: één beeld kan genoeg zijn, een rijk hoofdstuk kan tien of meer beelden krijgen.",
   "books": {
     "genesis": [
       {
@@ -403,9 +403,9 @@
       {
         "chapter": 19,
         "verse": 26,
-        "file": "19-26.webp",
-        "alt": "Beeld bij Genesis 19: de vrouw van lot kijkt om",
-        "scene": "De vrouw van Lot kijkt om"
+        "file": "19-26-omkijken-v2.webp",
+        "alt": "Lots vrouw kijkt achterom naar de brandende stad terwijl Lot en zijn dochters verder vluchten",
+        "scene": "De vrouw van Lot kijkt terug naar Sodom"
       },
       {
         "chapter": 20,
@@ -5039,9 +5039,10 @@
     "psalmen": [
       {
         "chapter": 1,
-        "file": "1.webp",
-        "alt": "Een reiziger rust onder een boom die aan stromend water staat",
-        "scene": "Een boom aan het water"
+        "file": "1-boom-water-v2.webp",
+        "alt": "Een vruchtdragende vijgenboom staat met groene bladeren aan stromend water",
+        "scene": "Een boom geplant aan het water",
+        "verse": 3
       },
       {
         "chapter": 23,
@@ -16221,6 +16222,62 @@
         "file": "22-river.webp",
         "alt": "Helder water stroomt tussen vruchtbomen in een stille tuin",
         "scene": "De rivier van het leven"
+      },
+      {
+        "chapter": 2,
+        "verse": 1,
+        "file": "2-brieven.webp",
+        "alt": "Een kleine gemeenschap in Efeze luistert bij olielicht naar een voorgelezen brief",
+        "scene": "Een brief aan de gemeenschap in Efeze"
+      },
+      {
+        "chapter": 6,
+        "verse": 2,
+        "file": "6-wit-paard.webp",
+        "alt": "Een gekroonde ruiter met een boog rijdt op een wit paard door een wijds landschap",
+        "scene": "De ruiter op het witte paard"
+      },
+      {
+        "chapter": 6,
+        "verse": 4,
+        "file": "6-rood-paard.webp",
+        "alt": "Een ruiter met een groot zwaard rijdt op een roodbruin paard onder donkere wolken",
+        "scene": "De ruiter op het rode paard"
+      },
+      {
+        "chapter": 6,
+        "verse": 5,
+        "file": "6-zwart-paard.webp",
+        "alt": "Een ruiter op een zwart paard houdt een eenvoudige balansweegschaal vast",
+        "scene": "De ruiter met de weegschaal"
+      },
+      {
+        "chapter": 6,
+        "verse": 8,
+        "file": "6-vaal-paard.webp",
+        "alt": "Een in een grijs gewaad gehulde ruiter rijdt op een vaal paard door een verlaten landschap",
+        "scene": "De ruiter op het vale paard"
+      },
+      {
+        "chapter": 7,
+        "verse": 9,
+        "file": "7-grote-menigte.webp",
+        "alt": "Een ontelbare menigte uit vele volken staat in witte gewaden met palmtakken in het licht",
+        "scene": "De grote menigte met palmtakken"
+      },
+      {
+        "chapter": 8,
+        "verse": 3,
+        "file": "8-wierook.webp",
+        "alt": "Een engel staat met een gouden wierookvat bij een gouden altaar terwijl rook omhoogstijgt",
+        "scene": "Wierook en de gebeden van de heiligen"
+      },
+      {
+        "chapter": 10,
+        "verse": 2,
+        "file": "10-engel-boekrol.webp",
+        "alt": "Een machtige engel met een open boekrol staat met één voet op zee en één voet op het land",
+        "scene": "De engel op zee en land"
       }
     ],
     "esther": [

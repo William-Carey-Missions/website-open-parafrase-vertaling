@@ -65,7 +65,7 @@ def test_volledige_tekst_metadata_en_navigatie(tmp_path):
     assert '<base href="/">' in first
     assert 'id="sidebar-right"' in first
     assert 'js/app.js' in first
-    assert '/js/reading-support.js?v=6' in first
+    assert '/js/reading-support.js?v=7' in first
     assert '/js/reading-details.js?v=12' in first
     assert 'Lees met instellingen' not in first
     assert 'Lezer met instellingen' not in first
@@ -158,6 +158,25 @@ def test_hoofdstuk_zonder_eigen_beeld_krijgt_geen_onjuiste_afbeelding(tmp_path):
     assert "Hoofdstuk 2" in second
 
 
+def test_tien_beelden_staan_ook_zonder_javascript_bij_hun_vers(tmp_path):
+    root = fixture_site(tmp_path)
+    path = root / "data/book-images.json"
+    images = json.loads(path.read_text(encoding="utf-8"))
+    images["books"]["genesis"] = [
+        {"chapter": 1, "verse": 1, "file": f"1-scene-{i}.webp", "alt": f"Scène {i}", "scene": f"Scène {i}"}
+        for i in range(10)
+    ]
+    for scene in images["books"]["genesis"]:
+        (root / "images/boekseries/genesis" / scene["file"]).write_bytes(b"fixture")
+    path.write_text(json.dumps(images), encoding="utf-8")
+    builder().build_site(root)
+    reading = (root / "bijbel/genesis/1.html").read_text(encoding="utf-8")
+    text = reading.split('<div class="opw-bijbeltekst">', 1)[1].split('<aside', 1)[0]
+    assert text.count('<figure ') == 10
+    assert text.index('id="vers-1"') < text.index('1-scene-0.webp')
+    assert text.index('1-scene-0.webp') < text.index('1-scene-9.webp')
+
+
 def test_boekbeeld_vult_hoofdstukken_zonder_eigen_scenebeeld_aan(tmp_path):
     root = fixture_site(tmp_path)
     cover = root / "images/boeken/genesis.webp"
@@ -215,7 +234,7 @@ def test_exodus_heeft_hoofdstukbeeld_in_tekst_en_deelvoorbeeld(tmp_path):
     for number in (1, 40):
         html = (root / f'bijbel/exodus/{number}.html').read_text(encoding='utf-8')
         image_path = f"/images/{'boekseries' if number == 1 else 'hoofdstukken'}/exodus/{number}.webp"
-        assert f'<figure class="opw-hoofdstukbeeld opw-sidecar-item is-active"><img src="{image_path}"' in html
+        assert re.search(r'<figure class="opw-hoofdstukbeeld opw-sidecar-item is-active"[^>]*><img src="' + re.escape(image_path) + '"', html)
         assert f'<meta property="og:image" content="https://open-parafrase-weergave.nl{image_path}">' in html
         assert ('alt="Het volk"' if number == 1 else f'alt="Illustratie bij Exodus {number}:') in html
 

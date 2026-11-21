@@ -53,15 +53,13 @@ def test_bovenbalk_blijft_vrij_en_tabletbeelden_staan_in_de_tekst(browser, site,
     boxes = [page.locator(selector).bounding_box() for selector in ('.opv-merk', '.opv-hfst', '.opv-rechts')]
     assert boxes[0]['x'] + boxes[0]['width'] <= boxes[1]['x'] + 1
     assert boxes[1]['x'] + boxes[1]['width'] <= boxes[2]['x'] + 1
-    if touch:
-        images = page.locator('.opw-leeskolom .opw-hoofdstukbeeld')
-        assert images.count() == 3
-        for image in images.all():
-            assert image.is_visible()
-            image.scroll_into_view_if_needed()
-            page.wait_for_function('img => img.complete && img.naturalWidth > 0', arg=image.locator('img').element_handle())
-    else:
-        assert page.locator('.opw-sidecar .opw-hoofdstukbeeld').count() == 3
+    images = page.locator('.opw-leeskolom .opw-hoofdstukbeeld')
+    assert images.count() == 3
+    assert page.locator('.opw-sidecar .opw-hoofdstukbeeld').count() == 0
+    for image in images.all():
+        assert image.is_visible()
+        image.scroll_into_view_if_needed()
+        page.wait_for_function('img => img.complete && img.naturalWidth > 0', arg=image.locator('img').element_handle())
     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
 
 
@@ -80,6 +78,7 @@ def test_de_volledige_lezer_is_standaard_met_rode_cursieve_citaten(browser, site
     assert page.locator(".opw-hoofdstukbeeld img").count() == 3
     assert page.locator(".opw-hoofdstukbeeld img").first.get_attribute("src") == "/images/boekseries/genesis/1.webp"
     for picture in page.locator(".opw-hoofdstukbeeld img").all():
+        picture.scroll_into_view_if_needed()
         page.wait_for_function("img => img.complete && img.naturalWidth > 0", arg=picture.element_handle())
     page.locator("#topnav-weergave").click()
     assert page.locator("#sidebar-right").is_visible()
@@ -152,29 +151,27 @@ def test_exodusbeelden_in_dezelfde_lezer(browser, site, chapter, width):
     assert page.locator("#sidebar-right").is_visible()
 
 
-def test_beeld_staat_vanaf_het_begin_naast_de_tekst_en_wisselt_bij_het_vers(browser, site):
-    page = page_for(browser, site, viewport={"width": 1440, "height": 1000})
-    page.goto(site + "/bijbel/exodus/1.html", wait_until="networkidle")
+@pytest.mark.parametrize("width", [390, 1440])
+def test_beelden_verschijnen_bij_hun_vers_tijdens_het_scrollen(browser, site, width):
+    page = page_for(browser, site, viewport={"width": width, "height": 900})
+    page.goto(site + "/bijbel/openbaring/6.html", wait_until="networkidle")
     page.locator('.opw-leesindeling[data-reading-ready="true"]').wait_for()
-    first = page.locator('.opw-hoofdstukbeeld img[src$="/1-7.webp"]')
-    assert first.is_visible()
-    text = page.locator('.opw-leeskolom').bounding_box()
-    picture = first.bounding_box()
-    assert picture["x"] >= text["x"] + text["width"]
-    assert picture["y"] < 200
-    page.locator('.verse-row[data-verse="8"]').evaluate(
-        "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
-    assert page.locator('.opw-background').count() == 0
-    assert first.is_visible()
-    page.locator('.verse-row[data-verse="17"]').evaluate(
-        "el => window.scrollBy(0, el.getBoundingClientRect().top - 140)")
-    last = page.locator('.opw-hoofdstukbeeld img[src$="/1-17.webp"]')
-    page.wait_for_function("() => document.querySelector('.opw-hoofdstukbeeld img[src$=\"/1-17.webp\"]').getBoundingClientRect().width > 0")
-    assert last.is_visible()
-    page.goto(site + "/bijbel/exodus/2.html", wait_until="domcontentloaded")
-    page.locator('.opw-leesindeling[data-reading-ready="true"]').wait_for()
-    assert page.locator('.opw-hoofdstukbeeld.is-active img').count() == 1
-    assert '/exodus/2-' in page.locator('.opw-hoofdstukbeeld.is-active img').get_attribute('src')
+    figures = page.locator('.opw-leeskolom .opw-hoofdstukbeeld')
+    assert figures.count() == 4
+    positions = []
+    for figure, verse in zip(figures.all(), [2, 4, 5, 8]):
+        assert figure.get_attribute('data-verse') == str(verse)
+        assert figure.evaluate("el => el.previousElementSibling.dataset.verse") == str(verse)
+        figure.scroll_into_view_if_needed()
+        image = figure.locator('img')
+        page.wait_for_function('img => img.complete && img.naturalWidth > 0', arg=image.element_handle())
+        assert figure.is_visible()
+        positions.append(figure.evaluate('el => el.getBoundingClientRect().top + scrollY'))
+        ratio = image.evaluate('el => el.getBoundingClientRect().width / el.getBoundingClientRect().height')
+        assert abs(ratio - 1.5) < .02
+    assert positions == sorted(positions)
+    assert page.locator('.opw-sidecar .opw-hoofdstukbeeld').count() == 0
+    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
 
 
 def test_breed_beeld_kan_groot_open_en_met_escape_sluiten(browser, site):

@@ -45,21 +45,20 @@
     }
 
     function arrangeImages(layout) {
-        const mobile = window.matchMedia('(max-width: 1100px), (hover: none), (pointer: coarse)').matches;
-        const placement = mobile ? 'inline' : 'aside';
+        const placement = 'inline';
         if (layout.dataset.imagePlacement === placement) return;
         const gallery = layout.querySelector('.opw-hoofdstukbeelden');
         const rows = [...layout.querySelectorAll('.verse-row')];
         const figures = [...layout.querySelectorAll('.opw-hoofdstukbeeld')];
         if (!gallery || !rows.length) return;
+        // Groepeer per vers zodat meerdere beelden bij hetzelfde vers hun volgorde behouden.
+        const anchors = new Map();
         figures.forEach((figure, index) => {
-            if (mobile) {
-                const row = rows.find(row => Number(row.dataset.verse) >= Number(figure.dataset.verse)) || rows[rows.length - 1];
-                // Een hoofdstuk begint met tekst: een openingsbeeld komt op de telefoon na het eerste vers.
-                if (row === layout.querySelector('.opw-leeskolom .verse-row') && window.matchMedia('(max-width: 768px)').matches) row.after(figure);
-                else row.before(figure);
-                if (index) figure.querySelector('img').loading = 'lazy';
-            } else gallery.appendChild(figure);
+            const row = rows.find(row => Number(row.dataset.verse) >= Number(figure.dataset.verse)) || rows[rows.length - 1];
+            const anchor = anchors.get(row) || row;
+            anchor.after(figure);
+            anchors.set(row, figure);
+            if (index) figure.querySelector('img').loading = 'lazy';
         });
         layout.dataset.imagePlacement = placement;
     }
@@ -72,7 +71,7 @@
         if (gallery) {
             gallery.classList.add('opw-sidecar');
             layout.classList.add('heeft-beelden');
-            const figures = [...gallery.querySelectorAll('.opw-hoofdstukbeeld')];
+            const figures = [...layout.querySelectorAll('.opw-hoofdstukbeeld')];
             const maxVerse = Number(rows[rows.length - 1].dataset.verse) || rows.length;
             figures.forEach((figure, index) => {
                 figure.classList.add('opw-sidecar-item');
