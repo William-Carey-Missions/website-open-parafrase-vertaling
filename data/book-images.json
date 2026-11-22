@@ -1057,13 +1057,15 @@
         "chapter": 19,
         "file": "19-camp.webp",
         "alt": "Israëlitische families kamperen aan de voet van de Sinaï",
-        "scene": "Het volk bij de Sinaï"
+        "scene": "Het volk bij de Sinaï",
+        "verse": 2
       },
       {
         "chapter": 19,
         "file": "19-sinai.webp",
         "alt": "Het volk kijkt van een afstand naar de Sinaï onder wolken en bliksem",
-        "scene": "De berg in wolken"
+        "scene": "De berg in wolken",
+        "verse": 16
       },
       {
         "chapter": 20,
@@ -1889,6 +1891,15 @@
         "file": "40-38.webp",
         "alt": "Beeld bij Exodus 40: Vuur boven de tabernakel bij nacht",
         "scene": "Vuur boven de tabernakel bij nacht"
+      },
+      {
+        "chapter": 19,
+        "verse": 13,
+        "file": "19-ramshoorn.webp",
+        "scene": "De ramshoorn bij de Sinaï",
+        "alt": "Een gekromde ramshoorn ligt op een rots met de Sinaï onder donkere wolken op de achtergrond",
+        "width": 1536,
+        "height": 1024
       }
     ],
     "deuteronomium": [
@@ -3055,13 +3066,15 @@
         "chapter": 17,
         "file": "17-camp.webp",
         "alt": "David kijkt vanuit het legerkamp naar Goliath aan de overzijde van het dal",
-        "scene": "David ziet Goliath"
+        "scene": "David ziet Goliath",
+        "verse": 23
       },
       {
         "chapter": 17,
         "file": "17-stones.webp",
         "alt": "David kiest stenen uit een beek en houdt zijn slinger gereed",
-        "scene": "David kiest vijf stenen"
+        "scene": "David kiest vijf stenen",
+        "verse": 40
       },
       {
         "chapter": 1,
@@ -3692,6 +3705,15 @@
         "file": "31-13.webp",
         "alt": "Beeld bij 1 Samuël 31: In Jabes worden Saul en zijn zonen herdacht bij hun graf.",
         "scene": "In Jabes worden Saul en zijn zonen herdacht bij hun graf."
+      },
+      {
+        "chapter": 17,
+        "verse": 50,
+        "file": "17-goliath-verslagen.webp",
+        "scene": "Goliath ligt verslagen op de grond",
+        "alt": "Goliath ligt voorover en roerloos op de grond terwijl David met zijn slinger naast hem staat",
+        "width": 1536,
+        "height": 1024
       }
     ],
     "1koningen": [

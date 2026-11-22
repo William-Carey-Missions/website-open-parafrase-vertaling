@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-22",
+  "tool": "built-in image_gen",
+  "images": [
+    {
+      "book": "exodus",
+      "chapter": 19,
+      "verse": 13,
+      "file": "19-ramshoorn.webp",
+      "scene": "De ramshoorn bij de Sinaï",
+      "alt": "Een gekromde ramshoorn ligt op een rots met de Sinaï onder donkere wolken op de achtergrond",
+      "prompt": "Use case: illustration-story, educational object detail for Exodus 19:13. Create one LANDSCAPE 1536x1024 photorealistic biblical illustration in the established Open Parafrase Weergave series: warm earth tones, detailed natural textures, dramatic readable light. Main subject is one authentic ancient SHOFAR MADE FROM A REAL RAM'S HORN, resting horizontally on a rough stone in the close foreground. It must be a modest curled ram horn with a tapering narrow blown mouth end, natural ridges and warm brown-to-ivory keratin, and a cut, open, wider hollow end; clearly an animal horn used as a wind instrument. Not a long straight metal trumpet and not an extremely long kudu horn. In soft focus behind it, the rocky Sinai rises under dark thunderclouds, smoke and a few lightning flashes, with a distant modest encampment at the foot of the mountain. The shofar itself fills much of the composition and remains completely in frame; precise horn material and natural curvature. This is an illustrative object detail accompanying the reference to the ram's horn in the verse: do not depict Moses or any human blowing it, and do not depict a deity. No brass, no valves, no metal trumpet, no text, captions or watermarks."
+    },
+    {
+      "book": "1samuel",
+      "chapter": 17,
+      "verse": 50,
+      "file": "17-goliath-verslagen.webp",
+      "scene": "Goliath ligt verslagen op de grond",
+      "alt": "Goliath ligt voorover en roerloos op de grond terwijl David met zijn slinger naast hem staat",
+      "prompt": "Use case: illustration-story. Create ONE NEW LANDSCAPE 1536x1024 photorealistic historical Bible illustration of 1 Samuel 17:49-50, consistent with the attached reference image's visual style. The attached image is ONLY a CHARACTER REFERENCE for David: keep his youthful Middle Eastern face, dark curly hair, simple off-white rough linen short tunic, brown wool wrap, sandals and leather sling. The new scene is the aftermath of David defeating Goliath in the Valley of Elah. Goliath, an exceptionally tall muscular adult Philistine warrior in period-appropriate bronze scale armor and bronze greaves, is DEAD and lies FULL-LENGTH FACE DOWN on the dusty rocky ground, having fallen forward. His head remains attached and his face is turned toward the earth, his limbs lie limp and his body is completely motionless. Show the entire fallen body clearly and anatomically naturally in the foreground, head, torso, two arms and two legs all coherent. His long spear has fallen beside him. David stands a short distance behind and beside the fallen warrior, holding his SLING relaxed at his side; David has NO sword in his hand. The great size difference is clear but not cartoonishly giant. David is solemn and relieved, not gleeful or celebrating cruelty. Distant opposing armies on the hills frame the valley, with ancient tents and no sheep in this scene. Warm late afternoon light, highly realistic dusty terrain, cloth and bronze textures, calm readable wide composition. Non-graphic depiction of battlefield death: no blood pool, no exposed wound, no severed head, no decapitation, no dismemberment, no explicit injury detail. No modern weapons, no medieval plate armor, no words, captions or watermark.",
+      "reference": "images/boekseries/1samuel/17-stones.webp"
+    }
+  ]
+}
